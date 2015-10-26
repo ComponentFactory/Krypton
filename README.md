@@ -9,23 +9,20 @@ The **Bin** directory contains already compiled copies of all the example projec
 # Krypton Toolkit
 49 basic controls with full and consistent theming.
 
-![](/Images/home_toolkit1.png?raw=true) ![](/Images/home_toolkit2.png?raw=true) ![](/Images/home_toolkit3.png?raw=true)
-![](/Images/home_toolkit4.png?raw=true) ![](/Images/home_toolkit5.png?raw=true) ![](/Images/home_toolkit6.png?raw=true)
+![](/Images/home_toolkit1.gif?raw=true) ![](/Images/home_toolkit2.gif?raw=true) ![](/Images/home_toolkit3.gif?raw=true)
+![](/Images/home_toolkit4.gif?raw=true) ![](/Images/home_toolkit5.gif?raw=true) ![](/Images/home_toolkit6.gif?raw=true)
 
 # Krypton Ribbon
 Office style ribbon control.
 
-![](/Images/home_ribbon1.png?raw=true) ![](/Images/home_ribbon2.png?raw=true) ![](/Images/home_ribbon3.png?raw=true)
-![](/Images/home_ribbon4.png?raw=true) ![](/Images/home_ribbon5.png?raw=true) ![](/Images/home_ribbon6.png?raw=true)
+![](/Images/home_ribbon1.gif?raw=true) ![](/Images/home_ribbon2.gif?raw=true) ![](/Images/home_ribbon3.gif?raw=true)
+![](/Images/home_ribbon4.gif?raw=true) ![](/Images/home_ribbon5.gif?raw=true) ![](/Images/home_ribbon6.gif?raw=true)
 
 # Krypton Navigator
 A TabControl but so much better.
 
-![](/Images/home_navigator1.png?raw=true) ![](/Images/home_navigator2.png?raw=true)
-![](/Images/home_navigator3.png?raw=true) ![](/Images/home_navigator4.png?raw=true)
+![](/Images/home_navigator1.gif?raw=true) ![](/Images/home_navigator2.gif?raw=true)
+![](/Images/home_navigator3.gif?raw=true) ![](/Images/home_navigator4.gif?raw=true)
 
 
-
-
-![](/Images/home_image.png?raw=true)
 
