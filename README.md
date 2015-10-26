@@ -8,3 +8,9 @@ The **Bin** directory contains already compiled copies of all the example projec
 
 Alternatively the **Source** directory contains the full source code that you can view, modify and directly compile.
 
+!(/images/home_image.jpg?raw=true)
+
+!(/images/KDocking.jpg?raw=true)
+
+!(/images/home_image.jpg?raw=true)
+
