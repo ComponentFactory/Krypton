@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\ButtonSpecPlayground.exe.config
+C:\Bewaren\krypton\Krypton\Bin\ButtonSpecPlayground.exe
+C:\Bewaren\krypton\Krypton\Bin\ButtonSpecPlayground.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\ButtonSpec Playground\obj\Release\ButtonSpecPlayground.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\ButtonSpec Playground\obj\Release\ButtonSpecPlayground.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\ButtonSpec Playground\obj\Release\ButtonSpec Playground 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\ButtonSpec Playground\obj\Release\ButtonSpecPlayground.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\ButtonSpec Playground\obj\Release\ButtonSpecPlayground.pdb

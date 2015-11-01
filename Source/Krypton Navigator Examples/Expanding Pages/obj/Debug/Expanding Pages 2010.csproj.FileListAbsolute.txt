@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\ExpandingPages.exe.config
+C:\Bewaren\krypton\Krypton\Bin\ExpandingPages.exe
+C:\Bewaren\krypton\Krypton\Bin\ExpandingPages.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Expanding Pages\obj\Debug\ExpandingPages.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Expanding Pages\obj\Debug\ExpandingPages.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Expanding Pages\obj\Debug\Expanding Pages 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Expanding Pages\obj\Debug\ExpandingPages.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Expanding Pages\obj\Debug\ExpandingPages.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Expanding Pages\obj\Debug\ExpandingPages.pdb

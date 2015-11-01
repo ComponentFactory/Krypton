@@ -1,0 +1,10 @@
+C:\Bewaren\krypton\Krypton\Bin\CellMaximizeAndRestore.exe.config
+C:\Bewaren\krypton\Krypton\Bin\CellMaximizeAndRestore.exe
+C:\Bewaren\krypton\Krypton\Bin\CellMaximizeAndRestore.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Cell Maximize + Restore\obj\Debug\Cell Maximize + Restore 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Cell Maximize + Restore\obj\Debug\CellMaximizeAndRestore.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Cell Maximize + Restore\obj\Debug\CellMaximizeAndRestore.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Cell Maximize + Restore\obj\Debug\Cell Maximize + Restore 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Cell Maximize + Restore\obj\Debug\CellMaximizeAndRestore.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Cell Maximize + Restore\obj\Debug\CellMaximizeAndRestore.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Cell Maximize + Restore\obj\Debug\CellMaximizeAndRestore.pdb

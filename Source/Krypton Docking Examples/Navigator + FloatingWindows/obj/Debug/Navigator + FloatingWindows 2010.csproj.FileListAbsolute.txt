@@ -1,0 +1,10 @@
+C:\Bewaren\krypton\Krypton\Bin\NavigatorAndFloatingWindows.exe.config
+C:\Bewaren\krypton\Krypton\Bin\NavigatorAndFloatingWindows.exe
+C:\Bewaren\krypton\Krypton\Bin\NavigatorAndFloatingWindows.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Navigator + FloatingWindows\obj\Debug\NavigatorAndFloatingWindows.ContentDocument.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Navigator + FloatingWindows\obj\Debug\NavigatorAndFloatingWindows.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Navigator + FloatingWindows\obj\Debug\NavigatorAndFloatingWindows.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Navigator + FloatingWindows\obj\Debug\Navigator + FloatingWindows 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Navigator + FloatingWindows\obj\Debug\NavigatorAndFloatingWindows.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Navigator + FloatingWindows\obj\Debug\NavigatorAndFloatingWindows.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Navigator + FloatingWindows\obj\Debug\NavigatorAndFloatingWindows.pdb

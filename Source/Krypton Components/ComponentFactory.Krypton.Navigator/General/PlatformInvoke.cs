@@ -12,6 +12,7 @@ using System;
 using System.Text;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+using System.Security;
 
 namespace ComponentFactory.Krypton.Navigator
 {
@@ -33,31 +34,87 @@ namespace ComponentFactory.Krypton.Navigator
         #endregion
 
         #region Static User32
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern int ShowWindow(IntPtr hWnd, short cmdShow);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "ShowWindow")]
+        private static extern int ShowWindowInvoke(IntPtr hWnd, short cmdShow);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr GetDC(IntPtr hWnd);
+        [SecuritySafeCritical]
+        internal static int ShowWindow(IntPtr hWnd, short cmdShow)
+        {
+            return ShowWindowInvoke(hWnd, cmdShow);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool UpdateLayeredWindow(IntPtr hwnd, IntPtr hdcDst, ref POINT pptDst, ref SIZE psize, IntPtr hdcSrc, ref POINT pprSrc, Int32 crKey, ref BLENDFUNCTION pblend, Int32 dwFlags);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetDC")]
+        private static extern IntPtr GetDCInvoke(IntPtr hWnd);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern int ReleaseDC(IntPtr hWnd, IntPtr hDC);
+        [SecuritySafeCritical]
+        internal static IntPtr GetDC(IntPtr hWnd)
+        {
+            return GetDCInvoke(hWnd);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "UpdateLayeredWindow")]
+        private static extern bool UpdateLayeredWindowInvoke(IntPtr hwnd, IntPtr hdcDst, ref POINT pptDst, ref SIZE psize, IntPtr hdcSrc, ref POINT pprSrc, Int32 crKey, ref BLENDFUNCTION pblend, Int32 dwFlags);
+
+        [SecuritySafeCritical]
+        internal static bool UpdateLayeredWindow(IntPtr hwnd, IntPtr hdcDst, ref POINT pptDst, ref SIZE psize, IntPtr hdcSrc, ref POINT pprSrc, Int32 crKey, ref BLENDFUNCTION pblend, Int32 dwFlags)
+        {
+            return UpdateLayeredWindowInvoke(hwnd, hdcDst, ref pptDst, ref psize, hdcSrc, ref pprSrc, crKey, ref pblend, dwFlags);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "ReleaseDC")]
+        private static extern int ReleaseDCInvoke(IntPtr hWnd, IntPtr hDC);
+
+        [SecuritySafeCritical]
+        internal static int ReleaseDC(IntPtr hWnd, IntPtr hDC)
+        {
+            return ReleaseDCInvoke(hWnd, hDC);
+        }
         #endregion
 
         #region Static Gdi32
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr CreateCompatibleDC(IntPtr hDC);
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "CreateCompatibleDC")]
+        private static extern IntPtr CreateCompatibleDCInvoke(IntPtr hDC);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr SelectObject(IntPtr hDC, IntPtr hObject);
+        [SecuritySafeCritical]
+        internal static IntPtr CreateCompatibleDC(IntPtr hDC)
+        {
+            return CreateCompatibleDCInvoke(hDC);
+        }
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr DeleteObject(IntPtr hObject);
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "SelectObject")]
+        private static extern IntPtr SelectObjectInvoke(IntPtr hDC, IntPtr hObject);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool DeleteDC(IntPtr hDC);
+        [SecuritySafeCritical]
+        internal static IntPtr SelectObject(IntPtr hDC, IntPtr hObject)
+        {
+            return SelectObjectInvoke(hDC, hObject);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "DeleteObject")]
+        private static extern IntPtr DeleteObjectInvoke(IntPtr hObject);
+
+        [SecuritySafeCritical]
+        internal static IntPtr DeleteObject(IntPtr hObject)
+        {
+            return DeleteObjectInvoke(hObject);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "DeleteDC")]
+        private static extern bool DeleteDCInvoke(IntPtr hDC);
+
+        [SecuritySafeCritical]
+        internal static bool DeleteDC(IntPtr hDC)
+        {
+            return DeleteDCInvoke(hDC);
+        }
         #endregion
 
         #region Static Methods

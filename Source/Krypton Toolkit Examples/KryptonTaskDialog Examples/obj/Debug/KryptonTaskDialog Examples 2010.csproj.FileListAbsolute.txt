@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonTaskDialogExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonTaskDialogExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonTaskDialogExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTaskDialog Examples\obj\Debug\KryptonTaskDialogExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTaskDialog Examples\obj\Debug\KryptonTaskDialogExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTaskDialog Examples\obj\Debug\KryptonTaskDialog Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTaskDialog Examples\obj\Debug\KryptonTaskDialogExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTaskDialog Examples\obj\Debug\KryptonTaskDialogExamples.pdb

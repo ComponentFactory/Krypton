@@ -2773,6 +2773,41 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.Properties.Resources.add">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.Properties.Resources.arrow_down_blue">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.Properties.Resources.arrow_up_blue">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.Properties.Resources.CF_Logo">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.Properties.Resources.check2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.Properties.Resources.delete2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.Properties.Resources.help2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="T:ComponentFactory.Krypton.Workspace.ViewDrawWorkspaceSeparator">
             <summary>
             Workspace specific separator that works relative to a specific workspace item.

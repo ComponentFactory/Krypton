@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonRichTextBoxExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonRichTextBoxExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonRichTextBoxExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonRichTextBox Examples\obj\Release\KryptonRichTextBoxExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonRichTextBox Examples\obj\Release\KryptonRichTextBoxExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonRichTextBox Examples\obj\Release\KryptonRichTextBox Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonRichTextBox Examples\obj\Release\KryptonRichTextBoxExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonRichTextBox Examples\obj\Release\KryptonRichTextBoxExamples.pdb

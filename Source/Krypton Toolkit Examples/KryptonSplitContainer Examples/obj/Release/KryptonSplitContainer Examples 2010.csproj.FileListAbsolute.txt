@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonSplitContainerExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonSplitContainerExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonSplitContainerExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSplitContainer Examples\obj\Release\KryptonSplitContainerExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSplitContainer Examples\obj\Release\KryptonSplitContainerExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSplitContainer Examples\obj\Release\KryptonSplitContainer Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSplitContainer Examples\obj\Release\KryptonSplitContainerExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSplitContainer Examples\obj\Release\KryptonSplitContainerExamples.pdb

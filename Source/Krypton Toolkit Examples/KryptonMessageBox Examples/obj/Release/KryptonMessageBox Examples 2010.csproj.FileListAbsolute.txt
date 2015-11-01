@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonMessageBoxExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonMessageBoxExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonMessageBoxExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMessageBox Examples\obj\Release\KryptonMessageBoxExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMessageBox Examples\obj\Release\KryptonMessageBoxExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMessageBox Examples\obj\Release\KryptonMessageBox Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMessageBox Examples\obj\Release\KryptonMessageBoxExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMessageBox Examples\obj\Release\KryptonMessageBoxExamples.pdb

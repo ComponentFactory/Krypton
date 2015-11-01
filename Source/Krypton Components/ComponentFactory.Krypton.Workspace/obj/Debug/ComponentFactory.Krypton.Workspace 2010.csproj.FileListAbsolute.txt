@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\ComponentFactory.Krypton.Workspace.XML
+C:\Bewaren\krypton\Krypton\Bin\ComponentFactory.Krypton.Workspace.dll
+C:\Bewaren\krypton\Krypton\Bin\ComponentFactory.Krypton.Workspace.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Workspace\obj\Debug\ComponentFactory.Krypton.Workspace 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Workspace\obj\Debug\ComponentFactory.Krypton.Workspace.LicenseInstallForm.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Workspace\obj\Debug\ComponentFactory.Krypton.Workspace.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Workspace\obj\Debug\ComponentFactory.Krypton.Workspace 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Workspace\obj\Debug\ComponentFactory.Krypton.Workspace.dll
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Workspace\obj\Debug\ComponentFactory.Krypton.Workspace.pdb

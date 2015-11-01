@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\NavigatorToolTips.exe.config
+C:\Bewaren\krypton\Krypton\Bin\NavigatorToolTips.exe
+C:\Bewaren\krypton\Krypton\Bin\NavigatorToolTips.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Tooltips\obj\Debug\NavigatorToolTips.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Tooltips\obj\Debug\NavigatorToolTips.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Tooltips\obj\Debug\Navigator ToolTips 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Tooltips\obj\Debug\NavigatorToolTips.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Tooltips\obj\Debug\NavigatorToolTips.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Tooltips\obj\Debug\NavigatorToolTips.pdb

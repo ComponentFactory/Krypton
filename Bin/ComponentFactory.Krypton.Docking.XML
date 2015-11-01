@@ -5677,6 +5677,26 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Docking.Properties.Resources.CF_Logo">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Docking.Properties.Resources.check2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Docking.Properties.Resources.delete2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Docking.Properties.Resources.help2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="T:ComponentFactory.Krypton.Docking.ViewDrawAutoHiddenTab">
             <summary>
             View element that can draw an auto hidden tab based on a KryptonPage as the source.

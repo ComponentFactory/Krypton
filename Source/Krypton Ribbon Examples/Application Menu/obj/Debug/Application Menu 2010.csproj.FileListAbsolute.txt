@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\ApplicationMenu.exe.config
+C:\Bewaren\krypton\Krypton\Bin\ApplicationMenu.exe
+C:\Bewaren\krypton\Krypton\Bin\ApplicationMenu.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Application Menu\obj\Debug\ApplicationMenu.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Application Menu\obj\Debug\ApplicationMenu.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Application Menu\obj\Debug\Application Menu 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Application Menu\obj\Debug\ApplicationMenu.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Application Menu\obj\Debug\ApplicationMenu.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Application Menu\obj\Debug\ApplicationMenu.pdb

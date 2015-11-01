@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\CustomControlUsingRenderers.exe.config
+C:\Bewaren\krypton\Krypton\Bin\CustomControlUsingRenderers.exe
+C:\Bewaren\krypton\Krypton\Bin\CustomControlUsingRenderers.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Renderers\obj\Release\CustomControlUsingRenderers.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Renderers\obj\Release\CustomControlUsingRenderers.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Renderers\obj\Release\Custom Control using Renderers 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Renderers\obj\Release\CustomControlUsingRenderers.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Renderers\obj\Release\CustomControlUsingRenderers.pdb

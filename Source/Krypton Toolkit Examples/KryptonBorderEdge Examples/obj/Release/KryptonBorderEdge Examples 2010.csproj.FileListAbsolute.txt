@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonBorderEdgeExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonBorderEdgeExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonBorderEdgeExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBorderEdge Examples\obj\Release\KryptonBorderEdgeExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBorderEdge Examples\obj\Release\KryptonBorderEdgeExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBorderEdge Examples\obj\Release\KryptonBorderEdge Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBorderEdge Examples\obj\Release\KryptonBorderEdgeExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBorderEdge Examples\obj\Release\KryptonBorderEdgeExamples.pdb

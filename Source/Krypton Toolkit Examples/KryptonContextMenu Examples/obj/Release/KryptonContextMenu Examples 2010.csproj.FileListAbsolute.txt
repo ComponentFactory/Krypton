@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonContextMenuExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonContextMenuExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonContextMenuExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonContextMenu Examples\obj\Release\KryptonContextMenuExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonContextMenu Examples\obj\Release\KryptonContextMenuExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonContextMenu Examples\obj\Release\KryptonContextMenu Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonContextMenu Examples\obj\Release\KryptonContextMenuExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonContextMenu Examples\obj\Release\KryptonContextMenuExamples.pdb

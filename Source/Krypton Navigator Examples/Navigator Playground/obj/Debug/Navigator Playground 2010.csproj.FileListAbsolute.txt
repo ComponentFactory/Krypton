@@ -1,0 +1,10 @@
+C:\Bewaren\krypton\Krypton\Bin\NavigatorPlayground.exe.config
+C:\Bewaren\krypton\Krypton\Bin\NavigatorPlayground.exe
+C:\Bewaren\krypton\Krypton\Bin\NavigatorPlayground.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Playground\obj\Debug\Navigator Playground 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Playground\obj\Debug\NavigatorPlayground.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Playground\obj\Debug\NavigatorPlayground.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Playground\obj\Debug\Navigator Playground 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Playground\obj\Debug\NavigatorPlayground.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Playground\obj\Debug\NavigatorPlayground.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Playground\obj\Debug\NavigatorPlayground.pdb

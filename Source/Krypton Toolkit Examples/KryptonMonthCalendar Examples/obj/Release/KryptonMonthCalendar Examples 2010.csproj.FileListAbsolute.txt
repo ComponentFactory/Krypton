@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonMonthCalendarExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonMonthCalendarExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonMonthCalendarExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMonthCalendar Examples\obj\Release\KryptonMonthCalendarExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMonthCalendar Examples\obj\Release\KryptonMonthCalendarExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMonthCalendar Examples\obj\Release\KryptonMonthCalendar Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMonthCalendar Examples\obj\Release\KryptonMonthCalendarExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMonthCalendar Examples\obj\Release\KryptonMonthCalendarExamples.pdb

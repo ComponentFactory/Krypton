@@ -1,0 +1,11 @@
+C:\Bewaren\krypton\Krypton\Bin\ComponentFactory.Krypton.Design.XML
+C:\Bewaren\krypton\Krypton\Bin\ComponentFactory.Krypton.Design.dll
+C:\Bewaren\krypton\Krypton\Bin\ComponentFactory.Krypton.Design.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Design\obj\Debug\ComponentFactory.Krypton.Design 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Design\obj\Debug\ComponentFactory.Krypton.Navigator.KryptonPageFormEditFlags.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Design\obj\Debug\ComponentFactory.Krypton.Design.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Design\obj\Debug\ComponentFactory.Krypton.Toolkit.KryptonCheckButtonCollectionForm.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Design\obj\Debug\ComponentFactory.Krypton.Toolkit.PaletteDrawBordersSelector.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Design\obj\Debug\ComponentFactory.Krypton.Design 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Design\obj\Debug\ComponentFactory.Krypton.Design.dll
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Design\obj\Debug\ComponentFactory.Krypton.Design.pdb

@@ -1,0 +1,10 @@
+C:\Bewaren\krypton\Krypton\Bin\WorkspaceCellModes.exe.config
+C:\Bewaren\krypton\Krypton\Bin\WorkspaceCellModes.exe
+C:\Bewaren\krypton\Krypton\Bin\WorkspaceCellModes.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Cell Modes\obj\Debug\Workspace Cell Modes 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Cell Modes\obj\Debug\WorkspaceCellModes.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Cell Modes\obj\Debug\WorkspaceCellModes.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Cell Modes\obj\Debug\Workspace Cell Modes 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Cell Modes\obj\Debug\WorkspaceCellModes.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Cell Modes\obj\Debug\WorkspaceCellModes.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Cell Modes\obj\Debug\WorkspaceCellModes.pdb

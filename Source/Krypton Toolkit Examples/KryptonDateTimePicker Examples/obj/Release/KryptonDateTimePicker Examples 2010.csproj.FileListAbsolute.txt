@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonDateTimePickerExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonDateTimePickerExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonDateTimePickerExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDateTimePicker Examples\obj\Release\KryptonDateTimePickerExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDateTimePicker Examples\obj\Release\KryptonDateTimePickerExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDateTimePicker Examples\obj\Release\KryptonDateTimePicker Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDateTimePicker Examples\obj\Release\KryptonDateTimePickerExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDateTimePicker Examples\obj\Release\KryptonDateTimePickerExamples.pdb

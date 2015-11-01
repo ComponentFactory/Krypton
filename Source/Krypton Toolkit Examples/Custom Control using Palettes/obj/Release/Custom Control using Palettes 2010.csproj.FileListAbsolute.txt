@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\CustomControlUsingPalettes.exe.config
+C:\Bewaren\krypton\Krypton\Bin\CustomControlUsingPalettes.exe
+C:\Bewaren\krypton\Krypton\Bin\CustomControlUsingPalettes.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Palettes\obj\Release\CustomControlUsingPalettes.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Palettes\obj\Release\CustomControlUsingPalettes.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Palettes\obj\Release\Custom Control using Palettes 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Palettes\obj\Release\CustomControlUsingPalettes.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Custom Control using Palettes\obj\Release\CustomControlUsingPalettes.pdb

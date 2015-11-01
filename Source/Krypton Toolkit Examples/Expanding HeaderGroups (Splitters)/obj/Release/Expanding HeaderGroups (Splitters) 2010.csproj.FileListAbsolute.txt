@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\ExpandingHeaderGroupsSplitters.exe.config
+C:\Bewaren\krypton\Krypton\Bin\ExpandingHeaderGroupsSplitters.exe
+C:\Bewaren\krypton\Krypton\Bin\ExpandingHeaderGroupsSplitters.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Splitters)\obj\Release\ExpandingHeaderGroupsSplitters.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Splitters)\obj\Release\ExpandingHeaderGroupsSplitters.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Splitters)\obj\Release\Expanding HeaderGroups (Splitters) 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Splitters)\obj\Release\ExpandingHeaderGroupsSplitters.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Splitters)\obj\Release\ExpandingHeaderGroupsSplitters.pdb

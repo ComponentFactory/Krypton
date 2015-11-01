@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\OrientationPlusAlignment.exe.config
+C:\Bewaren\krypton\Krypton\Bin\OrientationPlusAlignment.exe
+C:\Bewaren\krypton\Krypton\Bin\OrientationPlusAlignment.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Orientation + Alignment\obj\Debug\OrientationPlusAlignment.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Orientation + Alignment\obj\Debug\OrientationPlusAlignment.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Orientation + Alignment\obj\Debug\Orientation + Alignment 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Orientation + Alignment\obj\Debug\OrientationPlusAlignment.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Orientation + Alignment\obj\Debug\OrientationPlusAlignment.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Orientation + Alignment\obj\Debug\OrientationPlusAlignment.pdb

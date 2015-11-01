@@ -1,0 +1,13 @@
+C:\Bewaren\krypton\Krypton\Bin\DockingCustomized.exe.config
+C:\Bewaren\krypton\Krypton\Bin\DockingCustomized.exe
+C:\Bewaren\krypton\Krypton\Bin\DockingCustomized.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\Docking Customized 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\DockingCustomized.ContentDocument.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\DockingCustomized.ContentInput.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\DockingCustomized.ContentPropertyGrid.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\DockingCustomized.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\DockingCustomized.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\Docking Customized 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\DockingCustomized.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\DockingCustomized.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Customized\obj\Debug\DockingCustomized.pdb

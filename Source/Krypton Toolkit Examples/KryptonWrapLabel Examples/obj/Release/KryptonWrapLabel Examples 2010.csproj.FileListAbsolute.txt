@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonWrapLabelExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonWrapLabelExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonWrapLabelExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonWrapLabel Examples\obj\Release\KryptonWrapLabelExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonWrapLabel Examples\obj\Release\KryptonWrapLabelExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonWrapLabel Examples\obj\Release\KryptonWrapLabel Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonWrapLabel Examples\obj\Release\KryptonWrapLabelExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonWrapLabel Examples\obj\Release\KryptonWrapLabelExamples.pdb

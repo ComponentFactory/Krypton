@@ -1,0 +1,13 @@
+C:\Bewaren\krypton\Krypton\Bin\ExternalDragToDocking.exe.config
+C:\Bewaren\krypton\Krypton\Bin\ExternalDragToDocking.exe
+C:\Bewaren\krypton\Krypton\Bin\ExternalDragToDocking.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\ExternalDragToDocking.ContentDocument.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\ExternalDragToDocking.ContentInput.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\ExternalDragToDocking.ContentPropertyGrid.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\ExternalDragToDocking.ContentTreeView.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\ExternalDragToDocking.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\ExternalDragToDocking.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\External Drag To Docking 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\ExternalDragToDocking.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\ExternalDragToDocking.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\External Drag To Docking\obj\Debug\ExternalDragToDocking.pdb

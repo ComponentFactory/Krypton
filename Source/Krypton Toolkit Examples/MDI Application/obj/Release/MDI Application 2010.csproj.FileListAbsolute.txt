@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\MDIApplication.exe.config
+C:\Bewaren\krypton\Krypton\Bin\MDIApplication.exe
+C:\Bewaren\krypton\Krypton\Bin\MDIApplication.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\MDI Application\obj\Release\MDIApplication.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\MDI Application\obj\Release\MDIApplication.Form2.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\MDI Application\obj\Release\MDIApplication.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\MDI Application\obj\Release\MDI Application 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\MDI Application\obj\Release\MDIApplication.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\MDI Application\obj\Release\MDIApplication.pdb

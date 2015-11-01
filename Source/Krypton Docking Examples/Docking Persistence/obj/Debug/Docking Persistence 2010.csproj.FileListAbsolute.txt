@@ -1,0 +1,13 @@
+C:\Bewaren\krypton\Krypton\Bin\DockingPersistence.exe.config
+C:\Bewaren\krypton\Krypton\Bin\DockingPersistence.exe
+C:\Bewaren\krypton\Krypton\Bin\DockingPersistence.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\Docking Persistence 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\DockingPersistence.ContentDocument.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\DockingPersistence.ContentInput.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\DockingPersistence.ContentPropertyGrid.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\DockingPersistence.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\DockingPersistence.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\Docking Persistence 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\DockingPersistence.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\DockingPersistence.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Docking Persistence\obj\Debug\DockingPersistence.pdb

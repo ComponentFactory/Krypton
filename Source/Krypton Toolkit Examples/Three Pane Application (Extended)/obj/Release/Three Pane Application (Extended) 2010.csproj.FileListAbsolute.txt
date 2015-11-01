@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\ThreePaneApplicationExtended.exe.config
+C:\Bewaren\krypton\Krypton\Bin\ThreePaneApplicationExtended.exe
+C:\Bewaren\krypton\Krypton\Bin\ThreePaneApplicationExtended.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Three Pane Application (Extended)\obj\Release\ThreePaneApplication.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Three Pane Application (Extended)\obj\Release\ThreePaneApplication.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Three Pane Application (Extended)\obj\Release\Three Pane Application (Extended) 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Three Pane Application (Extended)\obj\Release\ThreePaneApplicationExtended.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Three Pane Application (Extended)\obj\Release\ThreePaneApplicationExtended.pdb

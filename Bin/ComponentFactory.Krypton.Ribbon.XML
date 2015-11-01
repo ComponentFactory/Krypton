@@ -15380,6 +15380,201 @@
               resource lookups using this strongly typed resource class.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.AppButtonDefault">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.ButtonColorImageLarge">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.ButtonColorImageSmall">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.ButtonImageLarge">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.ButtonImageSmall">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.ButtonNoColor">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.CF_logo">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.check2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.delete2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.GroupImageDefault">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.help2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonGallery">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroup">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupButton">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupCheckBox">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupCluster">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupClusterButton">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupClusterColorButton">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupColorButton">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupComboBox">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupCustomControl">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupDateTimePicker">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupDomainUpDown">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupLabel">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupLines">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupMaskedTextBox">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupNumericUpDown">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupRadioButton">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupRichTextBox">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupSeparator">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupTextBox">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupTrackBar">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonGroupTriple">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.KryptonRibbonRecentDoc">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.MoveFirst">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.MoveLast">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.MoveNext">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.MovePrevious">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.Properties.Resources.QATButtonDefault">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.ViewRibbonQATOverflowManager.#ctor(ComponentFactory.Krypton.Ribbon.KryptonRibbon,System.Windows.Forms.Control,ComponentFactory.Krypton.Ribbon.ViewLayoutRibbonQATContents,ComponentFactory.Krypton.Toolkit.ViewBase)">
             <summary>
             Initialize a new instance of the ViewRibbonPopupGroupManager class.

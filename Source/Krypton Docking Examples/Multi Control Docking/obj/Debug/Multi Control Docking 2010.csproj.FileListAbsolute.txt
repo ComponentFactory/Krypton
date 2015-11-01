@@ -1,0 +1,11 @@
+C:\Bewaren\krypton\Krypton\Bin\MultiControlDocking.exe.config
+C:\Bewaren\krypton\Krypton\Bin\MultiControlDocking.exe
+C:\Bewaren\krypton\Krypton\Bin\MultiControlDocking.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Multi Control Docking\obj\Debug\Multi Control Docking 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Multi Control Docking\obj\Debug\MultiControlDocking.ContentInput.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Multi Control Docking\obj\Debug\MultiControlDocking.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Multi Control Docking\obj\Debug\MultiControlDocking.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Multi Control Docking\obj\Debug\Multi Control Docking 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Multi Control Docking\obj\Debug\MultiControlDocking.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Multi Control Docking\obj\Debug\MultiControlDocking.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Multi Control Docking\obj\Debug\MultiControlDocking.pdb

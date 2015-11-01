@@ -19,6 +19,7 @@ using System.Windows.Forms.Design;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
+    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")] 
     internal class KryptonButtonDesigner : ControlDesigner
 	{
 		#region Identity

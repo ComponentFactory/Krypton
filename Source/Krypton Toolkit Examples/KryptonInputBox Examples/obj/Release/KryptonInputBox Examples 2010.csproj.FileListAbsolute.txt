@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonInputBoxExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonInputBoxExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonInputBoxExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonInputBox Examples\obj\Release\KryptonInputBoxExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonInputBox Examples\obj\Release\KryptonInputBoxExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonInputBox Examples\obj\Release\KryptonInputBox Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonInputBox Examples\obj\Release\KryptonInputBoxExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonInputBox Examples\obj\Release\KryptonInputBoxExamples.pdb

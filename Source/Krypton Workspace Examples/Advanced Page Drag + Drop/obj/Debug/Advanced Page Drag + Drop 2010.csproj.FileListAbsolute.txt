@@ -1,0 +1,10 @@
+C:\Bewaren\krypton\Krypton\Bin\AdvancedPageDragAndDrop.exe.config
+C:\Bewaren\krypton\Krypton\Bin\AdvancedPageDragAndDrop.exe
+C:\Bewaren\krypton\Krypton\Bin\AdvancedPageDragAndDrop.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Advanced Page Drag + Drop\obj\Debug\Advanced Page Drag + Drop 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Advanced Page Drag + Drop\obj\Debug\AdvancedPageDragAndDrop.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Advanced Page Drag + Drop\obj\Debug\AdvancedPageDragAndDrop.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Advanced Page Drag + Drop\obj\Debug\Advanced Page Drag + Drop 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Advanced Page Drag + Drop\obj\Debug\AdvancedPageDragAndDrop.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Advanced Page Drag + Drop\obj\Debug\AdvancedPageDragAndDrop.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Advanced Page Drag + Drop\obj\Debug\AdvancedPageDragAndDrop.pdb

@@ -1,0 +1,13 @@
+C:\Bewaren\krypton\Krypton\Bin\StandardDocking.exe.config
+C:\Bewaren\krypton\Krypton\Bin\StandardDocking.exe
+C:\Bewaren\krypton\Krypton\Bin\StandardDocking.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\Standard Docking 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\StandardDocking.ContentDocument.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\StandardDocking.ContentInput.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\StandardDocking.ContentPropertyGrid.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\StandardDocking.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\StandardDocking.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\Standard Docking 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\StandardDocking.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\StandardDocking.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Docking Examples\Standard Docking\obj\Debug\StandardDocking.pdb

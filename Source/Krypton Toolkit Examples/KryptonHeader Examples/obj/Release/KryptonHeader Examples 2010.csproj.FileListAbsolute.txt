@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonHeaderExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonHeaderExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonHeaderExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonHeader Examples\obj\Release\KryptonHeader Examples 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonHeader Examples\obj\Release\KryptonHeaderExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonHeader Examples\obj\Release\KryptonHeader_Examples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonHeader Examples\obj\Release\KryptonHeader Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonHeader Examples\obj\Release\KryptonHeaderExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonHeader Examples\obj\Release\KryptonHeaderExamples.pdb

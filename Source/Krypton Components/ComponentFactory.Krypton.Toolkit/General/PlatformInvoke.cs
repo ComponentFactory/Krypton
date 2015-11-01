@@ -12,6 +12,7 @@ using System;
 using System.Text;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
+using System.Security;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
@@ -183,201 +184,638 @@ namespace ComponentFactory.Krypton.Toolkit
         #endregion
 
         #region Static User32
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool PrintWindow(IntPtr hwnd, IntPtr hDC, uint nFlags);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern short VkKeyScan(char ch);
-        
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr WindowFromPoint(PI.POINT pt);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "PrintWindow")]
+        private static extern bool PrintWindowInvoke(IntPtr hwnd, IntPtr hDC, uint nFlags);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern uint GetWindowLong(IntPtr hWnd, int nIndex);
+        [SecuritySafeCritical]
+        internal static bool PrintWindow(IntPtr hwnd, IntPtr hDC, uint nFlags)
+        {
+            return PrintWindowInvoke(hwnd, hDC, nFlags);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern uint SetWindowLong(IntPtr hwnd, int nIndex, int nLong);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "VkKeyScan")]
+        private static extern short VkKeyScanInvoke(char ch);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr GetActiveWindow();
+        [SecuritySafeCritical]
+        internal static short VkKeyScan(char ch)
+        {
+            return VkKeyScanInvoke(ch);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern int ShowWindow(IntPtr hWnd, short cmdShow);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern ushort GetKeyState(int virtKey);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "WindowFromPoint")]
+        private static extern IntPtr WindowFromPointInvoke(PI.POINT pt);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern uint SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
+        [SecuritySafeCritical]
+        internal static IntPtr WindowFromPoint(PI.POINT pt)
+        {
+            return WindowFromPointInvoke(pt);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern int SetWindowPos(IntPtr hWnd, IntPtr hWndAfter, int X, int Y, int Width, int Height, uint flags);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetWindowLong")]
+        private static extern uint GetWindowLongInvoke(IntPtr hWnd, int nIndex);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool RedrawWindow(IntPtr hWnd, IntPtr rectUpdate, IntPtr hRgnUpdate, uint uFlags);
+        [SecuritySafeCritical]
+        internal static uint GetWindowLong(IntPtr hWnd, int nIndex)
+        {
+            return GetWindowLongInvoke(hWnd, nIndex);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool RedrawWindow(IntPtr hWnd, ref PI.RECT rectUpdate, IntPtr hRgnUpdate, uint uFlags);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "SetWindowLong")]
+        private static extern uint SetWindowLongInvoke(IntPtr hwnd, int nIndex, int nLong);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool TrackMouseEvent(ref TRACKMOUSEEVENTS tme);
+        [SecuritySafeCritical]
+        internal static uint SetWindowLong(IntPtr hwnd, int nIndex, int nLong)
+        {
+            return SetWindowLongInvoke(hwnd, nIndex, nLong);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr GetDC(IntPtr hWnd);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetActiveWindow")]
+        private static extern IntPtr GetActiveWindowInvoke();
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr GetDCEx(IntPtr hWnd, IntPtr hRgnClip, uint fdwOptions);
+        [SecuritySafeCritical]
+        internal static IntPtr GetActiveWindow()
+        {
+            return GetActiveWindowInvoke();
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr GetWindowDC(IntPtr hwnd);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "ShowWindow")]
+        private static extern int ShowWindowInvoke(IntPtr hWnd, short cmdShow);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool GetWindowRect(IntPtr hWnd, ref RECT rect);
+        [SecuritySafeCritical]
+        internal static int ShowWindow(IntPtr hWnd, short cmdShow)
+        {
+            return ShowWindowInvoke(hWnd, cmdShow);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern int ReleaseDC(IntPtr hWnd, IntPtr hDC);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetKeyState")]
+        private static extern ushort GetKeyStateInvoke(int virtKey);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern void DisableProcessWindowsGhosting();
+        [SecuritySafeCritical]
+        internal static ushort GetKeyState(int virtKey)
+        {
+            return GetKeyStateInvoke(virtKey);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern void AdjustWindowRectEx(ref RECT rect, int dwStyle, bool hasMenu, int dwExSytle);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "SendMessage")]
+        private static extern uint SendMessageInvoke(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern int MapWindowPoints(IntPtr hWndFrom, IntPtr hWndTo, [In, Out]PI.POINTC pt, int cPoints);
+        [SecuritySafeCritical]
+        internal static uint SendMessage(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam)
+        {
+            return SendMessageInvoke(hWnd, Msg, wParam, lParam);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool TranslateMessage([In] ref MSG lpMsg);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "SetWindowPos")]
+        private static extern int SetWindowPosInvoke(IntPtr hWnd, IntPtr hWndAfter, int X, int Y, int Width, int Height, uint flags);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern int GetClassName(IntPtr hWnd, StringBuilder lpClassName,int nMaxCount);
+        [SecuritySafeCritical]
+        internal static int SetWindowPos(IntPtr hWnd, IntPtr hWndAfter, int X, int Y, int Width, int Height, uint flags)
+        {
+            return SetWindowPosInvoke(hWnd, hWndAfter, X, Y, Width, Height, flags);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern  IntPtr BeginPaint(IntPtr hwnd, ref PI.PAINTSTRUCT ps);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "RedrawWindow")]
+        private static extern bool RedrawWindowInvoke(IntPtr hWnd, IntPtr rectUpdate, IntPtr hRgnUpdate, uint uFlags);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool EndPaint(IntPtr hwnd, ref PI.PAINTSTRUCT ps);
+        [SecuritySafeCritical]
+        internal static bool RedrawWindow(IntPtr hWnd, IntPtr rectUpdate, IntPtr hRgnUpdate, uint uFlags)
+        {
+            return RedrawWindowInvoke(hWnd, rectUpdate, hRgnUpdate, uFlags);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool GetClientRect(IntPtr hWnd, out RECT lpRect);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "RedrawWindow")]
+        private static extern bool RedrawWindowInvoke(IntPtr hWnd, ref PI.RECT rectUpdate, IntPtr hRgnUpdate, uint uFlags);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool InflateRect(ref RECT lprc, int dx, int dy);
+        [SecuritySafeCritical]
+        internal static bool RedrawWindow(IntPtr hWnd, ref PI.RECT rectUpdate, IntPtr hRgnUpdate, uint uFlags)
+        {
+            return RedrawWindowInvoke(hWnd, ref rectUpdate, hRgnUpdate, uFlags);
+        }
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr GetWindow(IntPtr hWnd, uint uCmd);
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "TrackMouseEvent")]
+        private static extern bool TrackMouseEventInvoke(ref TRACKMOUSEEVENTS tme);
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto)]
-        internal static extern uint RegisterWindowMessage(string lpString);
+        [SecuritySafeCritical]
+        internal static bool TrackMouseEvent(ref TRACKMOUSEEVENTS tme)
+        {
+            return TrackMouseEventInvoke(ref tme);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetDC")]
+        private static extern IntPtr GetDCInvoke(IntPtr hWnd);
+
+        [SecuritySafeCritical]
+        internal static IntPtr GetDC(IntPtr hWnd)
+        {
+            return GetDCInvoke(hWnd);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetDCEx")]
+        private static extern IntPtr GetDCExInvoke(IntPtr hWnd, IntPtr hRgnClip, uint fdwOptions);
+
+        [SecuritySafeCritical]
+        internal static IntPtr GetDCEx(IntPtr hWnd, IntPtr hRgnClip, uint fdwOptions)
+        {
+            return GetDCExInvoke(hWnd, hRgnClip, fdwOptions);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetWindowDC")]
+        private static extern IntPtr GetWindowDCInvoke(IntPtr hwnd);
+
+        [SecuritySafeCritical]
+        internal static IntPtr GetWindowDC(IntPtr hwnd)
+        {
+            return GetWindowDCInvoke(hwnd);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetWindowRect")]
+        private static extern bool GetWindowRectInvoke(IntPtr hWnd, ref RECT rect);
+
+        [SecuritySafeCritical]
+        internal static bool GetWindowRect(IntPtr hWnd, ref RECT rect)
+        {
+            return GetWindowRectInvoke(hWnd, ref  rect);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "ReleaseDC")]
+        private static extern int ReleaseDCInvoke(IntPtr hWnd, IntPtr hDC);
+
+        [SecuritySafeCritical]
+        internal static int ReleaseDC(IntPtr hWnd, IntPtr hDC)
+        {
+            return ReleaseDCInvoke(hWnd, hDC);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "DisableProcessWindowsGhosting")]
+        private static extern void DisableProcessWindowsGhostingInvoke();
+
+        [SecuritySafeCritical]
+        internal static void DisableProcessWindowsGhosting()
+        {
+            DisableProcessWindowsGhostingInvoke();
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "AdjustWindowRectEx")]
+        private static extern void AdjustWindowRectExInvoke(ref RECT rect, int dwStyle, bool hasMenu, int dwExSytle);
+
+        [SecuritySafeCritical]
+        internal static void AdjustWindowRectEx(ref RECT rect, int dwStyle, bool hasMenu, int dwExSytle)
+        {
+            AdjustWindowRectExInvoke(ref  rect, dwStyle, hasMenu, dwExSytle);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "MapWindowPoints")]
+        private static extern int MapWindowPointsInvoke(IntPtr hWndFrom, IntPtr hWndTo, [In, Out]PI.POINTC pt, int cPoints);
+
+        [SecuritySafeCritical]
+        internal static int MapWindowPoints(IntPtr hWndFrom, IntPtr hWndTo, [In, Out]PI.POINTC pt, int cPoints)
+        {
+            return MapWindowPointsInvoke(hWndFrom, hWndTo, pt, cPoints);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "TranslateMessage")]
+        private static extern bool TranslateMessageInvoke([In] ref MSG lpMsg);
+
+        [SecuritySafeCritical]
+        internal static bool TranslateMessage([In] ref MSG lpMsg)
+        {
+            return TranslateMessageInvoke(ref lpMsg);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetClassName")]
+        private static extern int GetClassNameInvoke(IntPtr hWnd, StringBuilder lpClassName, int nMaxCount);
+
+        [SecuritySafeCritical]
+        internal static int GetClassName(IntPtr hWnd, StringBuilder lpClassName, int nMaxCount)
+        {
+            return GetClassNameInvoke(hWnd, lpClassName, nMaxCount);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "BeginPaint")]
+        private static extern IntPtr BeginPaintInvoke(IntPtr hwnd, ref PI.PAINTSTRUCT ps);
+
+        [SecuritySafeCritical]
+        internal static IntPtr BeginPaint(IntPtr hwnd, ref PI.PAINTSTRUCT ps)
+        {
+            return BeginPaintInvoke(hwnd, ref ps);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "EndPaint")]
+        private static extern bool EndPaintInvoke(IntPtr hwnd, ref PI.PAINTSTRUCT ps);
+
+        [SecuritySafeCritical]
+        internal static bool EndPaint(IntPtr hwnd, ref PI.PAINTSTRUCT ps)
+        {
+            return EndPaintInvoke(hwnd, ref ps);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetClientRect")]
+        private static extern bool GetClientRectInvoke(IntPtr hWnd, out RECT lpRect);
+
+        [SecuritySafeCritical]
+        internal static bool GetClientRect(IntPtr hWnd, out RECT lpRect)
+        {
+            return GetClientRectInvoke(hWnd, out lpRect);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "InflateRect")]
+        private static extern bool InflateRectInvoke(ref RECT lprc, int dx, int dy);
+
+        [SecuritySafeCritical]
+        internal static bool InflateRect(ref RECT lprc, int dx, int dy)
+        {
+            return InflateRectInvoke(ref  lprc, dx, dy);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "GetWindow")]
+        private static extern IntPtr GetWindowInvoke(IntPtr hWnd, uint uCmd);
+
+        [SecuritySafeCritical]
+        internal static IntPtr GetWindow(IntPtr hWnd, uint uCmd)
+        {
+            return GetWindowInvoke(hWnd, uCmd);
+        }
+
+        [SecurityCritical]
+        [DllImport("user32.dll", CharSet = CharSet.Auto, EntryPoint = "RegisterWindowMessage")]
+        private static extern uint RegisterWindowMessageInvoke(string lpString);
+
+        [SecuritySafeCritical]
+        internal static uint RegisterWindowMessage(string lpString)
+        {
+            return RegisterWindowMessageInvoke(lpString);
+        }
         #endregion
 
         #region Static Gdi32
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern int BitBlt(IntPtr hDestDC, int x, int y, int nWidth, int nHeight, IntPtr hSrcDC, int xSrc, int ySrc, int dwRop);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr CreateCompatibleBitmap(IntPtr hDC, int nWidth, int nHeight);
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "BitBlt")]
+        private static extern int BitBltInvoke(IntPtr hDestDC, int x, int y, int nWidth, int nHeight, IntPtr hSrcDC, int xSrc, int ySrc, int dwRop);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern int ExcludeClipRect(IntPtr hDC, int x1, int y1, int x2, int y2);
+        [SecuritySafeCritical]
+        internal static int BitBlt(IntPtr hDestDC, int x, int y, int nWidth, int nHeight, IntPtr hSrcDC, int xSrc, int ySrc, int dwRop)
+        {
+            return BitBltInvoke(hDestDC, x, y, nWidth, nHeight, hSrcDC, xSrc, ySrc, dwRop);
+        }
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern int IntersectClipRect(IntPtr hdc, int nLeftRect, int nTopRect, int nRightRect, int nBottomRect);
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "CreateCompatibleBitmap")]
+        private static extern IntPtr CreateCompatibleBitmapInvoke(IntPtr hDC, int nWidth, int nHeight);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern int GetDeviceCaps(IntPtr hDC, int nIndex);
+        [SecuritySafeCritical]
+        internal static IntPtr CreateCompatibleBitmap(IntPtr hDC, int nWidth, int nHeight)
+        {
+            return CreateCompatibleBitmapInvoke(hDC, nWidth, nHeight);
+        }
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr CreateDIBSection(IntPtr hDC, BITMAPINFO pBMI, uint iUsage, int ppvBits, IntPtr hSection, uint dwOffset);
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "ExcludeClipRect")]
+        private static extern int ExcludeClipRectInvoke(IntPtr hDC, int x1, int y1, int x2, int y2);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr CreateCompatibleDC(IntPtr hDC);
+        [SecuritySafeCritical]
+        internal static int ExcludeClipRect(IntPtr hDC, int x1, int y1, int x2, int y2)
+        {
+            return ExcludeClipRectInvoke(hDC, x1, y1, x2, y2);
+        }
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr SelectObject(IntPtr hDC, IntPtr hObject);
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "IntersectClipRect")]
+        private static extern int IntersectClipRectInvoke(IntPtr hdc, int nLeftRect, int nTopRect, int nRightRect, int nBottomRect);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern IntPtr DeleteObject(IntPtr hObject);
+        [SecuritySafeCritical]
+        internal static int IntersectClipRect(IntPtr hdc, int nLeftRect, int nTopRect, int nRightRect, int nBottomRect)
+        {
+            return IntersectClipRectInvoke(hdc, nLeftRect, nTopRect, nRightRect, nBottomRect);
+        }
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto)]
-        internal static extern bool DeleteDC(IntPtr hDC);
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "GetDeviceCaps")]
+        private static extern int GetDeviceCapsInvoke(IntPtr hDC, int nIndex);
 
+        [SecuritySafeCritical]
+        internal static int GetDeviceCaps(IntPtr hDC, int nIndex)
+        {
+            return GetDeviceCapsInvoke(hDC, nIndex);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "CreateDIBSection")]
+        private static extern IntPtr CreateDIBSectionInvoke(IntPtr hDC, BITMAPINFO pBMI, uint iUsage, int ppvBits, IntPtr hSection, uint dwOffset);
+
+        [SecuritySafeCritical]
+        internal static IntPtr CreateDIBSection(IntPtr hDC, BITMAPINFO pBMI, uint iUsage, int ppvBits, IntPtr hSection, uint dwOffset)
+        {
+            return CreateDIBSectionInvoke(hDC, pBMI, iUsage, ppvBits, hSection, dwOffset);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "CreateCompatibleDC")]
+        private static extern IntPtr CreateCompatibleDCInvoke(IntPtr hDC);
+
+        [SecuritySafeCritical]
+        internal static IntPtr CreateCompatibleDC(IntPtr hDC)
+        {
+            return CreateCompatibleDCInvoke(hDC);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "SelectObject")]
+        private static extern IntPtr SelectObjectInvoke(IntPtr hDC, IntPtr hObject);
+
+        [SecuritySafeCritical]
+        internal static IntPtr SelectObject(IntPtr hDC, IntPtr hObject)
+        {
+            return SelectObjectInvoke(hDC, hObject);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "DeleteObject")]
+        private static extern IntPtr DeleteObjectInvoke(IntPtr hObject);
+
+        [SecuritySafeCritical]
+        internal static IntPtr DeleteObject(IntPtr hObject)
+        {
+            return DeleteObjectInvoke(hObject);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, EntryPoint = "DeleteDC")]
+        private static extern bool DeleteDCInvoke(IntPtr hDC);
+
+        [SecuritySafeCritical]
+        internal static bool DeleteDC(IntPtr hDC)
+        {
+            return DeleteDCInvoke(hDC);
+        }
+
+        [SecurityCritical]
         [DllImport("gdi32.dll", EntryPoint = "SaveDC", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern int IntSaveDC(HandleRef hDC);
+        private static extern int SaveDCInvoke(HandleRef hDC);
 
+        [SecuritySafeCritical]
+        internal static int SaveDC(HandleRef hDC)
+        {
+            return SaveDCInvoke(hDC);
+        }
+
+        [SecurityCritical]
         [DllImport("gdi32.dll", EntryPoint = "RestoreDC", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern bool IntRestoreDC(HandleRef hDC, int nSavedDC);
+        private static extern bool RestoreDCInvoke(HandleRef hDC, int nSavedDC);
 
+        [SecuritySafeCritical]
+        internal static bool RestoreDC(HandleRef hDC, int nSavedDC)
+        {
+            return RestoreDCInvoke(hDC, nSavedDC);
+        }
+
+        [SecurityCritical]
         [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern bool GetViewportOrgEx(HandleRef hDC, [In, Out]POINTC point);
+        private static extern bool GetViewportOrgExInvoke(HandleRef hDC, [In, Out]POINTC point);
 
+        [SecuritySafeCritical]
+        internal static bool GetViewportOrgEx(HandleRef hDC, [In, Out]POINTC point)
+        {
+            return GetViewportOrgExInvoke(hDC, point);
+        }
+
+        [SecurityCritical]
         [DllImport("gdi32.dll", EntryPoint = "CreateRectRgn", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern IntPtr IntCreateRectRgn(int x1, int y1, int x2, int y2);
+        private static extern IntPtr CreateRectRgnInvoke(int x1, int y1, int x2, int y2);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern int GetClipRgn(HandleRef hDC, HandleRef hRgn);
+        [SecuritySafeCritical]
+        internal static IntPtr CreateRectRgn(int x1, int y1, int x2, int y2)
+        {
+            return CreateRectRgnInvoke(x1, y1, x2, y2);
+        }
 
+        [SecurityCritical]
         [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern bool SetViewportOrgEx(HandleRef hDC, int x, int y, [In, Out]POINTC point);
+        private static extern int GetClipRgnInvoke(HandleRef hDC, HandleRef hRgn);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern int GetRgnBox(HandleRef hRegion, ref RECT clipRect);
+        [SecuritySafeCritical]
+        internal static int GetClipRgn(HandleRef hDC, HandleRef hRgn)
+        {
+            return GetClipRgnInvoke(hDC, hRgn);
+        }
 
+        [SecurityCritical]
         [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern int CombineRgn(HandleRef hRgn, HandleRef hRgn1, HandleRef hRgn2, int nCombineMode);
+        private static extern bool SetViewportOrgExInvoke(HandleRef hDC, int x, int y, [In, Out]POINTC point);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern int SelectClipRgn(HandleRef hDC, HandleRef hRgn);
+        [SecuritySafeCritical]
+        internal static bool SetViewportOrgEx(HandleRef hDC, int x, int y, [In, Out]POINTC point)
+        {
+            return SetViewportOrgExInvoke(hDC, x, y, point);
+        }
 
+        [SecurityCritical]
         [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern int SelectClipRgn(IntPtr hDC, IntPtr hRgn);
+        private static extern int GetRgnBoxInvoke(HandleRef hRegion, ref RECT clipRect);
 
-        [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern uint SetTextColor(IntPtr hdc, int crColor);
+        [SecuritySafeCritical]
+        internal static int GetRgnBox(HandleRef hRegion, ref RECT clipRect)
+        {
+            return GetRgnBoxInvoke(hRegion, ref clipRect);
+        }
 
+        [SecurityCritical]
         [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern uint SetBkColor(IntPtr hdc, int crColor);
+        private static extern int CombineRgnInvoke(HandleRef hRgn, HandleRef hRgn1, HandleRef hRgn2, int nCombineMode);
 
+        [SecuritySafeCritical]
+        internal static int CombineRgn(HandleRef hRgn, HandleRef hRgn1, HandleRef hRgn2, int nCombineMode)
+        {
+            return CombineRgnInvoke(hRgn, hRgn1, hRgn2, nCombineMode);
+        }
+
+        [SecurityCritical]
         [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
-        internal static extern IntPtr CreateSolidBrush(int crColor);
+        private static extern int SelectClipRgnInvoke(HandleRef hDC, HandleRef hRgn);
+
+        [SecuritySafeCritical]
+        internal static int SelectClipRgn(HandleRef hDC, HandleRef hRgn)
+        {
+            return SelectClipRgnInvoke(hDC, hRgn);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
+        private static extern int SelectClipRgnInvoke(IntPtr hDC, IntPtr hRgn);
+
+        [SecuritySafeCritical]
+        internal static int SelectClipRgn(IntPtr hDC, IntPtr hRgn)
+        {
+            return SelectClipRgnInvoke(hDC, hRgn);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
+        private static extern uint SetTextColorInvoke(IntPtr hdc, int crColor);
+
+        [SecuritySafeCritical]
+        internal static uint SetTextColor(IntPtr hdc, int crColor)
+        {
+            return SetTextColorInvoke(hdc, crColor);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
+        private static extern uint SetBkColorInvoke(IntPtr hdc, int crColor);
+
+        [SecuritySafeCritical]
+        internal static uint SetBkColor(IntPtr hdc, int crColor)
+        {
+            return SetBkColorInvoke(hdc, crColor);
+        }
+
+        [SecurityCritical]
+        [DllImport("gdi32.dll", CharSet = CharSet.Auto, SetLastError = true, ExactSpelling = true)]
+        private static extern IntPtr CreateSolidBrushInvoke(int crColor);
+
+        [SecuritySafeCritical]
+        internal static IntPtr CreateSolidBrush(int crColor)
+        {
+            return CreateSolidBrushInvoke(crColor);
+        }
         #endregion
 
         #region Static DwmApi
-        [DllImport("dwmapi.dll", CharSet = CharSet.Auto)]
-        internal static extern void DwmIsCompositionEnabled(ref bool enabled);
+        [SecurityCritical]
+        [DllImport("dwmapi.dll", CharSet = CharSet.Auto, EntryPoint = "DwmIsCompositionEnabled")]
+        private static extern void DwmIsCompositionEnabledInvoke(ref bool enabled);
 
-        [DllImport("dwmapi.dll", CharSet = CharSet.Auto)]
-        internal static extern int DwmExtendFrameIntoClientArea(IntPtr hWnd, ref MARGINS pMarInset);
+        [SecuritySafeCritical]
+        internal static void DwmIsCompositionEnabled(ref bool enabled)
+        {
+            DwmIsCompositionEnabledInvoke(ref enabled);
+        }
 
-        [DllImport("dwmapi.dll", CharSet = CharSet.Auto)]
-        internal static extern int DwmDefWindowProc(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam, out IntPtr result);
+        [SecurityCritical]
+        [DllImport("dwmapi.dll", CharSet = CharSet.Auto, EntryPoint = "DwmExtendFrameIntoClientArea")]
+        private static extern int DwmExtendFrameIntoClientAreaInvoke(IntPtr hWnd, ref MARGINS pMarInset);
+
+        [SecuritySafeCritical]
+        internal static int DwmExtendFrameIntoClientArea(IntPtr hWnd, ref MARGINS pMarInset)
+        {
+            return DwmExtendFrameIntoClientAreaInvoke(hWnd, ref pMarInset);
+        }
+
+        [SecurityCritical]
+        [DllImport("dwmapi.dll", CharSet = CharSet.Auto, EntryPoint = "DwmDefWindowProc")]
+        private static extern int DwmDefWindowProcInvoke(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam, out IntPtr result);
+
+        [SecuritySafeCritical]
+        internal static int DwmDefWindowProc(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam, out IntPtr result)
+        {
+            return DwmDefWindowProcInvoke(hWnd, msg, wParam, lParam, out result);
+        }
         #endregion
 
         #region Static Ole32
-        [DllImport("ole32.dll", CharSet = CharSet.Auto)]
-        internal static extern void CoCreateGuid(ref GUIDSTRUCT guid);
+        [SecurityCritical]
+        [DllImport("ole32.dll", CharSet = CharSet.Auto, EntryPoint = "CoCreateGuid")]
+        private static extern void CoCreateGuidInvoke(ref GUIDSTRUCT guid);
+
+        [SecuritySafeCritical]
+        internal static void CoCreateGuid(ref GUIDSTRUCT guid)
+        {
+            CoCreateGuidInvoke(ref guid);
+        }
         #endregion
 
         #region Static Uxtheme
-        [DllImport("uxtheme.dll", CharSet = CharSet.Auto)]
-        internal static extern bool IsAppThemed();
+        [SecurityCritical]
+        [DllImport("uxtheme.dll", CharSet = CharSet.Auto, EntryPoint = "IsAppThemed")]
+        private static extern bool IsAppThemedInvoke();
 
-        [DllImport("uxtheme.dll", CharSet = CharSet.Auto)]
-        internal static extern bool IsThemeActive();
+        [SecuritySafeCritical]
+        internal static bool IsAppThemed()
+        {
+            return IsAppThemedInvoke();
+        }
 
-        [DllImport("uxtheme.dll", CharSet = CharSet.Auto)]
-        internal static extern int SetWindowTheme(IntPtr hWnd, String subAppName, String subIdList);
+        [SecurityCritical]
+        [DllImport("uxtheme.dll", CharSet = CharSet.Auto, EntryPoint = "IsThemeActive")]
+        private static extern bool IsThemeActiveInvoke();
 
+        [SecuritySafeCritical]
+        internal static bool IsThemeActive()
+        {
+            return IsThemeActiveInvoke();
+        }
+
+        [SecurityCritical]
+        [DllImport("uxtheme.dll", CharSet = CharSet.Auto, EntryPoint = "SetWindowTheme")]
+        private static extern int SetWindowThemeInvoke(IntPtr hWnd, String subAppName, String subIdList);
+
+        [SecuritySafeCritical]
+        internal static int SetWindowTheme(IntPtr hWnd, String subAppName, String subIdList)
+        {
+            return SetWindowThemeInvoke(hWnd, subAppName, subIdList);
+        }
+
+        [SecurityCritical]
         [DllImport("uxtheme.dll", CharSet = CharSet.Unicode)]
-        internal static extern int DrawThemeTextEx(IntPtr hTheme, IntPtr hDC, int iPartId, int iStateId, string text, int iCharCount, int dwFlags, ref RECT pRect, ref DTTOPTS pOptions);
+        private static extern int DrawThemeTextExInvoke(IntPtr hTheme, IntPtr hDC, int iPartId, int iStateId, string text, int iCharCount, int dwFlags, ref RECT pRect, ref DTTOPTS pOptions);
+
+        [SecuritySafeCritical]
+        internal static int DrawThemeTextEx(IntPtr hTheme, IntPtr hDC, int iPartId, int iStateId, string text, int iCharCount, int dwFlags, ref RECT pRect, ref DTTOPTS pOptions)
+        {
+            return DrawThemeTextExInvoke(hTheme, hDC, iPartId, iStateId, text, iCharCount, dwFlags, ref pRect, ref pOptions);
+        }
         #endregion
 
         #region Static Kernel32
-        [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
-        internal static extern short QueryPerformanceCounter(ref long var);
+        [SecurityCritical]
+        [DllImport("kernel32.dll", CharSet = CharSet.Auto, EntryPoint = "QueryPerformanceCounter")]
+        private static extern short QueryPerformanceCounterInvoke(ref long var);
 
-        [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
-        internal static extern short QueryPerformanceFrequency(ref long var);
+        [SecuritySafeCritical]
+        internal static short QueryPerformanceCounter(ref long var)
+        {
+            return QueryPerformanceCounterInvoke(ref  var);
+        }
+
+        [SecurityCritical]
+        [DllImport("kernel32.dll", CharSet = CharSet.Auto, EntryPoint = "QueryPerformanceFrequency")]
+        private static extern short QueryPerformanceFrequencyInvoke(ref long var);
+
+        [SecuritySafeCritical]
+        internal static short QueryPerformanceFrequency(ref long var)
+        {
+            return QueryPerformanceFrequencyInvoke(ref var);
+        }
         #endregion
 
         #region Structures
@@ -466,13 +904,13 @@ namespace ComponentFactory.Krypton.Toolkit
         [StructLayout(LayoutKind.Sequential)]
         internal struct MSG
         {
-             public IntPtr hwnd;
-             public int message;
-             public IntPtr wParam;
-             public IntPtr lParam;
-             public uint time;
-             public POINT pt;
-         }
+            public IntPtr hwnd;
+            public int message;
+            public IntPtr wParam;
+            public IntPtr lParam;
+            public uint time;
+            public POINT pt;
+        }
 
         [StructLayout(LayoutKind.Sequential)]
         internal struct DTTOPTS

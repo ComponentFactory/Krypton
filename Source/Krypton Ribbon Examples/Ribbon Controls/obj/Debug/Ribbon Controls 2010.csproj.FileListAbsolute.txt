@@ -1,0 +1,10 @@
+C:\Bewaren\krypton\Krypton\Bin\RibbonControls.exe.config
+C:\Bewaren\krypton\Krypton\Bin\RibbonControls.exe
+C:\Bewaren\krypton\Krypton\Bin\RibbonControls.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Controls\obj\Debug\Ribbon Controls 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Controls\obj\Debug\RibbonControls.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Controls\obj\Debug\RibbonControls.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Controls\obj\Debug\Ribbon Controls 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Controls\obj\Debug\RibbonControls.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Controls\obj\Debug\RibbonControls.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Controls\obj\Debug\RibbonControls.pdb

@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonBreadCrumbExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonBreadCrumbExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonBreadCrumbExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBreadCrumb Examples\obj\Release\KryptonBreadCrumbExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBreadCrumb Examples\obj\Release\KryptonBreadCrumbExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBreadCrumb Examples\obj\Release\KryptonBreadCrumb Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBreadCrumb Examples\obj\Release\KryptonBreadCrumbExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonBreadCrumb Examples\obj\Release\KryptonBreadCrumbExamples.pdb

@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\KryptonTrackBarExamples.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KryptonTrackBarExamples.exe
+C:\Bewaren\krypton\Krypton\Bin\KryptonTrackBarExamples.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTrackBar Examples\obj\Release\KryptonTrackBarExamples.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTrackBar Examples\obj\Release\KryptonTrackBarExamples.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTrackBar Examples\obj\Release\KryptonTrackBar Examples 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTrackBar Examples\obj\Release\KryptonTrackBarExamples.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonTrackBar Examples\obj\Release\KryptonTrackBarExamples.pdb

@@ -1,0 +1,10 @@
+C:\Bewaren\krypton\Krypton\Bin\KeyTipsAndKeyboardAccess.exe.config
+C:\Bewaren\krypton\Krypton\Bin\KeyTipsAndKeyboardAccess.exe
+C:\Bewaren\krypton\Krypton\Bin\KeyTipsAndKeyboardAccess.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KeyTips + Keyboard Access\obj\Debug\KeyTips + Keyboard Access 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KeyTips + Keyboard Access\obj\Debug\KeyTipsAndKeyboardAccess.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KeyTips + Keyboard Access\obj\Debug\KeyTipsAndKeyboardAccess.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KeyTips + Keyboard Access\obj\Debug\KeyTips + Keyboard Access 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KeyTips + Keyboard Access\obj\Debug\KeyTipsAndKeyboardAccess.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KeyTips + Keyboard Access\obj\Debug\KeyTipsAndKeyboardAccess.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KeyTips + Keyboard Access\obj\Debug\KeyTipsAndKeyboardAccess.pdb

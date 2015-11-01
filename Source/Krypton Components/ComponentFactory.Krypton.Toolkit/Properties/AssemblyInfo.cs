@@ -31,7 +31,6 @@ using System.Diagnostics;
 [assembly: StringFreezing]
 [assembly: ComVisible(true)]
 [assembly: CLSCompliant(true)]
-[assembly: AllowPartiallyTrustedCallers()]
 [assembly: Dependency("System", LoadHint.Always)]
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]

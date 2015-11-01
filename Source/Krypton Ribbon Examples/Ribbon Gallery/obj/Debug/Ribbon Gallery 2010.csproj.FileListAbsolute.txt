@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\RibbonGallery.exe.config
+C:\Bewaren\krypton\Krypton\Bin\RibbonGallery.exe
+C:\Bewaren\krypton\Krypton\Bin\RibbonGallery.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Gallery\obj\Debug\RibbonGallery.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Gallery\obj\Debug\RibbonGallery.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Gallery\obj\Debug\Ribbon Gallery 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Gallery\obj\Debug\RibbonGallery.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Gallery\obj\Debug\RibbonGallery.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon Gallery\obj\Debug\RibbonGallery.pdb

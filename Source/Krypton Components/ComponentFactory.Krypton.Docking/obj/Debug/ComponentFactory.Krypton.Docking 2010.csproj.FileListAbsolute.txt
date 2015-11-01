@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\ComponentFactory.Krypton.Docking.XML
+C:\Bewaren\krypton\Krypton\Bin\ComponentFactory.Krypton.Docking.dll
+C:\Bewaren\krypton\Krypton\Bin\ComponentFactory.Krypton.Docking.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Docking\obj\Debug\ComponentFactory.Krypton.Docking 2010.csprojResolveAssemblyReference.cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Docking\obj\Debug\ComponentFactory.Krypton.Docking.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Docking\obj\Debug\ComponentFactory.Krypton.Docking.LicenseInstallForm.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Docking\obj\Debug\ComponentFactory.Krypton.Docking 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Docking\obj\Debug\ComponentFactory.Krypton.Docking.dll
+C:\Bewaren\krypton\Krypton\Source\Krypton Components\ComponentFactory.Krypton.Docking\obj\Debug\ComponentFactory.Krypton.Docking.pdb

@@ -1,0 +1,8 @@
+C:\Bewaren\krypton\Krypton\Bin\ExpandingHeaderGroupsStack.exe.config
+C:\Bewaren\krypton\Krypton\Bin\ExpandingHeaderGroupsStack.exe
+C:\Bewaren\krypton\Krypton\Bin\ExpandingHeaderGroupsStack.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Stack)\obj\Release\ExpandingHeaderGroupsStack.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Stack)\obj\Release\ExpandingHeaderGroupsStack.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Stack)\obj\Release\Expanding HeaderGroups (Stack) 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Stack)\obj\Release\ExpandingHeaderGroupsStack.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (Stack)\obj\Release\ExpandingHeaderGroupsStack.pdb

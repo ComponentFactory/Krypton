@@ -22,6 +22,7 @@ using System.Runtime.InteropServices;
 using System.Windows.Forms.VisualStyles;
 using System.Reflection;
 using Microsoft.Win32;
+using System.Security;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
@@ -972,6 +973,7 @@ namespace ComponentFactory.Krypton.Toolkit
         /// Process Windows-based messages.
         /// </summary>
         /// <param name="m">A Windows-based message.</param>
+        [SecuritySafeCritical]
         protected override void WndProc(ref Message m)
         {
             bool processed = false;
@@ -1081,6 +1083,7 @@ namespace ComponentFactory.Krypton.Toolkit
         /// </summary>
         /// <param name="m">A Windows-based message.</param>
         /// <returns>True if the message was processed; otherwise false.</returns>
+        [SecurityCritical]
         protected virtual bool OnWM_NCCALCSIZE(ref Message m)
         {
             // Does the LParam contain a RECT or an NCCALCSIZE_PARAMS

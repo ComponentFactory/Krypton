@@ -1,0 +1,9 @@
+C:\Bewaren\krypton\Krypton\Bin\SinglelinePlusMultiline.exe.config
+C:\Bewaren\krypton\Krypton\Bin\SinglelinePlusMultiline.exe
+C:\Bewaren\krypton\Krypton\Bin\SinglelinePlusMultiline.pdb
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Singleline + Multiline\obj\Debug\SinglelinePlusMultiline.Form1.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Singleline + Multiline\obj\Debug\SinglelinePlusMultiline.Properties.Resources.resources
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Singleline + Multiline\obj\Debug\Singleline + Multiline 2010.csproj.GenerateResource.Cache
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Singleline + Multiline\obj\Debug\SinglelinePlusMultiline.exe.licenses
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Singleline + Multiline\obj\Debug\SinglelinePlusMultiline.exe
+C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Singleline + Multiline\obj\Debug\SinglelinePlusMultiline.pdb
