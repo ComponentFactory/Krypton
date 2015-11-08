@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 17/267 Nepean Hwy, 
 //  Seaford, Vic 3198, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.4.0.0 	www.ComponentFactory.com
+//  Version 4.5.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -35,11 +35,10 @@ namespace ComponentFactory.Krypton.Workspace
     [ToolboxBitmap(typeof(KryptonWorkspace), "ToolboxBitmaps.KryptonWorkspace.bmp")]
     [DefaultEvent("WorkspaceCellAdded")]
     [DefaultProperty("Root")]
-    [Designer("ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner, ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner, ComponentFactory.Krypton.Design, Version=4.5.0.0, Culture=neutral, PublicKeyToken=00ed6e3ba24ec383")]
     [DesignerCategory("code")]
     [Description("Layout a hierarchy of KryptonNavigator instances.")]
     [Docking(DockingBehavior.Ask)]
-    [LicenseProvider(typeof(EncryptedLicenseProvider))]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]
     [ComVisible(true)]
     public class KryptonWorkspace : VisualContainerControl,

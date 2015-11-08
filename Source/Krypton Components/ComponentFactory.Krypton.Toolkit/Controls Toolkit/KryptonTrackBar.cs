@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 17/267 Nepean Hwy, 
 //  Seaford, Vic 3198, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.4.0.0 	www.ComponentFactory.com
+//  Version 4.5.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -27,7 +27,7 @@ namespace ComponentFactory.Krypton.Toolkit
     [ToolboxBitmap(typeof(KryptonTrackBar), "ToolboxBitmaps.KryptonTrackBar.bmp")]
     [DefaultEvent("ValueChanged")]
 	[DefaultProperty("Value")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonTrackBarDesigner, ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonTrackBarDesigner, ComponentFactory.Krypton.Design, Version=4.5.0.0, Culture=neutral, PublicKeyToken=00ed6e3ba24ec383")]
     [DesignerCategory("code")]
     [Description("Allow user to scroll between a range of values.")]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]

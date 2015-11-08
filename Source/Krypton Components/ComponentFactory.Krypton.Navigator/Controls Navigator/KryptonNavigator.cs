@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 17/267 Nepean Hwy, 
 //  Seaford, Vic 3198, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.4.0.0 	www.ComponentFactory.com
+//  Version 4.5.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -32,11 +32,10 @@ namespace ComponentFactory.Krypton.Navigator
 	[ToolboxBitmap(typeof(KryptonNavigator), "ToolboxBitmaps.KryptonNavigator.bmp")]
 	[DefaultEvent("SelectedIndexChanged")]
 	[DefaultProperty("Pages")]
-    [Designer("ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner, ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner, ComponentFactory.Krypton.Design, Version=4.5.0.0, Culture=neutral, PublicKeyToken=00ed6e3ba24ec383")]
     [DesignerCategory("code")]
     [Description("Allows navigation between pages.")]
     [Docking(DockingBehavior.Ask)]
-    [LicenseProvider(typeof(EncryptedLicenseProvider))]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]
     [ComVisible(true)]
     public class KryptonNavigator : VisualSimple,
@@ -397,7 +396,7 @@ namespace ComponentFactory.Krypton.Navigator
 		[Category("Visuals")]
 		[Description("Collection of pages in the navigator control.")]
 		[MergableProperty(false)]
-        [Editor("ComponentFactory.Krypton.Navigator.NavigatorPageCollectionEditor, ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e", typeof(UITypeEditor))]
+        [Editor("ComponentFactory.Krypton.Navigator.NavigatorPageCollectionEditor, ComponentFactory.Krypton.Design, Version=4.5.0.0, Culture=neutral, PublicKeyToken=00ed6e3ba24ec383", typeof(UITypeEditor))]
 		[DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
 		public KryptonPageCollection Pages
 		{

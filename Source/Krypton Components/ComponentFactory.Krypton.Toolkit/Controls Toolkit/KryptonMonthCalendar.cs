@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 17/267 Nepean Hwy, 
 //  Seaford, Vic 3198, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.4.0.0 	www.ComponentFactory.com
+//  Version 4.5.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -34,7 +34,7 @@ namespace ComponentFactory.Krypton.Toolkit
     [DefaultEvent("DateChanged")]
     [DefaultProperty("SelectionRange")]
     [DefaultBindingProperty("SelectionRange")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner, ComponentFactory.Krypton.Design, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner, ComponentFactory.Krypton.Design, Version=4.5.0.0, Culture=neutral, PublicKeyToken=00ed6e3ba24ec383")]
     [DesignerCategory("code")]
     [Description("Select a date using a visual monthly calendar display.")]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]

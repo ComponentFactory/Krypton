@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 17/267 Nepean Hwy, 
 //  Seaford, Vic 3198, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.4.0.0 	www.ComponentFactory.com
+//  Version 4.5.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -23,7 +23,7 @@ namespace ComponentFactory.Krypton.Navigator
 	/// <summary>
     /// Implements base functionality for NavigatorMode.Outlook modes.
 	/// </summary>
-    internal abstract class ViewBuilderOutlookBase : ViewBuilderLicence,
+    internal abstract class ViewBuilderOutlookBase : ViewBuilderBase,
                                                      ISeparatorSource
 	{
         #region Type Definitons

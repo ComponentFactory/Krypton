@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?define ComponentFactory.Krypton.Design_TargetDir=$(var.ComponentFactory.Krypton.Design.TargetDir)?>
+  <?define ComponentFactory.Krypton.Docking_TargetDir=$(var.ComponentFactory.Krypton.Docking.TargetDir)?>
+
+  <?define ProductShortName = "Krypton Toolkit" ?>
+  <?define ProductVersion = "4.5.0" ?>
+  <?define ProductVersionText = "4.5" ?>
+  <?define Manufacturer = "Krypton Toolkit Community" ?>
+  <?define ProductCode = "62526FDE-89FC-43A8-BBB4-7B868EDB1BD0" ?>
+  <?define UpgradeCode = "7B8C48E2-CA50-4C43-AC42-3AB50BCB7F39" ?>
+
+  <Product Id="$(var.ProductCode)" UpgradeCode="$(var.UpgradeCode)" Name="$(var.ProductShortName) $(var.ProductVersionText)" Version="$(var.ProductVersion)" Language="1033" Manufacturer="$(var.Manufacturer)">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate />
+
+    <UIRef Id="WixUI_FeatureTree" />
+
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+    <WixVariable Id="WixUIBannerBmp" Value="topBanner.bmp" />
+    <WixVariable Id="WixUIDialogBmp" Value="dialog.bmp" />
+
+    <Feature Id="ProductFeature" Title="Krypton Toolkit" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+    </Feature>
+
+    <Feature Id="Krypton_VisualStudio12Toolbox" Title="Register controls in Visual Studio 2013" Level="1" Display="expand" AllowAdvertise="no" InstallDefault="local" Absent="allow">
+      <ComponentRef Id="Krypton_VisualStudio12Toolbox" />
+    </Feature>
+
+    <Feature Id="Krypton_VisualStudio11Toolbox" Title="Register controls in Visual Studio 2012" Level="1" Display="expand" AllowAdvertise="no" InstallDefault="local" Absent="allow">
+      <ComponentRef Id="Krypton_VisualStudio11Toolbox" />
+    </Feature>
+
+    <Feature Id="Krypton_VisualStudio10Toolbox" Title="Register controls in Visual Studio 2010" Level="1" Display="expand" AllowAdvertise="no" InstallDefault="local" Absent="allow">
+      <ComponentRef Id="Krypton_VisualStudio10Toolbox" />
+    </Feature>
+  </Product>
+
+  <Fragment>
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="Krypton.Installer" />
+      </Directory>
+    </Directory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="ComponentFactory.Krypton.Design.dll" Guid="5e36c820-c631-4a60-b7d0-62a8c0970386">
+        <File Id="ComponentFactory.Krypton.Design.dll" Name="ComponentFactory.Krypton.Design.dll" Source="$(var.ComponentFactory.Krypton.Design_TargetDir)ComponentFactory.Krypton.Design.dll" Assembly=".net" KeyPath="yes" />
+      </Component>
+      <Component Id="ComponentFactory.Krypton.Navigator.dll" Guid="1881740b-dbe9-48e6-b679-2552aebf0258">
+        <File Id="ComponentFactory.Krypton.Navigator.dll" Name="ComponentFactory.Krypton.Navigator.dll" Source="$(var.ComponentFactory.Krypton.Design_TargetDir)ComponentFactory.Krypton.Navigator.dll" Assembly=".net" KeyPath="yes" />
+      </Component>
+      <Component Id="ComponentFactory.Krypton.Ribbon.dll" Guid="c920a05d-45cc-4ee5-a3c8-2fa9ba018ec5">
+        <File Id="ComponentFactory.Krypton.Ribbon.dll" Name="ComponentFactory.Krypton.Ribbon.dll" Source="$(var.ComponentFactory.Krypton.Design_TargetDir)ComponentFactory.Krypton.Ribbon.dll" Assembly=".net" KeyPath="yes" />
+      </Component>
+      <Component Id="ComponentFactory.Krypton.Toolkit.dll" Guid="e42a2f7f-5de5-4389-968a-f45fd555133e">
+        <File Id="ComponentFactory.Krypton.Toolkit.dll" Name="ComponentFactory.Krypton.Toolkit.dll" Source="$(var.ComponentFactory.Krypton.Design_TargetDir)ComponentFactory.Krypton.Toolkit.dll" Assembly=".net" KeyPath="yes" />
+      </Component>
+      <Component Id="ComponentFactory.Krypton.Workspace.dll" Guid="8660fea3-bc97-4f16-ac2f-1f3e129ebef5">
+        <File Id="ComponentFactory.Krypton.Workspace.dll" Name="ComponentFactory.Krypton.Workspace.dll" Source="$(var.ComponentFactory.Krypton.Design_TargetDir)ComponentFactory.Krypton.Workspace.dll" Assembly=".net" KeyPath="yes" />
+      </Component>
+      <Component Id="ComponentFactory.Krypton.Docking.dll" Guid="24c1aad0-c82b-415c-862a-125a967b60ad">
+        <File Id="ComponentFactory.Krypton.Docking.dll" Name="ComponentFactory.Krypton.Docking.dll" Source="$(var.ComponentFactory.Krypton.Docking_TargetDir)ComponentFactory.Krypton.Docking.dll" Assembly=".net" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+  <Fragment>
+    <ComponentGroup Id="registry" Directory="INSTALLFOLDER">
+      <!-- Register the control with the Toolbox Controls Installer Package for Visual Studio 2013 (Standard edition and higher) -->
+      <Component Id="Krypton_VisualStudio12Toolbox" Guid="C72C3A6E-4DE0-49C2-9A61-3AE5F3930B30">
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\12.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Docking, Version=4.5.0.0, Culture=neutral, PublicKeyToken=f6ee007c15dff33c" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Docking" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\12.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Navigator, Version=4.5.0.0, Culture=neutral, PublicKeyToken=cf6e1efac1f7a7d1" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Navigator" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\12.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=51548153b8b771cd" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Ribbon" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\12.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=1e780cd9494ced7d" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Toolkit" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\12.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Workspace, Version=4.5.0.0, Culture=neutral, PublicKeyToken=bd93671d59468a46" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Workspace" />
+        </RegistryKey>
+
+        <!-- Config -->
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\12.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Docking, Version=4.5.0.0, Culture=neutral, PublicKeyToken=f6ee007c15dff33c" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Docking" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\12.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Navigator, Version=4.5.0.0, Culture=neutral, PublicKeyToken=cf6e1efac1f7a7d1" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Navigator" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\12.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=51548153b8b771cd" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Ribbon" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\12.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=1e780cd9494ced7d" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Toolkit" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\12.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Workspace, Version=4.5.0.0, Culture=neutral, PublicKeyToken=bd93671d59468a46" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Workspace" />
+        </RegistryKey>
+      </Component>
+
+      <!-- Register the control with the Toolbox Controls Installer Package for Visual Studio 2012 (Standard edition and higher) -->
+      <Component Id="Krypton_VisualStudio11Toolbox" Guid="B9B97DCE-7F2F-4611-9B28-812A656C4287">
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\11.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Docking, Version=4.5.0.0, Culture=neutral, PublicKeyToken=f6ee007c15dff33c" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Docking" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\11.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Navigator, Version=4.5.0.0, Culture=neutral, PublicKeyToken=cf6e1efac1f7a7d1" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Navigator" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\11.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=51548153b8b771cd" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Ribbon" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\11.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=1e780cd9494ced7d" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Toolkit" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\11.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Workspace, Version=4.5.0.0, Culture=neutral, PublicKeyToken=bd93671d59468a46" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Workspace" />
+        </RegistryKey>
+
+        <!-- Config -->
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\11.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Docking, Version=4.5.0.0, Culture=neutral, PublicKeyToken=f6ee007c15dff33c" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Docking" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\11.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Navigator, Version=4.5.0.0, Culture=neutral, PublicKeyToken=cf6e1efac1f7a7d1" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Navigator" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\11.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=51548153b8b771cd" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Ribbon" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\11.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=1e780cd9494ced7d" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Toolkit" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKCU" Key="Software\Microsoft\VisualStudio\11.0_Config\ToolboxControlsInstaller\ComponentFactory.Krypton.Workspace, Version=4.5.0.0, Culture=neutral, PublicKeyToken=bd93671d59468a46" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Workspace" />
+        </RegistryKey>
+      </Component>
+
+      <!-- Register the control with the Toolbox Controls Installer Package for Visual Studio 2010 (Standard edition and higher) -->
+      <Component Id="Krypton_VisualStudio10Toolbox" Guid="F0BA9339-FD81-465B-A670-CE30ED21EE29">
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\10.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Docking, Version=4.5.0.0, Culture=neutral, PublicKeyToken=f6ee007c15dff33c" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Docking" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\10.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Navigator, Version=4.5.0.0, Culture=neutral, PublicKeyToken=cf6e1efac1f7a7d1" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Navigator" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\10.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=51548153b8b771cd" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Ribbon" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\10.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=1e780cd9494ced7d" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Toolkit" />
+        </RegistryKey>
+
+        <RegistryKey Root="HKLM" Key="Software\Microsoft\VisualStudio\10.0\ToolboxControlsInstaller\ComponentFactory.Krypton.Workspace, Version=4.5.0.0, Culture=neutral, PublicKeyToken=bd93671d59468a46" ForceDeleteOnUninstall="yes" ForceCreateOnInstall="yes">
+          <RegistryValue Type="string" Value="Krypton Workspace" />
+        </RegistryKey>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

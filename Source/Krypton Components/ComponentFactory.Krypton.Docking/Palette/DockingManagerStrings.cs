@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 17/267 Nepean Hwy, 
 //  Seaford, Vic 3198, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.4.0.0 	www.ComponentFactory.com
+//  Version 4.5.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -23,7 +23,7 @@ namespace ComponentFactory.Krypton.Docking
 	/// <summary>
 	/// Storage for docking managee strings.
 	/// </summary>
-    public class DockingManagerStrings : DockingManagerStringsBase
+    public class DockingManagerStrings : Storage
     {
         #region Static Fields
         private static readonly string _defaultTextAutoHide = "Auto Hide";
@@ -60,7 +60,6 @@ namespace ComponentFactory.Krypton.Docking
 		/// </summary>
         /// <param name="docking">Reference to owning docking manager.</param>
         public DockingManagerStrings(KryptonDockingManager docking)
-            : base(docking)
 		{
             // Default values
             _textAutoHide = _defaultTextAutoHide;
