@@ -23,7 +23,7 @@ namespace ComponentFactory.Krypton.Navigator
 	/// <summary>
     /// Implements base functionality for NavigatorMode.Outlook modes.
 	/// </summary>
-    internal abstract class ViewBuilderOutlookBase : ViewBuilderLicence,
+    internal abstract class ViewBuilderOutlookBase : ViewBuilderBase,
                                                      ISeparatorSource
 	{
         #region Type Definitons

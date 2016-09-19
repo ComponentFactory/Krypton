@@ -22,7 +22,7 @@ namespace ComponentFactory.Krypton.Navigator
 	/// <summary>
     /// Implements the NavigatorMode.Skeleton view.
 	/// </summary>
-    internal class ViewBuilderPanel : ViewBuilderLicence
+    internal class ViewBuilderPanel : ViewBuilderBase
 	{
         #region Instance Fields
         private ViewBase _oldRoot;

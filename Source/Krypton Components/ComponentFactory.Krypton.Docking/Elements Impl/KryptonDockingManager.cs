@@ -37,7 +37,6 @@ namespace ComponentFactory.Krypton.Docking
     [DefaultEvent("PageCloseRequest")]
     [DefaultProperty("Strings")]
     [DesignerCategory("code")]
-    [LicenseProvider(typeof(EncryptedLicenseProvider))]
     [Description("Docking management component.")]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]
     [ComVisible(true)]

@@ -21,7 +21,7 @@ namespace ComponentFactory.Krypton.Navigator
 	/// <summary>
     /// Base class for implementation of 'Stack - CheckButton' modes.
 	/// </summary>
-    internal abstract class ViewBuilderStackCheckButtonBase : ViewBuilderLicence
+    internal abstract class ViewBuilderStackCheckButtonBase : ViewBuilderBase
 	{
         #region Type Definitons
         protected class PageToButtonEdge : Dictionary<KryptonPage, ViewDrawBorderEdge> { };

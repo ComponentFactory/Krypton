@@ -66,45 +66,19 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Control Docking\KryptonDockableNavigator.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonDockspaceSlide.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonStorePage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonAutoHiddenSlidePanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonAutoHiddenProxyPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonDockableWorkspace.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonDockspaceSeparator.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonSpace.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonFloatspace.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonFloatingWindow.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonAutoHiddenPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonAutoHiddenGroup.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Control Docking\KryptonDockspace.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Control Docking\KryptonDockableNavigator.cs" />
+    <Compile Include="Control Docking\KryptonDockspaceSlide.cs" />
+    <Compile Include="Control Docking\KryptonStorePage.cs" />
+    <Compile Include="Control Docking\KryptonAutoHiddenSlidePanel.cs" />
+    <Compile Include="Control Docking\KryptonAutoHiddenProxyPage.cs" />
+    <Compile Include="Control Docking\KryptonDockableWorkspace.cs" />
+    <Compile Include="Control Docking\KryptonDockspaceSeparator.cs" />
+    <Compile Include="Control Docking\KryptonSpace.cs" />
+    <Compile Include="Control Docking\KryptonFloatspace.cs" />
+    <Compile Include="Control Docking\KryptonFloatingWindow.cs" />
+    <Compile Include="Control Docking\KryptonAutoHiddenPanel.cs" />
+    <Compile Include="Control Docking\KryptonAutoHiddenGroup.cs" />
+    <Compile Include="Control Docking\KryptonDockspace.cs" />
     <Compile Include="Dragging\DockingDragTargetProvider.cs" />
     <Compile Include="Dragging\DockingDragManager.cs" />
     <Compile Include="Dragging\DragTargetNull.cs" />
@@ -118,45 +92,19 @@
     <Compile Include="Elements Base\DockingElement.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Elements Impl\KryptonDockingNavigator.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingWorkspace.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingSpace.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingFloatspace.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingFloatingWindow.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingFloating.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingAutoHiddenGroup.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingDockspace.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingEdgeAutoHidden.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingEdgeDocked.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingEdge.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingManager.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Elements Impl\KryptonDockingControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Elements Impl\KryptonDockingNavigator.cs" />
+    <Compile Include="Elements Impl\KryptonDockingWorkspace.cs" />
+    <Compile Include="Elements Impl\KryptonDockingSpace.cs" />
+    <Compile Include="Elements Impl\KryptonDockingFloatspace.cs" />
+    <Compile Include="Elements Impl\KryptonDockingFloatingWindow.cs" />
+    <Compile Include="Elements Impl\KryptonDockingFloating.cs" />
+    <Compile Include="Elements Impl\KryptonDockingAutoHiddenGroup.cs" />
+    <Compile Include="Elements Impl\KryptonDockingDockspace.cs" />
+    <Compile Include="Elements Impl\KryptonDockingEdgeAutoHidden.cs" />
+    <Compile Include="Elements Impl\KryptonDockingEdgeDocked.cs" />
+    <Compile Include="Elements Impl\KryptonDockingEdge.cs" />
+    <Compile Include="Elements Impl\KryptonDockingManager.cs" />
+    <Compile Include="Elements Impl\KryptonDockingControl.cs" />
     <Compile Include="Event Args\AutoHiddenGroupEventArgs.cs" />
     <Compile Include="Event Args\AutoHiddenGroupPanelEventArgs.cs" />
     <Compile Include="Event Args\AutoHiddenSeparatorResizeEventArgs.cs" />
@@ -191,11 +139,7 @@
     <Compile Include="General\DockingHelper.cs" />
     <Compile Include="General\Definitions.cs" />
     <Compile Include="General\PlatformInvoke.cs" />
-    <Compile Include="Licence\LicenseInstallForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Palette\DockingManagerStrings.cs" />
-    <Compile Include="Palette\DockingManagerStringsBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -216,9 +160,6 @@
     <None Include="Resources\delete2.png" />
     <None Include="Resources\check2.png" />
     <None Include="Resources\CF_Logo.bmp" />
-    <EmbeddedResource Include="Licence\LicenseInstallForm.resx">
-      <DependentUpon>LicenseInstallForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ToolboxBitmaps\KryptonDockableNavigator.bmp" />
     <EmbeddedResource Include="ToolboxBitmaps\KryptonDockableWorkspace.bmp" />
     <EmbeddedResource Include="ToolboxBitmaps\KryptonDockingManager.bmp" />

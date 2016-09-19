@@ -39,7 +39,6 @@ namespace ComponentFactory.Krypton.Workspace
     [DesignerCategory("code")]
     [Description("Layout a hierarchy of KryptonNavigator instances.")]
     [Docking(DockingBehavior.Ask)]
-    [LicenseProvider(typeof(EncryptedLicenseProvider))]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]
     [ComVisible(true)]
     public class KryptonWorkspace : VisualContainerControl,

@@ -32,6 +32,16 @@
             Collection of workspace items.
             </summary>
         </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.PropertyChanged">
+            <summary>
+            Occurs after a change has occured to the collection.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.MaximizeRestoreClicked">
+            <summary>
+            Occurs when the user clicks the maximize/restore button.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence)">
             <summary>
             Initialize a new instance of the KryptonWorkspaceCollection class.
@@ -43,6 +53,16 @@
             Obtains the String representation of this instance.
             </summary>
             <returns>User readable name of the instance.</returns>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.RestrictTypes">
+            <summary>
+            Gets an array of types that the collection is restricted to contain.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.ContainsVisibleCell">
+            <summary>
+            Gets a value indicating if the collection or child collections contains a cell instance.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.OnInserted(ComponentFactory.Krypton.Toolkit.TypedCollectionEventArgs{System.ComponentModel.Component})">
             <summary>
@@ -94,95 +114,19 @@
             </summary>
             <param name="e">Event arguments associated with the event.</param>
         </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.PropertyChanged">
-            <summary>
-            Occurs after a change has occured to the collection.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.MaximizeRestoreClicked">
-            <summary>
-            Occurs when the user clicks the maximize/restore button.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.RestrictTypes">
-            <summary>
-            Gets an array of types that the collection is restricted to contain.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollection.ContainsVisibleCell">
-            <summary>
-            Gets a value indicating if the collection or child collections contains a cell instance.
-            </summary>
-        </member>
         <member name="T:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell">
             <summary>
             Represents an individual workspace cell.
             </summary>
         </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.IWorkspaceItem">
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.PropertyChanged">
             <summary>
-            Interface for an individual bar check item.
+            Occurs after a change has occured to the collection.
             </summary>
         </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.IWorkspaceItem.Compact(ComponentFactory.Krypton.Workspace.CompactFlags)">
-            <summary>
-            Perform any compacting actions allowed by the flags.
-            </summary>
-            <param name="flags">Set of compacting actions allowed.</param>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.IWorkspaceItem.PropertyChanged">
-            <summary>
-            Occures when a property changes that affects workspace layout.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.IWorkspaceItem.MaximizeRestoreClicked">
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.MaximizeRestoreClicked">
             <summary>
             Occurs when the user clicks the maximize/restore button.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceParent">
-            <summary>
-            Reference to owning workspace item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceAllowResizing">
-            <summary>
-            Should the item be displayed in the workspace.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceVisible">
-            <summary>
-            Should the item be displayed in the workspace.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceActualSize">
-            <summary>
-            Current pixel size of the item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspacePreferredSize">
-            <summary>
-            Current preferred size of the item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceStarSize">
-            <summary>
-            Get the defined star sizing value.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceMinSize">
-            <summary>
-            Get the defined minimum size.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceMaxSize">
-            <summary>
-            Get the defined maximum size.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.DisposeOnRemove">
-            <summary>
-            Should the item be disposed when it is removed from the workspace.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.#ctor">
@@ -201,79 +145,6 @@
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.Compact(ComponentFactory.Krypton.Workspace.CompactFlags)">
-            <summary>
-            Perform any compacting actions allowed by the flags.
-            </summary>
-            <param name="flags">Set of compacting actions allowed.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.SaveToXml(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlWriter)">
-            <summary>
-            Request this cell save its information.
-            </summary>
-            <param name="workspace">Reference to owning workspace instance..</param>
-            <param name="xmlWriter">Xml writer to save information into.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.LoadFromXml(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlReader,ComponentFactory.Krypton.Navigator.UniqueNameToPage)">
-            <summary>
-            Request this cell load and update state.
-            </summary>
-            <param name="workspace">Reference to owning workspace instance.</param>
-            <param name="xmlReader">Xml reader for loading information.</param>
-            <param name="existingPages">Dictionary on existing pages before load.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.DebugOutput(System.Int32)">
-            <summary>
-            Output debug information about the workspace hierarchy.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.SetVisibleCore(System.Boolean)">
-            <summary>
-            Sets the control to the specified visible state. 
-            </summary>
-            <param name="value">true to make the control visible; otherwise, false.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.CellDesignerGetHitTest(System.Drawing.Point)">
-            <summary>
-            Called by the designer to hit test a point.
-            </summary>
-            <param name="pt">Point to be tested.</param>
-            <returns>True if a hit otherwise false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.CellDesignerComponentFromPoint(System.Drawing.Point)">
-            <summary>
-            Called by the designer to get the component associated with the point.
-            </summary>
-            <param name="pt">Point to be tested.</param>
-            <returns>Component associated with point or null.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.CellDesignerMouseLeave">
-            <summary>
-            Called by the designer to indicate that the mouse has left the control.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.OnPropertyChanged(System.String)">
-            <summary>
-            Raises the PropertyChanged event.
-            </summary>
-            <param name="property">Name of property that has changed.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
-            <summary>
-            Raises the PropertyChanged event.
-            </summary>
-            <param name="e">A PropertyChangedEventArgs containing the event data.</param>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.PropertyChanged">
-            <summary>
-            Occurs after a change has occured to the collection.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.MaximizeRestoreClicked">
-            <summary>
-            Occurs when the user clicks the maximize/restore button.
-            </summary>
         </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.Dock">
             <summary>
@@ -299,6 +170,12 @@
             <summary>
             Gets or sets the tab order of the workspace item within its KryptonWorkspace.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.Compact(ComponentFactory.Krypton.Workspace.CompactFlags)">
+            <summary>
+            Perform any compacting actions allowed by the flags.
+            </summary>
+            <param name="flags">Set of compacting actions allowed.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.WorkspaceVisible">
             <summary>
@@ -375,9 +252,29 @@
             Gets access to the maxmize/restore button spec.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.SaveToXml(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlWriter)">
+            <summary>
+            Request this cell save its information.
+            </summary>
+            <param name="workspace">Reference to owning workspace instance..</param>
+            <param name="xmlWriter">Xml writer to save information into.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.LoadFromXml(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlReader,ComponentFactory.Krypton.Navigator.UniqueNameToPage)">
+            <summary>
+            Request this cell load and update state.
+            </summary>
+            <param name="workspace">Reference to owning workspace instance.</param>
+            <param name="xmlReader">Xml reader for loading information.</param>
+            <param name="existingPages">Dictionary on existing pages before load.</param>
+        </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.LastVisibleSet">
             <summary>
             Internal design time properties.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.DebugOutput(System.Int32)">
+            <summary>
+            Output debug information about the workspace hierarchy.
             </summary>
         </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.LayoutOnInitialized">
@@ -385,10 +282,47 @@
             Should the OnInitialized call perform layout.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.SetVisibleCore(System.Boolean)">
+            <summary>
+            Sets the control to the specified visible state. 
+            </summary>
+            <param name="value">true to make the control visible; otherwise, false.</param>
+        </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.CellChildPanel">
             <summary>
             Gets the child panel used for displaying actual pages.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.CellDesignerGetHitTest(System.Drawing.Point)">
+            <summary>
+            Called by the designer to hit test a point.
+            </summary>
+            <param name="pt">Point to be tested.</param>
+            <returns>True if a hit otherwise false.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.CellDesignerComponentFromPoint(System.Drawing.Point)">
+            <summary>
+            Called by the designer to get the component associated with the point.
+            </summary>
+            <param name="pt">Point to be tested.</param>
+            <returns>Component associated with point or null.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.CellDesignerMouseLeave">
+            <summary>
+            Called by the designer to indicate that the mouse has left the control.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.OnPropertyChanged(System.String)">
+            <summary>
+            Raises the PropertyChanged event.
+            </summary>
+            <param name="property">Name of property that has changed.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Raises the PropertyChanged event.
+            </summary>
+            <param name="e">A PropertyChangedEventArgs containing the event data.</param>
         </member>
         <member name="T:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCellList">
             <summary>
@@ -398,6 +332,16 @@
         <member name="T:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence">
             <summary>
             Represents a sequence of workspace items.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.PropertyChanged">
+            <summary>
+            Occurs after a change has occured to the workspace.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.MaximizeRestoreClicked">
+            <summary>
+            Occurs when the user clicks the maximize/restore button.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.#ctor">
@@ -423,83 +367,6 @@
             </summary>
             <returns>User readable name of the instance.</returns>
         </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.Hide">
-            <summary>
-            Conceals the control from the user.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.Show">
-            <summary>
-            Displays the control to the user.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.ResetUniqueName">
-            <summary>
-            Resets the UniqueName property to its default value.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.Compact(ComponentFactory.Krypton.Workspace.CompactFlags)">
-            <summary>
-            Perform any compacting actions allowed by the flags.
-            </summary>
-            <param name="flags">Set of compacting actions allowed.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.SaveToXml(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlWriter)">
-            <summary>
-            Request this sequence save its information about children.
-            </summary>
-            <param name="workspace">Reference to owning workspace instance.</param>
-            <param name="xmlWriter">Xml writer to save information into.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.LoadFromXml(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlReader,ComponentFactory.Krypton.Navigator.UniqueNameToPage)">
-            <summary>
-            Request this sequence load and recreate children.
-            </summary>
-            <param name="workspace">Reference to owning workspace instance.</param>
-            <param name="xmlReader">Xml reader for loading information.</param>
-            <param name="existingPages">Dictionary on existing pages before load.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.DebugOutput(System.Int32)">
-            <summary>
-            Output debug information about the workspace hierarchy.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.OnChildrenPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
-            <summary>
-            Handle a change in the child collection of items.
-            </summary>
-            <param name="sender">Source of the event.</param>
-            <param name="e">Event arguments associated with the event.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.OnChildrenMaximizeRestoreClicked(System.Object,System.EventArgs)">
-            <summary>
-            Handle a maximize/restore request from a child item.
-            </summary>
-            <param name="sender">Source of the event.</param>
-            <param name="e">Event arguments associated with the event.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.OnPropertyChanged(System.String)">
-            <summary>
-            Raises the PropertyChanged event.
-            </summary>
-            <param name="property">Name of property that has changed.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
-            <summary>
-            Raises the PropertyChanged event.
-            </summary>
-            <param name="e">A PropertyChangedEventArgs containing the event data.</param>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.PropertyChanged">
-            <summary>
-            Occurs after a change has occured to the workspace.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.MaximizeRestoreClicked">
-            <summary>
-            Occurs when the user clicks the maximize/restore button.
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.Children">
             <summary>
             Gets access to the collection of child workspace items.
@@ -515,6 +382,16 @@
             Gets or sets a value indicating whether the sequence is displayed.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.Hide">
+            <summary>
+            Conceals the control from the user.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.Show">
+            <summary>
+            Displays the control to the user.
+            </summary>
+        </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.StarSize">
             <summary>
             Star notation the describes the sizing of the workspace item.
@@ -524,6 +401,17 @@
             <summary>
             Gets and sets the unique name of the workspace sequence.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.ResetUniqueName">
+            <summary>
+            Resets the UniqueName property to its default value.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.Compact(ComponentFactory.Krypton.Workspace.CompactFlags)">
+            <summary>
+            Perform any compacting actions allowed by the flags.
+            </summary>
+            <param name="flags">Set of compacting actions allowed.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.WorkspaceParent">
             <summary>
@@ -570,14 +458,169 @@
             Should the item be disposed when it is removed from the workspace.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.SaveToXml(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlWriter)">
+            <summary>
+            Request this sequence save its information about children.
+            </summary>
+            <param name="workspace">Reference to owning workspace instance.</param>
+            <param name="xmlWriter">Xml writer to save information into.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.LoadFromXml(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlReader,ComponentFactory.Krypton.Navigator.UniqueNameToPage)">
+            <summary>
+            Request this sequence load and recreate children.
+            </summary>
+            <param name="workspace">Reference to owning workspace instance.</param>
+            <param name="xmlReader">Xml reader for loading information.</param>
+            <param name="existingPages">Dictionary on existing pages before load.</param>
+        </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.WorkspaceControl">
             <summary>
             Internal method.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.DebugOutput(System.Int32)">
+            <summary>
+            Output debug information about the workspace hierarchy.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.OnChildrenPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Handle a change in the child collection of items.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments associated with the event.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.OnChildrenMaximizeRestoreClicked(System.Object,System.EventArgs)">
+            <summary>
+            Handle a maximize/restore request from a child item.
+            </summary>
+            <param name="sender">Source of the event.</param>
+            <param name="e">Event arguments associated with the event.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.OnPropertyChanged(System.String)">
+            <summary>
+            Raises the PropertyChanged event.
+            </summary>
+            <param name="property">Name of property that has changed.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequence.OnPropertyChanged(System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Raises the PropertyChanged event.
+            </summary>
+            <param name="e">A PropertyChangedEventArgs containing the event data.</param>
+        </member>
         <member name="T:ComponentFactory.Krypton.Workspace.KryptonWorkspace">
             <summary>
             Layout a hierarchy of KryptonNavigator instances.
+            </summary>
+        </member>
+        <member name="T:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo">
+            <summary>
+            Temporary layout information associated with a workspace child.
+            </summary>
+        </member>
+        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.WorkspaceItem">
+            <summary>Interface for recovering information from a workspace item.</summary>
+        </member>
+        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.CacheStarSize">
+            <summary>Cached requested size for the layout direction.</summary>
+        </member>
+        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.CacheMinSize">
+            <summary>Cached requested minimum size in layout direction.</summary>
+        </member>
+        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.CacheMaxSize">
+            <summary>Cached requested maximum size in layout direction.</summary>
+        </member>
+        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.WorkspaceVisible">
+            <summary>Does the workspace item want to be visible.</summary>
+        </member>
+        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.AllocatedSpace">
+            <summary>Has space been allocated for the workspace item.</summary>
+        </member>
+        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.DisplayRect">
+            <summary>Display rectangle for positioning the item.</summary>
+        </member>
+        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.DisplaySpace">
+            <summary>Space allocated for item.</summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CellCountChanged">
+            <summary>
+            Occurs after the number of cells has changed.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CellVisibleCountChanged">
+            <summary>
+            Occurs after the number of visible cells has changed.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.WorkspaceCellAdding">
+            <summary>
+            Occurs when a new KryptonWorkspaceCell instance is about to be added to the workspace.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.WorkspaceCellRemoved">
+            <summary>
+            Occurs when an existing KryptonWorkspaceCell instance has been removed from the workspace.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ActiveCellChanged">
+            <summary>
+            Occurs when the active cell value has changed.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ActivePageChanged">
+            <summary>
+            Occurs when the active page value has changed.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.MaximizedCellChanged">
+            <summary>
+            Occurs when the maximized cell value has changed.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.GlobalSaving">
+            <summary>
+            Occurs when the workspace information is saving.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.GlobalLoading">
+            <summary>
+            Occurs when the workspace information is loading.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageSaving">
+            <summary>
+            Occurs when the workspace cell page information is saving.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageLoading">
+            <summary>
+            Occurs when the workspace cell page information is loading.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.RecreateLoadingPage">
+            <summary>
+            Occurs when the workspace cell page is loading but there is no existing matching page.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PagesUnmatched">
+            <summary>
+            Occurs when the loading process have completed and there are unmatched pages.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.BeforePageDrag">
+            <summary>
+            Occurs just before a page drag operation is started.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AfterPageDrag">
+            <summary>
+            Occurs after a page drag operation has finished/aborted.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageDrop">
+            <summary>
+            Occurs when a page is being dropped.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspace.#ctor">
@@ -591,6 +634,148 @@
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.TabStop">
+            <summary>
+            Gets or sets a value indicating whether the user can give the focus to this control using the TAB key.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AllowDrop">
+            <summary>
+            Gets or sets a value indicating whether the control can accept data that the user drags onto it.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AutoSize">
+            <summary>
+            Gets or sets a value indicating whether the control is automatically resized to display its entire contents.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.Text">
+            <summary>
+            Gets or sets the text associated with this control.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.BackColor">
+            <summary>
+            Gets or sets the background color for the control.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.Font">
+            <summary>
+            Gets or sets the font of the text displayed by the control.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ForeColor">
+            <summary>
+            Gets or sets the foreground color for the control.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.KryptonContextMenu">
+            <summary>
+            Gets and sets the KryptonContextMenu to show when right clicked.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.Controls">
+            <summary>
+            Gets the collection of controls contained within the control.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ActiveCell">
+            <summary>
+            Gets and sets the active cell.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ActivePage">
+            <summary>
+            Gets and the active page.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CompactFlags">
+            <summary>
+            Gets and sets the compacting options to be applied.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.MaximizedCell">
+            <summary>
+            Gets and sets the cell to maximize inside the client area.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.SplitterWidth">
+            <summary>
+            Gets and sets the thickness of the splitters.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AllowResizing">
+            <summary>
+            Gets and sets if the user can use separators to resize workspace items.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ContainerBackStyle">
+            <summary>
+            Gets and sets the container background style.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.SeparatorStyle">
+            <summary>
+            Gets and sets the separator style.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StateCommon">
+            <summary>
+            Gets access to the common split container appearance that other states can override.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StateDisabled">
+            <summary>
+            Gets access to the disabled split container appearance.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StateNormal">
+            <summary>
+            Gets access to the normal split container appearance.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StateTracking">
+            <summary>
+            Gets access to the hot tracking separator appearance entries.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StatePressed">
+            <summary>
+            Gets access to the pressed separator appearance entries.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ContextMenus">
+            <summary>
+            Gets access to the properties for managing the workspace context menus.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.Root">
+            <summary>
+            Gets access to the root sequence.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AllowPageDrag">
+            <summary>
+            Gets or sets the default setting for allowing the dragging of cells.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ShowMaximizeButton">
+            <summary>
+            Gets or sets if the maximized/restore button is displayed. 
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageCount">
+            <summary>
+            Gets the number of of defined pages in the workspace hierarchy.
+            </summary>
+            <returns>Number of pages.</returns>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageVisibleCount">
+            <summary>
+            Gets the number of of defined visible pages in the workspace hierarchy.
+            </summary>
+            <returns>Number of visible pages.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AllPages">
             <summary>
             Gets an array of all the pages within the workspace,
@@ -602,6 +787,18 @@
             Gets an array of all the visible pages within the workspace,
             </summary>
             <returns>Array of all workspace visible pages.</returns>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CellCount">
+            <summary>
+            Gets the number of of defined cells in the workspace hierarchy.
+            </summary>
+            <returns>Number of cells.</returns>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CellVisibleCount">
+            <summary>
+            Gets the number of of defined visible cells in the workspace hierarchy.
+            </summary>
+            <returns>Number of visible cells.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspace.FirstCell">
             <summary>
@@ -834,6 +1031,11 @@
             Remove all pages from all the cells.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.DragPageNotify">
+            <summary>
+            Gets and sets the interface for receiving page drag notifications.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspace.GenerateDragTargets(ComponentFactory.Krypton.Navigator.PageDragEndData)">
             <summary>
             Generate a list of drag targets that are relevant to the provided end data.
@@ -1035,6 +1237,11 @@
             </summary>
             <returns>A new instance of KryptonNavigatorControlCollection assigned to the control.</returns>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.DefaultSize">
+            <summary>
+            Gets the default size of the control.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspace.Select(System.Boolean,System.Boolean)">
             <summary>
             Activates a child control. Optionally specifies the direction in the tab order to select the control from.
@@ -1071,6 +1278,11 @@
             Process Windows-based messages.
             </summary>
             <param name="m">A Windows-based message.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.EvalInvokePaint">
+            <summary>
+            Work out if this control needs to use Invoke to force a repaint.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspace.OnCellCountChanged(System.EventArgs)">
             <summary>
@@ -1144,284 +1356,6 @@
             </summary>
             <param name="cell">Cell being removed from the control.</param>
         </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CellCountChanged">
-            <summary>
-            Occurs after the number of cells has changed.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CellVisibleCountChanged">
-            <summary>
-            Occurs after the number of visible cells has changed.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.WorkspaceCellAdding">
-            <summary>
-            Occurs when a new KryptonWorkspaceCell instance is about to be added to the workspace.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.WorkspaceCellRemoved">
-            <summary>
-            Occurs when an existing KryptonWorkspaceCell instance has been removed from the workspace.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ActiveCellChanged">
-            <summary>
-            Occurs when the active cell value has changed.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ActivePageChanged">
-            <summary>
-            Occurs when the active page value has changed.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.MaximizedCellChanged">
-            <summary>
-            Occurs when the maximized cell value has changed.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.GlobalSaving">
-            <summary>
-            Occurs when the workspace information is saving.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.GlobalLoading">
-            <summary>
-            Occurs when the workspace information is loading.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageSaving">
-            <summary>
-            Occurs when the workspace cell page information is saving.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageLoading">
-            <summary>
-            Occurs when the workspace cell page information is loading.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.RecreateLoadingPage">
-            <summary>
-            Occurs when the workspace cell page is loading but there is no existing matching page.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PagesUnmatched">
-            <summary>
-            Occurs when the loading process have completed and there are unmatched pages.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.BeforePageDrag">
-            <summary>
-            Occurs just before a page drag operation is started.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AfterPageDrag">
-            <summary>
-            Occurs after a page drag operation has finished/aborted.
-            </summary>
-        </member>
-        <member name="E:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageDrop">
-            <summary>
-            Occurs when a page is being dropped.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.TabStop">
-            <summary>
-            Gets or sets a value indicating whether the user can give the focus to this control using the TAB key.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AllowDrop">
-            <summary>
-            Gets or sets a value indicating whether the control can accept data that the user drags onto it.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AutoSize">
-            <summary>
-            Gets or sets a value indicating whether the control is automatically resized to display its entire contents.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.Text">
-            <summary>
-            Gets or sets the text associated with this control.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.BackColor">
-            <summary>
-            Gets or sets the background color for the control.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.Font">
-            <summary>
-            Gets or sets the font of the text displayed by the control.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ForeColor">
-            <summary>
-            Gets or sets the foreground color for the control.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.KryptonContextMenu">
-            <summary>
-            Gets and sets the KryptonContextMenu to show when right clicked.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.Controls">
-            <summary>
-            Gets the collection of controls contained within the control.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ActiveCell">
-            <summary>
-            Gets and sets the active cell.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ActivePage">
-            <summary>
-            Gets and the active page.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CompactFlags">
-            <summary>
-            Gets and sets the compacting options to be applied.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.MaximizedCell">
-            <summary>
-            Gets and sets the cell to maximize inside the client area.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.SplitterWidth">
-            <summary>
-            Gets and sets the thickness of the splitters.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AllowResizing">
-            <summary>
-            Gets and sets if the user can use separators to resize workspace items.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ContainerBackStyle">
-            <summary>
-            Gets and sets the container background style.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.SeparatorStyle">
-            <summary>
-            Gets and sets the separator style.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StateCommon">
-            <summary>
-            Gets access to the common split container appearance that other states can override.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StateDisabled">
-            <summary>
-            Gets access to the disabled split container appearance.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StateNormal">
-            <summary>
-            Gets access to the normal split container appearance.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StateTracking">
-            <summary>
-            Gets access to the hot tracking separator appearance entries.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.StatePressed">
-            <summary>
-            Gets access to the pressed separator appearance entries.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ContextMenus">
-            <summary>
-            Gets access to the properties for managing the workspace context menus.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.Root">
-            <summary>
-            Gets access to the root sequence.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.AllowPageDrag">
-            <summary>
-            Gets or sets the default setting for allowing the dragging of cells.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.ShowMaximizeButton">
-            <summary>
-            Gets or sets if the maximized/restore button is displayed. 
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageCount">
-            <summary>
-            Gets the number of of defined pages in the workspace hierarchy.
-            </summary>
-            <returns>Number of pages.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.PageVisibleCount">
-            <summary>
-            Gets the number of of defined visible pages in the workspace hierarchy.
-            </summary>
-            <returns>Number of visible pages.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CellCount">
-            <summary>
-            Gets the number of of defined cells in the workspace hierarchy.
-            </summary>
-            <returns>Number of cells.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.CellVisibleCount">
-            <summary>
-            Gets the number of of defined visible cells in the workspace hierarchy.
-            </summary>
-            <returns>Number of visible cells.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.DragPageNotify">
-            <summary>
-            Gets and sets the interface for receiving page drag notifications.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.DefaultSize">
-            <summary>
-            Gets the default size of the control.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspace.EvalInvokePaint">
-            <summary>
-            Work out if this control needs to use Invoke to force a repaint.
-            </summary>
-        </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo">
-            <summary>
-            Temporary layout information associated with a workspace child.
-            </summary>
-        </member>
-        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.WorkspaceItem">
-            <summary>Interface for recovering information from a workspace item.</summary>
-        </member>
-        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.CacheStarSize">
-            <summary>Cached requested size for the layout direction.</summary>
-        </member>
-        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.CacheMinSize">
-            <summary>Cached requested minimum size in layout direction.</summary>
-        </member>
-        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.CacheMaxSize">
-            <summary>Cached requested maximum size in layout direction.</summary>
-        </member>
-        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.WorkspaceVisible">
-            <summary>Does the workspace item want to be visible.</summary>
-        </member>
-        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.AllocatedSpace">
-            <summary>Has space been allocated for the workspace item.</summary>
-        </member>
-        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.DisplayRect">
-            <summary>Display rectangle for positioning the item.</summary>
-        </member>
-        <member name="F:ComponentFactory.Krypton.Workspace.KryptonWorkspace.LayoutInfo.DisplaySpace">
-            <summary>Space allocated for item.</summary>
-        </member>
         <member name="T:ComponentFactory.Krypton.Workspace.DragTargetWorkspace">
             <summary>
             Target within the workspace.
@@ -1444,6 +1378,11 @@
             </summary>
             <param name="disposing">Called from Dispose method.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.DragTargetWorkspace.Workspace">
+            <summary>
+            Gets the target workspace control.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.DragTargetWorkspace.ProcessDragEndData(ComponentFactory.Krypton.Workspace.KryptonWorkspace,ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell,ComponentFactory.Krypton.Navigator.PageDragEndData)">
             <summary>
             Process the drag pages in the context of a target navigator.
@@ -1452,11 +1391,6 @@
             <param name="target">Target workspace cell instance.</param>
             <param name="data">Dragged page data.</param>
             <returns>Last page to be transferred.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.DragTargetWorkspace.Workspace">
-            <summary>
-            Gets the target workspace control.
-            </summary>
         </member>
         <member name="T:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceCellTransfer">
             <summary>
@@ -1501,35 +1435,6 @@
             Target one of the four sides of a workspace cell.
             </summary>
         </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceEdge">
-            <summary>
-            Target one of the four sides of the workspace control.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceEdge.#ctor(System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Rectangle,ComponentFactory.Krypton.Navigator.DragTargetHint,ComponentFactory.Krypton.Workspace.KryptonWorkspace,ComponentFactory.Krypton.Navigator.KryptonPageFlags)">
-            <summary>
-            Initialize a new instance of the DragTargetWorkspaceEdge class.
-            </summary>
-            <param name="screenRect">Rectangle for screen area.</param>
-            <param name="hotRect">Rectangle for hot area.</param>
-            <param name="drawRect">Rectangle for draw area.</param>
-            <param name="hint">Target hint which should be one of the edges.</param>
-            <param name="workspace">Control instance for drop.</param>
-            <param name="allowFlags">Only drop pages that have one of these flags defined.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceEdge.PerformDrop(System.Drawing.Point,ComponentFactory.Krypton.Navigator.PageDragEndData)">
-            <summary>
-            Perform the drop action associated with the target.
-            </summary>
-            <param name="screenPt">Position in screen coordinates.</param>
-            <param name="data">Data to pass to the target to process drop.</param>
-            <returns>Drop was performed and the source can perform any removal of pages as required.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceEdge.Edge">
-            <summary>
-            Gets the dragging edge.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceCellEdge.#ctor(System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Rectangle,ComponentFactory.Krypton.Navigator.DragTargetHint,ComponentFactory.Krypton.Workspace.KryptonWorkspace,ComponentFactory.Krypton.Workspace.KryptonWorkspaceCell,ComponentFactory.Krypton.Navigator.KryptonPageFlags)">
             <summary>
             Initialize a new instance of the DragTargetWorkspaceCellEdge class.
@@ -1548,6 +1453,11 @@
             </summary>
             <param name="disposing">Called from Dispose method.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceCellEdge.Cell">
+            <summary>
+            Gets the target workspace cell.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceCellEdge.IsMatch(System.Drawing.Point,ComponentFactory.Krypton.Navigator.PageDragEndData)">
             <summary>
             Is this target a match for the provided screen position.
@@ -1564,10 +1474,34 @@
             <param name="data">Data to pass to the target to process drop.</param>
             <returns>Drop was performed and the source can perform any removal of pages as required.</returns>
         </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceCellEdge.Cell">
+        <member name="T:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceEdge">
             <summary>
-            Gets the target workspace cell.
+            Target one of the four sides of the workspace control.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceEdge.#ctor(System.Drawing.Rectangle,System.Drawing.Rectangle,System.Drawing.Rectangle,ComponentFactory.Krypton.Navigator.DragTargetHint,ComponentFactory.Krypton.Workspace.KryptonWorkspace,ComponentFactory.Krypton.Navigator.KryptonPageFlags)">
+            <summary>
+            Initialize a new instance of the DragTargetWorkspaceEdge class.
+            </summary>
+            <param name="screenRect">Rectangle for screen area.</param>
+            <param name="hotRect">Rectangle for hot area.</param>
+            <param name="drawRect">Rectangle for draw area.</param>
+            <param name="hint">Target hint which should be one of the edges.</param>
+            <param name="workspace">Control instance for drop.</param>
+            <param name="allowFlags">Only drop pages that have one of these flags defined.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceEdge.Edge">
+            <summary>
+            Gets the dragging edge.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.DragTargetWorkspaceEdge.PerformDrop(System.Drawing.Point,ComponentFactory.Krypton.Navigator.PageDragEndData)">
+            <summary>
+            Perform the drop action associated with the target.
+            </summary>
+            <param name="screenPt">Position in screen coordinates.</param>
+            <param name="data">Data to pass to the target to process drop.</param>
+            <returns>Drop was performed and the source can perform any removal of pages as required.</returns>
         </member>
         <member name="T:ComponentFactory.Krypton.Workspace.CellDragCancelEventArgs">
             <summary>
@@ -1667,28 +1601,6 @@
             Event data for persisting extra data for a workspace cell page.
             </summary>
         </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.XmlLoadingEventArgs">
-            <summary>
-            Event data for persisting extra data for a workspace.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.XmlLoadingEventArgs.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlReader)">
-            <summary>
-            Initialize a new instance of the XmlLoadingEventArgs class.
-            </summary>
-            <param name="workspace">Reference to owning workspace control.</param>
-            <param name="xmlReading">Xml reader for persisting custom data.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.XmlLoadingEventArgs.Workspace">
-            <summary>
-            Gets the workspace reference.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.XmlLoadingEventArgs.XmlReader">
-            <summary>
-            Gets the xml reader.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.PageLoadingEventArgs.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspace,ComponentFactory.Krypton.Navigator.KryptonPage,System.Xml.XmlReader)">
             <summary>
             Initialize a new instance of the PageLoadingEventArgs class.
@@ -1705,28 +1617,6 @@
         <member name="T:ComponentFactory.Krypton.Workspace.PageSavingEventArgs">
             <summary>
             Event data for persisting extra data for a workspace cell page.
-            </summary>
-        </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.XmlSavingEventArgs">
-            <summary>
-            Event data for persisting extra data for a workspace.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.XmlSavingEventArgs.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlWriter)">
-            <summary>
-            Initialize a new instance of the XmlSavingEventArgs class.
-            </summary>
-            <param name="workspace">Reference to owning workspace control.</param>
-            <param name="xmlWriter">Xml writer for persisting custom data.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.XmlSavingEventArgs.Workspace">
-            <summary>
-            Gets the workspace reference.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.XmlSavingEventArgs.XmlWriter">
-            <summary>
-            Gets the xml writer.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.PageSavingEventArgs.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspace,ComponentFactory.Krypton.Navigator.KryptonPage,System.Xml.XmlWriter)">
@@ -1761,6 +1651,50 @@
         <member name="P:ComponentFactory.Krypton.Workspace.RecreateLoadingPageEventArgs.UniqueName">
             <summary>
             Gets the unique name of the page requested to be recreated.
+            </summary>
+        </member>
+        <member name="T:ComponentFactory.Krypton.Workspace.XmlLoadingEventArgs">
+            <summary>
+            Event data for persisting extra data for a workspace.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.XmlLoadingEventArgs.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlReader)">
+            <summary>
+            Initialize a new instance of the XmlLoadingEventArgs class.
+            </summary>
+            <param name="workspace">Reference to owning workspace control.</param>
+            <param name="xmlReading">Xml reader for persisting custom data.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.XmlLoadingEventArgs.Workspace">
+            <summary>
+            Gets the workspace reference.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.XmlLoadingEventArgs.XmlReader">
+            <summary>
+            Gets the xml reader.
+            </summary>
+        </member>
+        <member name="T:ComponentFactory.Krypton.Workspace.XmlSavingEventArgs">
+            <summary>
+            Event data for persisting extra data for a workspace.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.XmlSavingEventArgs.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspace,System.Xml.XmlWriter)">
+            <summary>
+            Initialize a new instance of the XmlSavingEventArgs class.
+            </summary>
+            <param name="workspace">Reference to owning workspace control.</param>
+            <param name="xmlWriter">Xml writer for persisting custom data.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.XmlSavingEventArgs.Workspace">
+            <summary>
+            Gets the workspace reference.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.XmlSavingEventArgs.XmlWriter">
+            <summary>
+            Gets the xml writer.
             </summary>
         </member>
         <member name="T:ComponentFactory.Krypton.Workspace.WorkspaceCellEventArgs">
@@ -1891,6 +1825,72 @@
             Specifies that all compacting flags be applied.
             </summary>
         </member>
+        <member name="T:ComponentFactory.Krypton.Workspace.IWorkspaceItem">
+            <summary>
+            Interface for an individual bar check item.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.IWorkspaceItem.PropertyChanged">
+            <summary>
+            Occures when a property changes that affects workspace layout.
+            </summary>
+        </member>
+        <member name="E:ComponentFactory.Krypton.Workspace.IWorkspaceItem.MaximizeRestoreClicked">
+            <summary>
+            Occurs when the user clicks the maximize/restore button.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceParent">
+            <summary>
+            Reference to owning workspace item.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceAllowResizing">
+            <summary>
+            Should the item be displayed in the workspace.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceVisible">
+            <summary>
+            Should the item be displayed in the workspace.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceActualSize">
+            <summary>
+            Current pixel size of the item.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspacePreferredSize">
+            <summary>
+            Current preferred size of the item.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceStarSize">
+            <summary>
+            Get the defined star sizing value.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceMinSize">
+            <summary>
+            Get the defined minimum size.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.WorkspaceMaxSize">
+            <summary>
+            Get the defined maximum size.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.IWorkspaceItem.DisposeOnRemove">
+            <summary>
+            Should the item be disposed when it is removed from the workspace.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.IWorkspaceItem.Compact(ComponentFactory.Krypton.Workspace.CompactFlags)">
+            <summary>
+            Perform any compacting actions allowed by the flags.
+            </summary>
+            <param name="flags">Set of compacting actions allowed.</param>
+        </member>
         <member name="T:ComponentFactory.Krypton.Workspace.StarNumber">
             <summary>
             Handle a star number which consists of a number with optional asterisk at the end.
@@ -1933,600 +1933,24 @@
             Gets the star size value.
             </summary>
         </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.LicenseInstallForm">
-            <summary>
-            Provides a basic form for installing Infralution Encrypted Licenses that can be extended or modified using 
-            visual inheritance
-            </summary>
-            <seealso cref="T:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider"/>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.InitializeComponent">
-            <summary>
-            Required method for Designer support - do not modify
-            the contents of this method with the code editor.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.#ctor">
-            <summary>
-            Initialize a new instance of the form
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.ShowDialog(System.Type)">
-            <summary>
-            Display the InstallLicense Dialog
-            </summary>
-            <param name="typeToLicence">Type to licence.</param>
-            <returns>The newly installed license (if any)</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.GetLicenseProvider">
-            <summary>
-            Return the license provider to use
-            </summary>
-            <returns>The license provider to use for installing licensing</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.InstallLicenseKey(System.String)">
-            <summary>
-            Install the license key entered by the user
-            </summary>
-            <param name="key">The key to install</param>
-            <returns>True if the license was installed successfully</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.OnLicenceTextChanged(System.Object,System.EventArgs)">
-            <summary>
-            Handle TextChanged event for the License Text button
-            </summary>
-            <param name="sender">Event source.</param>
-            <param name="e">An EventArgs containing the event data.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.OnIgnoreButtonClick(System.Object,System.EventArgs)">
-            <summary>
-            Handle Click event for the Ignore button
-            </summary>
-            <param name="sender">Event source.</param>
-            <param name="e">An EventArgs containing the event data.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.OnOkButtonClick(System.Object,System.EventArgs)">
-            <summary>
-            Handle Click event for the Ignore button
-            </summary>
-            <param name="sender">Event source.</param>
-            <param name="e">An EventArgs containing the event data.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.OnHelpButtonClick(System.Object,System.EventArgs)">
-            <summary>
-            Handle Click event for the Help button
-            </summary>
-            <param name="sender">Event source.</param>
-            <param name="e">An EventArgs containing the event data.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.GetProductCode(System.String)">
-            <summary>
-            Gets the product code from the license.
-            </summary>
-            <param name="licenseString">License code to decompose.</param>
-            <returns>Product code string.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.LicenseInstallForm.GetVersionCode(System.String)">
-            <summary>
-            Gets the version code from the license.
-            </summary>
-            <param name="licenseString">License code to decompose.</param>
-            <returns>Product code string.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.LicenseInstallForm.TypeToLicense">
-            <summary>
-            The type of the component/control being licensed
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.LicenseInstallForm.InstalledLicense">
-            <summary>
-            The license installed by this form (if any)
-            </summary>
-        </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.EncryptedLicense">
-            <summary>
-            Defines an encrypted license for a component or control generated using the Infralution
-            Licensing System.
-            </summary>
-            <remarks>
-            The Infralution Licensing System provides a secure way of licensing .NET controls,
-            components and applications.   Licenses are protected using public key encryption to
-            minimize possibility of cracking.
-            </remarks>
-            <seealso cref="T:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider"/>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicense.#ctor(System.String,System.UInt16,System.String)">
-            <summary>
-            Create a new Infralution Encrypted License
-            </summary>
-            <param name="key">The key for the license</param>
-            <param name="serialNo">The serial number of the license</param>
-            <param name="productInfo">The product data associated with the license</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicense.Dispose">
-            <summary>
-            Cleans up any resources held by the license
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicense.Checksum(System.String)">
-            <summary>
-            Returns a four character checksum based on the given input string
-            </summary>
-            <param name="input">The input string to return a checksum for</param>
-            <returns>An checksum that can be used to validate the given input string</returns>
-            <remarks>
-            <para>
-            This function can be used to generate a short checksum that can be embedded in a
-            license key as <see cref="P:ComponentFactory.Krypton.Workspace.EncryptedLicense.ProductInfo"/>.  This allows you to tie the license key to 
-            information supplied by the user (for instance the name of the purchaser) without
-            having to include the full information in the license key.  This enables license keys
-            to be kept reasonably short.
-            </para>
-            <para>
-            When the license is checked by the application it performs a checksum on the information
-            supplied by the user and checks that it matches the information in the ProductInfo that
-            was generated when the license was issued.   The License Tracker application provides
-            support for "CustomGenerators" which allow you provide the code to generate the ProductInfo
-            from customer and other information.
-            </para>
-            </remarks>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.EncryptedLicense.LicenseKey">
-            <summary>
-            The license key for the license
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.EncryptedLicense.ProductInfo">
-            <summary>
-            The product data associated with the license
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.EncryptedLicense.SerialNo">
-            <summary>
-            The unique serial no for the license
-            </summary>
-        </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider">
-             <summary>
-             Defines a .NET LicenseProvider that uses encrypted licenses generated by the 
-             Infralution Licensing System.
-             </summary>
-             <remarks>
-             <p>The Infralution Licensing System provides a secure way of licensing .NET controls,
-             components and applications.   Licenses are protected using public key encryption to
-             minimize possibility of cracking.</p>
-             <p>Components or controls use the <see cref="T:System.ComponentModel.LicenseProviderAttribute"/> to specify
-             this class as the LicenseProvider </p>
-             </remarks>
-             <example>
-             This example demonstrates the typical usage of the EncryptedLicenseProvider to license a component or
-             control.  The component/control must first initialize the EncryptedLicenseProvider with the public 
-             key encryption parameters required to validate the license using <see cref="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.SetParameters(System.String)"/>.  
-             It can then use the .NET license manager to obtain a license for the current context 
-             (runtime or design).  If there is not a valid license the component designer can  
-             choose the appropriate course of action based on the context.  In this case the code uses the generic
-             Infralution.Licensing.LicenseInstallForm to prompt the user to install a license - but allows use of 
-             the component without a license for evaluation purposes. Applications created using the unlicensed evaluation 
-             component will display a nag MessageBox.
-             <code lang="C#" escaped="true">
-             #using Infralution.Licensing;
-             #using System.ComponentModel;
-             [LicenseProvider(typeof(Infralution.Licensing.EncryptedLicenseProvider))]
-             public class MyControl : Control
-             {
-                 const string _licenseParameters = 
-                    @"<LicenseParameters>
-                         <RSAKeyValue>
-                             <Modulus>z7ijwu7osE4HcGZH7+PhOYw3WuZp/+1szNEjrEo61WVO2sklsdVJpjShXPzUDjlDDvnIFZo4d0l8IFswCYleRS+5PVOkqH0OnAHOSIvoHMNxRyKi9klj7ZD55sKfDJu17MUsjLFLc741B8EvQ3dXPLQoTc+TF5mKOm6o8BnrSuU=</Modulus>
-                             <Exponent>AQAB</Exponent>
-                         </RSAKeyValue>
-                         <DesignSignature>NqPti5+oayvPPlaETb5gNi9u32sze0o9AhlVEtWm3rfo3gGV/jKXDqQBd9Icy9xgfrEOVKvCyrhnCUEowQDOBPaVMiDqdm9UBRM/KAQt4kUAb2bhl8W47R09bikvahfJWfP+zyic3oin61B1jvuI2CSYjiRi4a5Qz2hudDP5MxM=</DesignSignature>
-                         <RuntimeSignature>lL2tfh7eUgkZS+I0/yoRowAP7p++zXma4JgO/Npf0QXnbBy3pKw+B5U9jtfwydKleM22Wgk/KBG5uyYXWaJeG/Pe6I29uLD1s5uo+Y9EzVaXDdi9HMQwIIvrv7dcgZlPPkzmkSm1X3uqfHl9R4+NfP9noDBKiQBVSWkem/iH87E=</RuntimeSignature>
-                      </LicenseParameters>";
-            
-                 public MyControl()
-                 {
-                     InitializeComponent();
-                     EncryptedLicenseProvider.SetParameters(_licenseParameters);
-                     License license;
-                     if (!LicenseManager.IsValid(typeof(MyControl), this, out license))
-                     {
-                         if (LicenseManager.CurrentContext.UsageMode == LicenseUsageMode.Runtime)
-                         {
-                             MessageBox.Show("This application was created using an unlicensed version of MyControl", 
-                                             "Unlicensed Application");
-                         }
-                         else
-                         {
-                             LicenseInstallForm form = new LicenseInstallForm();
-                             form.ShowDialog("MyControl", "www.mycompany.com", typeof(MyControl)); 
-                         }
-                     }
-                 }
-             } 
-             </code>
-             <code lang="Visual Basic">
-             Imports System.ComponentModel
-             Imports Infralution.Licensing
-             &lt;LicenseProvider(GetType(Infralution.Licensing.EncryptedLicenseProvider))&gt; _
-             Public Class MyControl
-                Inherits System.Windows.Forms.UserControl
-            
-                Const _licenseParameters As String = _
-                     "&lt;LicenseParameters&gt;" &amp; _
-                     "       &lt;RSAKeyValue&gt;" &amp; _
-                     "       &lt;Modulus&gt;2/dDoUDRnh2gT//5UhGkQRnviVmbrqZj6JdMHhMfZsXslK3x4Yz2QFjpjWtKI2REj8Z3rLd0iOHlOgEaRCM82qGaSMyaoYBYovOtIqU20hpYS6VBtNzwQCJ58d27cnQnMiAmpAjfnKc+gSD/ZIJeO6FdTjfx86+aWrsMOiSpjFk=&lt;/Modulus&gt;" &amp; _
-                     "       &lt;Exponent&gt;AQAB&lt;/Exponent&gt;" &amp; _
-                     "       &lt;/RSAKeyValue&gt;" &amp; _
-                     "       &lt;DesignSignature&gt;IGODC7CpxUR/sFHG38Z09/tpCK115hGWHNm7HvziN/RAw2H7i5o4F6vwgSF7+Uw0ZBKALNqGXWZQg+vaskbf4cotbN1SAhSi3/qYYeH7s5tAiS4ZJfN4DVDaB/IZOfL+3X+hehuO+Ot+X/u8cDqZKCA+1kxeSX4aqwJ+iFwWaAM=&lt;/DesignSignature&gt;" &amp; _
-                     "       &lt;RuntimeSignature&gt;xaala0UVs/pvODuBtGxJ/V8R633EWmprSYZga0rVA5C3+TdSl5ywHPc2OXVLvm4MyqtK7VX0bsnCZXMKkcek0BkV7TWOIt0xb5ORu1L5iKpOqqXuNhdrTDF9M+FXwQAFPLmts/HObZ4Ul89PmSbTG3pjhQVVUA20ioj7AlEcLQo=&lt;/RuntimeSignature&gt;" &amp; _
-                     "&lt;/LicenseParameters&gt;"
-            
-                Public Sub New()
-                     MyBase.New()
-                     InitializeComponent()
-                     EncryptedLicenseProvider.SetParameters(_licenseParameters)
-                     Dim slicense as License
-                     If Not LicenseManager.IsValid(GetType(MyControl), Me, slicense) Then
-                         If LicenseManager.CurrentContext.UsageMode = LicenseUsageMode.Runtime Then
-                             MessageBox.Show("This application was created using an unlicensed version of MyControl", "Unlicensed Application")
-                         Else
-                             Dim myForm As New LicenseInstallForm
-                             myForm.ShowDialog("MyControl", "www.mycompany.com", GetType(MyControl))
-                         End If
-                     End If
-                End Sub
-             End Class   
-             </code>
-             </example>
-             <seealso cref="T:ComponentFactory.Krypton.Workspace.EncryptedLicense"/>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.SetParameters(System.String)">
-            <summary>
-            Set the parameters used to validate licenses created by this provider.
-            </summary>
-            <remarks>
-            This must be called by the client software prior to obtaining licenses using the EncryptedLicenseProvider.
-            The parameters are generated using the Infralution License Key Generator and pasted into the calling client code.
-            </remarks>
-            <param name="licenseParameters">An XML string containing parameters used to validate licenses</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.GenerateLicenseParameters(System.String)">
-            <summary>
-            Generate the XML license parameter string that is used to validate licenses generated using the 
-            given password
-            </summary>
-            <param name="password">The password used to encrypted the license data</param>
-            <returns>An XML string which is used to initialise the EncryptedLicenseProvider</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.GenerateKey(System.String,System.String,System.UInt16)">
-            <summary>
-            Generate a new encrypted license using the given password
-            </summary>
-            <param name="password">The password used to encrypted the license data</param>
-            <param name="productInfo">User defined data about the product being licensed</param>
-            <param name="serialNo">The unique license serial number</param>
-            <returns>A hex encoded ecnrypted license key</returns>
-            <remarks>
-            If there is no installed license for the Infralution Licensing System then the only 
-            allowed password is "TEST" and the only allowed serial numbers are 1 or 0.  To use the
-            licensed version of this method ensure that the file Infralution.Licensing.EncryptedLicenseProvider.lic
-            exists in the same directory as the Infralution.Licensing.dll and contains a valid
-            license key for the Licensing System.
-            </remarks>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.InstallLicense(System.Type,System.String)">
-            <summary>
-            Install a license for the given type.
-            </summary>
-            <remarks>
-            This method is used by client applications to allow customers to register license for components.  The 
-            generic Infralution.Licensing.LicenseInstallForm uses this method to install licenses.  Client
-            components may implement their own registration forms that call this method.
-            You must call <see cref="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.SetParameters(System.String)"/> before using this method.
-            </remarks>
-            <param name="type">The type to install the license for</param>
-            <param name="licenseKey">The license key to install</param>
-            <returns>A license if succesful or null/nothing if not</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.ValidateLicenseKey(System.String)">
-            <summary>
-            Validate that the given license key is valid for the current licensing parameters
-            </summary>
-            <param name="licenseKey">The license key to validate</param>
-            <returns>The encrypted license if the key is valid otherwise null</returns>
-            <remarks>
-            This method provides a mechanism to validate that a given license key is valid
-            prior to attempting to install it.   This can be useful if you want to check
-            the <see cref="P:ComponentFactory.Krypton.Workspace.EncryptedLicense.ProductInfo"/> before installing the license.
-            You must call <see cref="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.SetParameters(System.String)"/> before using this method.
-            </remarks>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.GetLicense(System.ComponentModel.LicenseContext,System.Type,System.Object,System.Boolean)">
-            <summary>
-            Get a license (if installed) for the given context, type and instance
-            </summary>
-            <param name="context">The context (design or runtime)</param>
-            <param name="type">The type to get the license for</param>
-            <param name="instance"></param>
-            <param name="allowExceptions">If true LicenseException is thrown if a valid license cannot be loaded</param>
-            <returns>An encrypted license</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.GetLicense(System.String,System.String)">
-            <summary>
-            Return the license information from the given license key
-            </summary>
-            <param name="licenseKey">The license key to extract the license information from</param>
-            <param name="password">The password - required to open the license key</param>
-            <returns>The license data if successful or null if not</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.ArraySize(System.Int32)">
-            <summary>
-            Return the array size to use when declaring an array of the given length.
-            </summary>
-            <param name="length">The length of the array you are declaring</param>
-            <returns>The size to declare the array</returns>
-            <remarks>
-            This is used to account for the difference between declaring VB and C# arrays and
-            permit automatic conversion of the code to VB
-            </remarks>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.Strip(System.String,System.String)">
-            <summary>
-            Return the given input string stripped of the given characters
-            </summary>
-            <param name="value">The string to strip</param>
-            <param name="characters">The characters to strip from the string</param>
-            <returns>The input string with the given characters removed</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.ToHex(System.Byte[])">
-            <summary>
-            Converts a byte array into a hexadecimal representation.
-            </summary>
-            <param name="data">The byte data to convert</param>
-            <returns>Hexadecimal representation of the data</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.FromHex(System.String)">
-            <summary>
-            Converts a hexadecimal string into a byte array.
-            </summary>
-            <param name="hex">Te hexadecimal string to convert</param>
-            <returns>The converted byte data</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.ArrayEqual(System.Byte[],System.Byte[])">
-            <summary>
-            Are the contents of the two byte arrays equal
-            </summary>
-            <param name="a1">The first array</param>
-            <param name="a2">The second array </param>
-            <returns>True if the contents of the arrays is equal</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.GetEncryptionKey(System.String)">
-            <summary>
-            Generate an 8 byte DES encryption key using the given password
-            </summary>
-            <remarks>
-            Only the first 7 bytes of the key returned are used.  This enables us
-            to reduce the size of the final license keys by 8 bytes.
-            </remarks>
-            <param name="password">The password used to generate the key</param>
-            <returns>An 8 byte key</returns> 
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.LoadLicense(System.ComponentModel.LicenseContext,System.Type,System.String)">
-            <summary>
-            Extract the license for the given type from the given licenseKey
-            </summary>
-            <param name="context">The current licensing context</param>
-            <param name="type">The type to be licensed</param>
-            <param name="licenseKey">The encrypted hexadecimal license key</param>
-            <returns>A license for the given type or NULL if the licenseKey was invalid</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.ReadKeyFromFile(System.String)">
-            <summary>
-            Read a license key from the given file
-            </summary>
-            <param name="licenseFile">The path to the license file to read the key from</param>
-            <returns>The license key if any</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.GetLicenseKey(System.ComponentModel.LicenseContext,System.Type)">
-            <summary>
-            Return the license key for the given context and type
-            </summary>
-            <remarks>
-            This can be overridden to change where the license key is stored by the provider.   For
-            instance a derived class could override this method to store the key in the Registry.
-            </remarks>
-            <param name="context">The license context</param>
-            <param name="type">The type to get the key for</param>
-            <returns>The license key</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.ReadKeyFromRegistry">
-            <summary>
-            Grab the key from the registry.
-            </summary>
-            <returns>Key if found; otherwise null.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.GetLicenseDirectory(System.ComponentModel.LicenseContext,System.Type)">
-            <summary>
-            Return the directory used to store license files
-            </summary>
-            <param name="context">The licence context</param>
-            <param name="type">The type being licensed</param>
-            <returns>The directory to look for license files</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.GetLicenseFilePath(System.ComponentModel.LicenseContext,System.Type)">
-            <summary>
-            Called by GetLicenseKey to get the file path to obtain the license from (if there is no runtime license saved in the context)
-            </summary>
-            <remarks>
-            This can be overridden to change the file used to store the design time license for the provider.   By default the
-            the license file is stored in the same directory as the component executable with the name based on the fully
-            qualified type name eg MyNamespace.MyControl.lic
-            </remarks>
-            <seealso cref="M:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.GetLicenseKey(System.ComponentModel.LicenseContext,System.Type)"/>
-            <param name="context">The licence context</param>
-            <param name="type">The type to get the license for</param>
-            <returns>The path of the license file</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.EncryptedLicenseProvider.SystemLicense">
-            <summary>
-            Return the license for the Infralution Licensing System
-            </summary>
-            <returns>The license data if successful or null if not</returns>
-        </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.EvaluationMonitor">
-            <summary>
-            Provides a mechanism for managing time/usage limited evaluations of products.
-            </summary>
-            <remarks>
-            <para>
-            Instantiate an instance of this class to read/write the evaluation parameters for the   
-            given product.  The <see cref="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.FirstUseDate"/> is set the first time that
-            the class is instantiated.  The <see cref="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.LastUseDate"/> is set each time the class
-            is instantiated.  The <see cref="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.UsageCount"/> is incremented each time the class is 
-            instantiated.
-            </para>
-            <para>
-            Note that evaluation data must be stored somewhere on the users 
-            hard disk.  It is therefore not too difficult for a sophisticated user to determine the 
-            changes made either to registry keys or files (using file/registry monitoring software) 
-            and restore the state of these to their pre-installation state (thus resetting the 
-            evaluation period).  For this reason it is recommended that you don't rely on this 
-            mechanism alone.  You should also consider limiting the functionality of your product 
-            in some way or adding nag screens to discourage long term use of evaluation versions.
-            </para>
-            <para>
-            If you have a data oriented application you can increase the security of evaluations by
-            storing the current <see cref="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.UsageCount"/> somewhere in your database each time the 
-            application runs and cross checking this with the number returned by the EvaluationMonitor.
-            </para>
-            </remarks>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.#ctor(System.String)">
-            <summary>
-            Initialize a new instance of the evaluation monitor.
-            </summary>
-            <remarks>
-            The <see cref="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.UsageCount"/> is incremented each time a new evaluation
-            monitor is instantiated for a product
-            </remarks>
-            <param name="productID">A string which uniquely identifies the product</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.Reset">
-            <summary>
-            Allows you to reset the evaluation period.
-            </summary>
-            <remarks>
-            This may be useful if a customer needs an extension or if somehow they
-            invalidate their evaluation data by attempting to fiddle
-            </remarks>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.FindBaseKey(Microsoft.Win32.RegistryKey)">
-            <summary>
-            Find the base key for this product
-            </summary>
-            <param name="parent">The key to search under</param>
-            <returns>The base registry key used to store the data</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.CreateBaseKey(Microsoft.Win32.RegistryKey)">
-            <summary>
-            Create the base key for this product
-            </summary>
-            <param name="parent">The key to place the information under</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.GetDateData">
-            <summary>
-            Calculate the number of days the product has been in use
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.GetUsageData">
-            <summary>
-            Get the number of times the product has been used (and increment)
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.Encrypt(System.String)">
-            <summary>
-            Encrypt the given text
-            </summary>
-            <param name="text">The text to encrypt</param>
-            <returns>Encrypted byte array</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.Decrypt(System.Byte[])">
-            <summary>
-            Decrypt the given byte data to text
-            </summary>
-            <param name="data">The byte data to decrypt</param>
-            <returns>The decrypted text</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.Equals(System.Byte[],System.Byte[])">
-            <summary>
-            Are the contents of the two byte arrays equal
-            </summary>
-            <param name="a1">The first array</param>
-            <param name="a2">The second array </param>
-            <returns>True if the contents of the arrays is equal</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.EvaluationMonitor.Dispose">
-            <summary>
-            Free resources used by the EvaluationMonitor
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.UsageCount">
-            <summary>
-            Return the number of times the product has been used 
-            </summary>
-            <remarks>
-            This is calculated by the number of times the Evaluation object for the
-            product has been instantiated, so typically you should instantiate the
-            Evaluation object just once in your software.
-            </remarks>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.FirstUseDate">
-            <summary>
-            Return the date/time the product was first used
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.LastUseDate">
-            <summary>
-            Return the date/time the product was last used
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.DaysInUse">
-            <summary>
-            Return the number of days since the product was first run.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.EvaluationMonitor.Invalid">
-            <summary>
-            Returns true if the evaluation monitor detects attempts to circumvent
-            evaluation limits by tampering with the hidden evaluation data or winding
-            the PC clock backwards 
-            </summary>
-        </member>
         <member name="T:ComponentFactory.Krypton.Workspace.WorkspaceMenus">
             <summary>
             Storage for workspace context menu for pages.
             </summary>
         </member>
-        <member name="T:ComponentFactory.Krypton.Workspace.WorkspacePageMenuBase">
-            <summary>
-            Storage for workspace context menu for pages.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.WorkspacePageMenuBase.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspace)">
-            <summary>
-            Initialize a new instance of the WorkspacePageMenuBase class.
-            </summary>
-            <param name="workspace">Reference to owning workspace.</param>
-        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspace)">
             <summary>
             Initialize a new instance of the WorkspaceMenus class.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.IsDefault">
+            <summary>
+            Gets a value indicating if all values are default.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextClose">
+            <summary>
+            Gets and sets the text to use for the close context menu item.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetTextClose">
@@ -2534,9 +1958,19 @@
             Resets the TextClose property to its default value.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextCloseAllButThis">
+            <summary>
+            Gets and sets the text to use for the 'close all but this' context menu item.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetTextCloseAllButThis">
             <summary>
             Resets the TextCloseAllButThis property to its default value.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextMoveNext">
+            <summary>
+            Gets and sets the text to use for the move next context menu item.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetTextMoveNext">
@@ -2544,9 +1978,19 @@
             Resets the TextMoveNext property to its default value.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextMovePrevious">
+            <summary>
+            Gets and sets the text to use for the move previous context menu item.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetTextMovePrevious">
             <summary>
             Resets the TextMovePrevious property to its default value.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextSplitVertical">
+            <summary>
+            Gets and sets the text to use for the split vertical context menu item.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetTextSplitVertical">
@@ -2554,9 +1998,19 @@
             Resets the TextSplitVertical property to its default value.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextSplitHorizontal">
+            <summary>
+            Gets and sets the text to use for the split horizontal context menu item.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetTextSplitHorizontal">
             <summary>
             Resets the TextSplitHorizontal property to its default value.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextRebalance">
+            <summary>
+            Gets and sets the text to use for the rebalance context menu item.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetTextRebalance">
@@ -2564,14 +2018,29 @@
             Resets the TextRebalance property to its default value.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextMaximize">
+            <summary>
+            Gets and sets the text to use for the maximize context menu item.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetTextMaximize">
             <summary>
             Resets the TextMaximize property to its default value.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextRestore">
+            <summary>
+            Gets and sets the text to use for the restore context menu item.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetTextRestore">
             <summary>
             Resets the TextRestore property to its default value.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutClose">
+            <summary>
+            Gets and sets the shortcut for closing the current page.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShouldSerializeShortcutClose">
@@ -2585,6 +2054,11 @@
             Resets the ShortcutClose property to its default value.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutCloseAllButThis">
+            <summary>
+            Gets and sets the shortcut for 'close all but this' page.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShouldSerializeShortcutCloseAllButThis">
             <summary>
             Decide if the shortcut for 'close all but this' page.
@@ -2594,6 +2068,11 @@
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetShortcutCloseAllButThis">
             <summary>
             Resets the ShortcutCloseAllButThis property to its default value.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutMoveNext">
+            <summary>
+            Gets and sets the shortcut for moving the current page to the next cell.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShouldSerializeShortcutMoveNext">
@@ -2607,6 +2086,11 @@
             Resets the ShortcutMoveNext property to its default value.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutMovePrevious">
+            <summary>
+            Gets and sets the shortcut for moving the current page to the previous cell.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShouldSerializeShortcutMovePrevious">
             <summary>
             Decide if the shortcut for moving the current page to the previous cell.
@@ -2616,6 +2100,11 @@
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetShortcutMovePrevious">
             <summary>
             Resets the ShortcutMovePrevious property to its default value.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutSplitVertical">
+            <summary>
+            Gets and sets the shortcut for splitting the current page into a vertical aligned page.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShouldSerializeShortcutSplitVertical">
@@ -2629,6 +2118,11 @@
             Resets the ShortcutSplitVertical property to its default value.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutSplitHorizontal">
+            <summary>
+            Gets and sets the shortcut for splitting the current page into a horizontal aligned page.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShouldSerializeShortcutSplitHorizontal">
             <summary>
             Decide if the shortcut for splitting the current page into a horizontal aligned page.
@@ -2638,6 +2132,11 @@
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetShortcutSplitHorizontal">
             <summary>
             Resets the ShortcutSplitHorizontal property to its default value.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutRebalance">
+            <summary>
+            Gets and sets the shortcut for rebalancing the layout.
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShouldSerializeShortcutRebalance">
@@ -2651,6 +2150,11 @@
             Resets the ShortcutRebalance property to its default value.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutMaximizeRestore">
+            <summary>
+            Gets and sets the shortcut for maximizing/restoring the layout.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShouldSerializeShortcutMaximizeRestore">
             <summary>
             Decide if the shortcut for maximizing/restoring the layout.
@@ -2660,96 +2164,6 @@
         <member name="M:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ResetShortcutMaximizeRestore">
             <summary>
             Resets the ShortcutMaximizeRestore property to its default value.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.IsDefault">
-            <summary>
-            Gets a value indicating if all values are default.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextClose">
-            <summary>
-            Gets and sets the text to use for the close context menu item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextCloseAllButThis">
-            <summary>
-            Gets and sets the text to use for the 'close all but this' context menu item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextMoveNext">
-            <summary>
-            Gets and sets the text to use for the move next context menu item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextMovePrevious">
-            <summary>
-            Gets and sets the text to use for the move previous context menu item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextSplitVertical">
-            <summary>
-            Gets and sets the text to use for the split vertical context menu item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextSplitHorizontal">
-            <summary>
-            Gets and sets the text to use for the split horizontal context menu item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextRebalance">
-            <summary>
-            Gets and sets the text to use for the rebalance context menu item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextMaximize">
-            <summary>
-            Gets and sets the text to use for the maximize context menu item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.TextRestore">
-            <summary>
-            Gets and sets the text to use for the restore context menu item.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutClose">
-            <summary>
-            Gets and sets the shortcut for closing the current page.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutCloseAllButThis">
-            <summary>
-            Gets and sets the shortcut for 'close all but this' page.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutMoveNext">
-            <summary>
-            Gets and sets the shortcut for moving the current page to the next cell.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutMovePrevious">
-            <summary>
-            Gets and sets the shortcut for moving the current page to the previous cell.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutSplitVertical">
-            <summary>
-            Gets and sets the shortcut for splitting the current page into a vertical aligned page.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutSplitHorizontal">
-            <summary>
-            Gets and sets the shortcut for splitting the current page into a horizontal aligned page.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutRebalance">
-            <summary>
-            Gets and sets the shortcut for rebalancing the layout.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShortcutMaximizeRestore">
-            <summary>
-            Gets and sets the shortcut for maximizing/restoring the layout.
             </summary>
         </member>
         <member name="P:ComponentFactory.Krypton.Workspace.WorkspaceMenus.ShowContextMenu">
@@ -2792,26 +2206,6 @@
             </summary>
             <returns>User readable name of the instance.</returns>
         </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.ViewDrawWorkspaceSeparator.SeparatorMoving(System.Drawing.Point,System.Drawing.Point)">
-            <summary>
-            Indicates the separator is moving.
-            </summary>
-            <param name="mouse">Current mouse position in client area.</param>
-            <param name="splitter">Current position of the splitter.</param>
-            <returns>True if movement should be cancelled; otherwise false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.ViewDrawWorkspaceSeparator.SeparatorMoved(System.Drawing.Point,System.Drawing.Point)">
-            <summary>
-            Indicates the separator has finished and been moved.
-            </summary>
-            <param name="mouse">Current mouse position in client area.</param>
-            <param name="splitter">Current position of the splitter.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.ViewDrawWorkspaceSeparator.SeparatorNotMoved">
-            <summary>
-            Indicates the separator has not been moved.
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Workspace.ViewDrawWorkspaceSeparator.WorkspaceItem">
             <summary>
             Gets the associated workspace item instance.
@@ -2840,6 +2234,26 @@
         <member name="P:ComponentFactory.Krypton.Workspace.ViewDrawWorkspaceSeparator.SeparatorMoveBox">
             <summary>
             Gets the box representing the minimum and maximum allowed splitter movement.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.ViewDrawWorkspaceSeparator.SeparatorMoving(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Indicates the separator is moving.
+            </summary>
+            <param name="mouse">Current mouse position in client area.</param>
+            <param name="splitter">Current position of the splitter.</param>
+            <returns>True if movement should be cancelled; otherwise false.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.ViewDrawWorkspaceSeparator.SeparatorMoved(System.Drawing.Point,System.Drawing.Point)">
+            <summary>
+            Indicates the separator has finished and been moved.
+            </summary>
+            <param name="mouse">Current mouse position in client area.</param>
+            <param name="splitter">Current position of the splitter.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.ViewDrawWorkspaceSeparator.SeparatorNotMoved">
+            <summary>
+            Indicates the separator has not been moved.
             </summary>
         </member>
     </members>

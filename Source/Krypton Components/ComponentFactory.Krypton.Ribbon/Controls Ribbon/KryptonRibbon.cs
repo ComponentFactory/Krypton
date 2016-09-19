@@ -38,7 +38,6 @@ namespace ComponentFactory.Krypton.Ribbon
     [DesignerCategory("code")]
     [Description("Ribbon control presents a tabbed set of user options.")]
     [Docking(DockingBehavior.Never)]
-    [LicenseProvider(typeof(EncryptedLicenseProvider))]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]
     [ComVisible(true)]
     public class KryptonRibbon : VisualSimple,

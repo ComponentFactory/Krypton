@@ -21,7 +21,7 @@ namespace ComponentFactory.Krypton.Navigator
 	/// <summary>
     /// Base class for implementation of various check button modes.
 	/// </summary>
-    internal abstract class ViewBuilderItemBase : ViewBuilderLicence
+    internal abstract class ViewBuilderItemBase : ViewBuilderBase
     {
         #region Instance Fields
         protected PageToNavCheckItem _pageLookup;

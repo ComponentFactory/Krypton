@@ -92,9 +92,7 @@
     <Compile Include="Controller\PageButtonController.cs" />
     <Compile Include="Controller\DragViewController.cs" />
     <Compile Include="Controller\OutlookMiniController.cs" />
-    <Compile Include="Controls Visuals\VisualPopupPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Visuals\VisualPopupPage.cs" />
     <Compile Include="Converters\ButtonDisplayConverter.cs" />
     <Compile Include="Converters\ButtonDisplayLogicConverter.cs" />
     <Compile Include="Converters\CloseButtonActionConverter.cs" />
@@ -137,12 +135,7 @@
     <Compile Include="EventArgs\KryptonPageFlagsEventArgs.cs" />
     <Compile Include="General\PageToToolTipMapping.cs" />
     <Compile Include="General\PlatformInvoke.cs" />
-    <Compile Include="Licence\LicenseInstallForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Page\KryptonPage.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Page\KryptonPage.cs" />
     <Compile Include="EventArgs\KryptonPageCancelEventArgs.cs" />
     <Compile Include="Page\KryptonPageCollection.cs" />
     <Compile Include="Palette\PaletteMetrics.cs" />
@@ -201,7 +194,6 @@
     <Compile Include="View Builder\ViewBuilderStackCheckButtonHeaderGroup.cs" />
     <Compile Include="View Builder\ViewBuilderStackCheckButtonGroup.cs" />
     <Compile Include="View Builder\ViewBuilderStackCheckButtonBase.cs" />
-    <Compile Include="View Builder\ViewBuilderLicence.cs" />
     <Compile Include="View Builder\ViewBuilderBarCheckButtonGroupOnly.cs" />
     <Compile Include="View Builder\ViewBuilderBarCheckButtonOnly.cs" />
     <Compile Include="View Builder\ViewBuilderBarCheckButtonGroupInside.cs" />
@@ -212,9 +204,7 @@
     <Compile Include="View Builder\ViewBuilderGroup.cs" />
     <Compile Include="View Builder\ViewBuilderPanel.cs" />
     <Compile Include="General\Definitions.cs" />
-    <Compile Include="Controls Navigator\KryptonNavigator.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Navigator\KryptonNavigator.cs" />
     <Compile Include="Controls Navigator\KryptonNavigatorControlCollection.cs">
     </Compile>
     <Compile Include="View Builder\ViewBuilderBase.cs" />
@@ -240,10 +230,6 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ToolboxBitmaps\KryptonNavigator.bmp" />
-    <EmbeddedResource Include="Licence\LicenseInstallForm.resx">
-      <DependentUpon>LicenseInstallForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
       <Generator>ResXFileCodeGenerator</Generator>
