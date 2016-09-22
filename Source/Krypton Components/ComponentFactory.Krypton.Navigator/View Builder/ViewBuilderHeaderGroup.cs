@@ -20,7 +20,7 @@ namespace ComponentFactory.Krypton.Navigator
 	/// <summary>
 	/// Implements the NavigatorMode.HeaderGroup view.
 	/// </summary>
-    internal class ViewBuilderHeaderGroup : ViewBuilderLicence
+    internal class ViewBuilderHeaderGroup : ViewBuilderBase
 	{
 		#region Instance Fields
 		private ViewBase _oldRoot;

@@ -15,27 +15,6 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorActionList.AddPage">
-            <summary>
-            Add a new page to the navigator.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorActionList.RemovePage">
-            <summary>
-            Remove the current page from the navigator.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorActionList.ClearPages">
-            <summary>
-            Remove all pages from the navigator.
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Navigator.KryptonNavigatorActionList.NavigatorMode">
             <summary>
             Gets and sets the navigator mode.
@@ -181,6 +160,27 @@
             Gets and sets the stack alignment.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorActionList.AddPage">
+            <summary>
+            Add a new page to the navigator.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorActionList.RemovePage">
+            <summary>
+            Remove the current page from the navigator.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorActionList.ClearPages">
+            <summary>
+            Remove all pages from the navigator.
+            </summary>
+        </member>
         <member name="T:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner">
             <summary>
             Designer for the navigator instance.
@@ -197,6 +197,21 @@
             Initializes a newly created component. 
             </summary>
             <param name="defaultValues">A name/value dictionary of default values to apply to properties.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.CanParent(System.Windows.Forms.Control)">
             <summary>
@@ -269,6 +284,11 @@
             </summary>
             <param name="de">A DragEventArgs that provides data for the event.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.Navigator">
+            <summary>
+            Gets access to the associated navigator instance.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.OnComponentRemoving(System.Object,System.ComponentModel.Design.ComponentEventArgs)">
             <summary>
             Occurs when the component is being removed from the designer.
@@ -276,37 +296,11 @@
             <param name="sender">Source of the event.</param>
             <param name="e">A ComponentEventArgs containing event data.</param>
         </member>
-        <member name="P:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Navigator.KryptonNavigatorDesigner.Navigator">
-            <summary>
-            Gets access to the associated navigator instance.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageActionList.#ctor(ComponentFactory.Krypton.Navigator.KryptonPageDesigner)">
             <summary>
             Initialize a new instance of the KryptonPageActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Navigator.KryptonPageActionList.TextShort">
             <summary>
@@ -358,6 +352,12 @@
             Gets and sets the large page image.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
@@ -370,23 +370,6 @@
             </summary>
             <param name="parentDesigner">The IDesigner that manages the control to check.</param>
             <returns>true if the control managed by the specified designer can parent the control managed by this designer; otherwise, false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageDesigner.SelectParentControl">
-            <summary>
-            Select the control that contains the group panel.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases the resources used by the KryptonSplitterPanelDesigner. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageDesigner.OnPaintAdornments(System.Windows.Forms.PaintEventArgs)">
-            <summary>
-            Receives a call when the control that the designer is managing has painted its surface so the designer can paint any additional adornments on top of the control.
-            </summary>
-            <param name="pe">A PaintEventArgs the designer can use to draw on the control.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Navigator.KryptonPageDesigner.AssociatedComponents">
             <summary>
@@ -412,6 +395,23 @@
             <summary>
             Should painting be performed for the selection glyph.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageDesigner.SelectParentControl">
+            <summary>
+            Select the control that contains the group panel.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases the resources used by the KryptonSplitterPanelDesigner. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageDesigner.OnPaintAdornments(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Receives a call when the control that the designer is managing has painted its surface so the designer can paint any additional adornments on top of the control.
+            </summary>
+            <param name="pe">A PaintEventArgs the designer can use to draw on the control.</param>
         </member>
         <member name="M:ComponentFactory.Krypton.Navigator.KryptonPageFormEditFlags.#ctor">
             <summary>
@@ -487,18 +487,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTrackBarDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTrackBarDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
-        </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTrackBarDesigner.Verbs">
             <summary>
             Gets the design-time verbs supported by the component that is associated with the designer.
@@ -514,22 +502,34 @@
             Gets and sets if the object is visible.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTrackBarDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTrackBarDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonGalleryActionList.#ctor(ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner)">
             <summary>
             Initialize a new instance of the KryptonGalleryActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonGalleryActionList.PaletteMode">
+            <summary>
+            Gets and sets the palette mode.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonGalleryActionList.GetSortedActionItems">
             <summary>
             Returns the collection of DesignerActionItem objects contained in the list.
             </summary>
             <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonGalleryActionList.PaletteMode">
-            <summary>
-            Gets and sets the palette mode.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner.#ctor">
             <summary>
@@ -542,6 +542,11 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner.CanParent(System.Windows.Forms.Control)">
             <summary>
             Indicates whether the specified control can be a child of the control managed by a designer.
@@ -549,33 +554,22 @@
             <param name="control">The Control to test.</param>
             <returns>true if the specified control can be a child of the control managed by this designer; otherwise, false.</returns>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonActionList.#ctor(ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner)">
             <summary>
             Initialize a new instance of the KryptonRibbonActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonActionList.InDesignHelperMode">
             <summary>
@@ -586,6 +580,12 @@
             <summary>
             Gets and sets the palette mode.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner.#ctor">
             <summary>
@@ -604,6 +604,21 @@
             </summary>
             <param name="control">The Control to test.</param>
             <returns>true if the specified control can be a child of the control managed by this designer; otherwise, false.</returns>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner.Dispose(System.Boolean)">
             <summary>
@@ -641,21 +656,6 @@
             </summary>
             <param name="de">A DragEventArgs that provides data for the event.</param>
         </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButtonDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonRibbonGroupButtonDesigner class.
@@ -667,16 +667,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButtonDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButtonDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupButtonDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCheckBoxDesigner.#ctor">
             <summary>
@@ -689,16 +689,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCheckBoxDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCheckBoxDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCheckBoxDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterButtonDesigner.#ctor">
             <summary>
@@ -711,16 +711,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterButtonDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterButtonDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterButtonDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterCollectionEditor.#ctor">
             <summary>
@@ -744,16 +744,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterColorButtonDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterColorButtonDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterColorButtonDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterDesigner.#ctor">
             <summary>
@@ -766,12 +766,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -781,6 +775,12 @@
             <summary>
             Gets the design-time verbs supported by the component that is associated with the designer.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupClusterDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupColorButtonDesigner.#ctor">
             <summary>
@@ -793,16 +793,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupColorButtonDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupColorButtonDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupColorButtonDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupComboBoxDesigner.#ctor">
             <summary>
@@ -814,18 +814,6 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupComboBoxDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupComboBoxDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupComboBoxDesigner.Verbs">
             <summary>
@@ -841,6 +829,18 @@
             <summary>
             Gets and sets if the object is visible.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupComboBoxDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupComboBoxDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupContainerCollectionEditor.#ctor">
             <summary>
@@ -864,18 +864,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCustomControlDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCustomControlDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
-        </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCustomControlDesigner.Verbs">
             <summary>
             Gets the design-time verbs supported by the component that is associated with the designer.
@@ -891,6 +879,18 @@
             Gets and sets if the object is visible.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCustomControlDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupCustomControlDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDateTimePickerDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonRibbonGroupDateTimePickerDesigner class.
@@ -901,18 +901,6 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDateTimePickerDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDateTimePickerDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDateTimePickerDesigner.Verbs">
             <summary>
@@ -929,6 +917,18 @@
             Gets and sets if the object is visible.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDateTimePickerDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDateTimePickerDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonRibbonGroupDesigner class.
@@ -940,12 +940,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -955,6 +949,12 @@
             <summary>
             Gets the design-time verbs supported by the component that is associated with the designer.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDomainUpDownDesigner.#ctor">
             <summary>
@@ -966,18 +966,6 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDomainUpDownDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDomainUpDownDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDomainUpDownDesigner.Verbs">
             <summary>
@@ -994,6 +982,18 @@
             Gets and sets if the object is visible.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDomainUpDownDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupDomainUpDownDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGalleryDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonRibbonGroupGalleryDesigner class.
@@ -1004,18 +1004,6 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGalleryDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGalleryDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGalleryDesigner.Verbs">
             <summary>
@@ -1032,6 +1020,18 @@
             Gets and sets if the object is visible.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGalleryDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupGalleryDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLabelDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonRibbonGroupLabelDesigner class.
@@ -1043,16 +1043,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLabelDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLabelDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLabelDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLinesCollectionEditor.#ctor">
             <summary>
@@ -1076,12 +1076,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLinesDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLinesDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -1091,6 +1085,12 @@
             <summary>
             Gets the design-time verbs supported by the component that is associated with the designer.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupLinesDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupMaskedTextBoxDesigner.#ctor">
             <summary>
@@ -1102,18 +1102,6 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupMaskedTextBoxDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupMaskedTextBoxDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupMaskedTextBoxDesigner.Verbs">
             <summary>
@@ -1130,6 +1118,18 @@
             Gets and sets if the object is visible.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupMaskedTextBoxDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupMaskedTextBoxDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupNumericUpDownDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonRibbonGroupNumericUpDownDesigner class.
@@ -1140,18 +1140,6 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupNumericUpDownDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupNumericUpDownDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupNumericUpDownDesigner.Verbs">
             <summary>
@@ -1168,6 +1156,18 @@
             Gets and sets if the object is visible.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupNumericUpDownDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupNumericUpDownDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRadioButtonDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonRibbonGroupRadioButtonDesigner class.
@@ -1179,16 +1179,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRadioButtonDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRadioButtonDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRadioButtonDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRichTextBoxDesigner.#ctor">
             <summary>
@@ -1200,18 +1200,6 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRichTextBoxDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRichTextBoxDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRichTextBoxDesigner.Verbs">
             <summary>
@@ -1228,6 +1216,18 @@
             Gets and sets if the object is visible.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRichTextBoxDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupRichTextBoxDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupSeparatorDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonRibbonGroupSeparatorDesigner class.
@@ -1239,16 +1239,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupSeparatorDesigner.Verbs">
+            <summary>
+            Gets the design-time verbs supported by the component that is associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupSeparatorDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupSeparatorDesigner.Verbs">
-            <summary>
-            Gets the design-time verbs supported by the component that is associated with the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTextBoxDesigner.#ctor">
             <summary>
@@ -1260,18 +1260,6 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTextBoxDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTextBoxDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Adjusts the set of properties the component exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTextBoxDesigner.Verbs">
             <summary>
@@ -1287,6 +1275,18 @@
             <summary>
             Gets and sets if the object is visible.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTextBoxDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTextBoxDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Adjusts the set of properties the component exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">An IDictionary containing the properties for the class of the component.</param>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTripleCollectionEditor.#ctor">
             <summary>
@@ -1310,12 +1310,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTripleDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTripleDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -1325,6 +1319,12 @@
             <summary>
             Gets the design-time verbs supported by the component that is associated with the designer.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupTripleDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         </member>
         <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonQATButtonCollectionEditor.#ctor">
             <summary>
@@ -1367,12 +1367,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonTabDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
         <member name="P:ComponentFactory.Krypton.Ribbon.KryptonRibbonTabDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -1383,17 +1377,17 @@
             Gets the design-time verbs supported by the component that is associated with the designer.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Ribbon.KryptonRibbonTabDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTreeViewActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonTreeViewDesigner)">
             <summary>
             Initialize a new instance of the KryptonTreeViewActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTreeViewActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonTreeViewActionList.ItemStyle">
             <summary>
@@ -1419,6 +1413,12 @@
             <summary>
             Gets and sets the palette mode.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTreeViewActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTreeViewDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
@@ -1447,12 +1447,6 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBorderEdgeActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonBorderEdgeActionList.BorderStyle">
             <summary>
             Gets and sets the border style.
@@ -1473,6 +1467,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBorderEdgeActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBorderEdgeDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonBorderEdgeDesigner class.
@@ -1488,12 +1488,6 @@
             Initialize a new instance of the KryptonBreadCrumbActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbActionList.ControlBackStyle">
             <summary>
@@ -1515,11 +1509,27 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbDesigner.Dispose(System.Boolean)">
             <summary>
@@ -1539,21 +1549,16 @@
             Receives a call when the mouse leaves the control. 
             </summary>
         </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemDesigner.Dispose(System.Boolean)">
             <summary>
@@ -1561,35 +1566,9 @@
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.#ctor">
-            <summary>
-            Initialize a new instance of the KryptonBreadCrumbItemsEditor class.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.CreateCollectionForm">
-            <summary>
-            Creates a new form to display and edit the current collection.
-            </summary>
-            <returns>A CollectionForm to provide as the user interface for editing the collection.</returns>
-        </member>
         <member name="T:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.KryptonBreadCrumbItemsForm">
             <summary>
             Form used for editing the KryptonBreadCrumbItems.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.KryptonBreadCrumbItemsForm.#ctor(ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor)">
-            <summary>
-            Initialize a new instance of the KryptonBreadCrumbItemsForm class.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.KryptonBreadCrumbItemsForm.OnEditValueChanged">
-            <summary>
-            Provides an opportunity to perform processing when a collection value has changed.
             </summary>
         </member>
         <member name="T:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.KryptonBreadCrumbItemsForm.DictItemBase">
@@ -1693,17 +1672,32 @@
             Gets or sets the name of the component associated with the ISite when implemented by a class.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.KryptonBreadCrumbItemsForm.#ctor(ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor)">
+            <summary>
+            Initialize a new instance of the KryptonBreadCrumbItemsForm class.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.KryptonBreadCrumbItemsForm.OnEditValueChanged">
+            <summary>
+            Provides an opportunity to perform processing when a collection value has changed.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.#ctor">
+            <summary>
+            Initialize a new instance of the KryptonBreadCrumbItemsEditor class.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonBreadCrumbItemsEditor.CreateCollectionForm">
+            <summary>
+            Creates a new form to display and edit the current collection.
+            </summary>
+            <returns>A CollectionForm to provide as the user interface for editing the collection.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonButtonActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonButtonDesigner)">
             <summary>
             Initialize a new instance of the KryptonButtonActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonButtonActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonButtonActionList.ButtonStyle">
             <summary>
@@ -1735,6 +1729,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonButtonActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonButtonDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonButtonDesigner class.
@@ -1750,12 +1750,6 @@
             Initialize a new instance of the KryptonCheckBoxActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckBoxActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonCheckBoxActionList.Checked">
             <summary>
@@ -1807,6 +1801,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckBoxActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckBoxDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonCheckBoxDesigner class.
@@ -1823,16 +1823,16 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonActionList.Checked">
+            <summary>
+            Gets and sets the checked state.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonActionList.GetSortedActionItems">
             <summary>
             Returns the collection of DesignerActionItem objects contained in the list.
             </summary>
             <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonActionList.Checked">
-            <summary>
-            Gets and sets the checked state.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonCollectionEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
             <summary>
@@ -1849,6 +1849,23 @@
             <param name="provider">An IServiceProvider that this editor can use to obtain services.</param>
             <param name="value">The object to edit.</param>
             <returns></returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonCollectionForm.ListEntry.#ctor(ComponentFactory.Krypton.Toolkit.KryptonCheckButton)">
+            <summary>
+            Initialize a new instance of the ListEntry class.
+            </summary>
+            <param name="checkButton">CheckButton to encapsulate.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonCollectionForm.ListEntry.ToString">
+            <summary>
+            Gets a string representation of the encapsulated check button.
+            </summary>
+            <returns>String instance.</returns>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonCollectionForm.ListEntry.CheckButton">
+            <summary>
+            Gets access to the encapsulated check button instance.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonCollectionForm.#ctor">
             <summary>
@@ -1877,23 +1894,6 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonCollectionForm.ListEntry.#ctor(ComponentFactory.Krypton.Toolkit.KryptonCheckButton)">
-            <summary>
-            Initialize a new instance of the ListEntry class.
-            </summary>
-            <param name="checkButton">CheckButton to encapsulate.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonCollectionForm.ListEntry.ToString">
-            <summary>
-            Gets a string representation of the encapsulated check button.
-            </summary>
-            <returns>String instance.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonCollectionForm.ListEntry.CheckButton">
-            <summary>
-            Gets access to the encapsulated check button instance.
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonCheckButtonDesigner.ActionLists">
             <summary>
              Gets the design-time action lists supported by the component associated with the designer.
@@ -1904,12 +1904,6 @@
             Initialize a new instance of the KryptonCheckedListBoxActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckedListBoxActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonCheckedListBoxActionList.ItemStyle">
             <summary>
@@ -1946,6 +1940,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckedListBoxActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCheckedListBoxDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
@@ -1979,12 +1979,6 @@
             Initialize a new instance of the KryptonColorButtonActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonColorButtonActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonColorButtonActionList.ButtonStyle">
             <summary>
@@ -2031,6 +2025,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonColorButtonActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonColorButtonDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonColorButtonDesigner class.
@@ -2047,12 +2047,6 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonComboBoxActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonComboBoxActionList.PaletteMode">
             <summary>
             Gets and sets the palette mode.
@@ -2062,6 +2056,12 @@
             <summary>
             Gets and sets the input control style.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonComboBoxActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonComboBoxColumnDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
@@ -2080,18 +2080,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonComboBoxDesigner.GetHitTest(System.Drawing.Point)">
-            <summary>
-            Indicates whether a mouse click at the specified point should be handled by the control.
-            </summary>
-            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
-            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonComboBoxDesigner.OnMouseLeave">
-            <summary>
-            Receives a call when the mouse leaves the control. 
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonComboBoxDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -2105,6 +2093,18 @@
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonComboBoxDesigner.ActionLists">
             <summary>
              Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonComboBoxDesigner.GetHitTest(System.Drawing.Point)">
+            <summary>
+            Indicates whether a mouse click at the specified point should be handled by the control.
+            </summary>
+            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
+            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonComboBoxDesigner.OnMouseLeave">
+            <summary>
+            Receives a call when the mouse leaves the control. 
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonCommandActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonCommandDesigner)">
@@ -2146,36 +2146,9 @@
             Designer for a collection of context menu items.
             </summary>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.#ctor">
-            <summary>
-            Initialize a new instance of the KryptonContextMenuCollectionEditor class.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.CreateCollectionForm">
-            <summary>
-            Creates a new form to display and edit the current collection.
-            </summary>
-            <returns>A CollectionForm to provide as the user interface for editing the collection.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.CreateNewItemTypes">
-            <summary>
-            Gets the data types that this collection editor can contain. 
-            </summary>
-            <returns>An array of data types that this collection can contain.</returns>
-        </member>
         <member name="T:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.KryptonContextMenuCollectionForm">
             <summary>
             Form used for editing the KryptonContextMenuCollection.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.KryptonContextMenuCollectionForm.#ctor(ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor)">
-            <summary>
-            Initialize a new instance of the KryptonContextMenuCollectionForm class.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.KryptonContextMenuCollectionForm.OnEditValueChanged">
-            <summary>
-            Provides an opportunity to perform processing when a collection value has changed.
             </summary>
         </member>
         <member name="T:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.KryptonContextMenuCollectionForm.DictItemBase">
@@ -2243,17 +2216,38 @@
             Gets or sets the name of the component associated with the ISite when implemented by a class.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.KryptonContextMenuCollectionForm.#ctor(ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor)">
+            <summary>
+            Initialize a new instance of the KryptonContextMenuCollectionForm class.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.KryptonContextMenuCollectionForm.OnEditValueChanged">
+            <summary>
+            Provides an opportunity to perform processing when a collection value has changed.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.#ctor">
+            <summary>
+            Initialize a new instance of the KryptonContextMenuCollectionEditor class.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.CreateCollectionForm">
+            <summary>
+            Creates a new form to display and edit the current collection.
+            </summary>
+            <returns>A CollectionForm to provide as the user interface for editing the collection.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuCollectionEditor.CreateNewItemTypes">
+            <summary>
+            Gets the data types that this collection editor can contain. 
+            </summary>
+            <returns>An array of data types that this collection can contain.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuDesigner.Dispose(System.Boolean)">
-            <summary>
-            Releases all resources used by the component. 
-            </summary>
-            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonContextMenuDesigner.AssociatedComponents">
             <summary>
@@ -2264,6 +2258,12 @@
             <summary>
              Gets the design-time action lists supported by the component associated with the designer.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuDesigner.Dispose(System.Boolean)">
+            <summary>
+            Releases all resources used by the component. 
+            </summary>
+            <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         </member>
         <member name="T:ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemCollectionEditor">
             <summary>
@@ -2287,16 +2287,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemsDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
@@ -2304,28 +2304,22 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemsDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemsDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
         </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonContextMenuItemsDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner)">
             <summary>
             Initialize a new instance of the KryptonDateTimePickerActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerActionList.Format">
             <summary>
@@ -2352,6 +2346,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerColumnDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
@@ -2369,6 +2369,21 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner.SelectionRules">
+            <summary>
+            Defines identifiers that are used to indicate selection rules for a component.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
@@ -2385,21 +2400,6 @@
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner.OnMouseLeave">
             <summary>
             Receives a call when the mouse leaves the control. 
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner.SelectionRules">
-            <summary>
-            Defines identifiers that are used to indicate selection rules for a component.
             </summary>
         </member>
         <member name="T:ComponentFactory.Krypton.Toolkit.KryptonDesignerActionItem">
@@ -2450,12 +2450,6 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDomainUpDownActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDomainUpDownActionList.PaletteMode">
             <summary>
             Gets and sets the palette mode.
@@ -2465,6 +2459,12 @@
             <summary>
             Gets and sets the input control style.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDomainUpDownActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDomainUpDownColumnDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
@@ -2483,18 +2483,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDomainUpDownDesigner.GetHitTest(System.Drawing.Point)">
-            <summary>
-            Indicates whether a mouse click at the specified point should be handled by the control.
-            </summary>
-            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
-            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDomainUpDownDesigner.OnMouseLeave">
-            <summary>
-            Receives a call when the mouse leaves the control. 
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDomainUpDownDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -2510,17 +2498,23 @@
              Gets the design-time action lists supported by the component associated with the designer.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDomainUpDownDesigner.GetHitTest(System.Drawing.Point)">
+            <summary>
+            Indicates whether a mouse click at the specified point should be handled by the control.
+            </summary>
+            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
+            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDomainUpDownDesigner.OnMouseLeave">
+            <summary>
+            Receives a call when the mouse leaves the control. 
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDropButtonActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonDropButtonDesigner)">
             <summary>
             Initialize a new instance of the KryptonDropButtonActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDropButtonActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonDropButtonActionList.ButtonStyle">
             <summary>
@@ -2567,6 +2561,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDropButtonActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonDropButtonDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonDropButtonDesigner class.
@@ -2583,12 +2583,6 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonGroupActionList.GroupBackStyle">
             <summary>
             Gets and sets the group background style.
@@ -2604,17 +2598,17 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupBoxActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonGroupBoxDesigner)">
             <summary>
             Initialize a new instance of the KryptonGroupBoxDesigner class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupBoxActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonGroupBoxActionList.GroupBackStyle">
             <summary>
@@ -2645,6 +2639,12 @@
             <summary>
             Gets and sets the palette mode.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupBoxActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupBoxDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
@@ -2708,22 +2708,6 @@
              Gets the design-time action lists supported by the component associated with the designer.
             </summary>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonPanelDesigner.#ctor">
-            <summary>
-            Initialize a new instance of the KryptonPanelDesigner class.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonPanelDesigner.OnPaintAdornments(System.Windows.Forms.PaintEventArgs)">
-            <summary>
-            Receives a call when the control that the designer is managing has painted its surface so the designer can paint any additional adornments on top of the control.
-            </summary>
-            <param name="pe">A PaintEventArgs the designer can use to draw on the control.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonPanelDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupPanelDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
@@ -2736,23 +2720,6 @@
             </summary>
             <param name="parentDesigner">The IDesigner that manages the control to check.</param>
             <returns>true if the control managed by the specified designer can parent the control managed by this designer; otherwise, false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupPanelDesigner.SelectParentControl">
-            <summary>
-            Select the control that contains the group panel.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupPanelDesigner.Dispose(System.Boolean)">
-            <summary>
-            Clean up any resources being used.
-            </summary>
-            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupPanelDesigner.PreFilterProperties(System.Collections.IDictionary)">
-            <summary>
-            Allows a designer to add to the set of properties that it exposes through a TypeDescriptor.
-            </summary>
-            <param name="properties">The properties for the class of the component.</param>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonGroupPanelDesigner.SelectionRules">
             <summary>
@@ -2774,6 +2741,23 @@
             Should painting be performed for the selection glyph.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupPanelDesigner.SelectParentControl">
+            <summary>
+            Select the control that contains the group panel.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupPanelDesigner.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonGroupPanelDesigner.PreFilterProperties(System.Collections.IDictionary)">
+            <summary>
+            Allows a designer to add to the set of properties that it exposes through a TypeDescriptor.
+            </summary>
+            <param name="properties">The properties for the class of the component.</param>
+        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonGroupPanelDesigner.InheritanceAttribute">
             <summary>
             Gets an attribute that indicates the type of inheritance of the associated component.
@@ -2784,12 +2768,6 @@
             Initialize a new instance of the KryptonHeaderActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderActionList.HeaderStyle">
             <summary>
@@ -2821,6 +2799,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
@@ -2832,6 +2816,16 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderDesigner.GetHitTest(System.Drawing.Point)">
             <summary>
@@ -2845,27 +2839,11 @@
             Receives a call when the mouse leaves the control. 
             </summary>
         </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupDesigner)">
             <summary>
             Initialize a new instance of the KryptonHeaderGroupActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupActionList.GroupBackStyle">
             <summary>
@@ -2902,6 +2880,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
@@ -2913,6 +2897,11 @@
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupDesigner.CanParent(System.Windows.Forms.Control)">
             <summary>
@@ -2934,6 +2923,11 @@
             </summary>
             <returns>The number of internal control designers in the ControlDesigner.</returns>
         </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupDesigner.GetHitTest(System.Drawing.Point)">
             <summary>
             Indicates whether a mouse click at the specified point should be handled by the control.
@@ -2946,27 +2940,11 @@
             Receives a call when the mouse leaves the control. 
             </summary>
         </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonHeaderGroupDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonLabelActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonLabelDesigner)">
             <summary>
             Initialize a new instance of the KryptonLabelActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonLabelActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonLabelActionList.LabelStyle">
             <summary>
@@ -2998,6 +2976,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonLabelActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonLabelDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonLabelDesigner class.
@@ -3013,12 +2997,6 @@
             Initialize a new instance of the KryptonLinkLabelActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonLinkLabelActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonLinkLabelActionList.LabelStyle">
             <summary>
@@ -3060,6 +3038,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonLinkLabelActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonLinkLabelDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonLabelDesigner class.
@@ -3075,12 +3059,6 @@
             Initialize a new instance of the KryptonListBoxActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonListBoxActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonListBoxActionList.ItemStyle">
             <summary>
@@ -3112,6 +3090,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonListBoxActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonListBoxDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
@@ -3129,16 +3113,16 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonManagerActionList.GlobalPaletteMode">
+            <summary>
+            Gets and sets the global palette mode.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonManagerActionList.GetSortedActionItems">
             <summary>
             Returns the collection of DesignerActionItem objects contained in the list.
             </summary>
             <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonManagerActionList.GlobalPaletteMode">
-            <summary>
-            Gets and sets the global palette mode.
-            </summary>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonManagerDesigner.ActionLists">
             <summary>
@@ -3150,12 +3134,6 @@
             Initialize a new instance of the KryptonMaskedTextBoxActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBoxActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBoxActionList.PaletteMode">
             <summary>
@@ -3171,6 +3149,12 @@
             <summary>
             Gets and sets the input mask.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBoxActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBoxColumnDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
@@ -3189,18 +3173,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBoxDesigner.GetHitTest(System.Drawing.Point)">
-            <summary>
-            Indicates whether a mouse click at the specified point should be handled by the control.
-            </summary>
-            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
-            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBoxDesigner.OnMouseLeave">
-            <summary>
-            Receives a call when the mouse leaves the control. 
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBoxDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -3216,17 +3188,23 @@
              Gets the design-time action lists supported by the component associated with the designer.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBoxDesigner.GetHitTest(System.Drawing.Point)">
+            <summary>
+            Indicates whether a mouse click at the specified point should be handled by the control.
+            </summary>
+            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
+            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMaskedTextBoxDesigner.OnMouseLeave">
+            <summary>
+            Receives a call when the mouse leaves the control. 
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner)">
             <summary>
             Initialize a new instance of the KryptonMonthCalendarActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarActionList.PaletteMode">
             <summary>
@@ -3253,11 +3231,32 @@
             Gets and sets the display of week numbers.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner.SelectionRules">
+            <summary>
+            Defines identifiers that are used to indicate selection rules for a component.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner.Dispose(System.Boolean)">
             <summary>
@@ -3277,32 +3276,11 @@
             Receives a call when the mouse leaves the control. 
             </summary>
         </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonMonthCalendarDesigner.SelectionRules">
-            <summary>
-            Defines identifiers that are used to indicate selection rules for a component.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownDesigner)">
             <summary>
             Initialize a new instance of the KryptonNumericUpDownActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownActionList.PaletteMode">
             <summary>
@@ -3329,6 +3307,12 @@
             Gets and sets the increment value of the control.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownColumnDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
@@ -3346,18 +3330,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownDesigner.GetHitTest(System.Drawing.Point)">
-            <summary>
-            Indicates whether a mouse click at the specified point should be handled by the control.
-            </summary>
-            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
-            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownDesigner.OnMouseLeave">
-            <summary>
-            Receives a call when the mouse leaves the control. 
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -3371,6 +3343,18 @@
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownDesigner.ActionLists">
             <summary>
              Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownDesigner.GetHitTest(System.Drawing.Point)">
+            <summary>
+            Indicates whether a mouse click at the specified point should be handled by the control.
+            </summary>
+            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
+            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonNumericUpDownDesigner.OnMouseLeave">
+            <summary>
+            Receives a call when the mouse leaves the control. 
             </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonPaletteActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonPaletteDesigner)">
@@ -3396,12 +3380,6 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonPanelActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonPanelActionList.PanelBackStyle">
             <summary>
             Gets and sets the panel background style.
@@ -3412,17 +3390,33 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonPanelActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonPanelDesigner.#ctor">
+            <summary>
+            Initialize a new instance of the KryptonPanelDesigner class.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonPanelDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonPanelDesigner.OnPaintAdornments(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Receives a call when the control that the designer is managing has painted its surface so the designer can paint any additional adornments on top of the control.
+            </summary>
+            <param name="pe">A PaintEventArgs the designer can use to draw on the control.</param>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRadioButtonActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonRadioButtonDesigner)">
             <summary>
             Initialize a new instance of the KryptonRadioButtonActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRadioButtonActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonRadioButtonActionList.Checked">
             <summary>
@@ -3464,6 +3458,12 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRadioButtonActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRadioButtonDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonRadioButtonDesigner class.
@@ -3479,12 +3479,6 @@
             Initialize a new instance of the KryptonRichTextBoxActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRichTextBoxActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonRichTextBoxActionList.PaletteMode">
             <summary>
@@ -3506,23 +3500,17 @@
             Gets and sets the WordWrap mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRichTextBoxActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRichTextBoxDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRichTextBoxDesigner.GetHitTest(System.Drawing.Point)">
-            <summary>
-            Indicates whether a mouse click at the specified point should be handled by the control.
-            </summary>
-            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
-            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRichTextBoxDesigner.OnMouseLeave">
-            <summary>
-            Receives a call when the mouse leaves the control. 
-            </summary>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonRichTextBoxDesigner.AssociatedComponents">
             <summary>
@@ -3539,17 +3527,23 @@
              Gets the design-time action lists supported by the component associated with the designer.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRichTextBoxDesigner.GetHitTest(System.Drawing.Point)">
+            <summary>
+            Indicates whether a mouse click at the specified point should be handled by the control.
+            </summary>
+            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
+            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonRichTextBoxDesigner.OnMouseLeave">
+            <summary>
+            Receives a call when the mouse leaves the control. 
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSeparatorActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonSeparatorDesigner)">
             <summary>
             Initialize a new instance of the KryptonSeparatorActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSeparatorActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonSeparatorActionList.SeparatorStyle">
             <summary>
@@ -3565,6 +3559,12 @@
             <summary>
             Gets and sets the palette mode.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSeparatorActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSeparatorDesigner.#ctor">
             <summary>
@@ -3582,12 +3582,6 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSplitContainerActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonSplitContainerActionList.ContainerBackStyle">
             <summary>
             Gets and sets the panel background style.
@@ -3602,6 +3596,12 @@
             <summary>
             Gets and sets the palette mode.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSplitContainerActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSplitContainerBehavior.#ctor(System.ComponentModel.Design.IDesigner)">
             <summary>
@@ -3681,16 +3681,16 @@
             </summary>
             <returns>The number of internal control designers in the ControlDesigner.</returns>
         </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonSplitContainerDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSplitContainerDesigner.OnDragEnter(System.Windows.Forms.DragEventArgs)">
             <summary>
             Raises the DragEnter event.
             </summary>
             <param name="de">A DragEventArgs that contains the event data.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonSplitContainerDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSplitContainerGlyph.#ctor(System.ComponentModel.Design.ISelectionService,System.Windows.Forms.Design.Behavior.BehaviorService,System.Windows.Forms.Design.Behavior.Adorner,System.ComponentModel.Design.IDesigner)">
             <summary>
@@ -3732,6 +3732,16 @@
             <param name="parentDesigner">The IDesigner that manages the control to check.</param>
             <returns>true if the control managed by the specified designer can parent the control managed by this designer; otherwise, false.</returns>
         </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonSplitterPanelDesigner.SelectionRules">
+            <summary>
+            Gets the selection rules that indicate the movement capabilities of a component.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonSplitterPanelDesigner.CanPaint">
+            <summary>
+            Should painting be performed for the selection glyph.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonSplitterPanelDesigner.SelectParentControl">
             <summary>
             Select the control that contains the group panel.
@@ -3755,16 +3765,6 @@
             </summary>
             <param name="properties">The properties for the class of the component.</param>
         </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonSplitterPanelDesigner.SelectionRules">
-            <summary>
-            Gets the selection rules that indicate the movement capabilities of a component.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.KryptonSplitterPanelDesigner.CanPaint">
-            <summary>
-            Should painting be performed for the selection glyph.
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonSplitterPanelDesigner.InheritanceAttribute">
             <summary>
             Gets an attribute that indicates the type of inheritance of the associated component.
@@ -3775,12 +3775,6 @@
             Initialize a new instance of the KryptonTextBoxActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTextBoxActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonTextBoxActionList.PaletteMode">
             <summary>
@@ -3807,6 +3801,12 @@
             Gets and sets the UseSystemPasswordChar mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTextBoxActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTextBoxColumnDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
@@ -3824,18 +3824,6 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTextBoxDesigner.GetHitTest(System.Drawing.Point)">
-            <summary>
-            Indicates whether a mouse click at the specified point should be handled by the control.
-            </summary>
-            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
-            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTextBoxDesigner.OnMouseLeave">
-            <summary>
-            Receives a call when the mouse leaves the control. 
-            </summary>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonTextBoxDesigner.AssociatedComponents">
             <summary>
             Gets the collection of components associated with the component managed by the designer.
@@ -3851,17 +3839,23 @@
              Gets the design-time action lists supported by the component associated with the designer.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTextBoxDesigner.GetHitTest(System.Drawing.Point)">
+            <summary>
+            Indicates whether a mouse click at the specified point should be handled by the control.
+            </summary>
+            <param name="point">A Point indicating the position at which the mouse was clicked, in screen coordinates.</param>
+            <returns>true if a click at the specified point is to be handled by the control; otherwise, false.</returns>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTextBoxDesigner.OnMouseLeave">
+            <summary>
+            Receives a call when the mouse leaves the control. 
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTrackBarActionList.#ctor(ComponentFactory.Krypton.Toolkit.KryptonTrackBarDesigner)">
             <summary>
             Initialize a new instance of the KryptonTrackBarActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTrackBarActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonTrackBarActionList.PaletteMode">
             <summary>
@@ -3898,6 +3892,12 @@
             Gets and sets the track bar large change value.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTrackBarActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonTrackBarDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
@@ -3920,12 +3920,6 @@
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
         </member>
-        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonWrapLabelActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
-        </member>
         <member name="P:ComponentFactory.Krypton.Toolkit.KryptonWrapLabelActionList.LabelStyle">
             <summary>
             Gets and sets the label style.
@@ -3935,6 +3929,12 @@
             <summary>
             Gets and sets the palette mode.
             </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Toolkit.KryptonWrapLabelActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="M:ComponentFactory.Krypton.Toolkit.KryptonWrapLabelDesigner.#ctor">
             <summary>
@@ -3967,6 +3967,11 @@
             Initialize a new instance of the PaletteDrawBordersSelector class.
             </summary>
         </member>
+        <member name="P:ComponentFactory.Krypton.Toolkit.PaletteDrawBordersSelector.Value">
+            <summary>
+            Gets and sets the value being edited.
+            </summary>
+        </member>
         <member name="F:ComponentFactory.Krypton.Toolkit.PaletteDrawBordersSelector.components">
             <summary> 
             Required designer variable.
@@ -3984,22 +3989,11 @@
             the contents of this method with the code editor.
             </summary>
         </member>
-        <member name="P:ComponentFactory.Krypton.Toolkit.PaletteDrawBordersSelector.Value">
-            <summary>
-            Gets and sets the value being edited.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceActionList.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner)">
             <summary>
             Initialize a new instance of the KryptonWorkspaceActionList class.
             </summary>
             <param name="owner">Designer that owns this action list instance.</param>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceActionList.GetSortedActionItems">
-            <summary>
-            Returns the collection of DesignerActionItem objects contained in the list.
-            </summary>
-            <returns>A DesignerActionItem array that contains the items in this list.</returns>
         </member>
         <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceActionList.ContainerBackStyle">
             <summary>
@@ -4026,6 +4020,17 @@
             Gets and sets the palette mode.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceActionList.GetSortedActionItems">
+            <summary>
+            Returns the collection of DesignerActionItem objects contained in the list.
+            </summary>
+            <returns>A DesignerActionItem array that contains the items in this list.</returns>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCellDesigner.SelectionRules">
+            <summary>
+            Gets the selection rules that indicate the movement capabilities of a component.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCellDesigner.OnComponentRemoving(System.Object,System.ComponentModel.Design.ComponentEventArgs)">
             <summary>
             Occurs when the component is being removed from the designer.
@@ -4033,40 +4038,9 @@
             <param name="sender">Source of the event.</param>
             <param name="e">A ComponentEventArgs containing event data.</param>
         </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCellDesigner.SelectionRules">
-            <summary>
-            Gets the selection rules that indicate the movement capabilities of a component.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.#ctor">
-            <summary>
-            Initialize a new instance of the KryptonWorkspaceCollectionEditor class.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.CreateCollectionForm">
-            <summary>
-            Creates a new form to display and edit the current collection.
-            </summary>
-            <returns>A CollectionForm to provide as the user interface for editing the collection.</returns>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.Workspace">
-            <summary>
-            Gets access to the owning workspace instance.
-            </summary>
-        </member>
         <member name="T:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.KryptonWorkspaceCollectionForm">
             <summary>
             Form used for editing the KryptonWorkspaceCollection.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.KryptonWorkspaceCollectionForm.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor)">
-            <summary>
-            Initialize a new instance of the KryptonWorkspaceCollectionForm class.
-            </summary>
-        </member>
-        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.KryptonWorkspaceCollectionForm.OnEditValueChanged">
-            <summary>
-            Provides an opportunity to perform processing when a collection value has changed.
             </summary>
         </member>
         <member name="T:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.KryptonWorkspaceCollectionForm.DictItemBase">
@@ -4482,11 +4456,47 @@
             Gets or sets the name of the component associated with the ISite when implemented by a class.
             </summary>
         </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.KryptonWorkspaceCollectionForm.#ctor(ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor)">
+            <summary>
+            Initialize a new instance of the KryptonWorkspaceCollectionForm class.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.KryptonWorkspaceCollectionForm.OnEditValueChanged">
+            <summary>
+            Provides an opportunity to perform processing when a collection value has changed.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.#ctor">
+            <summary>
+            Initialize a new instance of the KryptonWorkspaceCollectionEditor class.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.Workspace">
+            <summary>
+            Gets access to the owning workspace instance.
+            </summary>
+        </member>
+        <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceCollectionEditor.CreateCollectionForm">
+            <summary>
+            Creates a new form to display and edit the current collection.
+            </summary>
+            <returns>A CollectionForm to provide as the user interface for editing the collection.</returns>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner.Initialize(System.ComponentModel.IComponent)">
             <summary>
             Initializes the designer with the specified component.
             </summary>
             <param name="component">The IComponent to associate with the designer.</param>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner.ActionLists">
+            <summary>
+             Gets the design-time action lists supported by the component associated with the designer.
+            </summary>
         </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner.CanParent(System.Windows.Forms.Control)">
             <summary>
@@ -4519,16 +4529,6 @@
             </summary>
             <param name="de">A DragEventArgs that provides data for the event.</param>
         </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner.ActionLists">
-            <summary>
-             Gets the design-time action lists supported by the component associated with the designer.
-            </summary>
-        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequenceDesigner.#ctor">
             <summary>
             Initialize a new instance of the KryptonWorkspaceSequenceDesigner class.
@@ -4540,16 +4540,16 @@
             </summary>
             <param name="component">The IComponent to associate the designer with.</param>
         </member>
+        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequenceDesigner.AssociatedComponents">
+            <summary>
+            Gets the collection of components associated with the component managed by the designer.
+            </summary>
+        </member>
         <member name="M:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequenceDesigner.Dispose(System.Boolean)">
             <summary>
             Releases all resources used by the component. 
             </summary>
             <param name="disposing">true to release both managed and unmanaged resources; false to release only unmanaged resources.</param>
-        </member>
-        <member name="P:ComponentFactory.Krypton.Workspace.KryptonWorkspaceSequenceDesigner.AssociatedComponents">
-            <summary>
-            Gets the collection of components associated with the component managed by the designer.
-            </summary>
         </member>
     </members>
 </doc>

@@ -23,7 +23,7 @@ namespace ComponentFactory.Krypton.Workspace
 	/// <summary>
 	/// Storage for workspace context menu for pages.
 	/// </summary>
-    public class WorkspaceMenus : WorkspacePageMenuBase
+    public class WorkspaceMenus : Storage
     {
         #region Static Fields
         private static readonly string _defaultTextClose = "&Close";
@@ -71,7 +71,7 @@ namespace ComponentFactory.Krypton.Workspace
         /// Initialize a new instance of the WorkspaceMenus class.
 		/// </summary>
         public WorkspaceMenus(KryptonWorkspace workspace)
-            : base(workspace)
+            : base()
 		{
             // Default values
             _textClose = _defaultTextClose;

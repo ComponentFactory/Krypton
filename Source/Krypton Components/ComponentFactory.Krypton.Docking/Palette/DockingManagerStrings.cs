@@ -23,7 +23,7 @@ namespace ComponentFactory.Krypton.Docking
 	/// <summary>
 	/// Storage for docking managee strings.
 	/// </summary>
-    public class DockingManagerStrings : DockingManagerStringsBase
+    public class DockingManagerStrings : Storage
     {
         #region Static Fields
         private static readonly string _defaultTextAutoHide = "Auto Hide";
@@ -60,7 +60,7 @@ namespace ComponentFactory.Krypton.Docking
 		/// </summary>
         /// <param name="docking">Reference to owning docking manager.</param>
         public DockingManagerStrings(KryptonDockingManager docking)
-            : base(docking)
+            : base()
 		{
             // Default values
             _textAutoHide = _defaultTextAutoHide;
