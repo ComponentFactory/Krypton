@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\PerTabButtons.exe.config
-C:\Bewaren\krypton\Krypton\Bin\PerTabButtons.exe
-C:\Bewaren\krypton\Krypton\Bin\PerTabButtons.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Per-Tab Buttons\obj\Debug\PerTabButtons.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Per-Tab Buttons\obj\Debug\PerTabButtons.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Per-Tab Buttons\obj\Debug\Per-Tab Buttons 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Per-Tab Buttons\obj\Debug\PerTabButtons.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Per-Tab Buttons\obj\Debug\PerTabButtons.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Per-Tab Buttons\obj\Debug\PerTabButtons.pdb

@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\NavigatorContextMenus.exe.config
-C:\Bewaren\krypton\Krypton\Bin\NavigatorContextMenus.exe
-C:\Bewaren\krypton\Krypton\Bin\NavigatorContextMenus.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Context Menus\obj\Debug\NavigatorContextMenus.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Context Menus\obj\Debug\NavigatorContextMenus.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Context Menus\obj\Debug\Navigator Context Menus 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Context Menus\obj\Debug\NavigatorContextMenus.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Context Menus\obj\Debug\NavigatorContextMenus.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Context Menus\obj\Debug\NavigatorContextMenus.pdb

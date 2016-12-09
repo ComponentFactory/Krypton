@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\OutlookMockup.exe.config
-C:\Bewaren\krypton\Krypton\Bin\OutlookMockup.exe
-C:\Bewaren\krypton\Krypton\Bin\OutlookMockup.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Outlook Mockup\obj\Debug\OutlookMockup.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Outlook Mockup\obj\Debug\OutlookMockup.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Outlook Mockup\obj\Debug\Outlook Mockup 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Outlook Mockup\obj\Debug\OutlookMockup.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Outlook Mockup\obj\Debug\OutlookMockup.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Outlook Mockup\obj\Debug\OutlookMockup.pdb

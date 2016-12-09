@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonSeparatorExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonSeparatorExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonSeparatorExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSeparator Examples\obj\Release\KryptonSeparatorExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSeparator Examples\obj\Release\KryptonSeparatorExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSeparator Examples\obj\Release\KryptonSeparator Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSeparator Examples\obj\Release\KryptonSeparatorExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonSeparator Examples\obj\Release\KryptonSeparatorExamples.pdb

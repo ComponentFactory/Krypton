@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonDataGridViewExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonDataGridViewExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonDataGridViewExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDataGridView Examples\obj\Release\KryptonDataGridViewExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDataGridView Examples\obj\Release\KryptonDataGridViewExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDataGridView Examples\obj\Release\KryptonDataGridView Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDataGridView Examples\obj\Release\KryptonDataGridViewExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDataGridView Examples\obj\Release\KryptonDataGridViewExamples.pdb

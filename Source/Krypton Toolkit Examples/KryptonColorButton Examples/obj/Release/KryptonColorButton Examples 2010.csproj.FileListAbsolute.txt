@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonColorButtonExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonColorButtonExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonColorButtonExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonColorButton Examples\obj\Release\KryptonColorButtonExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonColorButton Examples\obj\Release\KryptonColorButtonExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonColorButton Examples\obj\Release\KryptonColorButton Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonColorButton Examples\obj\Release\KryptonColorButtonExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonColorButton Examples\obj\Release\KryptonColorButtonExamples.pdb

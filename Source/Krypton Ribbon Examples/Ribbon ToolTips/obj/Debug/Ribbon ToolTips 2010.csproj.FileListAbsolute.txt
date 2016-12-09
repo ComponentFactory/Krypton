@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\RibbonToolTips.exe.config
-C:\Bewaren\krypton\Krypton\Bin\RibbonToolTips.exe
-C:\Bewaren\krypton\Krypton\Bin\RibbonToolTips.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon ToolTips\obj\Debug\RibbonToolTips.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon ToolTips\obj\Debug\RibbonToolTips.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon ToolTips\obj\Debug\Ribbon ToolTips 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon ToolTips\obj\Debug\RibbonToolTips.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon ToolTips\obj\Debug\RibbonToolTips.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\Ribbon ToolTips\obj\Debug\RibbonToolTips.pdb

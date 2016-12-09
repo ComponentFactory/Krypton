@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\OneNoteTabs.exe.config
-C:\Bewaren\krypton\Krypton\Bin\OneNoteTabs.exe
-C:\Bewaren\krypton\Krypton\Bin\OneNoteTabs.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\OneNote Tabs\obj\Debug\OneNoteTabs.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\OneNote Tabs\obj\Debug\OneNoteTabs.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\OneNote Tabs\obj\Debug\OneNote Tabs 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\OneNote Tabs\obj\Debug\OneNoteTabs.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\OneNote Tabs\obj\Debug\OneNoteTabs.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\OneNote Tabs\obj\Debug\OneNoteTabs.pdb

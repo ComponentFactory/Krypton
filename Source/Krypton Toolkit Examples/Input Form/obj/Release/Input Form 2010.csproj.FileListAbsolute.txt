@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\InputForm.exe.config
-C:\Bewaren\krypton\Krypton\Bin\InputForm.exe
-C:\Bewaren\krypton\Krypton\Bin\InputForm.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Input Form\obj\Release\InputForm.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Input Form\obj\Release\InputForm.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Input Form\obj\Release\Input Form 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Input Form\obj\Release\InputForm.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Input Form\obj\Release\InputForm.pdb

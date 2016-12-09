@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\ChildControlStack.exe.config
-C:\Bewaren\krypton\Krypton\Bin\ChildControlStack.exe
-C:\Bewaren\krypton\Krypton\Bin\ChildControlStack.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Child Control Stack\obj\Release\ChildControlStack.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Child Control Stack\obj\Release\ChildControlStack.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Child Control Stack\obj\Release\Child Control Stack 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Child Control Stack\obj\Release\ChildControlStack.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Child Control Stack\obj\Release\ChildControlStack.pdb

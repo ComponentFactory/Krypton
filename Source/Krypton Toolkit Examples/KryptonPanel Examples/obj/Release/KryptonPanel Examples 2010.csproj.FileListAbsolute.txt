@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonPanelExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonPanelExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonPanelExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPanel Examples\obj\Release\KryptonPanelExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPanel Examples\obj\Release\KryptonPanelExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPanel Examples\obj\Release\KryptonPanel Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPanel Examples\obj\Release\KryptonPanelExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPanel Examples\obj\Release\KryptonPanelExamples.pdb

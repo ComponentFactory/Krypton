@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonMaskedTextBoxExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonMaskedTextBoxExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonMaskedTextBoxExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMaskedTextBox Examples\obj\Release\KryptonMaskedTextBoxExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMaskedTextBox Examples\obj\Release\KryptonMaskedTextBoxExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMaskedTextBox Examples\obj\Release\KryptonMaskedTextBox Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMaskedTextBox Examples\obj\Release\KryptonMaskedTextBoxExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonMaskedTextBox Examples\obj\Release\KryptonMaskedTextBoxExamples.pdb

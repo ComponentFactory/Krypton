@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonPaletteExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonPaletteExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonPaletteExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPalette Examples\obj\Release\KryptonPaletteExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPalette Examples\obj\Release\KryptonPaletteExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPalette Examples\obj\Release\KryptonPalette Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPalette Examples\obj\Release\KryptonPaletteExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonPalette Examples\obj\Release\KryptonPaletteExamples.pdb

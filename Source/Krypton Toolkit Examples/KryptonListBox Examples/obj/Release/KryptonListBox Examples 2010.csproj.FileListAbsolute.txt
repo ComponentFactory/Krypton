@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonListBoxExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonListBoxExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonListBoxExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonListBox Examples\obj\Release\KryptonListBoxExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonListBox Examples\obj\Release\KryptonListBoxExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonListBox Examples\obj\Release\KryptonListBox Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonListBox Examples\obj\Release\KryptonListBoxExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonListBox Examples\obj\Release\KryptonListBoxExamples.pdb

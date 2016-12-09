@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\WorkspacePersistence.exe.config
-C:\Bewaren\krypton\Krypton\Bin\WorkspacePersistence.exe
-C:\Bewaren\krypton\Krypton\Bin\WorkspacePersistence.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Persistence\obj\Debug\WorkspacePersistence.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Persistence\obj\Debug\WorkspacePersistence.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Persistence\obj\Debug\Workspace Persistence 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Persistence\obj\Debug\WorkspacePersistence.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Persistence\obj\Debug\WorkspacePersistence.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Workspace Examples\Workspace Persistence\obj\Debug\WorkspacePersistence.pdb
