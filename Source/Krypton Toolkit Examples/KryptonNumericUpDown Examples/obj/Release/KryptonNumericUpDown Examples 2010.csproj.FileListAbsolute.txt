@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonNumericUpDownExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonNumericUpDownExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonNumericUpDownExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonNumericUpDown Examples\obj\Release\KryptonNumericUpDownExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonNumericUpDown Examples\obj\Release\KryptonNumericUpDownExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonNumericUpDown Examples\obj\Release\KryptonNumericUpDown Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonNumericUpDown Examples\obj\Release\KryptonNumericUpDownExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonNumericUpDown Examples\obj\Release\KryptonNumericUpDownExamples.pdb

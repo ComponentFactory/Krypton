@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonDropButtonExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonDropButtonExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonDropButtonExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDropButton Examples\obj\Release\KryptonDropButtonExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDropButton Examples\obj\Release\KryptonDropButtonExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDropButton Examples\obj\Release\KryptonDropButton Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDropButton Examples\obj\Release\KryptonDropButtonExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonDropButton Examples\obj\Release\KryptonDropButtonExamples.pdb

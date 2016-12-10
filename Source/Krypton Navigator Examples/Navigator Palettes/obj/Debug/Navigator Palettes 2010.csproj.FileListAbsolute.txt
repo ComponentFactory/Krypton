@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\NavigatorPalettes.exe.config
-C:\Bewaren\krypton\Krypton\Bin\NavigatorPalettes.exe
-C:\Bewaren\krypton\Krypton\Bin\NavigatorPalettes.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Palettes\obj\Debug\NavigatorPalettes.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Palettes\obj\Debug\NavigatorPalettes.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Palettes\obj\Debug\Navigator Palettes 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Palettes\obj\Debug\NavigatorPalettes.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Palettes\obj\Debug\NavigatorPalettes.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Navigator Palettes\obj\Debug\NavigatorPalettes.pdb

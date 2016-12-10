@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\PopupPages.exe.config
-C:\Bewaren\krypton\Krypton\Bin\PopupPages.exe
-C:\Bewaren\krypton\Krypton\Bin\PopupPages.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Popup Pages\obj\Debug\PopupPages.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Popup Pages\obj\Debug\PopupPages.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Popup Pages\obj\Debug\Popup Pages 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Popup Pages\obj\Debug\PopupPages.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Popup Pages\obj\Debug\PopupPages.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Popup Pages\obj\Debug\PopupPages.pdb

@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonFormExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonFormExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonFormExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonForm Examples\obj\Release\KryptonFormExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonForm Examples\obj\Release\KryptonFormExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonForm Examples\obj\Release\KryptonForm Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonForm Examples\obj\Release\KryptonFormExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonForm Examples\obj\Release\KryptonFormExamples.pdb

@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\ExpandingHeaderGroupsDockStyle.exe.config
-C:\Bewaren\krypton\Krypton\Bin\ExpandingHeaderGroupsDockStyle.exe
-C:\Bewaren\krypton\Krypton\Bin\ExpandingHeaderGroupsDockStyle.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (DockStyle)\obj\Release\Expanding HeaderGroups (DockStyle) 2010.csprojResolveAssemblyReference.cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (DockStyle)\obj\Release\ExpandingHeaderGroupsDockStyle.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (DockStyle)\obj\Release\ExpandingHeaderGroupsDockStyle.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (DockStyle)\obj\Release\Expanding HeaderGroups (DockStyle) 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (DockStyle)\obj\Release\ExpandingHeaderGroupsDockStyle.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\Expanding HeaderGroups (DockStyle)\obj\Release\ExpandingHeaderGroupsDockStyle.pdb

@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonCheckedListBoxExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonCheckedListBoxExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonCheckedListBoxExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckedListBox Examples\obj\Release\KryptonCheckedListBoxExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckedListBox Examples\obj\Release\KryptonCheckedListBoxExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckedListBox Examples\obj\Release\KryptonCheckedListBox Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckedListBox Examples\obj\Release\KryptonCheckedListBoxExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckedListBox Examples\obj\Release\KryptonCheckedListBoxExamples.pdb

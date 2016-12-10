@@ -1,8 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonLinkLabelExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonLinkLabelExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonLinkLabelExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonLinkLabel Examples\obj\Release\KryptonLinkLabelExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonLinkLabel Examples\obj\Release\KryptonLinkLabelExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonLinkLabel Examples\obj\Release\KryptonLinkLabel Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonLinkLabel Examples\obj\Release\KryptonLinkLabelExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonLinkLabel Examples\obj\Release\KryptonLinkLabelExamples.pdb

@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonGroupExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonGroupExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonGroupExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonGroup Examples\obj\Release\KryptonGroup Examples 2010.csprojResolveAssemblyReference.cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonGroup Examples\obj\Release\KryptonGroupExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonGroup Examples\obj\Release\KryptonGroupExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonGroup Examples\obj\Release\KryptonGroup Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonGroup Examples\obj\Release\KryptonGroupExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonGroup Examples\obj\Release\KryptonGroupExamples.pdb

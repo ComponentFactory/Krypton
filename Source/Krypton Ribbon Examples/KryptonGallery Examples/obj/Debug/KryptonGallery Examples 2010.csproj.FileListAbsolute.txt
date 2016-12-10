@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonGalleryExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonGalleryExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonGalleryExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KryptonGallery Examples\obj\Debug\KryptonGalleryExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KryptonGallery Examples\obj\Debug\KryptonGalleryExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KryptonGallery Examples\obj\Debug\KryptonGallery Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KryptonGallery Examples\obj\Debug\KryptonGalleryExamples.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KryptonGallery Examples\obj\Debug\KryptonGalleryExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Ribbon Examples\KryptonGallery Examples\obj\Debug\KryptonGalleryExamples.pdb

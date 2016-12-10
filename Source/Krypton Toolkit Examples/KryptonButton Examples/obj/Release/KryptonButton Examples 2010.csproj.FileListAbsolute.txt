@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonButtonExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonButtonExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonButtonExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonButton Examples\obj\Release\KryptonButton Examples 2010.csprojResolveAssemblyReference.cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonButton Examples\obj\Release\KryptonButtonExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonButton Examples\obj\Release\KryptonButtonExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonButton Examples\obj\Release\KryptonButton Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonButton Examples\obj\Release\KryptonButtonExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonButton Examples\obj\Release\KryptonButtonExamples.pdb

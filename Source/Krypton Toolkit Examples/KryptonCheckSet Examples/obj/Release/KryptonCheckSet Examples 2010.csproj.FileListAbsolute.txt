@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\KryptonCheckSetExamples.exe.config
-C:\Bewaren\krypton\Krypton\Bin\KryptonCheckSetExamples.exe
-C:\Bewaren\krypton\Krypton\Bin\KryptonCheckSetExamples.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckSet Examples\obj\Release\KryptonCheckSet Examples 2010.csprojResolveAssemblyReference.cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckSet Examples\obj\Release\KryptonCheckSetExamples.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckSet Examples\obj\Release\KryptonCheckSetExamples.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckSet Examples\obj\Release\KryptonCheckSet Examples 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckSet Examples\obj\Release\KryptonCheckSetExamples.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Toolkit Examples\KryptonCheckSet Examples\obj\Release\KryptonCheckSetExamples.pdb

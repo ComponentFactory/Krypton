@@ -1,9 +1,0 @@
-C:\Bewaren\krypton\Krypton\Bin\TabBorderStyles.exe.config
-C:\Bewaren\krypton\Krypton\Bin\TabBorderStyles.exe
-C:\Bewaren\krypton\Krypton\Bin\TabBorderStyles.pdb
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Tab Border Styles\obj\Debug\TabBorderStyles.Form1.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Tab Border Styles\obj\Debug\TabBorderStyles.Properties.Resources.resources
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Tab Border Styles\obj\Debug\Tab Border Styles 2010.csproj.GenerateResource.Cache
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Tab Border Styles\obj\Debug\TabBorderStyles.exe.licenses
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Tab Border Styles\obj\Debug\TabBorderStyles.exe
-C:\Bewaren\krypton\Krypton\Source\Krypton Navigator Examples\Tab Border Styles\obj\Debug\TabBorderStyles.pdb
