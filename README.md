@@ -7,11 +7,7 @@ I developed and sold them from my company Component Factory from 2006 until 2014
 **Bin** directory contains already compiled copies of all the example projects and the Krypton assemblies, so I recommend you start by running the **Krypton Explorer** application in this directory. It lists all the controls along with an example application used to show it in operation. You can directly include the Krypton assemblies from this that directory into your own projects as references.
 
 # Source #
-<<<<<<< HEAD
 **Source** directory contains the full source code that you can view, modify and directly compile. The Krypton Components sub-directory contains all the actual controls, the other directories are for the myriad example projects.
-=======
-The **Source** directory contains the full source code that you can view, modify and directly compile. The Krypton Components sub-directory contains all the actual controls, the other directories are for the myriad example projects.
->>>>>>> parent of 6145d89... Added old commercial installer
 
 # Krypton Toolkit
 49 basic controls with full and consistent theming.
