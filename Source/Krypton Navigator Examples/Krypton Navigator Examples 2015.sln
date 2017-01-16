@@ -1,35 +1,35 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator Modes 2010", "Navigator Modes\Navigator Modes 2010.csproj", "{D76F290E-8546-440A-98E6-6C6BC426D2B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator Modes 2015", "Navigator Modes\Navigator Modes 2015.csproj", "{D76F290E-8546-440A-98E6-6C6BC426D2B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User Page Creation 2010", "User Page Creation\User Page Creation 2010.csproj", "{42AC06D0-2FA3-4947-B61B-C801DD8C5413}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User Page Creation 2015", "User Page Creation\User Page Creation 2015.csproj", "{42AC06D0-2FA3-4947-B61B-C801DD8C5413}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator Playground 2010", "Navigator Playground\Navigator Playground 2010.csproj", "{8FF79C43-0E59-4E21-A8F3-6E9E4F3154EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator Playground 2015", "Navigator Playground\Navigator Playground 2015.csproj", "{8FF79C43-0E59-4E21-A8F3-6E9E4F3154EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic Events 2010", "Basic Events\Basic Events 2010.csproj", "{826F4ED0-866F-4354-B0C6-482DA5A25CD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic Events 2015", "Basic Events\Basic Events 2015.csproj", "{826F4ED0-866F-4354-B0C6-482DA5A25CD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation + Alignment 2010", "Orientation + Alignment\Orientation + Alignment 2010.csproj", "{546ED88E-A953-4041-98AF-EB2DB758EDD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation + Alignment 2015", "Orientation + Alignment\Orientation + Alignment 2015.csproj", "{546ED88E-A953-4041-98AF-EB2DB758EDD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator Palettes 2010", "Navigator Palettes\Navigator Palettes 2010.csproj", "{305FC9AC-BD98-4DE0-81A8-245209395B2E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator Palettes 2015", "Navigator Palettes\Navigator Palettes 2015.csproj", "{305FC9AC-BD98-4DE0-81A8-245209395B2E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneNote Tabs 2010", "OneNote Tabs\OneNote Tabs 2010.csproj", "{50F16849-656D-4C9A-AFE3-3E128757AD67}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OneNote Tabs 2015", "OneNote Tabs\OneNote Tabs 2015.csproj", "{50F16849-656D-4C9A-AFE3-3E128757AD67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tab Border Styles 2010", "Tab Border Styles\Tab Border Styles 2010.csproj", "{D72909C6-A2E7-4FE6-9DA0-2D39F2BBD187}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tab Border Styles 2015", "Tab Border Styles\Tab Border Styles 2015.csproj", "{D72909C6-A2E7-4FE6-9DA0-2D39F2BBD187}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outlook Mockup 2010", "Outlook Mockup\Outlook Mockup 2010.csproj", "{9497EDA8-5D49-4708-825D-FA52C6FDB962}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outlook Mockup 2015", "Outlook Mockup\Outlook Mockup 2015.csproj", "{9497EDA8-5D49-4708-825D-FA52C6FDB962}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleline + Multiline 2010", "Singleline + Multiline\Singleline + Multiline 2010.csproj", "{C499485E-21F6-4A4E-878A-65C7B9E86637}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleline + Multiline 2015", "Singleline + Multiline\Singleline + Multiline 2015.csproj", "{C499485E-21F6-4A4E-878A-65C7B9E86637}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popup Pages 2010", "Popup Pages\Popup Pages 2010.csproj", "{99F8F0C5-B840-4152-BC2C-9CD182BC670D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Popup Pages 2015", "Popup Pages\Popup Pages 2015.csproj", "{99F8F0C5-B840-4152-BC2C-9CD182BC670D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expanding Pages 2010", "Expanding Pages\Expanding Pages 2010.csproj", "{9A35098C-1B06-485F-BC81-18CE5BCA39B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Expanding Pages 2015", "Expanding Pages\Expanding Pages 2015.csproj", "{9A35098C-1B06-485F-BC81-18CE5BCA39B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator ToolTips 2010", "Navigator Tooltips\Navigator ToolTips 2010.csproj", "{1BCB18C0-67AB-498A-B586-5D2FFA3F99FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator ToolTips 2015", "Navigator Tooltips\Navigator ToolTips 2015.csproj", "{1BCB18C0-67AB-498A-B586-5D2FFA3F99FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator Context Menus 2010", "Navigator Context Menus\Navigator Context Menus 2010.csproj", "{6E993E95-B34E-47E0-91F2-4C4CA154A65B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator Context Menus 2015", "Navigator Context Menus\Navigator Context Menus 2015.csproj", "{6E993E95-B34E-47E0-91F2-4C4CA154A65B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Per-Tab Buttons 2010", "Per-Tab Buttons\Per-Tab Buttons 2010.csproj", "{82003863-6059-49A4-AC05-3A4A5328049A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Per-Tab Buttons 2015", "Per-Tab Buttons\Per-Tab Buttons 2015.csproj", "{82003863-6059-49A4-AC05-3A4A5328049A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
