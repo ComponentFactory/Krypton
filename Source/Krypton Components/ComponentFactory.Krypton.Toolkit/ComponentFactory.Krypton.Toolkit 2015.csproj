@@ -86,36 +86,16 @@
     <Compile Include="ButtonSpec\ButtonSpecCalendar.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuMonthCalendar.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuImageSelect.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuColorColumns.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuCheckButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuRadioButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuCheckBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuLinkLabel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuHeading.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuItems.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuItem.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="ContextMenu\KryptonContextMenuMonthCalendar.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuImageSelect.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuColorColumns.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuCheckButton.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuRadioButton.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuCheckBox.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuLinkLabel.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuHeading.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuItems.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuItem.cs" />
     <Compile Include="Controller\CheckBoxController.cs" />
     <Compile Include="Controller\ContextMenuController.cs" />
     <Compile Include="Controller\TrackPositionController.cs" />
@@ -130,137 +110,63 @@
     <Compile Include="Controller\MenuItemController.cs" />
     <Compile Include="Controller\RadioButtonController.cs" />
     <Compile Include="Controls Toolkit\KryptonTreeNode.cs" />
-    <Compile Include="Controls Toolkit\KryptonTreeView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonInputBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonTaskDialogCommand.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonTaskDialog.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Toolkit\KryptonTreeView.cs" />
+    <Compile Include="Controls Toolkit\KryptonInputBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonTaskDialogCommand.cs" />
+    <Compile Include="Controls Toolkit\KryptonTaskDialog.cs" />
     <Compile Include="Controls Visuals\VisualTaskDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls Toolkit\KryptonMessageBox.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonGroupBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonTrackBar.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonWrapLabel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonDateTimePicker.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonSeparator.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonMonthCalendar.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonDomainUpDown.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Toolkit\KryptonMessageBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonGroupBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonTrackBar.cs" />
+    <Compile Include="Controls Toolkit\KryptonWrapLabel.cs" />
+    <Compile Include="Controls Toolkit\KryptonDateTimePicker.cs" />
+    <Compile Include="Controls Toolkit\KryptonSeparator.cs" />
+    <Compile Include="Controls Toolkit\KryptonMonthCalendar.cs" />
+    <Compile Include="Controls Toolkit\KryptonDomainUpDown.cs" />
     <Compile Include="Controls Toolkit\KryptonBreadCrumbItem.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls Toolkit\KryptonBreadCrumb.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonNumericUpDown.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonCommand.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonCheckedListBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonListBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonColorButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonDropButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Toolkit\KryptonBreadCrumb.cs" />
+    <Compile Include="Controls Toolkit\KryptonNumericUpDown.cs" />
+    <Compile Include="Controls Toolkit\KryptonCommand.cs" />
+    <Compile Include="Controls Toolkit\KryptonCheckedListBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonListBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonColorButton.cs" />
+    <Compile Include="Controls Toolkit\KryptonDropButton.cs" />
     <Compile Include="Controls Toolkit\KryptonListItem.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls Toolkit\KryptonMaskedTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Visuals\VisualContextMenuDTP.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Visuals\VisualContainerControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Visuals\VisualContainerControlBase.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Visuals\VisualSimpleBase.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Visuals\VisualControlBase.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Toolkit\KryptonMaskedTextBox.cs" />
+    <Compile Include="Controls Visuals\VisualContextMenuDTP.cs" />
+    <Compile Include="Controls Visuals\VisualContainerControl.cs" />
+    <Compile Include="Controls Visuals\VisualContainerControlBase.cs" />
+    <Compile Include="Controls Visuals\VisualSimpleBase.cs" />
+    <Compile Include="Controls Visuals\VisualControlBase.cs" />
     <Compile Include="Converters\DateTimeNullableConverter.cs" />
     <Compile Include="Converters\KryptonCheckedButtonConverter.cs" />
     <Compile Include="ContextMenu\KryptonContextMenuItemBase.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="ContextMenu\KryptonContextMenuSeparator.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonRichTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonComboBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonDataGridView.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonDataGridViewColumns.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonRadioButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonCheckBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="ContextMenu\KryptonContextMenuSeparator.cs" />
+    <Compile Include="Controls Toolkit\KryptonRichTextBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonComboBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonDataGridView.cs" />
+    <Compile Include="Controls Toolkit\KryptonDataGridViewColumns.cs" />
+    <Compile Include="Controls Toolkit\KryptonRadioButton.cs" />
+    <Compile Include="Controls Toolkit\KryptonCheckBox.cs" />
     <Compile Include="Controls Toolkit\KryptonForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls Toolkit\KryptonTextBox.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonContextMenu.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Visuals\VisualContextMenu.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Visuals\VisualPopupTooltip.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Toolkit\KryptonTextBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonContextMenu.cs" />
+    <Compile Include="Controls Visuals\VisualContextMenu.cs" />
+    <Compile Include="Controls Visuals\VisualPopupTooltip.cs" />
     <Compile Include="Controls Visuals\VisualPopupShadow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls Visuals\VisualPopup.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Visuals\VisualPopup.cs" />
     <Compile Include="Controls Visuals\VisualForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,9 +206,7 @@
     <Compile Include="ButtonSpec\ButtonSpecRemapByContentView.cs" />
     <Compile Include="ButtonSpec\ButtonSpecRemapByContentCache.cs" />
     <Compile Include="Controller\LinkLabelController.cs" />
-    <Compile Include="Controls Toolkit\KryptonBorderEdge.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Toolkit\KryptonBorderEdge.cs" />
     <Compile Include="Converters\TabStyleConverter.cs" />
     <Compile Include="Converters\TabBorderStyleConverter.cs" />
     <Compile Include="Converters\PaletteDrawBordersConverter.cs" />
@@ -524,12 +428,8 @@
     <Compile Include="Palette Controls\KryptonColorTable2007.cs" />
     <Compile Include="Palette Controls\PaletteBorderEdge.cs" />
     <Compile Include="Palette Controls\LinkLabelBehaviorInherit.cs" />
-    <Compile Include="Controls Toolkit\KryptonLinkLabel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonGroupPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Toolkit\KryptonLinkLabel.cs" />
+    <Compile Include="Controls Toolkit\KryptonGroupPanel.cs" />
     <Compile Include="Converters\ButtonStyleConverter.cs" />
     <Compile Include="Converters\HeaderGroupCollapseTargetConverter.cs" />
     <Compile Include="Converters\PaletteButtonSpecStyleConverter.cs" />
@@ -549,30 +449,14 @@
     <Compile Include="Controller\ButtonController.cs" />
     <Compile Include="Controller\SeparatorController.cs" />
     <Compile Include="Controller\ControllerDefinitions.cs" />
-    <Compile Include="Controls Toolkit\KryptonCheckSet.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonCheckButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonGroup.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonHeader.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonHeaderGroup.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonLabel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonPalette.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Toolkit\KryptonCheckSet.cs" />
+    <Compile Include="Controls Toolkit\KryptonCheckButton.cs" />
+    <Compile Include="Controls Toolkit\KryptonButton.cs" />
+    <Compile Include="Controls Toolkit\KryptonGroup.cs" />
+    <Compile Include="Controls Toolkit\KryptonHeader.cs" />
+    <Compile Include="Controls Toolkit\KryptonHeaderGroup.cs" />
+    <Compile Include="Controls Toolkit\KryptonLabel.cs" />
+    <Compile Include="Controls Toolkit\KryptonPalette.cs" />
     <Compile Include="General\GlobalId.cs" />
     <Compile Include="General\KryptonDefaultColorAttribute.cs" />
     <Compile Include="General\ModalWaitDialog.cs">
@@ -643,15 +527,9 @@
     <Compile Include="Palette Component\KryptonPaletteTMSStatusStrip.cs" />
     <Compile Include="Palette Component\KryptonPaletteTMSButton.cs" />
     <Compile Include="Palette Component\KryptonPaletteTMS.cs" />
-    <Compile Include="Controls Toolkit\KryptonPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonSplitContainer.cs">
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Controls Toolkit\KryptonSplitterPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Toolkit\KryptonPanel.cs" />
+    <Compile Include="Controls Toolkit\KryptonSplitContainer.cs" />
+    <Compile Include="Controls Toolkit\KryptonSplitterPanel.cs" />
     <Compile Include="Palette Component\KryptonInternalKCT.cs" />
     <Compile Include="Palette Component\KryptonPaletteTMSToolStrip.cs" />
     <Compile Include="EventArgs\PaletteLayoutEventArgs.cs" />
@@ -659,9 +537,7 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="EventArgs\NeedLayoutEventArgs.cs" />
-    <Compile Include="Controls Visuals\VisualSimple.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Visuals\VisualSimple.cs" />
     <Compile Include="General\GraphicsTextHint.cs" />
     <Compile Include="General\HSL.cs" />
     <Compile Include="Converters\PaletteModeConverter.cs" />
@@ -724,9 +600,7 @@
     <Compile Include="Rendering\RenderStandard.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls Visuals\VisualPanel.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Visuals\VisualPanel.cs" />
     <Compile Include="Values\ButtonImageStates.cs">
     </Compile>
     <Compile Include="Values\ButtonValues.cs" />
@@ -818,9 +692,7 @@
     <Compile Include="AccurateText\AccurateTextMemento.cs" />
     <Compile Include="View Base\ViewContext.cs" />
     <Compile Include="Rendering\RenderDefinitions.cs" />
-    <Compile Include="Controls Visuals\VisualControlContainment.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Visuals\VisualControlContainment.cs" />
     <Compile Include="View Base\ViewManager.cs" />
     <Compile Include="View Layout\ViewLayoutMetricSpacer.cs" />
     <Compile Include="View Draw\ViewDrawPanel.cs" />
@@ -829,9 +701,7 @@
     <Compile Include="View Draw\ViewDrawButton.cs" />
     <Compile Include="View Draw\ViewDrawContent.cs" />
     <Compile Include="View Draw\ViewDrawCanvas.cs" />
-    <Compile Include="Controls Visuals\VisualControl.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="Controls Visuals\VisualControl.cs" />
     <Compile Include="View Base\ViewLeaf.cs" />
     <Compile Include="View Base\ViewBase.cs" />
     <Compile Include="View Base\ViewComposite.cs" />

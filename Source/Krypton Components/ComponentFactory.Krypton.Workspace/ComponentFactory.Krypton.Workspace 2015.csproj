@@ -148,13 +148,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator 2010.csproj">
+    <ProjectReference Include="..\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator 2015.csproj">
       <Project>{DC0DD714-4D19-4F31-A6D0-EA209D4F0EA8}</Project>
-      <Name>ComponentFactory.Krypton.Navigator 2010</Name>
+      <Name>ComponentFactory.Krypton.Navigator 2015</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2010.csproj">
+    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2015.csproj">
       <Project>{96ECAECC-54F8-4AA5-8591-B443C2D9565F}</Project>
-      <Name>ComponentFactory.Krypton.Toolkit 2010</Name>
+      <Name>ComponentFactory.Krypton.Toolkit 2015</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
