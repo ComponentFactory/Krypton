@@ -3,13 +3,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.50727</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{B8F9F88C-69D5-431F-AEFC-2285830D33C0}</ProjectGuid>
+    <ProjectGuid>{A48D00DF-EE6A-4D1B-A9B5-0D31423D215D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>QuickAccessToolbar</RootNamespace>
-    <AssemblyName>QuickAccessToolbar</AssemblyName>
+    <RootNamespace>RibbonControls</RootNamespace>
+    <AssemblyName>RibbonControls</AssemblyName>
     <ApplicationIcon>Krypton.ico</ApplicationIcon>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -53,11 +53,11 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
     </Reference>
-    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.4.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
@@ -104,19 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Krypton.ico" />
-    <None Include="Resources\delete2.png" />
-    <None Include="Resources\flag_peru.png" />
-    <None Include="Resources\flag_new_zealand.png" />
-    <None Include="Resources\flag_lithuania.png" />
-    <None Include="Resources\flag_italy.png" />
-    <None Include="Resources\flag_hong_kong.png" />
-    <None Include="Resources\flag_france.png" />
-    <None Include="Resources\flag_egypt.png" />
-    <None Include="Resources\flag_czech_republic.png" />
-    <None Include="Resources\flag_canada.png" />
-    <None Include="Resources\flag_cameroon.png" />
-    <None Include="Resources\flag_australia.png" />
-    <None Include="Resources\flag_wales.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
