@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator Modes 2015", "Navigator Modes\Navigator Modes 2015.csproj", "{D76F290E-8546-440A-98E6-6C6BC426D2B2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "User Page Creation 2015", "User Page Creation\User Page Creation 2015.csproj", "{42AC06D0-2FA3-4947-B61B-C801DD8C5413}"

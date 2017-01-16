@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentFactory.Krypton.Toolkit 2015", "ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit 2015.csproj", "{96ECAECC-54F8-4AA5-8591-B443C2D9565F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentFactory.Krypton.Navigator 2015", "ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator 2015.csproj", "{DC0DD714-4D19-4F31-A6D0-EA209D4F0EA8}"

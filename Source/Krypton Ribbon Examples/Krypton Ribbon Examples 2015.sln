@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Outlook Mail Clone 2015", "Outlook Mail Clone\Outlook Mail Clone 2015.csproj", "{B574C472-97B7-43C6-AC79-0BE2640B8A3F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contextual Tabs 2015", "Contextual Tabs\Contextual Tabs 2015.csproj", "{2D6C14C8-4D7C-4AC8-9E3D-BC2D332FD263}"

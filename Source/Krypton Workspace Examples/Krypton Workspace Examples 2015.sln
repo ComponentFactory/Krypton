@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workspace Cell Modes 2015", "Workspace Cell Modes\Workspace Cell Modes 2015.csproj", "{3A6E739B-22C7-4C4A-8CE5-9E6D1FEAE368}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workspace Cell Layout 2015", "Workspace Cell Layout\Workspace Cell Layout 2015.csproj", "{E5AAE9B7-FFFD-43B4-B95F-D3F72A637342}"

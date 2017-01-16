@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi Control Docking 2015", "Multi Control Docking\Multi Control Docking 2015.csproj", "{14D102AA-67A2-40B6-8B88-A97D955310F2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Persistence 2015", "Docking Persistence\Docking Persistence 2015.csproj", "{395F4ABA-4D19-453C-B183-7FB625616A56}"
