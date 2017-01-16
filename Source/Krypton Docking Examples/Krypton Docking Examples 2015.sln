@@ -1,19 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi Control Docking 2010", "Multi Control Docking\Multi Control Docking 2010.csproj", "{14D102AA-67A2-40B6-8B88-A97D955310F2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi Control Docking 2015", "Multi Control Docking\Multi Control Docking 2015.csproj", "{14D102AA-67A2-40B6-8B88-A97D955310F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Persistence 2010", "Docking Persistence\Docking Persistence 2010.csproj", "{395F4ABA-4D19-453C-B183-7FB625616A56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Persistence 2015", "Docking Persistence\Docking Persistence 2015.csproj", "{395F4ABA-4D19-453C-B183-7FB625616A56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Flags 2010", "Docking Flags\Docking Flags 2010.csproj", "{B838F655-F800-444C-9FDE-7CF779E8F3E8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Flags 2015", "Docking Flags\Docking Flags 2015.csproj", "{B838F655-F800-444C-9FDE-7CF779E8F3E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Customized 2010", "Docking Customized\Docking Customized 2010.csproj", "{4715FA62-377A-4BF8-952B-EA9E96927E8B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Customized 2015", "Docking Customized\Docking Customized 2015.csproj", "{4715FA62-377A-4BF8-952B-EA9E96927E8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standard Docking 2010", "Standard Docking\Standard Docking 2010.csproj", "{A693C42B-41AF-4EA2-8BB6-9D493DBA18B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standard Docking 2015", "Standard Docking\Standard Docking 2015.csproj", "{A693C42B-41AF-4EA2-8BB6-9D493DBA18B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator + FloatingWindows 2010", "Navigator + FloatingWindows\Navigator + FloatingWindows 2010.csproj", "{78DB3787-3CE3-4633-82DA-139219B698E6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator + FloatingWindows 2015", "Navigator + FloatingWindows\Navigator + FloatingWindows 2015.csproj", "{78DB3787-3CE3-4633-82DA-139219B698E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "External Drag To Docking 2010", "External Drag To Docking\External Drag To Docking 2010.csproj", "{7BE1440A-6144-4B4C-90D7-E101E99478EE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "External Drag To Docking 2015", "External Drag To Docking\External Drag To Docking 2015.csproj", "{7BE1440A-6144-4B4C-90D7-E101E99478EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
