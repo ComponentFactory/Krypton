@@ -13,8 +13,8 @@ I developed and sold them from my company Component Factory from 2006 until 2014
  - Right click the **Toolbox** and **Add Tab**, give it the name **Krypton**
  - Right click inside the new tab and select **Choose Toolbox Items**
  - Use the **Browse** button and go to your **Bin** directory, select all the **ComponentFactory.Krypton...** assemblies
- - Ignore warning for the **ComponentFactory.Krypton.Design.dll** as it does not have any controls in it
- - Select **OK** and now you have them all in the Toolbox!
+ - Ignore warning for **ComponentFactory.Krypton.Design.dll** as it does not have any controls in it
+ - Select **OK** and now you have them all in the **Toolbox!**
 
 # Source #
 **Source** directory contains the full source code that you can view, modify and directly compile. The Krypton Components sub-directory contains all the actual controls, the other directories are for the myriad example projects.
