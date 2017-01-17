@@ -3,8 +3,17 @@ The Krypton Suite of .NET WinForms controls are now freely available for use in 
 
 I developed and sold them from my company Component Factory from 2006 until 2014, when the lack of sales meant selling the controls was no longer viable. So I decided to make them open source so that .NET developers, hobby developers in particular, had a good set of free controls to use in their projects. There is no point in all that hard work sitting on my hard drive when it could be useful to others. Full source code for all the controls and components is included along with Visual Studio 2015 projects and solution files.
 
-# Getting Started
-**Bin** directory contains already compiled copies of all the example projects and the Krypton assemblies, so I recommend you start by running the **Krypton Explorer** application in this directory. It lists all the controls along with an example application used to show it in operation. You can directly include the Krypton assemblies from this that directory into your own projects as references.
+# Getting Started #
+**Bin** directory contains already compiled copies of all the example projects and the Krypton assemblies, so I recommend you start by running the **Krypton Explorer** application in this directory. It lists all the controls along with an example application used to show it in operation.
+
+# Using with Visual Studio #
+ - Run the batch file **RegisterToGAC.bat** in the **Bin** directory as an admin so that the Krypton assemblies are placed in the global assembly cache
+ - Start Visual Studio and create/open your Windows Forms project
+ - Open the main Form of your application and show the Toolbox
+ - Right click the **Toolbox** and **Add Tab**, give it the name **Krypton**
+ - Right click inside the new tab and select **Choose Toolbox Items**
+ - Use the **Browse** button and go to your **Bin** directory, select all the **ComponentFactory.Krypton** assemblies, except **Design** as that has no controls in it.
+ - Select **OK** and now you have them all in the Toolbox!
 
 # Source #
 **Source** directory contains the full source code that you can view, modify and directly compile. The Krypton Components sub-directory contains all the actual controls, the other directories are for the myriad example projects.
