@@ -7,12 +7,13 @@ I developed and sold them from my company Component Factory from 2006 until 2014
 **Bin** directory contains already compiled copies of all the example projects and the Krypton assemblies, so I recommend you start by running the **Krypton Explorer** application in this directory. It lists all the controls along with an example application used to show it in operation.
 
 # Using with Visual Studio #
- - Run the batch file **RegisterToGAC.bat** in the **Bin** directory as an admin so that the Krypton assemblies are placed in the global assembly cache
- - Start Visual Studio and create/open your Windows Forms project
- - Open the main Form of your application and show the Toolbox
+ - Run the batch file **RegisterToGAC.bat** in the **Bin** directory as an admin so the assemblies are placed in the GAC
+ - Start **Visual Studio** and create/open your Windows Forms project
+ - Open the main Form of your application and show the **Toolbox**
  - Right click the **Toolbox** and **Add Tab**, give it the name **Krypton**
  - Right click inside the new tab and select **Choose Toolbox Items**
- - Use the **Browse** button and go to your **Bin** directory, select all the **ComponentFactory.Krypton.* ** assemblies, except **.Design.dll** as that has no controls in it.
+ - Use the **Browse** button and go to your **Bin** directory, select all the **ComponentFactory.Krypton...** assemblies
+ - Ignore warning for the **ComponentFactory.Krypton.Design.dll** as it does not have any controls in it
  - Select **OK** and now you have them all in the Toolbox!
 
 # Source #
