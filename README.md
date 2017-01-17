@@ -12,7 +12,7 @@ I developed and sold them from my company Component Factory from 2006 until 2014
  - Open the main Form of your application and show the Toolbox
  - Right click the **Toolbox** and **Add Tab**, give it the name **Krypton**
  - Right click inside the new tab and select **Choose Toolbox Items**
- - Use the **Browse** button and go to your **Bin** directory, select all the **ComponentFactory.Krypton** assemblies, except **Design** as that has no controls in it.
+ - Use the **Browse** button and go to your **Bin** directory, select all the **ComponentFactory.Krypton.* ** assemblies, except **.Design.dll** as that has no controls in it.
  - Select **OK** and now you have them all in the Toolbox!
 
 # Source #
