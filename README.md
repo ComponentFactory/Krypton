@@ -6,6 +6,9 @@ I developed and sold them from my company Component Factory from 2006 until 2014
 # Getting Started #
 **Bin** directory contains already compiled copies of all the example projects and the Krypton assemblies, so I recommend you start by running the **Krypton Explorer** application in this directory. It lists all the controls along with an example application used to show it in operation.
 
+# Documentation #
+**Help** directory contains a **KryptonHelp.chm** file that can be double clicked to open the documentation. I recommend you read this before developing using the Krypton controls.
+
 # Using with Visual Studio #
  - Run the batch file **RegisterToGAC.bat** in the **Bin** directory as an admin so the assemblies are placed in the GAC
  - Start **Visual Studio** and create/open your Windows Forms project
