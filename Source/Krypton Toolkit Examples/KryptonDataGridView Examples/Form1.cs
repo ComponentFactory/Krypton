@@ -9,11 +9,15 @@
 // *****************************************************************************
 
 using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Windows.Forms;
 using System.ComponentModel;
-using System.Collections.Generic;
+using System.Collections.Specialized;
+using System.Linq;
+using System.Reflection;
 using ComponentFactory.Krypton.Toolkit;
 
 namespace KryptonDataGridViewExamples
@@ -121,6 +125,45 @@ namespace KryptonDataGridViewExamples
         private void buttonClose_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void btnCompare_Click(object sender, EventArgs e)
+        {
+          var old = new Form1().kryptonDataGridView1;
+          var changes = GetChangedProperties<DataGridView>(old, kryptonDataGridView1);
+          lbPropChanges.Items.Clear();
+          foreach (var s in changes)
+            lbPropChanges.Items.Add(s);
+        }
+
+        public List<string> GetChangedProperties<T>(object a, object b)
+        {
+          if (a == null || b == null)
+            throw new ArgumentNullException("You need to provide 2 non-null objects");
+
+          var type = typeof(T);
+          var allProperties = type.GetProperties(BindingFlags.Public | BindingFlags.Instance);
+          var allSimpleProperties = allProperties.Where(pi => pi.CanWrite && IsSimpleType(pi.PropertyType));
+          var unequalProperties =
+            from   pi in allSimpleProperties
+            let    AValue = type.GetProperty(pi.Name).GetValue(a, null)
+            let    BValue = type.GetProperty(pi.Name).GetValue(b, null)
+            where  AValue != BValue && (AValue == null || !AValue.Equals(BValue))
+            select pi.Name;
+          return unequalProperties.ToList();
+        }
+
+        public bool IsSimpleType(Type type)
+        {
+          if (type.IsGenericType && type.GetGenericTypeDefinition() == typeof(Nullable<>))
+          {
+            // nullable type, check if the nested type is simple.
+            return IsSimpleType(type.GetGenericArguments()[0]);
+          }
+          return type.IsPrimitive
+                 || type.IsEnum
+                 || type == typeof(string)
+                 || type == typeof(decimal);
         }
     }
 
@@ -405,5 +448,6 @@ namespace KryptonDataGridViewExamples
             get { return _grid.Enabled; }
             set { _grid.Enabled = value; }
         }
-    }
+
+  }
 }
