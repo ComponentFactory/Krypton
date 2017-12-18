@@ -1029,7 +1029,9 @@
   <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
   <PropertyGroup>
-    <PostBuildEvent>rem "$(ProjectDir)..\GacUtil.exe" -i "$(TargetPath)" /f</PostBuildEvent>
+    <PostBuildEvent>rem "$(ProjectDir)..\GacUtil.exe" -i "$(TargetPath)" /f
+copy "$(ProjectDir)..\GacUtil.exe" "$(ProjectDir)..\..\..\build\bin\$(Configuration)\"
+copy "$(ProjectDir)..\RegisterToGAC.bat" "$(ProjectDir)..\..\..\build\bin\$(Configuration)\"</PostBuildEvent>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
