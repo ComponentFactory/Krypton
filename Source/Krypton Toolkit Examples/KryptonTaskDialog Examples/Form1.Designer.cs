@@ -75,6 +75,7 @@
             this.paletteProfessional = new System.Windows.Forms.RadioButton();
             this.palette2007Blue = new System.Windows.Forms.RadioButton();
             this.palette2010Blue = new System.Windows.Forms.RadioButton();
+            this.buttonFill = new System.Windows.Forms.Button();
             this.groupBoxBasic.SuspendLayout();
             this.groupBoxFooter.SuspendLayout();
             this.groupBoxCheckBox.SuspendLayout();
@@ -261,6 +262,7 @@
             // 
             // groupBoxBasic
             // 
+            this.groupBoxBasic.Controls.Add(this.buttonFill);
             this.groupBoxBasic.Controls.Add(this.comboBoxIcon);
             this.groupBoxBasic.Controls.Add(this.labelIcon);
             this.groupBoxBasic.Controls.Add(this.labelCaption);
@@ -535,6 +537,16 @@
             this.palette2010Blue.Text = "Office 2010 - Blue";
             this.palette2010Blue.UseVisualStyleBackColor = true;
             this.palette2010Blue.CheckedChanged += new System.EventHandler(this.palette2010Blue_CheckedChanged);
+            //
+            // buttonFill
+            //
+            this.buttonFill.Location = new System.Drawing.Point(64, 136);
+            this.buttonFill.Name = "buttonFill";
+            this.buttonFill.Size = new System.Drawing.Size(40, 23);
+            this.buttonFill.TabIndex = 15;
+            this.buttonFill.Text = "Fill";
+            this.buttonFill.UseVisualStyleBackColor = true;
+            this.buttonFill.Click += new System.EventHandler(this.buttonFill_Click);
             // 
             // Form1
             // 
@@ -615,6 +627,7 @@
         private System.Windows.Forms.RadioButton paletteProfessional;
         private System.Windows.Forms.RadioButton palette2007Blue;
         private System.Windows.Forms.RadioButton palette2010Blue;
-    }
+    private System.Windows.Forms.Button buttonFill;
+  }
 }
 

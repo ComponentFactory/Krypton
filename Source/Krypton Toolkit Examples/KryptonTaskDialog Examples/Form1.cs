@@ -91,5 +91,24 @@ namespace KryptonTaskDialogExamples
             kryptonTaskDialog.FooterIcon = (MessageBoxIcon)Enum.Parse(typeof(MessageBoxIcon), comboBoxFooterIcon.Text);
             kryptonTaskDialog.ShowDialog(this);
         }
+
+        private void buttonFill_Click(object sender, EventArgs e)
+        {
+            var s  = "The quick brown fox jumps over the lazy dog";
+            var e1 = new Random().Next(50, 400);
+            var sb = new StringBuilder().Append(s);
+            for (var i = 0; i < e1; ++i)
+            {
+                sb.AppendFormat("\r\n\r\n{0}", s);
+                if (i % 10 == 0)
+                {
+                    var e2 = new Random().Next(1, 10);
+                    for (var j=0; j < e2; ++j)
+                      sb.AppendFormat(". {0}", s);
+                    sb.Append("\r\n");
+                }
+            }
+            textBoxContent.Text = sb.ToString();
+        }
     }
 }

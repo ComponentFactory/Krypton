@@ -1031,7 +1031,8 @@
   <PropertyGroup>
     <PostBuildEvent>rem "$(ProjectDir)..\GacUtil.exe" -i "$(TargetPath)" /f
 copy "$(ProjectDir)..\GacUtil.exe" "$(ProjectDir)..\..\..\build\bin\$(Configuration)\"
-copy "$(ProjectDir)..\RegisterToGAC.bat" "$(ProjectDir)..\..\..\build\bin\$(Configuration)\"</PostBuildEvent>
+copy "$(ProjectDir)..\RegisterToGAC.bat" "$(ProjectDir)..\..\..\build\bin\$(Configuration)\"
+copy "$(ProjectDir)..\UnRegisterFromGAC.bat" "$(ProjectDir)..\..\..\build\bin\$(Configuration)\"</PostBuildEvent>
   </PropertyGroup>
   <ProjectExtensions>
     <VisualStudio>
