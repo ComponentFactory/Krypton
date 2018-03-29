@@ -16,6 +16,7 @@ using System.Windows.Forms;
 using System.ComponentModel;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Reflection;
 using ComponentFactory.Krypton.Toolkit;
 using Microsoft.Win32;
 
@@ -29,601 +30,518 @@ namespace KryptonExplorer
 
             kryptonNavigator.SelectedIndex = 0;
             kryptonNavigatorToolkit.SelectedIndex = 0;
+            Dir = Path.GetDirectoryName(Assembly.GetEntryAssembly().Location);
+        }
+
+        public string Dir { get; }
+
+        private void run(string filename)
+        {
+            var file = Path.Combine(Dir, filename);
+            if (!File.Exists(file))
+              throw new FileNotFoundException(string.Format("File not found: {0}", file));
+
+            try { Process.Start(file); }
+            catch (Exception e)
+            {
+              KryptonMessageBox.Show(string.Format("Error running {0}\n{1}", filename, e.Message));
+            }
         }
 
         private void linkKryptonBorderEdge_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonBorderEdgeExamples.exe"); }
-            catch { }
+            run("KryptonBorderEdgeExamples.exe");
         }
 
         private void linkKryptonButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonButtonExamples.exe"); }
-            catch { }
+            run("KryptonButtonExamples.exe");
         }
 
         private void linkKryptonCheckBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonCheckBoxExamples.exe"); }
-            catch { }
+            run("KryptonCheckBoxExamples.exe");
         }
 
         private void linkKryptonCheckButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonCheckButtonExamples.exe"); }
-            catch { }
+            run("KryptonCheckButtonExamples.exe");
         }
 
         private void linkKryptonDropButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonDropButtonExamples.exe"); }
-            catch { }
+            run("KryptonDropButtonExamples.exe");
         }
 
         private void linkKryptonColorButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonColorButtonExamples.exe"); }
-            catch { }
+            run("KryptonColorButtonExamples.exe");
         }
 
         private void linkKryptonCheckSet_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonCheckSetExamples.exe"); }
-            catch { }
+            run("KryptonCheckSetExamples.exe");
         }
 
         private void linkKryptonContextMenu_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonContextMenuExamples.exe"); }
-            catch { }
+            run("KryptonContextMenuExamples.exe");
         }
 
         private void linkKryptonDataGridView_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonDataGridViewExamples.exe"); }
-            catch { }
+            run("KryptonDataGridViewExamples.exe");
         }
 
         private void linkKryptonForm_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonFormExamples.exe"); }
-            catch { }
+            run("KryptonFormExamples.exe");
         }
 
         private void linkKryptonGroup_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonGroupExamples.exe"); }
-            catch { }
+            run("KryptonGroupExamples.exe");
         }
 
         private void linkKryptonGroupBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonGroupBoxExamples.exe"); }
-            catch { }
+            run("KryptonGroupBoxExamples.exe");
         }
 
         private void linkKryptonHeader_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonHeaderExamples.exe"); }
-            catch { }
+            run("KryptonHeaderExamples.exe");
         }
 
         private void linkKryptonHeaderGroup_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonHeaderGroupExamples.exe"); }
-            catch { }
+            run("KryptonHeaderGroupExamples.exe");
         }
 
         private void linkKryptonLabel_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonLabelExamples.exe"); }
-            catch { }
+            run("KryptonLabelExamples.exe");
         }
 
         private void linkKryptonWrapLabel_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonWrapLabelExamples.exe"); }
-            catch { }
+            run("KryptonWrapLabelExamples.exe");
         }
 
         private void linkKryptonCommand_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonCommandExamples.exe"); }
-            catch { }
+            run("KryptonCommandExamples.exe");
         }
 
         private void linkKryptonLinkLabel_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonLinkLabelExamples.exe"); }
-            catch { }
+            run("KryptonLinkLabelExamples.exe");
         }
 
         private void linkKryptonListBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonListBoxExamples.exe"); }
-            catch { }
+            run("KryptonListBoxExamples.exe");
         }
 
         private void linkKryptonCheckedListBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonCheckedListBoxExamples.exe"); }
-            catch { }
+            run("KryptonCheckedListBoxExamples.exe");
         }
 
         private void linkKryptonMaskedTextBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonMaskedTextBoxExamples.exe"); }
-            catch { }
+            run("KryptonMaskedTextBoxExamples.exe");
         }
 
         private void linkKryptonPalette_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonPaletteExamples.exe"); }
-            catch { }
+            run("KryptonPaletteExamples.exe");
         }
 
         private void linkKryptonPanel_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonPanelExamples.exe"); }
-            catch { }
+            run("KryptonPanelExamples.exe");
         }
 
         private void linkKryptonSeparator_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonSeparatorExamples.exe"); }
-            catch { }
+            run("KryptonSeparatorExamples.exe");
         }
 
         private void linkKryptonRadioButton_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonRadioButtonExamples.exe"); }
-            catch { }
+            run("KryptonRadioButtonExamples.exe");
         }
 
         private void linkKryptobTrackBar_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonTrackBarExamples.exe"); }
-            catch { }
+            run("KryptonTrackBarExamples.exe");
         }
 
         private void linkKryptonSplitContainer_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonSplitContainerExamples.exe"); }
-            catch { }
+            run("KryptonSplitContainerExamples.exe");
         }
 
         private void linkKryptonComboBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonComboBoxExamples.exe"); }
-            catch { }
+            run("KryptonComboBoxExamples.exe");
         }
 
         private void linkKryptonTextBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonTextBoxExamples.exe"); }
-            catch { }
+            run("KryptonTextBoxExamples.exe");
         }
 
         private void linkKryptonRichTextBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonRichTextBoxExamples.exe"); }
-            catch { }
+            run("KryptonRichTextBoxExamples.exe");
         }
 
         private void linkKryptonNumericUpDown_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonNumericUpDownExamples.exe"); }
-            catch { }
+            run("KryptonNumericUpDownExamples.exe");
         }
 
         private void linkKryptonDomainUpDown_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonDomainUpDownExamples.exe"); }
-            catch { }
+            run("KryptonDomainUpDownExamples.exe");
         }
 
         private void linkKryptonBreadCrumb_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonBreadCrumbExamples.exe"); }
-            catch { }
+            run("KryptonBreadCrumbExamples.exe");
         }
 
         private void linkKryptonDateTimePicker_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonDateTimePickerExamples.exe"); }
-            catch { }
+            run("KryptonDateTimePickerExamples.exe");
         }
 
         private void linkKryptonMonthCalendar_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonMonthCalendarExamples.exe"); }
-            catch { }
+            run("KryptonMonthCalendarExamples.exe");
         }
 
         private void linkKryptonInputBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonInputBoxExamples.exe"); }
-            catch { }
+            run("KryptonInputBoxExamples.exe");
         }
 
         private void linkKryptonMessageBox_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonMessageBoxExamples.exe"); }
-            catch { }
+            run("KryptonMessageBoxExamples.exe");
         }
 
         private void linkKryptonTaskDialog_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonTaskDialogExamples.exe"); }
-            catch { }
+            run("KryptonTaskDialogExamples.exe");
         }
 
         private void linkKryptonTreeView_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonTreeViewExamples.exe"); }
-            catch { }
+            run("KryptonTreeViewExamples.exe");
         }
 
         private void linkInputForm_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\InputForm.exe"); }
-            catch { }
+            run("InputForm.exe");
         }
 
         private void linkThreePaneApplicationBasic_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ThreePaneApplicationBasic.exe"); }
-            catch { }
+            run("ThreePaneApplicationBasic.exe");
         }
 
         private void linkThreePaneApplicationExtended_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ThreePaneApplicationExtended.exe"); }
-            catch { }
+            run("ThreePaneApplicationExtended.exe");
         }
 
         private void linkMDIApplication_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\MDIApplication.exe"); }
-            catch { }
+            run("MDIApplication.exe");
         }
 
         private void linkCustomControlUsingPalettes_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\CustomControlUsingPalettes.exe"); }
-            catch { }
+            run("CustomControlUsingPalettes.exe");
         }
 
         private void linkCustomControlUsingRenderers_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\CustomControlUsingRenderers.exe"); }
-            catch { }
+            run("CustomControlUsingRenderers.exe");
         }
 
         private void linkExpandingSplitters_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ExpandingHeaderGroupsSplitters.exe"); }
-            catch { }
+            run("ExpandingHeaderGroupsSplitters.exe");
         }
 
         private void linkExpandingDockStyle_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ExpandingHeaderGroupsDockStyle.exe"); }
-            catch { }
+            run("ExpandingHeaderGroupsDockStyle.exe");
         }
 
         private void linkExpandingHeaderStack_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ExpandingHeaderGroupsStack.exe"); }
-            catch { }
+            run("ExpandingHeaderGroupsStack.exe");
         }
 
         private void linkChildControlStack_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ChildControlStack.exe"); }
-            catch { }
+            run("ChildControlStack.exe");
         }
 
         private void linkLabelButtonSpecPlayground_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ButtonSpecPlayground.exe"); }
-            catch { }
+            run("ButtonSpecPlayground.exe");
         }
 
         private void linkNavigatorModes_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\NavigatorModes.exe"); }
-            catch { }
+            run("NavigatorModes.exe");
         }
 
         private void linkNavigatorPalettes_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\NavigatorPalettes.exe"); }
-            catch { }
+            run("NavigatorPalettes.exe");
         }
 
         private void linkOrientationAndAlignment_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\OrientationPlusAlignment.exe"); }
-            catch { }
+            run("OrientationPlusAlignment.exe");
         }
 
         private void linkSinglelineAndMultiline_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\SinglelinePlusMultiline.exe"); }
-            catch { }
+            run("SinglelinePlusMultiline.exe");
         }
 
         private void linkTabBorderStyles_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\TabBorderStyles.exe"); }
-            catch { }
+            run("TabBorderStyles.exe");
         }
 
         private void linkNavigatorPopupPages_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\PopupPages.exe"); }
-            catch { }
+            run("PopupPages.exe");
         }
 
         private void linkNavigatorPerTabButtons_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\PerTabButtons.exe"); }
-            catch { }
+            run("PerTabButtons.exe");
         }
 
         private void linkNavigatorTooltips_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\NavigatorToolTips.exe"); }
-            catch { }
+            run("NavigatorToolTips.exe");
         }
 
         private void linkNavigatorContextMenus_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\NavigatorContextMenus.exe"); }
-            catch { }
+            run("NavigatorContextMenus.exe");
         }
 
         private void linkNavigatorPlayground_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\NavigatorPlayground.exe"); }
-            catch { }
+            run("NavigatorPlayground.exe");
         }
 
         private void linkContextualTabs_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ContextualTabs.exe"); }
-            catch { }
+            run("ContextualTabs.exe");
         }
 
         private void linkKeyTipsTabs_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KeyTipsAndKeyboardAccess.exe"); }
-            catch { }
+            run("KeyTipsAndKeyboardAccess.exe");
         }
 
         private void labelAutoShrinkingGroups_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\AutoShrinkingGroups.exe"); }
-            catch { }
+            run("AutoShrinkingGroups.exe");
         }
 
         private void labelQuickAccessToolbar_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\QuickAccessToolbar.exe"); }
-            catch { }
+            run("QuickAccessToolbar.exe");
         }
 
         private void linkRibbonGallery_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\RibbonGallery.exe"); }
-            catch { }
+            run("RibbonGallery.exe");
         }
 
         private void linkRibbonToolTips_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\RibbonToolTips.exe"); }
-            catch { }
+            run("RibbonToolTips.exe");
         }
 
         private void linkRibbonControls_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\RibbonControls.exe"); }
-            catch { }
+            run("RibbonControls.exe");
         }
 
         private void linkKryptonGallery_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonGalleryExamples.exe"); }
-            catch { }
+            run("KryptonGalleryExamples.exe");
         }
 
         private void linkApplicationMenu_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ApplicationMenu.exe"); }
-            catch { }
+            run("ApplicationMenu.exe");
         }
 
         private void linkOutlookMailClone_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\OutlookMailClone.exe"); }
-            catch { }
+            run("OutlookMailClone.exe");
         }
 
         private void linkRibbonAndNavigator_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\RibbonAndNavigatorAndWorkspace.exe"); }
-            catch { }
+            run("RibbonAndNavigatorAndWorkspace.exe");
         }
 
         private void linkMDIRibbon_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\MDIRibbon.exe"); }
-            catch { }
+            run("MDIRibbon.exe");
         }
 
         private void linkExpandingPages_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ExpandingPages.exe"); }
-            catch { }
+            run("ExpandingPages.exe");
         }
 
         private void linkNavigatorBasicEvents_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\BasicEvents.exe"); }
-            catch { }
+            run("BasicEvents.exe");
         }
 
         private void linkNavigatorUserPageCreation_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\UserPageCreation.exe"); }
-            catch { }
+            run("UserPageCreation.exe");
         }
 
         private void linkNavigatorOneNoteTabs_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\OneNoteTabs.exe"); }
-            catch { }
+            run("OneNoteTabs.exe");
         }
 
         private void linkNavigatorOutlookMockup_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\OutlookMockup.exe"); }
-            catch { }
+            run("OutlookMockup.exe");
         }
 
         private void linkWorkspaceCellModes_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\WorkspaceCellModes.exe"); }
-            catch { }
+            run("WorkspaceCellModes.exe");
         }
 
         private void linkWorkspaceCellLayout_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\WorkspaceCellLayout.exe"); }
-            catch { }
+            run("WorkspaceCellLayout.exe");
         }
 
         private void linkWorkspacePersistence_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\WorkspacePersistence.exe"); }
-            catch { }
+            run("WorkspacePersistence.exe");
         }
 
         private void linkCellMaximizeAndRestore_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\CellMaximizeAndRestore.exe"); }
-            catch { }
+            run("CellMaximizeAndRestore.exe");
         }
 
         private void linkBasicPageDragAndDrop_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\BasicPageDragAndDrop.exe"); }
-            catch { }
+            run("BasicPageDragAndDrop.exe");
         }
 
         private void linkAdvancedPageDragAndDrop_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\AdvancedPageDragAndDrop.exe"); }
-            catch { }
+            run("AdvancedPageDragAndDrop.exe");
         }
 
         private void memoEditor_Clicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\MemoEditor.exe"); }
-            catch { }
+            run("MemoEditor.exe");
         }
 
         private void linkStandardDocking_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\StandardDocking.exe"); }
-            catch { }
+            run("StandardDocking.exe");
         }
 
         private void linkMultiControlDocking_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\MultiControlDocking.exe"); }
-            catch { }
+            run("MultiControlDocking.exe");
         }
 
         private void linkExternalDragToDocking_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\ExternalDragToDocking.exe"); }
-            catch { }
+            run("ExternalDragToDocking.exe");
         }
 
 
         private void linkNavigatorAndFloatingWindows_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\NavigatorAndFloatingWindows.exe"); }
-            catch { }
+            run("NavigatorAndFloatingWindows.exe");
         }
 
         private void linkDockingPersistence_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\DockingPersistence.exe"); }
-            catch { }
+            run("DockingPersistence.exe");
         }
 
         private void linkDockingFlags_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\DockingFlags.exe"); }
-            catch { }
+            run("DockingFlags.exe");
         }
 
         private void linkDockingCustomized_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\DockingCustomized.exe"); }
-            catch { }
+            run("DockingCustomized.exe");
         }
 
         private void linkPaletteDesigner_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\PaletteDesigner.exe"); }
-            catch { }
+            run("PaletteDesigner.exe");
         }
 
         private void linkPaletteUpgradeTool_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\PaletteUpgradeTool.exe"); }
-            catch { }
+            run("PaletteUpgradeTool.exe");
         }
 
         private void linkSerialKeys_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@".\KryptonSerialKeys.exe"); }
-            catch { }
+            run("KryptonSerialKeys.exe");
         }
 
         private void linkToolkitChangeList_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@"..\Documents\Krypton Toolkit Change List.doc"); }
-            catch { }
+            run(@"..\Documents\Krypton Toolkit Change List.doc");
         }
 
         private void linkDockingChangeList_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@"..\Documents\Krypton Docking Change List.doc"); }
-            catch { }
+            run(@"..\Documents\Krypton Docking Change List.doc");
         }
 
         private void linkRibbonChangeList_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@"..\Documents\Krypton Ribbon Change List.doc"); }
-            catch { }
+            run(@"..\Documents\Krypton Ribbon Change List.doc");
         }
 
         private void linkNavigatorChangeList_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@"..\Documents\Krypton Navigator Change List.doc"); }
-            catch { }
+            run(@"..\Documents\Krypton Navigator Change List.doc");
         }
 
         private void linkWorkspaceChangeList_LinkClicked(object sender, EventArgs e)
         {
-            try { Process.Start(@"..\Documents\Krypton Workspace Change List.doc"); }
-            catch { }
+            run(@"..\Documents\Krypton Workspace Change List.doc");
         }
 
         private void linkDocumentation_LinkClicked(object sender, EventArgs e)

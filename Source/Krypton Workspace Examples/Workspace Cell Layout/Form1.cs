@@ -185,5 +185,11 @@ namespace WorkspaceCellLayout
 
             return page;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // Create a grid with one cell per page
+            kryptonWorkspace.ApplyGridPages(true, Orientation.Horizontal);
+        }
     }
 }
