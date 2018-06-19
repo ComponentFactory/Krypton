@@ -64,6 +64,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
@@ -226,6 +227,39 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Ribbon\KryptonGalleryActionList.cs" />
+    <Compile Include="Ribbon\KryptonGalleryDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonActionList.cs" />
+    <Compile Include="Ribbon\KryptonRibbonDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupButtonDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupCheckBoxDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupClusterButtonDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupClusterCollectionEditor.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupClusterColorButtonDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupClusterDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupColorButtonDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupComboBoxDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupContainerCollectionEditor.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupCustomControlDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupDateTimePickerDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupDomainUpDownDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupGalleryDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupLabelDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupLinesCollectionEditor.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupLinesDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupMaskedTextBoxDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupNumericUpDownDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupRadioButtonDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupRichTextBoxDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupSeparatorDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupTextBoxDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupTrackBarDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupTripleCollectionEditor.cs" />
+    <Compile Include="Ribbon\KryptonRibbonGroupTripleDesigner.cs" />
+    <Compile Include="Ribbon\KryptonRibbonQATButtonCollectionEditor.cs" />
+    <Compile Include="Ribbon\KryptonRibbonRecentDocCollectionEditor.cs" />
+    <Compile Include="Ribbon\KryptonRibbonTabDesigner.cs" />
     <Compile Include="View Base\ViewRibbonQATOverflowManager.cs" />
     <Compile Include="View Base\ViewRibbonPopupGroupManager.cs" />
     <Compile Include="View Base\ViewRibbonManager.cs" />
