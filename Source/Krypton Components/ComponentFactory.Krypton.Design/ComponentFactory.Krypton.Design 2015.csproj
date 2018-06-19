@@ -66,162 +66,12 @@
     <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Navigator\KryptonNavigatorActionList.cs" />
-    <Compile Include="Navigator\KryptonNavigatorDesigner.cs" />
-    <Compile Include="Navigator\KryptonPageActionList.cs" />
-    <Compile Include="Navigator\KryptonPageDesigner.cs" />
-    <Compile Include="Navigator\KryptonPageFormEditFlags.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Navigator\KryptonPageFormEditFlags.Designer.cs">
-      <DependentUpon>KryptonPageFormEditFlags.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Navigator\NavigatorPageCollectionEditor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Ribbon\KryptonRibbonGroupTrackBarDesigner.cs" />
-    <Compile Include="Ribbon\KryptonGalleryActionList.cs" />
-    <Compile Include="Ribbon\KryptonGalleryDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonActionList.cs" />
-    <Compile Include="Ribbon\KryptonRibbonDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupButtonDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupCheckBoxDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupClusterButtonDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupClusterCollectionEditor.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupClusterColorButtonDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupClusterDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupColorButtonDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupComboBoxDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupContainerCollectionEditor.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupCustomControlDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupDateTimePickerDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupDomainUpDownDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupGalleryDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupLabelDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupLinesCollectionEditor.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupLinesDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupMaskedTextBoxDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupNumericUpDownDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupRadioButtonDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupRichTextBoxDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupSeparatorDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupTextBoxDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupTripleCollectionEditor.cs" />
-    <Compile Include="Ribbon\KryptonRibbonGroupTripleDesigner.cs" />
-    <Compile Include="Ribbon\KryptonRibbonQATButtonCollectionEditor.cs" />
-    <Compile Include="Ribbon\KryptonRibbonRecentDocCollectionEditor.cs" />
-    <Compile Include="Ribbon\KryptonRibbonTabDesigner.cs" />
-    <Compile Include="Toolkit\KryptonTreeViewActionList.cs" />
-    <Compile Include="Toolkit\KryptonTreeViewDesigner.cs" />
-    <Compile Include="Toolkit\KryptonBorderEdgeActionList.cs" />
-    <Compile Include="Toolkit\KryptonBorderEdgeDesigner.cs" />
-    <Compile Include="Toolkit\KryptonBreadCrumbActionList.cs" />
-    <Compile Include="Toolkit\KryptonBreadCrumbDesigner.cs" />
-    <Compile Include="Toolkit\KryptonBreadCrumbItemDesigner.cs" />
-    <Compile Include="Toolkit\KryptonBreadCrumbItemsEditor.cs" />
-    <Compile Include="Toolkit\KryptonButtonActionList.cs" />
-    <Compile Include="Toolkit\KryptonButtonDesigner.cs" />
-    <Compile Include="Toolkit\KryptonCheckBoxActionList.cs" />
-    <Compile Include="Toolkit\KryptonCheckBoxDesigner.cs" />
-    <Compile Include="Toolkit\KryptonCheckButtonActionList.cs" />
-    <Compile Include="Toolkit\KryptonCheckButtonCollectionEditor.cs" />
-    <Compile Include="Toolkit\KryptonCheckButtonCollectionForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Toolkit\KryptonCheckButtonCollectionForm.Designer.cs">
-      <DependentUpon>KryptonCheckButtonCollectionForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Toolkit\KryptonCheckButtonDesigner.cs" />
-    <Compile Include="Toolkit\KryptonCheckedListBoxActionList.cs" />
-    <Compile Include="Toolkit\KryptonCheckedListBoxDesigner.cs" />
-    <Compile Include="Toolkit\KryptonCheckSetActionList.cs" />
-    <Compile Include="Toolkit\KryptonCheckSetDesigner.cs" />
-    <Compile Include="Toolkit\KryptonColorButtonActionList.cs" />
-    <Compile Include="Toolkit\KryptonColorButtonDesigner.cs" />
-    <Compile Include="Toolkit\KryptonComboBoxActionList.cs" />
-    <Compile Include="Toolkit\KryptonComboBoxColumnDesigner.cs" />
-    <Compile Include="Toolkit\KryptonComboBoxDesigner.cs" />
-    <Compile Include="Toolkit\KryptonCommandActionList.cs" />
-    <Compile Include="Toolkit\KryptonCommandDesigner.cs" />
-    <Compile Include="Toolkit\KryptonContextMenuActionList.cs" />
-    <Compile Include="Toolkit\KryptonContextMenuCollectionEditor.cs" />
-    <Compile Include="Toolkit\KryptonContextMenuDesigner.cs" />
-    <Compile Include="Toolkit\KryptonContextMenuItemCollectionEditor.cs" />
-    <Compile Include="Toolkit\KryptonContextMenuItemDesigner.cs" />
-    <Compile Include="Toolkit\KryptonContextMenuItemsDesigner.cs" />
-    <Compile Include="Toolkit\KryptonDateTimePickerActionList.cs" />
-    <Compile Include="Toolkit\KryptonDateTimePickerColumnDesigner.cs" />
-    <Compile Include="Toolkit\KryptonDateTimePickerDesigner.cs" />
-    <Compile Include="Toolkit\KryptonDesignerActionItem.cs" />
-    <Compile Include="Toolkit\KryptonDomainUpDownActionList.cs" />
-    <Compile Include="Toolkit\KryptonDomainUpDownColumnDesigner.cs" />
-    <Compile Include="Toolkit\KryptonDomainUpDownDesigner.cs" />
-    <Compile Include="Toolkit\KryptonDropButtonActionList.cs" />
-    <Compile Include="Toolkit\KryptonDropButtonDesigner.cs" />
-    <Compile Include="Toolkit\KryptonGroupActionList.cs" />
-    <Compile Include="Toolkit\KryptonGroupBoxActionList.cs" />
-    <Compile Include="Toolkit\KryptonGroupBoxDesigner.cs" />
-    <Compile Include="Toolkit\KryptonGroupDesigner.cs" />
-    <Compile Include="Toolkit\KryptonGroupPanelDesigner.cs" />
-    <Compile Include="Toolkit\KryptonHeaderActionList.cs" />
-    <Compile Include="Toolkit\KryptonHeaderDesigner.cs" />
-    <Compile Include="Toolkit\KryptonHeaderGroupActionList.cs" />
-    <Compile Include="Toolkit\KryptonHeaderGroupDesigner.cs" />
-    <Compile Include="Toolkit\KryptonLabelActionList.cs" />
-    <Compile Include="Toolkit\KryptonLabelDesigner.cs" />
-    <Compile Include="Toolkit\KryptonLinkLabelActionList.cs" />
-    <Compile Include="Toolkit\KryptonLinkLabelDesigner.cs" />
-    <Compile Include="Toolkit\KryptonListBoxActionList.cs" />
-    <Compile Include="Toolkit\KryptonListBoxDesigner.cs" />
-    <Compile Include="Toolkit\KryptonManagerActionList.cs" />
-    <Compile Include="Toolkit\KryptonManagerDesigner.cs" />
-    <Compile Include="Toolkit\KryptonMaskedTextBoxActionList.cs" />
-    <Compile Include="Toolkit\KryptonMaskedTextBoxColumnDesigner.cs" />
-    <Compile Include="Toolkit\KryptonMaskedTextBoxDesigner.cs" />
-    <Compile Include="Toolkit\KryptonMonthCalendarActionList.cs" />
-    <Compile Include="Toolkit\KryptonMonthCalendarDesigner.cs" />
-    <Compile Include="Toolkit\KryptonNumericUpDownActionList.cs" />
-    <Compile Include="Toolkit\KryptonNumericUpDownColumnDesigner.cs" />
-    <Compile Include="Toolkit\KryptonNumericUpDownDesigner.cs" />
-    <Compile Include="Toolkit\KryptonPaletteActionList.cs" />
-    <Compile Include="Toolkit\KryptonPaletteDesigner.cs" />
-    <Compile Include="Toolkit\KryptonPanelActionList.cs" />
-    <Compile Include="Toolkit\KryptonPanelDesigner.cs" />
-    <Compile Include="Toolkit\KryptonRadioButtonActionList.cs" />
-    <Compile Include="Toolkit\KryptonRadioButtonDesigner.cs" />
-    <Compile Include="Toolkit\KryptonRichTextBoxActionList.cs" />
-    <Compile Include="Toolkit\KryptonRichTextBoxDesigner.cs" />
-    <Compile Include="Toolkit\KryptonSeparatorActionList.cs" />
-    <Compile Include="Toolkit\KryptonSeparatorDesigner.cs" />
-    <Compile Include="Toolkit\KryptonSplitContainerActionList.cs" />
-    <Compile Include="Toolkit\KryptonSplitContainerBehavior.cs" />
-    <Compile Include="Toolkit\KryptonSplitContainerDesigner.cs" />
-    <Compile Include="Toolkit\KryptonSplitContainerGlyph.cs" />
-    <Compile Include="Toolkit\KryptonSplitterPanelDesigner.cs" />
-    <Compile Include="Toolkit\KryptonTextBoxActionList.cs" />
-    <Compile Include="Toolkit\KryptonTextBoxColumnDesigner.cs" />
-    <Compile Include="Toolkit\KryptonTextBoxDesigner.cs" />
-    <Compile Include="Toolkit\KryptonTrackBarActionList.cs" />
-    <Compile Include="Toolkit\KryptonTrackBarDesigner.cs" />
-    <Compile Include="Toolkit\KryptonWrapLabelActionList.cs" />
-    <Compile Include="Toolkit\KryptonWrapLabelDesigner.cs" />
-    <Compile Include="Toolkit\PaletteDrawBordersEditor.cs" />
-    <Compile Include="Toolkit\PaletteDrawBordersSelector.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Toolkit\PaletteDrawBordersSelector.Designer.cs">
-      <DependentUpon>PaletteDrawBordersSelector.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Workspace\KryptonWorkspaceActionList.cs" />
-    <Compile Include="Workspace\KryptonWorkspaceCellDesigner.cs" />
-    <Compile Include="Workspace\KryptonWorkspaceCollectionEditor.cs" />
-    <Compile Include="Workspace\KryptonWorkspaceDesigner.cs" />
-    <Compile Include="Workspace\KryptonWorkspaceSequenceDesigner.cs" />
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -310,21 +160,9 @@
     <None Include="StrongKrypton.snk" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Navigator\KryptonPageFormEditFlags.resx">
-      <DependentUpon>KryptonPageFormEditFlags.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Toolkit\KryptonCheckButtonCollectionForm.resx">
-      <DependentUpon>KryptonCheckButtonCollectionForm.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Toolkit\PaletteDrawBordersSelector.resx">
-      <DependentUpon>PaletteDrawBordersSelector.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -62,7 +62,9 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.XML" />
   </ItemGroup>
@@ -136,6 +138,17 @@
     <Compile Include="EventArgs\KryptonPageFlagsEventArgs.cs" />
     <Compile Include="General\PageToToolTipMapping.cs" />
     <Compile Include="General\PlatformInvoke.cs" />
+    <Compile Include="Navigator\KryptonNavigatorActionList.cs" />
+    <Compile Include="Navigator\KryptonNavigatorDesigner.cs" />
+    <Compile Include="Navigator\KryptonPageActionList.cs" />
+    <Compile Include="Navigator\KryptonPageDesigner.cs" />
+    <Compile Include="Navigator\KryptonPageFormEditFlags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navigator\KryptonPageFormEditFlags.Designer.cs">
+      <DependentUpon>KryptonPageFormEditFlags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigator\NavigatorPageCollectionEditor.cs" />
     <Compile Include="Page\KryptonPage.cs" />
     <Compile Include="EventArgs\KryptonPageCancelEventArgs.cs" />
     <Compile Include="Page\KryptonPageCollection.cs" />
@@ -230,6 +243,10 @@
     <Compile Include="View Layout\ViewLayoutOutlookFull.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Navigator\KryptonPageFormEditFlags.resx">
+      <DependentUpon>KryptonPageFormEditFlags.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="ToolboxBitmaps\KryptonNavigator.bmp" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <SubType>Designer</SubType>
