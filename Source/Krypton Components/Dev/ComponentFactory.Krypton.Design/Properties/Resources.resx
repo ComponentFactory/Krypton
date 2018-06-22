@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="KryptonBorderEdge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonBorderEdge.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonBreadCrumb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonBreadCrumb.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonBreadCrumbItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonBreadCrumbItem.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonButtonSpec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonButtonSpec.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonCheckBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonCheckBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonCheckButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonCheckButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonCheckedListBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonCheckedListBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonCheckSet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonCheckSet.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonColorButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonColorButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonComboBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonComboBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonCommand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonCommand.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonContextMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonContextMenu.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonContextMenuColorColumns" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonContextMenuColorColumns.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonContextMenuHeading" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonContextMenuHeading.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonContextMenuImageSelect" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonContextMenuImageSelect.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonContextMenuItem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonContextMenuItem.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonContextMenuItems" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonContextMenuItems.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonContextMenuSeparator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonContextMenuSeparator.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonDataGridView" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonDataGridView.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonDateTimePicker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonDateTimePicker.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonDomainUpDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonDomainUpDown.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonDropButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonDropButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonForm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonForm.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonGroup.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonGroupBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonGroupBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonGroupPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonGroupPanel.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonHeader" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonHeader.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonHeaderGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonHeaderGroup.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonLabel.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonLinkLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonLinkLabel.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonListBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonListBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonManager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonManager.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonMaskedTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonMaskedTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonMonthCalendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonMonthCalendar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonNumericUpDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonNumericUpDown.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonPalette" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonPalette.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonPanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonPanel.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRadioButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRadioButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRichTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRichTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonSeparator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonSeparator.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonSplitContainer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonSplitContainer.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonWrapLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonWrapLabel.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_down_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_down_blue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_up_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow_up_blue.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete2.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Empty16x16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Empty16x16.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoveFirst" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoveFirst.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoveLast" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoveLast.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MoveNext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MoveNext.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MovePrevious" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MovePrevious.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonContext" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonContext.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroup" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroup.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupCheckBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupCheckBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupCluster" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupCluster.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupClusterButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupClusterButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupClusterColorButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupClusterColorButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupColorButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupColorButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupComboBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupComboBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupCustomControl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupCustomControl.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupDateTimePicker" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupDateTimePicker.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupDomainUpDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupDomainUpDown.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupLabel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupLabel.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupLines" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupLines.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupMaskedTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupMaskedTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupNumericUpDown" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupNumericUpDown.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupRadioButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupRadioButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupRichTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupRichTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupSeparator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupSeparator.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupTextBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupTextBox.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonGroupTriple" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupTriple.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonQATButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonQATButton.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonRecentDoc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonRecentDoc.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonRibbonTab" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonTab.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KryptonGallery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonGallery.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="KryptonRibbonGroupTrackBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KryptonRibbonGroupTrackBar.bmp;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

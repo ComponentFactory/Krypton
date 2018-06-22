@@ -1,1 +1,0 @@
-S:\Source Code\GitHub\Krypton Dev\Source\Krypton Components\ComponentFactory.Krypton.Docking\obj\Debug\ComponentFactory.Krypton.Docking 2015.csprojAssemblyReference.cache
