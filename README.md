@@ -11,6 +11,7 @@ I developed and sold them from my company Component Factory from 2006 until 2014
 
 # Using with Visual Studio #
  - Start **Visual Studio** and create/open your Windows Forms project
+ - Add a reference to **ComponentFactory.Krypton.Design.dll** to your Windows Forms project (otherwise the components will **not** work as expected!)
  - Open the main Form of your application and show the **Toolbox**
  - Right click the **Toolbox** and **Add Tab**, give it the name **Krypton**
  - Right click inside the new tab and select **Choose Toolbox Items**
