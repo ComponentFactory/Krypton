@@ -1,1 +1,0 @@
-S:\Source Code\GitHub\Krypton Dev\build\obj\ComponentFactory.Krypton.Navigator\Debug\ComponentFactory.Krypton.Navigator 2015.csprojAssemblyReference.cache
