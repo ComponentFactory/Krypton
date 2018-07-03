@@ -84,6 +84,110 @@ namespace ComponentFactory.Krypton.Toolkit
         private static readonly Cursor _cursorVSplit = Properties.Resources.SplitVertical;
         private static readonly Cursor _cursorHMove = Cursors.SizeNS;
         private static readonly Cursor _cursorVMove = Cursors.SizeWE;
+		
+		/// <summary>
+        /// This class has been created to remove the function
+        /// ControlPaint.FillReversibleRectangle(drawRect, Color.Black);
+        /// I have continued to have artifacts drawn on the screen
+        /// when dragging splitter bars.
+        /// 
+        /// Code courtesy of James Simms (https://github.com/jwsimms)
+        /// </summary>
+		public class DragObject
+		{
+			#region Variables
+			private static Color _barColor = Color.Red;
+			
+			private static Control _ctrl = null;
+			
+			private static ViewBase _target = null;
+            
+			private static Control _parent = null;
+			#endregion
+			
+			public static void Hide()
+            {
+                if (_ctrl != null)
+                {
+                    _ctrl.Hide();
+
+                    _ctrl.Parent.Controls.Remove(_ctrl);
+
+                    _ctrl.Dispose();
+
+                    _ctrl = null;
+
+                    _parent = null;
+
+                    _target = null;
+
+                }
+            }
+
+            public static void Show(ViewBase target, Rectangle screenRect)
+            {
+                //
+                // If for some reason, our target has changed, remove old control
+                //
+                if (_target != null)
+                {
+                    if (_target != target)
+                    {
+                        Hide();
+                    }
+                }
+
+                //
+                // Create dragbar control
+                //                                
+                if (_ctrl == null)
+                {
+                    _ctrl = new Control() { Visible = false, BackColor = _barColour };
+
+                    //
+                    // Get parent of dragbar control. Find a parent that
+                    // supports children. Some controls have read only 
+                    // child collections.
+                    //
+                    _parent = target.OwningControl;
+
+                    while (_parent != null)
+                    {
+
+                        try
+                        {
+                            _ctrl.Parent = _parent;
+
+                            _parent.Controls.Add(_ctrl);
+
+                            break;
+                        }
+                        catch (NotSupportedException)
+                        {
+                            _parent = _parent.Parent;
+                        }
+                    }
+                }
+
+                //
+                // Position dragbar control
+                //
+                Rectangle rect = _parent.RectangleToClient(screenRect);
+
+                _ctrl.Location = rect.Location;
+
+                _ctrl.Size = rect.Size;
+
+                _ctrl.BringToFront();
+
+                if (_ctrl.Visible == false)
+                {
+                    _ctrl.Show();
+                }
+
+                _ctrl.Invalidate();
+            }
+		}
         #endregion
 
         #region Instance Fields
@@ -470,70 +574,92 @@ namespace ComponentFactory.Krypton.Toolkit
 
         private void DrawSplitIndicator(Point newPoint)
         {
-            if (_drawIndicator)
-            {
-                if (_movementPoint == _nullPoint)
-                {
-                    // If there is nothing old to remove...
-                    if (newPoint != _nullPoint)
-                    {
-                        // And there is something new to show, then just draw it
-                        DrawSplitIndicator(SplitRectangleFromPoint(newPoint));
-                    }
-                }
-                else if (newPoint == _nullPoint)
-                {
-                    // If there is nothing new to draw...
-                    if (_movementPoint != _nullPoint)
-                    {
-                        // And there is something old still showing, then remove it
-                        DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint));
-                    }
-                }
-                else if (_movementPoint != newPoint)
-                {
-                    // There is a delta change to draw based on the orientation
-                    if (_separatorOrientation == Orientation.Vertical)
-                    {
-                        // Find the absolute different in positions
-                        int delta = Math.Abs(_movementPoint.X - newPoint.X);
-
-                        // If they do not actually overlap...
-                        if (delta >= Target.ClientWidth)
+			if (DrawMoveIndicator)
+			{
+				if (newPoint == _nullPoint)
+				{
+					DragObject.Hide();
+				}
+				else
+				{
+					if (_movementPoint == _nullPoint)
+					{
+                        // If there is nothing old to remove...
+                        if (newPoint != _nullPoint)
                         {
-                            // Then we just remove the old indicator and draw the new one
-                            DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint));
-                            DrawSplitIndicator(SplitRectangleFromPoint(newPoint));
+                            DragObject.Show(Target, SplitRectangleFromPoint(newPoint));
                         }
-                        else
-                        {
-                            // Draw the areas that do not overlap
-                            DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint, newPoint.X - _movementPoint.X));
-                            DrawSplitIndicator(SplitRectangleFromPoint(new Point(_movementPoint.X + Target.ClientWidth, _movementPoint.Y), newPoint.X - _movementPoint.X));
-                        }
-                    }
+					}
                     else
                     {
-                        // Find the absolute different in positions
-                        int delta = Math.Abs(_movementPoint.Y - newPoint.Y);
-
-                        // If they do not actually overlap...
-                        if (delta >= Target.ClientHeight)
-                        {
-                            // Then we just remove the old indicator and draw the new one
-                            DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint));
-                            DrawSplitIndicator(SplitRectangleFromPoint(newPoint));
-                        }
-                        else
-                        {
-                            // Draw the areas that do not overlap
-                            DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint, newPoint.Y - _movementPoint.Y));
-                            DrawSplitIndicator(SplitRectangleFromPoint(new Point(_movementPoint.X, _movementPoint.Y + Target.ClientHeight), newPoint.Y - _movementPoint.Y));
-                        }
+                        DragObject.Show(Target, SplitRectangleFromPoint(newPoint));
                     }
-                }
-            }
+					
+					/* if (_drawIndicator)
+					{
+						if (_movementPoint == _nullPoint)
+						{
+							// If there is nothing old to remove...
+							if (newPoint != _nullPoint)
+							{
+								// And there is something new to show, then just draw it
+								DrawSplitIndicator(SplitRectangleFromPoint(newPoint));
+							}
+						}
+						else if (newPoint == _nullPoint)
+						{
+							// If there is nothing new to draw...
+							if (_movementPoint != _nullPoint)
+							{
+								// And there is something old still showing, then remove it
+								DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint));
+							}
+						}
+						else if (_movementPoint != newPoint)
+						{
+							// There is a delta change to draw based on the orientation
+							if (_separatorOrientation == Orientation.Vertical)
+							{
+								// Find the absolute different in positions
+								int delta = Math.Abs(_movementPoint.X - newPoint.X);
 
+								// If they do not actually overlap...
+								if (delta >= Target.ClientWidth)
+								{
+									// Then we just remove the old indicator and draw the new one
+									DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint));
+									DrawSplitIndicator(SplitRectangleFromPoint(newPoint));
+								}
+								else
+								{
+									// Draw the areas that do not overlap
+									DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint, newPoint.X - _movementPoint.X));
+									DrawSplitIndicator(SplitRectangleFromPoint(new Point(_movementPoint.X + Target.ClientWidth, _movementPoint.Y), newPoint.X - _movementPoint.X));
+								}
+							}
+							else
+							{
+								// Find the absolute different in positions
+								int delta = Math.Abs(_movementPoint.Y - newPoint.Y);
+
+								// If they do not actually overlap...
+								if (delta >= Target.ClientHeight)
+								{
+									// Then we just remove the old indicator and draw the new one
+									DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint));
+									DrawSplitIndicator(SplitRectangleFromPoint(newPoint));
+								}
+								else
+								{
+									// Draw the areas that do not overlap
+									DrawSplitIndicator(SplitRectangleFromPoint(_movementPoint, newPoint.Y - _movementPoint.Y));
+									DrawSplitIndicator(SplitRectangleFromPoint(new Point(_movementPoint.X, _movementPoint.Y + Target.ClientHeight), newPoint.Y - _movementPoint.Y));
+								}
+							}
+						}
+					} */
+				}
+			}
             // Remember the point used for last draw cycle
             _movementPoint = newPoint;
         }
