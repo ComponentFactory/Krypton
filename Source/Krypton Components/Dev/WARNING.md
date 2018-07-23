@@ -1,3 +1,0 @@
-## WARNING!
-
-This version is meant to decouple the `ComponentFactory.Krypton.Design.dll` from the rest of the toolkit. This is to allow the user to drag components onto a form like any other standard control without relying on `ComponentFactory.Krypton.Design.dll`. In its present state, this version **will not** compile due to deep, hard-coded intergration of `ComponentFactory.Krypton.Design.dll`. It is highly recommended that you use the normal toolkit.
