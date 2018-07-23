@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B574C472-97B7-43C6-AC79-0BE2640B8A3F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OutlookMailClone</RootNamespace>
+    <AssemblyName>OutlookMailClone</AssemblyName>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Ribbon, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\ComponentFactory.Krypton.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+    <None Include="Resources\FollowUp.png" />
+    <None Include="Resources\FollowUp.bmp" />
+    <None Include="Resources\AppMenuPrintStyles.PNG" />
+    <None Include="Resources\AppMenuPrintPreview.PNG" />
+    <None Include="Resources\AppMenuMemoStyle.PNG" />
+    <None Include="Resources\AppMenuQuickPrint.PNG" />
+    <None Include="Resources\AppMenuSaveAs.png" />
+    <None Include="Resources\AppMenuSave.png" />
+    <None Include="Resources\AppMenuProperties.png" />
+    <None Include="Resources\AppMenuPrint.png" />
+    <None Include="Resources\AppMenuNewMailMessage.png" />
+    <None Include="Resources\AppMenuMove.png" />
+    <None Include="Resources\AppMenuDelete.png" />
+    <None Include="Resources\AppMenuClose.png" />
+    <None Include="Resources\AppMenuSendMessage.png" />
+    <None Include="Resources\ApplyStyles.png" />
+    <None Include="Resources\StyleSet.png" />
+    <None Include="Resources\AllBorder.png" />
+    <None Include="Resources\ViewGridlines.png" />
+    <None Include="Resources\TopBorder.png" />
+    <None Include="Resources\RightBorder.png" />
+    <None Include="Resources\OutsideBorder.png" />
+    <None Include="Resources\NoBorder.png" />
+    <None Include="Resources\LeftBorder.png" />
+    <None Include="Resources\InsideVertBorder.png" />
+    <None Include="Resources\InsideHorzBorder.png" />
+    <None Include="Resources\InsideBorder.png" />
+    <None Include="Resources\HorizontalLineSmall1.png" />
+    <None Include="Resources\DiagonalUpBorder.png" />
+    <None Include="Resources\DiagonalDownBorder.png" />
+    <None Include="Resources\BottomBorder1.png" />
+    <None Include="Resources\BordersAndShading.png" />
+    <None Include="Resources\SpacingOneHalf.png" />
+    <None Include="Resources\SpacingOne.png" />
+    <None Include="Resources\SpacingDouble.png" />
+    <None Include="Resources\SpacingParagraph.png" />
+    <None Include="Resources\SelectSmall.png" />
+    <None Include="Resources\FindSmall.png" />
+    <None Include="Resources\FindReplaceSmall.png" />
+    <None Include="Resources\ZoomLarge.png" />
+    <None Include="Resources\QuickStyles.png" />
+    <None Include="Resources\ChangeStyles.png" />
+    <None Include="Resources\TextSubscript.png" />
+    <None Include="Resources\TextStrikeout.png" />
+    <None Include="Resources\TextShowHideMarkup.png" />
+    <None Include="Resources\TextJustify.png" />
+    <None Include="Resources\TextChangeCase.png" />
+    <None Include="Resources\SortAscending.png" />
+    <None Include="Resources\Shading.png" />
+    <None Include="Resources\MultiLevelList.png" />
+    <None Include="Resources\LineSpacing.png" />
+    <None Include="Resources\BottomBorder.png" />
+    <None Include="Resources\TextSuperscript.png" />
+    <None Include="Resources\OtherFolderSmall.png" />
+    <None Include="Resources\SaveThemesSmall.png" />
+    <None Include="Resources\BrowseThemesSmall.png" />
+    <None Include="Resources\FieldsSmall.png" />
+    <None Include="Resources\TrackingSmall.png" />
+    <None Include="Resources\ThemesSmall.png" />
+    <None Include="Resources\SendRepliesToSmall.png" />
+    <None Include="Resources\MoreOptionsSmall.png" />
+    <None Include="Resources\DelayDeliverySmall.png" />
+    <None Include="Resources\ShowFromLarge.png" />
+    <None Include="Resources\ShowBccLarge.png" />
+    <None Include="Resources\SaveSentItemLarge.png" />
+    <None Include="Resources\RichTextSmall.png" />
+    <None Include="Resources\PlainTextSmall.png" />
+    <None Include="Resources\PageColorLarge.png" />
+    <None Include="Resources\HTMLSmall.png" />
+    <None Include="Resources\DirectRepliesToLarge.png" />
+    <None Include="Resources\DelayDeliveryLarge.png" />
+    <None Include="Resources\UseVotingButtonsLarge.png" />
+    <None Include="Resources\ThemesLarge.png" />
+    <None Include="Resources\FontsSmall.png" />
+    <None Include="Resources\EffectsSmall.png" />
+    <None Include="Resources\ColorsSmall.png" />
+    <None Include="Resources\HelpSmall.png" />
+    <None Include="Resources\TableSmall.png" />
+    <None Include="Resources\TableDrawSmall.png" />
+    <None Include="Resources\ExcelSpreadsheetSmall.png" />
+    <None Include="Resources\DrawingCanvasSmall.png" />
+    <None Include="Resources\TextBoxSmall.png" />
+    <None Include="Resources\SymbolSmall.png" />
+    <None Include="Resources\SmartArtSmall.png" />
+    <None Include="Resources\ShapesSmall.png" />
+    <None Include="Resources\QuickPartsSmall.png" />
+    <None Include="Resources\ObjectSmall.png" />
+    <None Include="Resources\HyperlinkSmall.png" />
+    <None Include="Resources\HorizontalLineSmall.png" />
+    <None Include="Resources\EquationSmall.png" />
+    <None Include="Resources\DropCapSmall.png" />
+    <None Include="Resources\DateTimeSmall.png" />
+    <None Include="Resources\ChartSmall.png" />
+    <None Include="Resources\BookmarkSmall.png" />
+    <None Include="Resources\WordArtSmall.png" />
+    <None Include="Resources\TextBoxLarge.png" />
+    <None Include="Resources\TablesLarge.png" />
+    <None Include="Resources\SymbolLarge.png" />
+    <None Include="Resources\SmartArtLarge.png" />
+    <None Include="Resources\ShapesLarge.png" />
+    <None Include="Resources\QuickPartsLarge.png" />
+    <None Include="Resources\PicturesLarge.png" />
+    <None Include="Resources\HyperlinkLarge.png" />
+    <None Include="Resources\HorizontalLineLarge.png" />
+    <None Include="Resources\EquationLarge.png" />
+    <None Include="Resources\ClipArtLarge.png" />
+    <None Include="Resources\ChartLarge.png" />
+    <None Include="Resources\BookmarkLarge.png" />
+    <None Include="Resources\WordArtLarge.png" />
+    <None Include="Resources\FormPublishSmall.png" />
+    <None Include="Resources\FormDesignThisForm.png" />
+    <None Include="Resources\FormDesignAForm.png" />
+    <None Include="Resources\CodeVisualBasic.png" />
+    <None Include="Resources\CodeMacros.png" />
+    <None Include="Resources\FormPublish.png" />
+    <None Include="Resources\QATSaveSmall.png" />
+    <None Include="Resources\QATRedoSmall.png" />
+    <None Include="Resources\QATQuickPrintSmall.png" />
+    <None Include="Resources\QATForwardSmall.png" />
+    <None Include="Resources\QATDeleteSmall.png" />
+    <None Include="Resources\QATUndoSmall.png" />
+    <None Include="Resources\OptionsToday.png" />
+    <None Include="Resources\OptionsWeek.png" />
+    <None Include="Resources\OptionsTomorrow.png" />
+    <None Include="Resources\OptionsReminder.png" />
+    <None Include="Resources\ProofingWordCountSmall.png" />
+    <None Include="Resources\ProofingTransScreentipSmall.png" />
+    <None Include="Resources\ProofingTranslateSmall.png" />
+    <None Include="Resources\ProofingThesaurusSmall.png" />
+    <None Include="Resources\ProofingSpellingSmall.png" />
+    <None Include="Resources\proofingSetLanguageSmall.png" />
+    <None Include="Resources\ProofingResearchSmall.png" />
+    <None Include="Resources\OptionsLowImportance.png" />
+    <None Include="Resources\OptionsHighImportance.png" />
+    <None Include="Resources\OptionsFollowUpSmall.png" />
+    <None Include="Resources\OptionsFollowUp.png" />
+    <None Include="Resources\ProofingSpelling.png" />
+    <None Include="Resources\IncludeCalendar.png" />
+    <None Include="Resources\IncludeCalendarSmall.png" />
+    <None Include="Resources\IncludeBusinessCardSmall.png" />
+    <None Include="Resources\IncludeAttachItemSmall.png" />
+    <None Include="Resources\IncludeAttachFileSmall.png" />
+    <None Include="Resources\IncludeSignatureSmall.png" />
+    <None Include="Resources\NamesGroup.png" />
+    <None Include="Resources\IncludeAttachFile.png" />
+    <None Include="Resources\IncludeBusinessCard.png" />
+    <None Include="Resources\IncludeAttachItem.png" />
+    <None Include="Resources\IncludeSignature.png" />
+    <None Include="Resources\NamesAddressBook.png" />
+    <None Include="Resources\NamesCheckNames.png" />
+    <None Include="Resources\TextTabLeft.png" />
+    <None Include="Resources\TextAlignRight.png" />
+    <None Include="Resources\TextAlignLeft.png" />
+    <None Include="Resources\TextAlignCenter.png" />
+    <None Include="Resources\TextTabRight.png" />
+    <None Include="Resources\TextItalics.png" />
+    <None Include="Resources\TextRubout.png" />
+    <None Include="Resources\TextFontSmaller.png" />
+    <None Include="Resources\TextFontLarger.png" />
+    <None Include="Resources\TextColor.png" />
+    <None Include="Resources\TextBulletPoints.png" />
+    <None Include="Resources\TextBulletNumbers.png" />
+    <None Include="Resources\TextBold.png" />
+    <None Include="Resources\TextBackColor.png" />
+    <None Include="Resources\TextUnderline.png" />
+    <None Include="Resources\ClipboardPasteSmall.png" />
+    <None Include="Resources\ClipboardPasteSpecial.png" />
+    <None Include="Resources\ClipboardFormatPainter.png" />
+    <None Include="Resources\ClipboardCut.png" />
+    <None Include="Resources\ClipboardCopy.png" />
+    <None Include="Resources\ClipboardPaste.png" />
+    <None Include="Resources\SendMail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
