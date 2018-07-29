@@ -9,12 +9,11 @@
 // *****************************************************************************
 
 using System;
-using System.Text;
+using System.Diagnostics;
 using System.Drawing;
-using System.Windows.Forms;
 using System.Security;
 using System.Security.Permissions;
-using System.Diagnostics;
+using System.Windows.Forms;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
@@ -76,7 +75,7 @@ namespace ComponentFactory.Krypton.Toolkit
 	/// </summary>
     public class SeparatorController : ButtonController,
                                        IDisposable
-                                       
+
     {
         #region Static Fields
         private static readonly Point _nullPoint = new Point(-1, -1);
@@ -84,6 +83,48 @@ namespace ComponentFactory.Krypton.Toolkit
         private static readonly Cursor _cursorVSplit = Properties.Resources.SplitVertical;
         private static readonly Cursor _cursorHMove = Cursors.SizeNS;
         private static readonly Cursor _cursorVMove = Cursors.SizeWE;
+
+        /// <summary>
+        /// This class has been created to remove the function
+        /// ControlPaint.FillReversibleRectangle(drawRect, Color.Black);
+        /// I have continued to have artifacts drawn on the screen
+        /// when dragging splitter bars.
+        /// 
+        /// Code courtesy of James Simms (https://github.com/jwsimms)
+        /// </summary>
+        public class DragObject
+        {
+            #region Variables
+            private static KryptonPalette _palette = new KryptonPalette();
+
+            // Note: At some point, use palette colors!
+            private static Color _barColor = Color.Red;
+
+            private static Control _control = null, _parent = null;
+
+            private static ViewBase _target = null;
+            #endregion
+
+            #region Methods
+            public static void Hide()
+            {
+                if (_control != null)
+                {
+                    _control.Hide();
+
+                    _control.Parent.Controls.Remove(_control);
+
+                    _control.Dispose();
+
+                    _control = null;
+
+                    _parent = null;
+
+                    _target = null;
+                }
+            }
+            #endregion
+        }
         #endregion
 
         #region Instance Fields
@@ -108,29 +149,29 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <param name="splitCursors">Show as split or movement cursors.</param>
         /// <param name="drawIndicator">Draw a separator indicator.</param>
         /// <param name="needPaint">Delegate for notifying paint requests.</param>
-        public SeparatorController(ISeparatorSource source, 
+        public SeparatorController(ISeparatorSource source,
                                    ViewBase target,
                                    bool splitCursors,
                                    bool drawIndicator,
                                    NeedPaintHandler needPaint)
             : base(target, needPaint)
-		{
+        {
             Debug.Assert(source != null);
 
             _source = source;
             _splitCursors = splitCursors;
             _drawIndicator = drawIndicator;
-		}
+        }
 
-		/// <summary>
-		/// Dispose of object resources.
-		/// </summary>
+        /// <summary>
+        /// Dispose of object resources.
+        /// </summary>
         public void Dispose()
         {
             UnregisterFilter();
         }
         #endregion
-        
+
         #region Public
         /// <summary>
         /// Gets and sets the drawing of the movement indicator.
@@ -149,7 +190,7 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <param name="c">Reference to the source control instance.</param>
         /// <param name="pt">Mouse position relative to control.</param>
 		public override void MouseMove(Control c, Point pt)
-		{
+        {
             // If the separator is allowed to be moved by the user
             if (_source.SeparatorCanMove)
             {
@@ -174,7 +215,7 @@ namespace ComponentFactory.Krypton.Toolkit
 
             // Let base class do standard processing
             base.MouseMove(c, pt);
-		}
+        }
 
         /// <summary>
         /// Mouse button has been pressed in the view.
@@ -266,7 +307,7 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <param name="c">Reference to the source control instance.</param>
         /// <param name="next">Reference to view that is next to have the mouse.</param>
         public override void MouseLeave(Control c, ViewBase next)
-		{
+        {
             // If leaving when currently moving, then abort the movement
             if (_moving)
                 AbortMoving();
@@ -277,7 +318,7 @@ namespace ComponentFactory.Krypton.Toolkit
             // Let base class do standard processing
             base.MouseLeave(c, next);
         }
-		#endregion
+        #endregion
 
         #region Key Notifications
         /// <summary>
@@ -424,11 +465,11 @@ namespace ComponentFactory.Krypton.Toolkit
         /// </summary>
         protected override bool IsOnlyPressedWhenOver
         {
-            get 
-            { 
+            get
+            {
                 // We want the separator to have the pressed look event when 
                 // the mouse is pressed by moved outside the separator rectangle
-                return false; 
+                return false;
             }
             set { }
         }

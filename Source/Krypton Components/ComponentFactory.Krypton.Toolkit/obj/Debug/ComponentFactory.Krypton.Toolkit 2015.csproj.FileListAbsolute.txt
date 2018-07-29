@@ -1,0 +1,1 @@
+S:\Source Code\GitHub\Krypton Wagnerp\Source\Krypton Components\ComponentFactory.Krypton.Toolkit\obj\Debug\ComponentFactory.Krypton.Toolkit 2015.csprojResolveAssemblyReference.cache
