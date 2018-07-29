@@ -123,6 +123,78 @@ namespace ComponentFactory.Krypton.Toolkit
                     _target = null;
                 }
             }
+
+            /// <summary>
+            /// Shows the specified target.
+            /// </summary>
+            /// <param name="target">The target.</param>
+            /// <param name="screenRect">The screen rect.</param>
+            public static void Show(ViewBase target, Rectangle screenRect)
+            {
+                //
+                // If for some reason, our target has changed, remove old control
+                //
+                if (_target != null)
+                {
+                    if (_target != target)
+                    {
+                        Hide();
+                    }
+                }
+
+                //
+                // Create dragbar control
+                //                                
+                if (_control == null)
+                {
+                    _control = new Control() { Visible = false, BackColor = _barColor };
+
+                    //
+                    // Get parent of dragbar control. Find a parent that
+                    // supports children. Some controls have read only 
+                    // child collections.
+                    //
+                    _parent = target.OwningControl;
+
+                    while (_parent != null)
+                    {
+
+                        try
+                        {
+                            _control.Parent = _parent;
+
+                            _parent.Controls.Add(_control);
+
+                            break;
+                        }
+                        catch (NotSupportedException)
+                        {
+                            _parent = _parent.Parent;
+                        }
+                    }
+                }
+
+                //
+                // Position dragbar control
+                //
+                Rectangle rect = _parent.RectangleToClient(screenRect);
+
+                _control.Location = rect.Location;
+
+                _control.Size = rect.Size;
+
+                _control.BringToFront();
+
+                if (_control.Visible == false)
+                {
+                    _control.Show();
+                }
+
+                //
+                // Force a redraw
+                //
+                _control.Invalidate();
+            }
             #endregion
         }
         #endregion
@@ -511,7 +583,33 @@ namespace ComponentFactory.Krypton.Toolkit
 
         private void DrawSplitIndicator(Point newPoint)
         {
-            if (_drawIndicator)
+            if (DrawMoveIndicator)
+            {
+                if (newPoint == _nullPoint)
+                {
+                    DragObject.Hide();
+                }
+                else
+                {
+                    if (_movementPoint == _nullPoint)
+                    {
+                        // If there is nothing old to remove...
+                        if (newPoint != _nullPoint)
+                        {
+                            DragObject.Show(Target, SplitRectangleFromPoint(newPoint));
+                        }
+                    }
+                    else
+                    {
+                        DragObject.Show(Target, SplitRectangleFromPoint(newPoint));
+                    }
+                }
+                // Remember the point used for last draw cycle
+                _movementPoint = newPoint;
+            }
+
+            #region Old Code
+            /*if (_drawIndicator)
             {
                 if (_movementPoint == _nullPoint)
                 {
@@ -576,7 +674,8 @@ namespace ComponentFactory.Krypton.Toolkit
             }
 
             // Remember the point used for last draw cycle
-            _movementPoint = newPoint;
+            _movementPoint = newPoint;*/
+            #endregion
         }
 
         private Rectangle SplitRectangleFromPoint(Point pt)
