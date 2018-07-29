@@ -1,0 +1,11 @@
+"$(ProjectDir)..\GacUtil.exe" -i "$(TargetPath)" /f (Design argument)
+
+"$(ProjectDir)..\GacUtil.exe" -i "$(TargetPath)" /f (Docking argument)
+
+"$(ProjectDir)..\GacUtil.exe" -i "$(TargetPath)" /f (Navigator argument)
+
+"$(ProjectDir)..\GacUtil.exe" -i "$(TargetPath)" /f (Ribbon argument)
+
+"$(ProjectDir)..\GacUtil.exe" -i "$(TargetPath)" /f (Toolkit argument)
+
+"$(ProjectDir)..\GacUtil.exe" -i "$(TargetPath)" /f (Workspace argument)
