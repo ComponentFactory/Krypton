@@ -1,3 +1,8 @@
+# Update: 3rd Oct 2018 #
+ - Projects changed to use .NET Framework 4
+ - Bin folder readded with already compiled assemblies
+ - Separator control drawing issues fixed
+
 # Krypton Suite of .NET WinForms Controls
 The Krypton Suite of .NET WinForms controls are now freely available for use in personal or commerical projects.
 
