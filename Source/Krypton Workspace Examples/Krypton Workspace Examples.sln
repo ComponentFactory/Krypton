@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Advanced Page Drag + Drop", "Advanced Page Drag + Drop\Advanced Page Drag + Drop.csproj", "{4DF0E5C8-9664-4FB3-B078-50616BFDB3E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basic Page Drag + Drop", "Basic Page Drag + Drop\Basic Page Drag + Drop.csproj", "{0F370DDE-5C67-4083-94CC-43E1A45A2C05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cell Maximize + Restore", "Cell Maximize + Restore\Cell Maximize + Restore.csproj", "{E7548846-1CC2-4A25-83AA-F95E22493FB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memo Editor", "Memo Editor\Memo Editor.csproj", "{A2A75DDB-6CC2-4E80-AE53-B2DF43B05255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workspace Cell Layout", "Workspace Cell Layout\Workspace Cell Layout.csproj", "{E5AAE9B7-FFFD-43B4-B95F-D3F72A637342}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workspace Cell Modes", "Workspace Cell Modes\Workspace Cell Modes.csproj", "{3A6E739B-22C7-4C4A-8CE5-9E6D1FEAE368}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workspace Persistence", "Workspace Persistence\Workspace Persistence.csproj", "{A4E69B3D-4DA3-4EAE-BBA4-78BF9C7FCE5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4DF0E5C8-9664-4FB3-B078-50616BFDB3E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF0E5C8-9664-4FB3-B078-50616BFDB3E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF0E5C8-9664-4FB3-B078-50616BFDB3E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF0E5C8-9664-4FB3-B078-50616BFDB3E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F370DDE-5C67-4083-94CC-43E1A45A2C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F370DDE-5C67-4083-94CC-43E1A45A2C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F370DDE-5C67-4083-94CC-43E1A45A2C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F370DDE-5C67-4083-94CC-43E1A45A2C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7548846-1CC2-4A25-83AA-F95E22493FB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7548846-1CC2-4A25-83AA-F95E22493FB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7548846-1CC2-4A25-83AA-F95E22493FB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7548846-1CC2-4A25-83AA-F95E22493FB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A75DDB-6CC2-4E80-AE53-B2DF43B05255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A75DDB-6CC2-4E80-AE53-B2DF43B05255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A75DDB-6CC2-4E80-AE53-B2DF43B05255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A75DDB-6CC2-4E80-AE53-B2DF43B05255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5AAE9B7-FFFD-43B4-B95F-D3F72A637342}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5AAE9B7-FFFD-43B4-B95F-D3F72A637342}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5AAE9B7-FFFD-43B4-B95F-D3F72A637342}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5AAE9B7-FFFD-43B4-B95F-D3F72A637342}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A6E739B-22C7-4C4A-8CE5-9E6D1FEAE368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A6E739B-22C7-4C4A-8CE5-9E6D1FEAE368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A6E739B-22C7-4C4A-8CE5-9E6D1FEAE368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A6E739B-22C7-4C4A-8CE5-9E6D1FEAE368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E69B3D-4DA3-4EAE-BBA4-78BF9C7FCE5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E69B3D-4DA3-4EAE-BBA4-78BF9C7FCE5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E69B3D-4DA3-4EAE-BBA4-78BF9C7FCE5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E69B3D-4DA3-4EAE-BBA4-78BF9C7FCE5D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B1A188C-1BC7-4B0F-AD4B-60FF36B81206}
+	EndGlobalSection
+EndGlobal

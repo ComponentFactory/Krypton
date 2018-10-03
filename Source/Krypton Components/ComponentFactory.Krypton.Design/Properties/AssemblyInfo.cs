@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -17,9 +17,9 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
 
-[assembly: AssemblyVersion("4.5.1.0")]
-[assembly: AssemblyFileVersion("4.5.1.0")]
-[assembly: AssemblyInformationalVersion("4.5.1.0")]
+[assembly: AssemblyVersion("4.6.0.0")]
+[assembly: AssemblyFileVersion("4.6.0.0")]
+[assembly: AssemblyInformationalVersion("4.6.0.0")]
 [assembly: AssemblyCopyright("© Component Factory Pty Ltd 2017. All rights reserved.")]
 [assembly: AssemblyProduct("Krypton Design")]
 [assembly: AssemblyDefaultAlias("ComponentFactory.Krypton.Design.dll")]
@@ -32,6 +32,7 @@ using System.Diagnostics;
 [assembly: ComVisible(true)]
 [assembly: CLSCompliant(true)]
 [assembly: AllowPartiallyTrustedCallers()]
+[assembly: SecurityRules(SecurityRuleSet.Level1)]
 [assembly: Dependency("System", LoadHint.Always)]
 [assembly: Dependency("System.Design", LoadHint.Sometimes)]
 [assembly: Dependency("System.Drawing", LoadHint.Always)]

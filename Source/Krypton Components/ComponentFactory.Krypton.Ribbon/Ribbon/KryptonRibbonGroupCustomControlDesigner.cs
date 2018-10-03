@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -459,11 +459,11 @@ namespace ComponentFactory.Krypton.Ribbon
                     _cms = new ContextMenuStrip();
                     _toggleHelpersMenu = new ToolStripMenuItem("Design Helpers", null, new EventHandler(OnToggleHelpers));
                     _visibleMenu = new ToolStripMenuItem("Visible", null, new EventHandler(OnVisible));
-                    _moveFirstMenu = new ToolStripMenuItem("Move Custom Control First", ComponentFactory.Krypton.Design.Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
-                    _movePreviousMenu = new ToolStripMenuItem("Move Custom Control Previous", ComponentFactory.Krypton.Design.Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
-                    _moveNextMenu = new ToolStripMenuItem("Move Custom Control Next", ComponentFactory.Krypton.Design.Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
-                    _moveLastMenu = new ToolStripMenuItem("Move Custom Control Last", ComponentFactory.Krypton.Design.Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
-                    _deleteCustomControlMenu = new ToolStripMenuItem("Delete Custom Control", ComponentFactory.Krypton.Design.Properties.Resources.delete2, new EventHandler(OnDeleteCustomControl));
+                    _moveFirstMenu = new ToolStripMenuItem("Move Custom Control First", Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
+                    _movePreviousMenu = new ToolStripMenuItem("Move Custom Control Previous", Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
+                    _moveNextMenu = new ToolStripMenuItem("Move Custom Control Next", Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
+                    _moveLastMenu = new ToolStripMenuItem("Move Custom Control Last", Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
+                    _deleteCustomControlMenu = new ToolStripMenuItem("Delete Custom Control", Properties.Resources.delete2, new EventHandler(OnDeleteCustomControl));
                     _cms.Items.AddRange(new ToolStripItem[] { _toggleHelpersMenu, new ToolStripSeparator(),
                                                               _visibleMenu, new ToolStripSeparator(),
                                                               _moveFirstMenu, _movePreviousMenu, _moveNextMenu, _moveLastMenu, new ToolStripSeparator(),

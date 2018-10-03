@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC0DD714-4D19-4F31-A6D0-EA209D4F0EA8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComponentFactory.Krypton.Navigator</RootNamespace>
+    <AssemblyName>ComponentFactory.Krypton.Navigator</AssemblyName>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>false</DelaySign>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ButtonSpecs\ButtonSpecNavManagerLayoutBar.cs" />
+    <Compile Include="ButtonSpecs\ButtonSpecNavigator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpecs\ButtonSpecNavFixed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpecs\ButtonSpecNavClose.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpecs\ButtonSpecNavPrevious.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpecs\ButtonSpecNavNext.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpecs\ButtonSpecNavContext.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpecs\ButtonSpecNavFixedConverter.cs">
+    </Compile>
+    <Compile Include="ButtonSpecs\ButtonSpecNavRemap.cs" />
+    <Compile Include="ButtonSpecs\ButtonSpecNavManagerLayoutHeaderBar.cs" />
+    <Compile Include="Controller\PageButtonController.cs" />
+    <Compile Include="Controller\DragViewController.cs" />
+    <Compile Include="Controller\OutlookMiniController.cs" />
+    <Compile Include="Controls Visuals\VisualPopupPage.cs" />
+    <Compile Include="Converters\ButtonDisplayConverter.cs" />
+    <Compile Include="Converters\ButtonDisplayLogicConverter.cs" />
+    <Compile Include="Converters\CloseButtonActionConverter.cs" />
+    <Compile Include="Converters\BarItemSizingConverter.cs" />
+    <Compile Include="Converters\ContextButtonActionConverter.cs" />
+    <Compile Include="Converters\PopupPageAllowConverter.cs" />
+    <Compile Include="Converters\PopupPagePositionConverter.cs" />
+    <Compile Include="Converters\DirectionButtonActionConverter.cs" />
+    <Compile Include="Converters\NavigatorModeConverter.cs" />
+    <Compile Include="Converters\MapKryptonPageImageConverter.cs" />
+    <Compile Include="Converters\MapKryptonPageTextConverter.cs" />
+    <Compile Include="Converters\PaletteButtonSpecStyleConverter.cs" />
+    <Compile Include="Dragging\DragFeedbackDocking.cs" />
+    <Compile Include="Dragging\DragFeedback.cs" />
+    <Compile Include="Dragging\DragFeedbackSolid.cs" />
+    <Compile Include="Dragging\DragManager.cs" />
+    <Compile Include="Dragging\DragTargetNavigatorTransfer.cs" />
+    <Compile Include="Dragging\DropDockingIndicatorsRounded.cs" />
+    <Compile Include="Dragging\DropDockingIndicatorsSquare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dragging\DropSolidWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dragging\PageDragEndData.cs" />
+    <Compile Include="Dragging\DragTarget.cs" />
+    <Compile Include="EventArgs\CloseActionEventArgs.cs" />
+    <Compile Include="EventArgs\ContextActionEventArgs.cs" />
+    <Compile Include="EventArgs\PageReorderEventArgs.cs" />
+    <Compile Include="EventArgs\PageDropEventArgs.cs" />
+    <Compile Include="EventArgs\PageMovedEventArgs.cs" />
+    <Compile Include="EventArgs\PageDragEndEventArgs.cs" />
+    <Compile Include="EventArgs\CtrlTabCancelEventArgs.cs" />
+    <Compile Include="EventArgs\PageDragCancelEventArgs.cs" />
+    <Compile Include="EventArgs\PageDragEventArgs.cs" />
+    <Compile Include="EventArgs\ShowContextMenuArgs.cs" />
+    <Compile Include="EventArgs\KryptonContextMenuStripEventArgs.cs" />
+    <Compile Include="EventArgs\PopupPageEventArgs.cs" />
+    <Compile Include="EventArgs\DirectionActionEventArgs.cs" />
+    <Compile Include="EventArgs\KryptonPageFlagsEventArgs.cs" />
+    <Compile Include="General\PageToToolTipMapping.cs" />
+    <Compile Include="General\PlatformInvoke.cs" />
+    <Compile Include="Navigator\KryptonNavigatorActionList.cs" />
+    <Compile Include="Navigator\KryptonNavigatorDesigner.cs" />
+    <Compile Include="Navigator\KryptonPageActionList.cs" />
+    <Compile Include="Navigator\KryptonPageDesigner.cs" />
+    <Compile Include="Navigator\KryptonPageFormEditFlags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Navigator\KryptonPageFormEditFlags.Designer.cs">
+      <DependentUpon>KryptonPageFormEditFlags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Navigator\NavigatorPageCollectionEditor.cs" />
+    <Compile Include="Page\KryptonPage.cs" />
+    <Compile Include="EventArgs\KryptonPageCancelEventArgs.cs" />
+    <Compile Include="Page\KryptonPageCollection.cs" />
+    <Compile Include="Palette\PaletteMetrics.cs" />
+    <Compile Include="Palette\NavigatorToolTips.cs" />
+    <Compile Include="Palette\NavigatorPopupPages.cs" />
+    <Compile Include="Palette\NavigatorOutlookMini.cs" />
+    <Compile Include="Palette\NavigatorOutlookFull.cs" />
+    <Compile Include="Palette\PaletteNavContentText.cs" />
+    <Compile Include="Palette\PaletteNavContent.cs" />
+    <Compile Include="Palette\PaletteRedirectRibbonTabContent.cs" />
+    <Compile Include="Palette\PaletteRibbonTabContentInheritOverride.cs" />
+    <Compile Include="Palette\PaletteRibbonTabContentRedirect.cs" />
+    <Compile Include="Palette\NavigatorOutlook.cs" />
+    <Compile Include="Palette\PaletteNavigatorOtherEx.cs" />
+    <Compile Include="Palette\NavigatorStack.cs" />
+    <Compile Include="Palette\NavigatorPanel.cs" />
+    <Compile Include="Palette\PaletteNavigatorHeaderGroup.cs" />
+    <Compile Include="Palette\PaletteNavigatorHeaderGroupRedirect.cs" />
+    <Compile Include="Palette\PaletteNavigatorOtherRedirect.cs" />
+    <Compile Include="Palette\NavigatorBar.cs" />
+    <Compile Include="Palette\PaletteNavigatorOther.cs" />
+    <Compile Include="Palette\NavigatorGroup.cs" />
+    <Compile Include="Palette\NavigatorButton.cs" />
+    <Compile Include="Palette\NavigatorHeader.cs" />
+    <Compile Include="Palette\PaletteBarRedirect.cs" />
+    <Compile Include="Palette\PaletteRibbonTabContent.cs" />
+    <Compile Include="Palette\PalettePageRedirect.cs" />
+    <Compile Include="Palette\PalettePage.cs" />
+    <Compile Include="Palette\PaletteNavigator.cs" />
+    <Compile Include="Palette\PaletteRibbonGeneralRedirect.cs" />
+    <Compile Include="Palette\RibbonTabToContent.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Palette\HeaderGroupMappingBase.cs" />
+    <Compile Include="Palette\HeaderGroupMappingPrimary.cs" />
+    <Compile Include="Palette\HeaderGroupMappingSecondary.cs" />
+    <Compile Include="View Builder\ViewBuilderHeaderBarTabGroup.cs" />
+    <Compile Include="View Builder\ViewBuilderOutlookMini.cs" />
+    <Compile Include="View Builder\ViewBuilderOutlookFull.cs" />
+    <Compile Include="View Builder\ViewBuilderBarRibbonTabOnly.cs" />
+    <Compile Include="View Builder\ViewBuilderBarRibbonTabGroup.cs" />
+    <Compile Include="View Builder\ViewBuilderBarRibbonTabBase.cs" />
+    <Compile Include="View Builder\ViewBuilderBarTabBase.cs" />
+    <Compile Include="View Builder\ViewBuilderBarTabOnly.cs" />
+    <Compile Include="View Builder\ViewBuilderBarTabGroup.cs" />
+    <Compile Include="View Builder\ViewletHeaderGroupOutlook.cs" />
+    <Compile Include="View Builder\ViewBuilderOutlookBase.cs" />
+    <Compile Include="View Builder\ViewBuilderHeaderBarCheckButtonOnly.cs" />
+    <Compile Include="View Builder\ViewBuilderHeaderBarCheckButtonHeaderGroup.cs" />
+    <Compile Include="View Builder\ViewBuilderHeaderBarCheckButtonBase.cs" />
+    <Compile Include="View Builder\ViewBuilderItemBase.cs" />
+    <Compile Include="View Builder\ViewBuilderHeaderBarCheckButtonGroup.cs" />
+    <Compile Include="View Builder\ViewBuilderStackCheckButtonHeaderGroup.cs" />
+    <Compile Include="View Builder\ViewBuilderStackCheckButtonGroup.cs" />
+    <Compile Include="View Builder\ViewBuilderStackCheckButtonBase.cs" />
+    <Compile Include="View Builder\ViewBuilderBarCheckButtonGroupOnly.cs" />
+    <Compile Include="View Builder\ViewBuilderBarCheckButtonOnly.cs" />
+    <Compile Include="View Builder\ViewBuilderBarCheckButtonGroupInside.cs" />
+    <Compile Include="View Builder\ViewBuilderBarCheckButtonGroupOutside.cs" />
+    <Compile Include="View Builder\ViewBuilderBarItemBase.cs" />
+    <Compile Include="View Builder\ViewBuilderHeaderGroup.cs" />
+    <Compile Include="Palette\PaletteNavigatorRedirect.cs" />
+    <Compile Include="View Builder\ViewBuilderGroup.cs" />
+    <Compile Include="View Builder\ViewBuilderPanel.cs" />
+    <Compile Include="General\Definitions.cs" />
+    <Compile Include="Controls Navigator\KryptonNavigator.cs" />
+    <Compile Include="Controls Navigator\KryptonNavigatorControlCollection.cs">
+    </Compile>
+    <Compile Include="View Builder\ViewBuilderBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View Builder\ViewletHeaderGroup.cs" />
+    <Compile Include="View Draw\ViewDrawNavOutlookMini.cs" />
+    <Compile Include="View Draw\ViewDrawNavCheckButtonTab.cs" />
+    <Compile Include="View Draw\ViewDrawNavOutlookStack.cs" />
+    <Compile Include="View Draw\ViewDrawNavOutlookOverflow.cs" />
+    <Compile Include="View Draw\ViewDrawNavCheckButtonStack.cs" />
+    <Compile Include="View Draw\ViewDrawNavCheckButtonBase.cs" />
+    <Compile Include="View Draw\ViewDrawNavCheckButtonBar.cs" />
+    <Compile Include="View Draw\ViewDrawNavRibbonTab.cs" />
+    <Compile Include="View Layout\ViewLayoutPopupPage.cs" />
+    <Compile Include="View Layout\ViewLayoutOutlookMini.cs" />
+    <Compile Include="View Layout\ViewLayoutBarForTabs.cs" />
+    <Compile Include="View Layout\ViewLayoutDockerOverlap.cs" />
+    <Compile Include="View Layout\ViewLayoutInsetOverlap.cs" />
+    <Compile Include="View Layout\ViewLayoutPageHide.cs" />
+    <Compile Include="View Layout\ViewLayoutBar.cs" />
+    <Compile Include="View Layout\ViewLayoutPageShow.cs" />
+    <Compile Include="View Layout\ViewLayoutOutlookFull.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Navigator\KryptonPageFormEditFlags.resx">
+      <DependentUpon>KryptonPageFormEditFlags.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonNavigator.bmp" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+    <None Include="Resources\DocumentValid.cur" />
+    <None Include="Resources\DocumentInvalid.cur" />
+    <None Include="Resources\help2.png" />
+    <None Include="Resources\check2.png" />
+    <None Include="Resources\delete2.png" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonPage.bmp" />
+    <EmbeddedResource Include="Resources\PageLarge.png" />
+    <EmbeddedResource Include="Resources\PageMedium.png" />
+    <EmbeddedResource Include="Resources\PageSmall.png" />
+    <EmbeddedResource Include="Resources\BlueDown.bmp" />
+    <EmbeddedResource Include="Resources\BlueUp.bmp" />
+    <None Include="Resources\CF_Logo.bmp" />
+    <None Include="StrongKrypton.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit.csproj">
+      <Project>{96ecaecc-54f8-4aa5-8591-b443c2d9565f}</Project>
+      <Name>ComponentFactory.Krypton.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

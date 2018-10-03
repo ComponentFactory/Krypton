@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Customized", "Docking Customized\Docking Customized.csproj", "{4715FA62-377A-4BF8-952B-EA9E96927E8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Flags", "Docking Flags\Docking Flags.csproj", "{B838F655-F800-444C-9FDE-7CF779E8F3E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Docking Persistence", "Docking Persistence\Docking Persistence.csproj", "{395F4ABA-4D19-453C-B183-7FB625616A56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "External Drag To Docking", "External Drag To Docking\External Drag To Docking.csproj", "{7BE1440A-6144-4B4C-90D7-E101E99478EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multi Control Docking", "Multi Control Docking\Multi Control Docking.csproj", "{14D102AA-67A2-40B6-8B88-A97D955310F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigator + FloatingWindows", "Navigator + FloatingWindows\Navigator + FloatingWindows.csproj", "{78DB3787-3CE3-4633-82DA-139219B698E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Standard Docking", "Standard Docking\Standard Docking.csproj", "{A693C42B-41AF-4EA2-8BB6-9D493DBA18B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4715FA62-377A-4BF8-952B-EA9E96927E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4715FA62-377A-4BF8-952B-EA9E96927E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4715FA62-377A-4BF8-952B-EA9E96927E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4715FA62-377A-4BF8-952B-EA9E96927E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B838F655-F800-444C-9FDE-7CF779E8F3E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B838F655-F800-444C-9FDE-7CF779E8F3E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B838F655-F800-444C-9FDE-7CF779E8F3E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B838F655-F800-444C-9FDE-7CF779E8F3E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{395F4ABA-4D19-453C-B183-7FB625616A56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{395F4ABA-4D19-453C-B183-7FB625616A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{395F4ABA-4D19-453C-B183-7FB625616A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{395F4ABA-4D19-453C-B183-7FB625616A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BE1440A-6144-4B4C-90D7-E101E99478EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BE1440A-6144-4B4C-90D7-E101E99478EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BE1440A-6144-4B4C-90D7-E101E99478EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BE1440A-6144-4B4C-90D7-E101E99478EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14D102AA-67A2-40B6-8B88-A97D955310F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14D102AA-67A2-40B6-8B88-A97D955310F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14D102AA-67A2-40B6-8B88-A97D955310F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14D102AA-67A2-40B6-8B88-A97D955310F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78DB3787-3CE3-4633-82DA-139219B698E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78DB3787-3CE3-4633-82DA-139219B698E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78DB3787-3CE3-4633-82DA-139219B698E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78DB3787-3CE3-4633-82DA-139219B698E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A693C42B-41AF-4EA2-8BB6-9D493DBA18B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A693C42B-41AF-4EA2-8BB6-9D493DBA18B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A693C42B-41AF-4EA2-8BB6-9D493DBA18B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A693C42B-41AF-4EA2-8BB6-9D493DBA18B7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A06B3BCD-2609-4A30-AAB5-C5E8AC2E50C3}
+	EndGlobalSection
+EndGlobal

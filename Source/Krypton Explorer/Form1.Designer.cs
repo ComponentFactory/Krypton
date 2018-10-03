@@ -151,7 +151,6 @@
             this.labelRibbonFeatureExamples = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.labelRibbonPage = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.kryptonPageApplicatons = new ComponentFactory.Krypton.Navigator.KryptonPage();
-            this.linkPaletteUpgradeTool = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
             this.labelApplicationsPage = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.labelApplications = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.linkPaletteDesigner = new ComponentFactory.Krypton.Toolkit.KryptonLinkLabel();
@@ -1691,7 +1690,6 @@
             // kryptonPageApplicatons
             // 
             this.kryptonPageApplicatons.AutoHiddenSlideSize = new System.Drawing.Size(150, 150);
-            this.kryptonPageApplicatons.Controls.Add(this.linkPaletteUpgradeTool);
             this.kryptonPageApplicatons.Controls.Add(this.labelApplicationsPage);
             this.kryptonPageApplicatons.Controls.Add(this.labelApplications);
             this.kryptonPageApplicatons.Controls.Add(this.linkPaletteDesigner);
@@ -1706,16 +1704,6 @@
             this.kryptonPageApplicatons.TextTitle = "";
             this.kryptonPageApplicatons.ToolTipTitle = "Page ToolTip";
             this.kryptonPageApplicatons.UniqueName = "F1D9B8A768F74629F1D9B8A768F74629";
-            // 
-            // linkPaletteUpgradeTool
-            // 
-            this.linkPaletteUpgradeTool.LabelStyle = ComponentFactory.Krypton.Toolkit.LabelStyle.NormalPanel;
-            this.linkPaletteUpgradeTool.Location = new System.Drawing.Point(20, 96);
-            this.linkPaletteUpgradeTool.Name = "linkPaletteUpgradeTool";
-            this.linkPaletteUpgradeTool.Size = new System.Drawing.Size(126, 20);
-            this.linkPaletteUpgradeTool.TabIndex = 2;
-            this.linkPaletteUpgradeTool.Values.Text = "Palette Upgrade Tool";
-            this.linkPaletteUpgradeTool.LinkClicked += new System.EventHandler(this.linkPaletteUpgradeTool_LinkClicked);
             // 
             // labelApplicationsPage
             // 
@@ -1781,7 +1769,7 @@
             this.labelKryptonExplorer.StateCommon.ShortText.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelKryptonExplorer.StateCommon.ShortText.Hint = ComponentFactory.Krypton.Toolkit.PaletteTextHint.AntiAlias;
             this.labelKryptonExplorer.TabIndex = 0;
-            this.labelKryptonExplorer.Values.Text = "Krypton 4.5.0";
+            this.labelKryptonExplorer.Values.Text = "Krypton 4.6.0";
             // 
             // pictureBoxRight
             // 
@@ -1898,7 +1886,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel labeToolkitPage;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel labelNavigatorPage;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel labelApplicationsPage;
-        private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel linkPaletteUpgradeTool;
         private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel linkExpandingHeaderGroupsDockStyle;
         private ComponentFactory.Krypton.Toolkit.KryptonLinkLabel linkKryptonLinkLabel;
         private ComponentFactory.Krypton.Toolkit.KryptonLabel labelNavigatorUsageExamples;

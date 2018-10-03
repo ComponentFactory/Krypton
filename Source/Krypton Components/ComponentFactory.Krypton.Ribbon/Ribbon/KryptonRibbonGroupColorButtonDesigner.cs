@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -427,11 +427,11 @@ namespace ComponentFactory.Krypton.Ribbon
                     _typeSplitMenu = new ToolStripMenuItem("Split", null, new EventHandler(OnTypeSplit));
                     _typeMenu = new ToolStripMenuItem("Type");
                     _typeMenu.DropDownItems.AddRange(new ToolStripItem[] { _typePushMenu, _typeCheckMenu, _typeDropDownMenu, _typeSplitMenu });
-                    _moveFirstMenu = new ToolStripMenuItem("Move Color Button First", ComponentFactory.Krypton.Design.Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
-                    _movePreviousMenu = new ToolStripMenuItem("Move Color Button Previous", ComponentFactory.Krypton.Design.Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
-                    _moveNextMenu = new ToolStripMenuItem("Move Color Button Next", ComponentFactory.Krypton.Design.Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
-                    _moveLastMenu = new ToolStripMenuItem("Move Color Button Last", ComponentFactory.Krypton.Design.Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
-                    _deleteButtonMenu = new ToolStripMenuItem("Delete Color Button", ComponentFactory.Krypton.Design.Properties.Resources.delete2, new EventHandler(OnDeleteButton));
+                    _moveFirstMenu = new ToolStripMenuItem("Move Color Button First", Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
+                    _movePreviousMenu = new ToolStripMenuItem("Move Color Button Previous", Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
+                    _moveNextMenu = new ToolStripMenuItem("Move Color Button Next", Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
+                    _moveLastMenu = new ToolStripMenuItem("Move Color Button Last", Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
+                    _deleteButtonMenu = new ToolStripMenuItem("Delete Color Button", Properties.Resources.delete2, new EventHandler(OnDeleteButton));
                     _cms.Items.AddRange(new ToolStripItem[] { _toggleHelpersMenu, new ToolStripSeparator(),
                                                               _visibleMenu, _enabledMenu, _checkedMenu, _typeMenu, new ToolStripSeparator(),
                                                               _moveFirstMenu, _movePreviousMenu, _moveNextMenu, _moveLastMenu, new ToolStripSeparator(),

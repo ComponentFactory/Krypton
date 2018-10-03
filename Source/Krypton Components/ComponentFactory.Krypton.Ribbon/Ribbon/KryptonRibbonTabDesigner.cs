@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -485,13 +485,13 @@ namespace ComponentFactory.Krypton.Ribbon
                     _cms = new ContextMenuStrip();
                     _toggleHelpersMenu = new ToolStripMenuItem("Design Helpers", null, new EventHandler(OnToggleHelpers));
                     _visibleMenu = new ToolStripMenuItem("Visible", null, new EventHandler(OnVisible));
-                    _moveFirstMenu = new ToolStripMenuItem("Move First", ComponentFactory.Krypton.Design.Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
-                    _movePreviousMenu = new ToolStripMenuItem("Move Previous", ComponentFactory.Krypton.Design.Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
-                    _moveNextMenu = new ToolStripMenuItem("Move Next", ComponentFactory.Krypton.Design.Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
-                    _moveLastMenu = new ToolStripMenuItem("Move Last", ComponentFactory.Krypton.Design.Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
-                    _addGroupMenu = new ToolStripMenuItem("Add Group", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroup, new EventHandler(OnAddGroup));
+                    _moveFirstMenu = new ToolStripMenuItem("Move First", Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
+                    _movePreviousMenu = new ToolStripMenuItem("Move Previous", Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
+                    _moveNextMenu = new ToolStripMenuItem("Move Next", Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
+                    _moveLastMenu = new ToolStripMenuItem("Move Last", Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
+                    _addGroupMenu = new ToolStripMenuItem("Add Group", Properties.Resources.KryptonRibbonGroup, new EventHandler(OnAddGroup));
                     _clearGroupsMenu = new ToolStripMenuItem("Clear Groups", null, new EventHandler(OnClearGroups));
-                    _deleteTabMenu = new ToolStripMenuItem("Delete Tab", ComponentFactory.Krypton.Design.Properties.Resources.delete2, new EventHandler(OnDeleteTab));
+                    _deleteTabMenu = new ToolStripMenuItem("Delete Tab", Properties.Resources.delete2, new EventHandler(OnDeleteTab));
                     _cms.Items.AddRange(new ToolStripItem[] { _toggleHelpersMenu, new ToolStripSeparator(),
                                                               _visibleMenu, new ToolStripSeparator(),
                                                               _moveFirstMenu, _movePreviousMenu, _moveNextMenu, _moveLastMenu, new ToolStripSeparator(),

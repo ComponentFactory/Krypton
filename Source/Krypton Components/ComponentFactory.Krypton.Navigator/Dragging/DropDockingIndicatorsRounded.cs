@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -140,7 +140,7 @@ namespace ComponentFactory.Krypton.Navigator
         }
 
 		/// <summary>
-		/// Perofrm mouse hit testing against a screen point.
+		/// Perform mouse hit testing against a screen point.
 		/// </summary>
 		/// <param name="screenPoint">Screen point.</param>
 		/// <returns>Area that is active.</returns>

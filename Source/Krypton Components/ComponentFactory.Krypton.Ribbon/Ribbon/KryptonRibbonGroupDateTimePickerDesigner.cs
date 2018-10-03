@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -463,11 +463,11 @@ namespace ComponentFactory.Krypton.Ribbon
                     _cms = new ContextMenuStrip();
                     _toggleHelpersMenu = new ToolStripMenuItem("Design Helpers", null, new EventHandler(OnToggleHelpers));
                     _visibleMenu = new ToolStripMenuItem("Visible", null, new EventHandler(OnVisible));
-                    _moveFirstMenu = new ToolStripMenuItem("Move DateTimePicker First", ComponentFactory.Krypton.Design.Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
-                    _movePreviousMenu = new ToolStripMenuItem("Move DateTimePicker Previous", ComponentFactory.Krypton.Design.Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
-                    _moveNextMenu = new ToolStripMenuItem("Move DateTimePicker Next", ComponentFactory.Krypton.Design.Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
-                    _moveLastMenu = new ToolStripMenuItem("Move DateTimePicker Last", ComponentFactory.Krypton.Design.Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
-                    _deleteDateTimePickerMenu = new ToolStripMenuItem("Delete DateTimePicker", ComponentFactory.Krypton.Design.Properties.Resources.delete2, new EventHandler(OnDeleteDateTimePicker));
+                    _moveFirstMenu = new ToolStripMenuItem("Move DateTimePicker First", Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
+                    _movePreviousMenu = new ToolStripMenuItem("Move DateTimePicker Previous", Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
+                    _moveNextMenu = new ToolStripMenuItem("Move DateTimePicker Next", Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
+                    _moveLastMenu = new ToolStripMenuItem("Move DateTimePicker Last", Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
+                    _deleteDateTimePickerMenu = new ToolStripMenuItem("Delete DateTimePicker", Properties.Resources.delete2, new EventHandler(OnDeleteDateTimePicker));
                     _cms.Items.AddRange(new ToolStripItem[] { _toggleHelpersMenu, new ToolStripSeparator(),
                                                               _visibleMenu, new ToolStripSeparator(),
                                                               _moveFirstMenu, _movePreviousMenu, _moveNextMenu, _moveLastMenu, new ToolStripSeparator(),

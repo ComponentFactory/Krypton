@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -636,17 +636,17 @@ namespace ComponentFactory.Krypton.Ribbon
                     _visibleMenu = new ToolStripMenuItem("Visible", null, new EventHandler(OnVisible));
                     _collapsableMenu = new ToolStripMenuItem("Allow Collapsed", null, new EventHandler(OnCollapsable));
                     _dialogLauncherMenu = new ToolStripMenuItem("Dialog Launcher", null, new EventHandler(OnDialogLauncher));
-                    _moveFirstMenu = new ToolStripMenuItem("Move Group First", ComponentFactory.Krypton.Design.Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
-                    _movePreviousMenu = new ToolStripMenuItem("Move Group Previous", ComponentFactory.Krypton.Design.Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
-                    _moveNextMenu = new ToolStripMenuItem("Move Group Next", ComponentFactory.Krypton.Design.Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
-                    _moveLastMenu = new ToolStripMenuItem("Move Group Last", ComponentFactory.Krypton.Design.Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
+                    _moveFirstMenu = new ToolStripMenuItem("Move Group First", Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
+                    _movePreviousMenu = new ToolStripMenuItem("Move Group Previous", Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
+                    _moveNextMenu = new ToolStripMenuItem("Move Group Next", Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
+                    _moveLastMenu = new ToolStripMenuItem("Move Group Last", Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
                     _moveToTabMenu = new ToolStripMenuItem("Move Group To Tab");
-                    _addTripleMenu = new ToolStripMenuItem("Add Triple", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupTriple, new EventHandler(OnAddTriple));
-                    _addLinesMenu = new ToolStripMenuItem("Add Lines", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupLines, new EventHandler(OnAddLines));
-                    _addSeparatorMenu = new ToolStripMenuItem("Add Separator", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupSeparator, new EventHandler(OnAddSep));
-                    _addGalleryMenu = new ToolStripMenuItem("Add Gallery", ComponentFactory.Krypton.Design.Properties.Resources.KryptonGallery, new EventHandler(OnAddGallery));
+                    _addTripleMenu = new ToolStripMenuItem("Add Triple", Properties.Resources.KryptonRibbonGroupTriple, new EventHandler(OnAddTriple));
+                    _addLinesMenu = new ToolStripMenuItem("Add Lines", Properties.Resources.KryptonRibbonGroupLines, new EventHandler(OnAddLines));
+                    _addSeparatorMenu = new ToolStripMenuItem("Add Separator", Properties.Resources.KryptonRibbonGroupSeparator, new EventHandler(OnAddSep));
+                    _addGalleryMenu = new ToolStripMenuItem("Add Gallery", Properties.Resources.KryptonGallery, new EventHandler(OnAddGallery));
                     _clearItemsMenu = new ToolStripMenuItem("Clear Items", null, new EventHandler(OnClearItems));
-                    _deleteGroupMenu = new ToolStripMenuItem("Delete Group", ComponentFactory.Krypton.Design.Properties.Resources.delete2, new EventHandler(OnDeleteGroup));
+                    _deleteGroupMenu = new ToolStripMenuItem("Delete Group", Properties.Resources.delete2, new EventHandler(OnDeleteGroup));
                     _cms.Items.AddRange(new ToolStripItem[] { _toggleHelpersMenu, new ToolStripSeparator(),
                                                               _visibleMenu, _collapsableMenu, _dialogLauncherMenu, new ToolStripSeparator(),
                                                               _moveFirstMenu, _movePreviousMenu, _moveNextMenu, _moveLastMenu, new ToolStripSeparator(),

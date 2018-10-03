@@ -1,0 +1,1153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96ECAECC-54F8-4AA5-8591-B443C2D9565F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComponentFactory.Krypton.Toolkit</RootNamespace>
+    <AssemblyName>ComponentFactory.Krypton.Toolkit</AssemblyName>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <DelaySign>false</DelaySign>
+    <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRules>
+    </CodeAnalysisRules>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccurateText\AccurateText.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecFormFixed.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecFormWindowClose.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecFormWindowMin.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecFormWindowMax.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecToContent.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecViewControllers.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecCalendar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContextMenu\KryptonContextMenuMonthCalendar.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuImageSelect.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuColorColumns.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuCheckButton.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuRadioButton.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuCheckBox.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuLinkLabel.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuHeading.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuItems.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuItem.cs" />
+    <Compile Include="Controller\CheckBoxController.cs" />
+    <Compile Include="Controller\ContextMenuController.cs" />
+    <Compile Include="Controller\TrackPositionController.cs" />
+    <Compile Include="Controller\TrackBarController.cs" />
+    <Compile Include="Controller\MonthCalendarController.cs" />
+    <Compile Include="Controller\MenuImageSelectController.cs" />
+    <Compile Include="Controller\MenuColorBlockController.cs" />
+    <Compile Include="Controller\MenuCheckButtonController.cs" />
+    <Compile Include="Controller\MenuRadioButtonController.cs" />
+    <Compile Include="Controller\MenuCheckBoxController.cs" />
+    <Compile Include="Controller\MenuLinkLabelController.cs" />
+    <Compile Include="Controller\MenuItemController.cs" />
+    <Compile Include="Controller\RadioButtonController.cs" />
+    <Compile Include="Controls Toolkit\KryptonTreeNode.cs" />
+    <Compile Include="Controls Toolkit\KryptonTreeView.cs" />
+    <Compile Include="Controls Toolkit\KryptonInputBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonTaskDialogCommand.cs" />
+    <Compile Include="Controls Toolkit\KryptonTaskDialog.cs" />
+    <Compile Include="Controls Visuals\VisualTaskDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls Toolkit\KryptonMessageBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonGroupBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonTrackBar.cs" />
+    <Compile Include="Controls Toolkit\KryptonWrapLabel.cs" />
+    <Compile Include="Controls Toolkit\KryptonDateTimePicker.cs" />
+    <Compile Include="Controls Toolkit\KryptonSeparator.cs" />
+    <Compile Include="Controls Toolkit\KryptonMonthCalendar.cs" />
+    <Compile Include="Controls Toolkit\KryptonDomainUpDown.cs" />
+    <Compile Include="Controls Toolkit\KryptonBreadCrumbItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls Toolkit\KryptonBreadCrumb.cs" />
+    <Compile Include="Controls Toolkit\KryptonNumericUpDown.cs" />
+    <Compile Include="Controls Toolkit\KryptonCommand.cs" />
+    <Compile Include="Controls Toolkit\KryptonCheckedListBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonListBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonColorButton.cs" />
+    <Compile Include="Controls Toolkit\KryptonDropButton.cs" />
+    <Compile Include="Controls Toolkit\KryptonListItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls Toolkit\KryptonMaskedTextBox.cs" />
+    <Compile Include="Controls Visuals\VisualContextMenuDTP.cs" />
+    <Compile Include="Controls Visuals\VisualContainerControl.cs" />
+    <Compile Include="Controls Visuals\VisualContainerControlBase.cs" />
+    <Compile Include="Controls Visuals\VisualSimpleBase.cs" />
+    <Compile Include="Controls Visuals\VisualControlBase.cs" />
+    <Compile Include="Converters\DateTimeNullableConverter.cs" />
+    <Compile Include="Converters\KryptonCheckedButtonConverter.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuItemBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContextMenu\KryptonContextMenuSeparator.cs" />
+    <Compile Include="Controls Toolkit\KryptonRichTextBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonComboBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonDataGridView.cs" />
+    <Compile Include="Controls Toolkit\KryptonDataGridViewColumns.cs" />
+    <Compile Include="Controls Toolkit\KryptonRadioButton.cs" />
+    <Compile Include="Controls Toolkit\KryptonCheckBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls Toolkit\KryptonTextBox.cs" />
+    <Compile Include="Controls Toolkit\KryptonContextMenu.cs" />
+    <Compile Include="Controls Visuals\VisualContextMenu.cs" />
+    <Compile Include="Controls Visuals\VisualPopupTooltip.cs" />
+    <Compile Include="Controls Visuals\VisualPopupShadow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls Visuals\VisualPopup.cs" />
+    <Compile Include="Controls Visuals\VisualForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls Visuals\VisualPopupManager.cs" />
+    <Compile Include="Converters\ButtonSpecFormFixedConverter.cs" />
+    <Compile Include="Converters\InputControlStyleConverter.cs" />
+    <Compile Include="Converters\DataGridViewStyleConverter.cs" />
+    <Compile Include="Converters\GridStyleConverter.cs" />
+    <Compile Include="EventArgs\ButtonDragRectangleEventArgs.cs" />
+    <Compile Include="EventArgs\ContextMenuArgs.cs" />
+    <Compile Include="EventArgs\CloseReasonEventArgs.cs" />
+    <Compile Include="EventArgs\ColorEventArgs.cs" />
+    <Compile Include="EventArgs\ContextPositionMenuArgs.cs" />
+    <Compile Include="EventArgs\BreadCrumbMenuArgs.cs" />
+    <Compile Include="EventArgs\ButtonDragOffsetEventArgs.cs" />
+    <Compile Include="EventArgs\ViewControlHitTestArgs.cs" />
+    <Compile Include="EventArgs\PointOffsetEventCancelArgs.cs" />
+    <Compile Include="EventArgs\SplitterMoveRectEventArgs.cs" />
+    <Compile Include="EventArgs\DateTimePickerCloseArgs.cs" />
+    <Compile Include="EventArgs\DateTimePickerDropArgs.cs" />
+    <Compile Include="EventArgs\PointEventCancelArgs.cs" />
+    <Compile Include="EventArgs\ImageSelectEventArgs.cs" />
+    <Compile Include="EventArgs\PointEventArgs.cs" />
+    <Compile Include="EventArgs\TooltipEventArgs.cs" />
+    <Compile Include="EventArgs\TypedCollectionEventArgs.cs" />
+    <Compile Include="General\BoolFlags31.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecAny.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecManagerDraw.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecView.cs" />
+    <Compile Include="ButtonSpec\ButtonSpec.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ButtonSpec\ButtonSpecCollection.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecManagerLayout.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecRemapByContentView.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecRemapByContentCache.cs" />
+    <Compile Include="Controller\LinkLabelController.cs" />
+    <Compile Include="Controls Toolkit\KryptonBorderEdge.cs" />
+    <Compile Include="Converters\TabStyleConverter.cs" />
+    <Compile Include="Converters\TabBorderStyleConverter.cs" />
+    <Compile Include="Converters\PaletteDrawBordersConverter.cs" />
+    <Compile Include="Converters\PaletteTextTrimConverter.cs" />
+    <Compile Include="Converters\PaletteButtonOrientationConverter.cs" />
+    <Compile Include="Converters\PaletteImageEffectConverter.cs" />
+    <Compile Include="Converters\PaletteImageStyleConverter.cs" />
+    <Compile Include="Converters\KryptonLinkBehaviorConverter.cs" />
+    <Compile Include="General\Clipping.cs" />
+    <Compile Include="General\AntiAlias.cs" />
+    <Compile Include="General\ContextMenuProvider.cs" />
+    <Compile Include="General\ControlObscurer.cs">
+    </Compile>
+    <Compile Include="General\GlobalStrings.cs" />
+    <Compile Include="General\CorrectContextControl.cs" />
+    <Compile Include="General\DesktopWindowManager.cs" />
+    <Compile Include="General\KryptonControlCollection.cs" />
+    <Compile Include="General\KryptonReadOnlyControls.cs" />
+    <Compile Include="General\NullContentValues.cs" />
+    <Compile Include="Controller\TooltipController.cs" />
+    <Compile Include="General\TooltipManager.cs" />
+    <Compile Include="General\TypedRestrictCollection.cs" />
+    <Compile Include="General\PlatformInvoke.cs" />
+    <Compile Include="General\TypedCollection.cs" />
+    <Compile Include="ContextMenu\KryptonContextMenuCollections.cs" />
+    <Compile Include="Palette Base\PaletteBack\PaletteBackColor1.cs" />
+    <Compile Include="Palette Base\PaletteBack\PaletteBackLightenColors.cs" />
+    <Compile Include="Palette Base\PaletteBack\PaletteBackToPalette.cs" />
+    <Compile Include="Palette Base\PaletteBorder\PaletteBorderToPalette.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentInheritForced.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentJustShortText.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentJustImage.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentJustText.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentToPalette.cs" />
+    <Compile Include="Palette Base\PaletteElementColor\PaletteElementColorInheritOverride.cs" />
+    <Compile Include="Palette Base\PaletteElementColor\PaletteElementColorRedirect.cs" />
+    <Compile Include="Palette Base\PaletteElementColor\PaletteElementColorInherit.cs" />
+    <Compile Include="Palette Base\PaletteElementColor\PaletteElementColorInheritRedirect.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectGrids.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectRibbonBack.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectRibbonGeneral.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectRibbonDouble.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonBackRedirect.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonDoubleRedirect.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonDoubleInheritOverride.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonTextInheritRedirect.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonTextInherit.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonText.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonGeneralInheritRedirect.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonGeneralInherit.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonBackInheritRedirect.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonBackInherit.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonBack.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonDoubleInherit.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonDoubleInheritRedirect.cs" />
+    <Compile Include="Palette Base\PaletteTab\PaletteTabTripleRedirect.cs" />
+    <Compile Include="Palette Base\PaletteTab\PaletteTabTriple.cs" />
+    <Compile Include="Palette Base\PaletteTab\PaletteTabBorder.cs" />
+    <Compile Include="Palette Base\PaletteBack\PaletteBackInheritForced.cs" />
+    <Compile Include="Palette Base\PaletteBorder\PaletteBorderInheritForced.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectBorderEdge.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectBorder.cs" />
+    <Compile Include="Palette Base\PaletteElementColor\PaletteElementColor.cs" />
+    <Compile Include="Palette Controls\PaletteBackInheritNode.cs" />
+    <Compile Include="Palette Controls\PaletteContentInheritNode.cs" />
+    <Compile Include="Palette Controls\PaletteNodeOverride.cs" />
+    <Compile Include="Palette Base\PaletteTriple\PaletteTripleJustImage.cs" />
+    <Compile Include="Palette Base\PaletteTriple\PaletteTripleJustImageRedirect.cs" />
+    <Compile Include="Palette Base\PaletteTriple\PaletteTripleToPalette.cs" />
+    <Compile Include="Palette Base\PaletteDragDrop\PaletteDragDrop.cs" />
+    <Compile Include="Palette Builtin\PaletteOffice2010Black.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteOffice2010Blue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteOffice2010Silver.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteOffice2010Base.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteSparklePurple.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteSparkleBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteSparkleOrange.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteSparkleBlue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteOffice2007Black.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteOffice2007Silver.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteOffice2007Blue.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteOffice2007Base.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonDouble.cs" />
+    <Compile Include="Palette Base\PaletteRibbon\PaletteRibbonGeneral.cs" />
+    <Compile Include="Palette Component\KryptonPaletteImagesTreeView.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTrackBar.cs" />
+    <Compile Include="Palette Component\KryptonPaletteCalendarDay.cs" />
+    <Compile Include="Palette Component\KryptonPaletteImagesGalleryButton.cs" />
+    <Compile Include="Palette Component\KryptonPaletteImagesGalleryButtons.cs" />
+    <Compile Include="Palette Component\KryptonPaletteImagesDropDownButton.cs" />
+    <Compile Include="Palette Component\KryptonPaletteContextMenu.cs" />
+    <Compile Include="Palette Component\KryptonPaletteImagesContextMenu.cs" />
+    <Compile Include="Palette Component\KryptonPaletteInputControl.cs" />
+    <Compile Include="Palette Component\KryptonPaletteInputControls.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupLabelText.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupCheckBoxText.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupRadioButtonText.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupBaseText.cs" />
+    <Compile Include="Palette Controls\PaletteRedirectTreeView.cs" />
+    <Compile Include="Palette Controls\PaletteTreeNodeTripleRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteTreeNodeTriple.cs" />
+    <Compile Include="Palette Controls\PaletteTreeState.cs" />
+    <Compile Include="Palette Controls\PaletteTreeStateRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteTrackBarPositionStatesOverride.cs" />
+    <Compile Include="Palette Controls\PaletteTrackBarStatesOverride.cs" />
+    <Compile Include="Palette Controls\PaletteTrackBarPositionStates.cs" />
+    <Compile Include="Palette Controls\KryptonColorTable2010.cs" />
+    <Compile Include="Palette Controls\PaletteGroupBox.cs" />
+    <Compile Include="Palette Controls\PaletteGroupBoxRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteTrackBarRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteTrackBarStates.cs" />
+    <Compile Include="Palette Controls\PaletteWrapLabel.cs" />
+    <Compile Include="Palette Controls\PaletteMonthCalendarStateRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteMonthCalendarState.cs" />
+    <Compile Include="Palette Controls\PaletteMonthCalendarDoubleState.cs" />
+    <Compile Include="Palette Controls\PaletteMonthCalendarRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteBreadCrumbState.cs" />
+    <Compile Include="Palette Controls\KryptonColorTableSparkle.cs" />
+    <Compile Include="Palette Controls\PaletteBreadCrumbRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteComboBoxJustItemStates.cs" />
+    <Compile Include="Palette Controls\PaletteComboBoxJustComboStates.cs" />
+    <Compile Include="Palette Controls\PaletteComboBoxStates.cs" />
+    <Compile Include="Palette Controls\PaletteComboBoxRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteListItemTripleRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteListItemTriple.cs" />
+    <Compile Include="Palette Controls\PaletteListStateRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteListState.cs" />
+    <Compile Include="Palette Controls\PaletteBreadCrumbDoubleState.cs" />
+    <Compile Include="Palette Controls\PaletteRedirectDropDownButton.cs" />
+    <Compile Include="Palette Controls\PaletteContextMenuItemState.cs" />
+    <Compile Include="Palette Controls\PaletteContextMenuItemStateHighlight.cs" />
+    <Compile Include="Palette Controls\PaletteContextMenuItemStateChecked.cs" />
+    <Compile Include="Palette Controls\PaletteContextMenuItemStateRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteRedirectContextMenu.cs" />
+    <Compile Include="Palette Controls\PaletteContextMenuRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteInputControlTripleRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteInputControlBackStates.cs" />
+    <Compile Include="Palette Controls\PaletteInputControlContentStates.cs" />
+    <Compile Include="Palette Controls\PaletteInputControlTripleStates.cs" />
+    <Compile Include="Palette Controls\KryptonDataGridViewStyles.cs" />
+    <Compile Include="Palette Component\KryptonPaletteGrid.cs" />
+    <Compile Include="Palette Component\KryptonPaletteGrids.cs" />
+    <Compile Include="Palette Component\KryptonPaletteImagesRadioButton.cs" />
+    <Compile Include="Palette Component\KryptonPaletteImagesCheckBox.cs" />
+    <Compile Include="Palette Component\KryptonPaletteImages.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupButtonText.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonQATMinibar.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupCollapsedFrameBorder.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupCollapsedFrameBack.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupCollapsedBack.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupCollapsedText.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupCollapsedBorder.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupNormalBorder.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupNormalTitle.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonGroupArea.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonAppButton.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbon.cs" />
+    <Compile Include="Palette Component\KryptonPaletteRibbonTab.cs" />
+    <Compile Include="Palette Component\KryptonPaletteForms.cs" />
+    <Compile Include="Palette Component\KryptonPaletteForm.cs" />
+    <Compile Include="Palette Component\KryptonPaletteDouble3.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTabButtons.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTabButton.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewBackInherit.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewTripleStates.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewContentCommon.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewContentStates.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewContentInherit.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewHeaders.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewCells.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteRedirectBreadCrumb.cs" />
+    <Compile Include="Palette Controls\PaletteRedirectRadioButton.cs" />
+    <Compile Include="Palette Controls\PaletteRedirectCheckBox.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewAll.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewTripleCommon.cs" />
+    <Compile Include="Palette Controls\PaletteDataGridViewTripleRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteColorButtonStrings.cs" />
+    <Compile Include="Rendering\RenderExpertHelpers.cs" />
+    <Compile Include="Rendering\RenderOffice2007.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rendering\KryptonOffice2010Renderer.cs" />
+    <Compile Include="Rendering\KryptonProfessionalRenderer.cs" />
+    <Compile Include="Rendering\KryptonSparkleRenderer.cs" />
+    <Compile Include="Rendering\RenderDragDockingData.cs" />
+    <Compile Include="Rendering\RenderSparkle.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Toolkit\KryptonBorderEdgeActionList.cs" />
+    <Compile Include="Toolkit\KryptonBorderEdgeDesigner.cs" />
+    <Compile Include="Toolkit\KryptonBreadCrumbActionList.cs" />
+    <Compile Include="Toolkit\KryptonBreadCrumbDesigner.cs" />
+    <Compile Include="Toolkit\KryptonBreadCrumbItemDesigner.cs" />
+    <Compile Include="Toolkit\KryptonBreadCrumbItemsEditor.cs" />
+    <Compile Include="Toolkit\KryptonButtonActionList.cs" />
+    <Compile Include="Toolkit\KryptonButtonDesigner.cs" />
+    <Compile Include="Toolkit\KryptonCheckBoxActionList.cs" />
+    <Compile Include="Toolkit\KryptonCheckBoxDesigner.cs" />
+    <Compile Include="Toolkit\KryptonCheckButtonActionList.cs" />
+    <Compile Include="Toolkit\KryptonCheckButtonCollectionEditor.cs" />
+    <Compile Include="Toolkit\KryptonCheckButtonCollectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Toolkit\KryptonCheckButtonCollectionForm.Designer.cs">
+      <DependentUpon>KryptonCheckButtonCollectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Toolkit\KryptonCheckButtonDesigner.cs" />
+    <Compile Include="Toolkit\KryptonCheckedListBoxActionList.cs" />
+    <Compile Include="Toolkit\KryptonCheckedListBoxDesigner.cs" />
+    <Compile Include="Toolkit\KryptonCheckSetActionList.cs" />
+    <Compile Include="Toolkit\KryptonCheckSetDesigner.cs" />
+    <Compile Include="Toolkit\KryptonColorButtonActionList.cs" />
+    <Compile Include="Toolkit\KryptonColorButtonDesigner.cs" />
+    <Compile Include="Toolkit\KryptonComboBoxActionList.cs" />
+    <Compile Include="Toolkit\KryptonComboBoxColumnDesigner.cs" />
+    <Compile Include="Toolkit\KryptonComboBoxDesigner.cs" />
+    <Compile Include="Toolkit\KryptonCommandActionList.cs" />
+    <Compile Include="Toolkit\KryptonCommandDesigner.cs" />
+    <Compile Include="Toolkit\KryptonContextMenuActionList.cs" />
+    <Compile Include="Toolkit\KryptonContextMenuCollectionEditor.cs" />
+    <Compile Include="Toolkit\KryptonContextMenuDesigner.cs" />
+    <Compile Include="Toolkit\KryptonContextMenuItemCollectionEditor.cs" />
+    <Compile Include="Toolkit\KryptonContextMenuItemDesigner.cs" />
+    <Compile Include="Toolkit\KryptonContextMenuItemsDesigner.cs" />
+    <Compile Include="Toolkit\KryptonDateTimePickerActionList.cs" />
+    <Compile Include="Toolkit\KryptonDateTimePickerColumnDesigner.cs" />
+    <Compile Include="Toolkit\KryptonDateTimePickerDesigner.cs" />
+    <Compile Include="Toolkit\KryptonDesignerActionItem.cs" />
+    <Compile Include="Toolkit\KryptonDomainUpDownActionList.cs" />
+    <Compile Include="Toolkit\KryptonDomainUpDownColumnDesigner.cs" />
+    <Compile Include="Toolkit\KryptonDomainUpDownDesigner.cs" />
+    <Compile Include="Toolkit\KryptonDropButtonActionList.cs" />
+    <Compile Include="Toolkit\KryptonDropButtonDesigner.cs" />
+    <Compile Include="Toolkit\KryptonGroupActionList.cs" />
+    <Compile Include="Toolkit\KryptonGroupBoxActionList.cs" />
+    <Compile Include="Toolkit\KryptonGroupBoxDesigner.cs" />
+    <Compile Include="Toolkit\KryptonGroupDesigner.cs" />
+    <Compile Include="Toolkit\KryptonGroupPanelDesigner.cs" />
+    <Compile Include="Toolkit\KryptonHeaderActionList.cs" />
+    <Compile Include="Toolkit\KryptonHeaderDesigner.cs" />
+    <Compile Include="Toolkit\KryptonHeaderGroupActionList.cs" />
+    <Compile Include="Toolkit\KryptonHeaderGroupDesigner.cs" />
+    <Compile Include="Toolkit\KryptonLabelActionList.cs" />
+    <Compile Include="Toolkit\KryptonLabelDesigner.cs" />
+    <Compile Include="Toolkit\KryptonLinkLabelActionList.cs" />
+    <Compile Include="Toolkit\KryptonLinkLabelDesigner.cs" />
+    <Compile Include="Toolkit\KryptonListBoxActionList.cs" />
+    <Compile Include="Toolkit\KryptonListBoxDesigner.cs" />
+    <Compile Include="Toolkit\KryptonManagerActionList.cs" />
+    <Compile Include="Toolkit\KryptonManagerDesigner.cs" />
+    <Compile Include="Toolkit\KryptonMaskedTextBoxActionList.cs" />
+    <Compile Include="Toolkit\KryptonMaskedTextBoxColumnDesigner.cs" />
+    <Compile Include="Toolkit\KryptonMaskedTextBoxDesigner.cs" />
+    <Compile Include="Toolkit\KryptonMonthCalendarActionList.cs" />
+    <Compile Include="Toolkit\KryptonMonthCalendarDesigner.cs" />
+    <Compile Include="Toolkit\KryptonNumericUpDownActionList.cs" />
+    <Compile Include="Toolkit\KryptonNumericUpDownColumnDesigner.cs" />
+    <Compile Include="Toolkit\KryptonNumericUpDownDesigner.cs" />
+    <Compile Include="Toolkit\KryptonPaletteActionList.cs" />
+    <Compile Include="Toolkit\KryptonPaletteDesigner.cs" />
+    <Compile Include="Toolkit\KryptonPanelActionList.cs" />
+    <Compile Include="Toolkit\KryptonPanelDesigner.cs" />
+    <Compile Include="Toolkit\KryptonRadioButtonActionList.cs" />
+    <Compile Include="Toolkit\KryptonRadioButtonDesigner.cs" />
+    <Compile Include="Toolkit\KryptonRichTextBoxActionList.cs" />
+    <Compile Include="Toolkit\KryptonRichTextBoxDesigner.cs" />
+    <Compile Include="Toolkit\KryptonSeparatorActionList.cs" />
+    <Compile Include="Toolkit\KryptonSeparatorDesigner.cs" />
+    <Compile Include="Toolkit\KryptonSplitContainerActionList.cs" />
+    <Compile Include="Toolkit\KryptonSplitContainerBehavior.cs" />
+    <Compile Include="Toolkit\KryptonSplitContainerDesigner.cs" />
+    <Compile Include="Toolkit\KryptonSplitContainerGlyph.cs" />
+    <Compile Include="Toolkit\KryptonSplitterPanelDesigner.cs" />
+    <Compile Include="Toolkit\KryptonTextBoxActionList.cs" />
+    <Compile Include="Toolkit\KryptonTextBoxColumnDesigner.cs" />
+    <Compile Include="Toolkit\KryptonTextBoxDesigner.cs" />
+    <Compile Include="Toolkit\KryptonTrackBarActionList.cs" />
+    <Compile Include="Toolkit\KryptonTrackBarDesigner.cs" />
+    <Compile Include="Toolkit\KryptonTreeViewActionList.cs" />
+    <Compile Include="Toolkit\KryptonTreeViewDesigner.cs" />
+    <Compile Include="Toolkit\KryptonWrapLabelActionList.cs" />
+    <Compile Include="Toolkit\KryptonWrapLabelDesigner.cs" />
+    <Compile Include="Toolkit\PaletteDrawBordersEditor.cs" />
+    <Compile Include="Toolkit\PaletteDrawBordersSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Toolkit\PaletteDrawBordersSelector.Designer.cs">
+      <DependentUpon>PaletteDrawBordersSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Values\CheckBoxImages.cs">
+    </Compile>
+    <Compile Include="Palette Controls\PaletteHeaderButtonRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteFormRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteForm.cs" />
+    <Compile Include="Palette Controls\KryptonColorTable2007.cs" />
+    <Compile Include="Palette Controls\PaletteBorderEdge.cs" />
+    <Compile Include="Palette Controls\LinkLabelBehaviorInherit.cs" />
+    <Compile Include="Controls Toolkit\KryptonLinkLabel.cs" />
+    <Compile Include="Controls Toolkit\KryptonGroupPanel.cs" />
+    <Compile Include="Converters\ButtonStyleConverter.cs" />
+    <Compile Include="Converters\HeaderGroupCollapseTargetConverter.cs" />
+    <Compile Include="Converters\PaletteButtonSpecStyleConverter.cs" />
+    <Compile Include="Converters\SeparatorStyleConverter.cs" />
+    <Compile Include="Converters\LabelStyleConverter.cs" />
+    <Compile Include="Converters\HeaderStyleConverter.cs" />
+    <Compile Include="Converters\PaletteContentStyleConverter.cs" />
+    <Compile Include="Converters\PaletteBorderStyleConverter.cs" />
+    <Compile Include="Converters\PaletteBackStyleConverter.cs" />
+    <Compile Include="Converters\PaletteButtonStyleConverter.cs" />
+    <Compile Include="EventArgs\ButtonSpecEventArgs.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecManagerBase.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecHeaderGroup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\CommonHelper.cs" />
+    <Compile Include="Controller\ButtonController.cs" />
+    <Compile Include="Controller\SeparatorController.cs" />
+    <Compile Include="Controller\ControllerDefinitions.cs" />
+    <Compile Include="Controls Toolkit\KryptonCheckSet.cs" />
+    <Compile Include="Controls Toolkit\KryptonCheckButton.cs" />
+    <Compile Include="Controls Toolkit\KryptonButton.cs" />
+    <Compile Include="Controls Toolkit\KryptonGroup.cs" />
+    <Compile Include="Controls Toolkit\KryptonHeader.cs" />
+    <Compile Include="Controls Toolkit\KryptonHeaderGroup.cs" />
+    <Compile Include="Controls Toolkit\KryptonLabel.cs" />
+    <Compile Include="Controls Toolkit\KryptonPalette.cs" />
+    <Compile Include="General\GlobalId.cs" />
+    <Compile Include="General\KryptonDefaultColorAttribute.cs" />
+    <Compile Include="General\ModalWaitDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="General\ModalWaitDialog.Designer.cs">
+      <DependentUpon>ModalWaitDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="General\OperationThread.cs" />
+    <Compile Include="ButtonSpec\ButtonSpecRemapByContentBase.cs">
+    </Compile>
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectMetric.cs" />
+    <Compile Include="Palette Base\PaletteMetric\PaletteMetricRedirect.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectDoubleMetric.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectButtonSpec.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectTriple.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectBack.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectDouble.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectContent.cs" />
+    <Compile Include="Palette Base\PaletteDouble\PaletteDoubleMetricRedirect.cs" />
+    <Compile Include="Palette Base\PaletteDouble\PaletteDoubleMetric.cs" />
+    <Compile Include="Palette Base\PaletteDouble\PaletteDoubleOverride.cs" />
+    <Compile Include="Palette Base\PaletteDouble\PaletteDoubleRedirect.cs" />
+    <Compile Include="Palette Base\PaletteDouble\PaletteDouble.cs" />
+    <Compile Include="Palette Base\PaletteTriple\PaletteTriple.cs" />
+    <Compile Include="Palette Base\PaletteTriple\PaletteTripleMetricRedirect.cs" />
+    <Compile Include="Palette Base\PaletteTriple\PaletteTripleMetric.cs" />
+    <Compile Include="Palette Component\KryptonPaletteNavigatorState.cs" />
+    <Compile Include="Palette Component\KryptonPaletteNavigatorStateBar.cs" />
+    <Compile Include="Palette Component\KryptonPaletteNavigator.cs" />
+    <Compile Include="Palette Component\KryptonPaletteButtonSpecTyped.cs" />
+    <Compile Include="Palette Component\KryptonPaletteButtonSpecBase.cs" />
+    <Compile Include="Palette Component\KryptonPaletteButtonSpecs.cs" />
+    <Compile Include="Palette Component\KryptonPaletteCargo.cs" />
+    <Compile Include="Palette Component\KryptonPaletteCommon.cs" />
+    <Compile Include="Palette Component\KryptonPaletteSeparators.cs" />
+    <Compile Include="Palette Component\KryptonPalettePanels.cs" />
+    <Compile Include="Palette Component\KryptonPaletteHeaders.cs" />
+    <Compile Include="Palette Component\KryptonPaletteControls.cs" />
+    <Compile Include="Palette Component\KryptonPaletteLabels.cs" />
+    <Compile Include="Palette Component\KryptonPaletteCheckButton.cs" />
+    <Compile Include="Palette Component\KryptonPaletteCheckButtons.cs">
+    </Compile>
+    <Compile Include="Palette Component\KryptonPaletteHeaderGroup.cs" />
+    <Compile Include="Palette Controls\KryptonProfessionalCustomKCT.cs" />
+    <Compile Include="Palette Controls\PaletteBorderEdgeRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteHeaderRedirect.cs" />
+    <Compile Include="Palette Controls\KryptonColorTable.cs" />
+    <Compile Include="Palette Component\KryptonPalettePanel.cs" />
+    <Compile Include="Palette Component\KryptonPaletteLabel.cs" />
+    <Compile Include="Palette Component\KryptonPaletteHeader.cs" />
+    <Compile Include="Palette Component\KryptonPaletteControl.cs" />
+    <Compile Include="Palette Controls\KryptonPersistAttribute.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirectTripleMetric.cs" />
+    <Compile Include="Palette Controls\PaletteRedirectCommon.cs" />
+    <Compile Include="Palette Controls\PaletteSplitContainer.cs" />
+    <Compile Include="Palette Controls\PaletteSeparatorPadding.cs" />
+    <Compile Include="Palette Controls\PaletteHeaderGroup.cs" />
+    <Compile Include="Palette Component\KryptonPaletteHeaderGroupState.cs" />
+    <Compile Include="Palette Component\KryptonPaletteSeparator.cs">
+    </Compile>
+    <Compile Include="Palette Component\KryptonPaletteTMSBase.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTMSMenu.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTMSRafting.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTMSGrip.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTMSSeparator.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTMSMenuStrip.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTMSStatusStrip.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTMSButton.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTMS.cs" />
+    <Compile Include="Controls Toolkit\KryptonPanel.cs" />
+    <Compile Include="Controls Toolkit\KryptonSplitContainer.cs" />
+    <Compile Include="Controls Toolkit\KryptonSplitterPanel.cs" />
+    <Compile Include="Palette Component\KryptonInternalKCT.cs" />
+    <Compile Include="Palette Component\KryptonPaletteTMSToolStrip.cs" />
+    <Compile Include="EventArgs\PaletteLayoutEventArgs.cs" />
+    <Compile Include="Controls Toolkit\KryptonManager.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EventArgs\NeedLayoutEventArgs.cs" />
+    <Compile Include="Controls Visuals\VisualSimple.cs" />
+    <Compile Include="General\GraphicsTextHint.cs" />
+    <Compile Include="General\HSL.cs" />
+    <Compile Include="Converters\PaletteModeConverter.cs" />
+    <Compile Include="Converters\StringLookupConverter.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentInheritOverride.cs" />
+    <Compile Include="Palette Base\PaletteBorder\PaletteBorderInheritOverride.cs" />
+    <Compile Include="Palette Base\PaletteBack\PaletteBackInheritOverride.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentImage.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentText.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentInheritRedirect.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContentInherit.cs" />
+    <Compile Include="Palette Base\PaletteContent\PaletteContent.cs" />
+    <Compile Include="Converters\PaletteModeManagerConverter.cs" />
+    <Compile Include="Palette Controls\KryptonProfessionalKCT.cs" />
+    <Compile Include="Palette Builtin\PaletteProfessionalSystem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Builtin\PaletteBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Palette Base\PaletteBack\PaletteBackInheritRedirect.cs" />
+    <Compile Include="Palette Base\PaletteBack\PaletteBackInherit.cs" />
+    <Compile Include="Palette Base\PaletteBorder\PaletteBorderInheritRedirect.cs" />
+    <Compile Include="Palette Base\PaletteBorder\PaletteBorderInherit.cs" />
+    <Compile Include="General\Definitions.cs" />
+    <Compile Include="Palette Base\PaletteTriple\PaletteTripleOverride.cs" />
+    <Compile Include="Palette Base\PaletteTriple\PaletteTripleRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteHeaderGroupRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteHeaderPaddingRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteSeparatorPaddingRedirect.cs" />
+    <Compile Include="Palette Controls\PaletteSplitContainerRedirect.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Rendering\KryptonOffice2007Renderer.cs" />
+    <Compile Include="Rendering\RenderMementos.cs" />
+    <Compile Include="Rendering\RenderOffice2010.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rendering\RenderGlassHelpers.cs" />
+    <Compile Include="Rendering\RenderProfessional.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rendering\KryptonStandardRenderer.cs">
+    </Compile>
+    <Compile Include="General\Storage.cs" />
+    <Compile Include="Palette Base\PaletteRedirect\PaletteRedirect.cs" />
+    <Compile Include="Palette Base\PaletteBack\PaletteBack.cs" />
+    <Compile Include="Palette Base\PaletteBorder\PaletteBorder.cs" />
+    <Compile Include="Palette Base\PaletteDefinitions.cs" />
+    <Compile Include="Palette Builtin\PaletteProfessionalOffice2003.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\GraphicsHint.cs" />
+    <Compile Include="Rendering\RenderBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rendering\RenderStandard.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls Visuals\VisualPanel.cs" />
+    <Compile Include="Values\ButtonImageStates.cs">
+    </Compile>
+    <Compile Include="Values\ButtonValues.cs" />
+    <Compile Include="Values\CheckButtonImageStates.cs" />
+    <Compile Include="Values\CheckButtonValues.cs" />
+    <Compile Include="Values\ContextMenuImages.cs" />
+    <Compile Include="Values\ColorButtonValues.cs" />
+    <Compile Include="Values\CaptionValues.cs" />
+    <Compile Include="Values\TreeViewImages.cs" />
+    <Compile Include="Values\GalleryImages.cs" />
+    <Compile Include="Values\DropDownButtonImages.cs" />
+    <Compile Include="Values\FixedContentValue.cs" />
+    <Compile Include="Values\GalleryButtonImages.cs" />
+    <Compile Include="Values\RadioButtonImages.cs" />
+    <Compile Include="Values\HeaderGroupValuesPrimary.cs" />
+    <Compile Include="Values\HeaderGroupValuesSecondary.cs" />
+    <Compile Include="Values\HeaderValues.cs" />
+    <Compile Include="Values\HeaderValuesBase.cs" />
+    <Compile Include="Values\LabelValues.cs" />
+    <Compile Include="Values\ShortTextValue.cs" />
+    <Compile Include="View Base\ViewDecorator.cs" />
+    <Compile Include="View Base\ViewContextMenuManager.cs" />
+    <Compile Include="View Decorator\ViewDecoratorFixedSize.cs" />
+    <Compile Include="View Draw\ViewDrawTrackTP.cs" />
+    <Compile Include="View Draw\ViewDrawTrackPosition.cs" />
+    <Compile Include="View Draw\ViewDrawTrackTrack.cs" />
+    <Compile Include="View Draw\ViewDrawTrackBar.cs" />
+    <Compile Include="View Draw\ViewDrawTrackTicks.cs" />
+    <Compile Include="View Draw\ViewDrawGroupBoxDocker.cs" />
+    <Compile Include="View Draw\ViewDrawMonthUpDown.cs" />
+    <Compile Include="View Draw\ViewDrawDateTimeText.cs" />
+    <Compile Include="View Draw\ViewDrawDateTimeButton.cs" />
+    <Compile Include="View Draw\ViewDrawEmptyContent.cs" />
+    <Compile Include="View Draw\ViewDrawToday.cs" />
+    <Compile Include="View Draw\ViewDrawWeekNumbers.cs" />
+    <Compile Include="View Draw\ViewDrawMenuMonthCalendar.cs" />
+    <Compile Include="View Draw\ViewDrawMonthDays.cs" />
+    <Compile Include="View Draw\ViewDrawMonthDayNames.cs" />
+    <Compile Include="View Draw\ViewDrawMenuImageSelectItem.cs" />
+    <Compile Include="View Draw\ViewDrawSplitCanvas.cs" />
+    <Compile Include="View Draw\ViewDrawDropDownButton.cs" />
+    <Compile Include="View Draw\ViewDrawMenuColorBlock.cs" />
+    <Compile Include="View Draw\ViewDrawMenuColorColumns.cs" />
+    <Compile Include="View Draw\ViewDrawMenuCheckButton.cs" />
+    <Compile Include="View Draw\ViewDrawMenuRadioButton.cs" />
+    <Compile Include="View Draw\ViewDrawMenuCheckBox.cs" />
+    <Compile Include="View Draw\ViewDrawMenuLinkLabel.cs" />
+    <Compile Include="View Draw\ViewDrawMenuImageCanvas.cs" />
+    <Compile Include="View Draw\ViewDrawMenuItemContent.cs" />
+    <Compile Include="View Draw\ViewDrawMenuImageColumn.cs" />
+    <Compile Include="View Draw\ViewDrawMenuHeading.cs" />
+    <Compile Include="View Draw\ViewDrawMenuItem.cs" />
+    <Compile Include="View Draw\ViewDrawMenuSeparator.cs" />
+    <Compile Include="View Draw\ViewDrawRadioButton.cs" />
+    <Compile Include="View Draw\ViewDrawCheckBox.cs" />
+    <Compile Include="View Draw\ViewDrawForm.cs" />
+    <Compile Include="View Draw\ViewDrawBorderEdge.cs" />
+    <Compile Include="View Draw\ViewDrawDebug.cs" />
+    <Compile Include="View Draw\ViewDrawNull.cs" />
+    <Compile Include="View Draw\ViewDrawScrollBar.cs" />
+    <Compile Include="View Draw\ViewDrawMenuColorColumn.cs" />
+    <Compile Include="View Draw\ViewDrawMonth.cs" />
+    <Compile Include="View Layout\ViewLayoutPadding.cs" />
+    <Compile Include="View Layout\ViewLayoutFit.cs" />
+    <Compile Include="View Layout\ViewLayoutStretch.cs" />
+    <Compile Include="View Layout\ViewLayoutWeekCorner.cs" />
+    <Compile Include="View Layout\ViewLayoutMonths.cs" />
+    <Compile Include="View Layout\ViewLayoutCrumbs.cs" />
+    <Compile Include="View Layout\ViewLayoutColorStack.cs" />
+    <Compile Include="View Layout\ViewLayoutMenuSepGap.cs" />
+    <Compile Include="View Layout\ViewLayoutMenuItemsPile.cs" />
+    <Compile Include="View Layout\ViewLayoutPile.cs" />
+    <Compile Include="View Layout\ViewLayoutMenuItemSelect.cs" />
+    <Compile Include="View Layout\ViewLayoutStack.cs" />
+    <Compile Include="View Base\ViewControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="View Layout\ViewLayoutControl.cs">
+    </Compile>
+    <Compile Include="View Layout\ViewLayoutFill.cs" />
+    <Compile Include="View Layout\ViewLayoutSeparator.cs" />
+    <Compile Include="View Layout\ViewLayoutScrollViewport.cs" />
+    <Compile Include="View Layout\ViewLayoutViewport.cs" />
+    <Compile Include="View Layout\ViewLayoutDocker.cs" />
+    <Compile Include="View Layout\ViewLayoutCenter.cs" />
+    <Compile Include="View Layout\ViewLayoutContext.cs" />
+    <Compile Include="Rendering\RenderContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="AccurateText\AccurateTextMemento.cs" />
+    <Compile Include="View Base\ViewContext.cs" />
+    <Compile Include="Rendering\RenderDefinitions.cs" />
+    <Compile Include="Controls Visuals\VisualControlContainment.cs" />
+    <Compile Include="View Base\ViewManager.cs" />
+    <Compile Include="View Layout\ViewLayoutMetricSpacer.cs" />
+    <Compile Include="View Draw\ViewDrawPanel.cs" />
+    <Compile Include="View Draw\ViewDrawSeparator.cs" />
+    <Compile Include="View Layout\ViewLayoutNull.cs" />
+    <Compile Include="View Draw\ViewDrawButton.cs" />
+    <Compile Include="View Draw\ViewDrawContent.cs" />
+    <Compile Include="View Draw\ViewDrawCanvas.cs" />
+    <Compile Include="Controls Visuals\VisualControl.cs" />
+    <Compile Include="View Base\ViewLeaf.cs" />
+    <Compile Include="View Base\ViewBase.cs" />
+    <Compile Include="View Base\ViewComposite.cs" />
+    <Compile Include="View Draw\ViewDrawDocker.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls Toolkit\KryptonInputBox.resx">
+      <DependentUpon>KryptonInputBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls Visuals\VisualTaskDialog.resx">
+      <DependentUpon>VisualTaskDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls Toolkit\KryptonMessageBox.resx">
+      <DependentUpon>KryptonMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolkit\KryptonCheckButtonCollectionForm.resx">
+      <DependentUpon>KryptonCheckButtonCollectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Toolkit\PaletteDrawBordersSelector.resx">
+      <DependentUpon>PaletteDrawBordersSelector.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplitVertical.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SplitHorizontal.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTreeView.bmp" />
+    <None Include="Resources\TreePlusBox.png" />
+    <None Include="Resources\TreeMinusBox.png" />
+    <None Include="Resources\TreeExpandPlus.png" />
+    <None Include="Resources\TreeCollapseMinus.png" />
+    <None Include="Resources\TreeExpandDark.png" />
+    <None Include="Resources\TreeCollapseDark.png" />
+    <None Include="Resources\TreeExpandWhite.png" />
+    <None Include="Resources\TreeCollapseBlack.png" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonInputBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTaskDialogCommand.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTaskDialog.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonMessageBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTrackBar.bmp" />
+    <None Include="Resources\ComponentYellow.png" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonManager.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonHeaderGroup.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonGroup.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonHeader.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonPanel.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonLabel.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonPalette.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonSplitContainer.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckSet.bmp" />
+    <EmbeddedResource Include="General\ModalWaitDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ModalWaitDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonBorderEdge.bmp" />
+    <Content Include="Krypton.ico" />
+    <None Include="Resources\arrow_up_blue.png" />
+    <None Include="Resources\arrow_down_blue.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\2010ButtonClose.bmp" />
+    <None Include="Resources\2010ButtonCloseH.bmp" />
+    <None Include="Resources\2010ButtonMax.bmp" />
+    <None Include="Resources\2010ButtonMin.bmp" />
+    <None Include="Resources\2010ButtonRestore.bmp" />
+    <None Include="Resources\2010ButtonCloseBlack.bmp" />
+    <None Include="Resources\2010ButtonMaxBlack.bmp" />
+    <None Include="Resources\2010ButtonMinBlack.bmp" />
+    <None Include="Resources\2010ButtonRestoreBlack.bmp" />
+    <None Include="Resources\2010ButtonMDIClose.bmp" />
+    <None Include="Resources\2010ButtonMDICloseBlack.bmp" />
+    <None Include="Resources\2010ButtonMDIMax.bmp" />
+    <None Include="Resources\2010ButtonMDIMaxBlack.bmp" />
+    <None Include="Resources\2010ButtonMDIMin.bmp" />
+    <None Include="Resources\2010ButtonMDIMinBlack.bmp" />
+    <None Include="Resources\2010ButtonMDIRestore.bmp" />
+    <None Include="Resources\2010ButtonMDIRestoreBlack.bmp" />
+    <None Include="Resources\2010BlueContextMenuSub.png" />
+    <None Include="Resources\2010BlueDropDownButton.png" />
+    <None Include="Resources\2010BlackContextMenuSub.png" />
+    <None Include="Resources\2010BlackDropDownButton.png" />
+    <Content Include="Resources\BlackButtonCloseA.bmp" />
+    <None Include="Resources\BlackButtonCollapse.bmp" />
+    <None Include="Resources\BlackButtonExpand.bmp" />
+    <Content Include="Resources\BlackDropDownButton.png" />
+    <None Include="Resources\SparkleDropDownButton.png" />
+    <Content Include="Resources\BlueDropDownButton.png" />
+    <Content Include="Resources\ButtonColorImageSmall.png" />
+    <Content Include="Resources\ButtonNoColor.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\CBSparkle.bmp" />
+    <None Include="Resources\CBSparklePurple.bmp" />
+    <None Include="Resources\CBSparkleOrange.bmp" />
+    <None Include="Resources\CB2010Black.bmp" />
+    <None Include="Resources\CB2010Blue.bmp" />
+    <None Include="Resources\CB2010Silver.bmp" />
+    <Content Include="Resources\DisabledDropDownButton.png" />
+    <None Include="Resources\GallerySilverBlack.bmp" />
+    <None Include="Resources\GalleryBlue.bmp" />
+    <None Include="Resources\DisabledGalleryDropButton.png" />
+    <None Include="Resources\DisabledDropUpButton.png" />
+    <None Include="Resources\DisabledDropDownButton2.png" />
+    <None Include="Resources\RBSparkleN.png" />
+    <None Include="Resources\RBSparkleNC.png" />
+    <None Include="Resources\RBSparkleP.png" />
+    <None Include="Resources\RBSparklePC.png" />
+    <None Include="Resources\RBSparkleT.png" />
+    <None Include="Resources\RBSparkleTC.png" />
+    <None Include="Resources\RBSparkleDC.png" />
+    <None Include="Resources\RBSparkleD.png" />
+    <None Include="Resources\RBSparklePurpleP.png" />
+    <None Include="Resources\RBSparklePurplePC.png" />
+    <None Include="Resources\RBSparklePurpleT.png" />
+    <None Include="Resources\RBSparklePurpleTC.png" />
+    <None Include="Resources\RBSparklePurpleNC.png" />
+    <None Include="Resources\RBSparkleOrangeTC.png" />
+    <None Include="Resources\RBSparkleOrangeNC.png" />
+    <None Include="Resources\RBSparkleOrangeP.png" />
+    <None Include="Resources\RBSparkleOrangePC.png" />
+    <None Include="Resources\RBSparkleOrangeT.png" />
+    <None Include="Resources\ProfessionalPinHorizontalButton.bmp" />
+    <None Include="Resources\ProfessionalPinVerticalButton.bmp" />
+    <None Include="Resources\ProfessionalMaximize.bmp" />
+    <None Include="Resources\ProfessionalRestore.bmp" />
+    <None Include="Resources\RibbonDown2010.bmp" />
+    <None Include="Resources\RibbonUp2010.bmp" />
+    <None Include="Resources\RibbonDown2010Black.bmp" />
+    <None Include="Resources\RibbonUp2010Black.bmp" />
+    <None Include="Resources\MdiRibbonExpand.bmp" />
+    <None Include="Resources\MdiRibbonMinimize.bmp" />
+    <None Include="Resources\ProfessionalPendantExpandA.bmp" />
+    <None Include="Resources\ProfessionalPendantExpandI.bmp" />
+    <None Include="Resources\ProfessionalPendantMinimizeI.bmp" />
+    <None Include="Resources\ProfessionalPendantMinimizeA.bmp" />
+    <None Include="Resources\RB2010BlueP.png" />
+    <None Include="Resources\RB2010BlueT.png" />
+    <None Include="Resources\RB2010BlueN.png" />
+    <None Include="Resources\RB2010BlueNC.png" />
+    <None Include="Resources\RB2010BlueTC.png" />
+    <None Include="Resources\RB2010BluePC.png" />
+    <None Include="Resources\RB2010SilverN.png" />
+    <None Include="Resources\RB2010SilverNC.png" />
+    <None Include="Resources\RB2010SilverTC.png" />
+    <None Include="Resources\RB2010SilverPC.png" />
+    <None Include="Resources\RB2010BlueD.png" />
+    <None Include="Resources\RB2010BlueDC.png" />
+    <None Include="Resources\Gallery2010.bmp" />
+    <None Include="Resources\error.png" />
+    <None Include="Resources\help2.png" />
+    <None Include="Resources\information.png" />
+    <None Include="Resources\sign_warning.png" />
+    <None Include="Resources\errorSmall.png" />
+    <None Include="Resources\help2Small.png" />
+    <None Include="Resources\informationSmall.png" />
+    <None Include="Resources\sign_warningSmall.png" />
+    <Content Include="Resources\SilverDropDownButton.png" />
+    <None Include="Resources\WhitePendantRibbonMinimize.bmp" />
+    <None Include="Resources\WhitePendantRibbonExpand.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonGroupBox.bmp" />
+    <None Include="Resources\WhiteRestore.bmp" />
+    <None Include="Resources\WhiteMaximize.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonWrapLabel.bmp" />
+    <None Include="Resources\WhitePinVerticalButton.bmp" />
+    <None Include="Resources\WhitePinHorizontalButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonSeparator.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDateTimePicker.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonMonthCalendar.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonBreadCrumbItem.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDomainUpDown.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonBreadCrumb.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonNumericUpDown.bmp" />
+    <None Include="Resources\SparkleGrayIndeterminate.png" />
+    <None Include="Resources\SparkleGrayChecked.png" />
+    <None Include="Resources\SparkleDropDownOutlineButton.png" />
+    <None Include="Resources\SparkleChecked.png" />
+    <None Include="Resources\SparkleIndeterminate.png" />
+    <None Include="Resources\SparkleDropUpButton.png" />
+    <None Include="Resources\SparkleGalleryDropButton.png" />
+    <None Include="Resources\SparkleContextMenuSub.png" />
+    <None Include="Resources\WhiteCloseButton.bmp" />
+    <None Include="Resources\WhitePendantMinA.bmp" />
+    <None Include="Resources\WhitePendantCloseA.bmp" />
+    <None Include="Resources\WhitePendantRestoreA.bmp" />
+    <None Include="Resources\WhiteNextButton.bmp" />
+    <None Include="Resources\WhiteDropDownButton.bmp" />
+    <None Include="Resources\WhiteContextButton.bmp" />
+    <None Include="Resources\WhiteArrowUpButton.bmp" />
+    <None Include="Resources\WhiteArrowRightButton.bmp" />
+    <None Include="Resources\WhiteArrowLeftButton.bmp" />
+    <None Include="Resources\WhiteArrowDownButton.bmp" />
+    <None Include="Resources\WhitePreviousButton.bmp" />
+    <None Include="Resources\WhiteButtonClose.bmp" />
+    <None Include="Resources\SparkleButtonRestoreI.bmp" />
+    <None Include="Resources\SparkleButtonRestoreA.bmp" />
+    <None Include="Resources\SparkleButtonMinI.bmp" />
+    <None Include="Resources\SparkleButtonMinA.bmp" />
+    <None Include="Resources\SparkleButtonMaxI.bmp" />
+    <None Include="Resources\SparkleButtonMaxA.bmp" />
+    <None Include="Resources\SparkleButtonCloseI.bmp" />
+    <None Include="Resources\SparkleButtonCloseA.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuImageSelect.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCommand.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckedListBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonListBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonColorButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDropButton.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuColorColumns.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonMaskedTextBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuItem.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuItems.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuSeparator.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenuHeading.bmp" />
+    <None Include="Resources\BlueContextMenuSub.png" />
+    <None Include="Resources\SystemContextMenuSub.png" />
+    <None Include="Resources\SilverContextMenuSub.png" />
+    <None Include="Resources\BlackContextMenuSub.png" />
+    <None Include="Resources\SystemIndeterminate.png" />
+    <None Include="Resources\SystemChecked.png" />
+    <None Include="Resources\Office2007Indeterminate.png" />
+    <None Include="Resources\Office2007Checked.png" />
+    <None Include="Resources\Empty16x16.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonContextMenu.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonRichTextBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonComboBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonTextBox.bmp" />
+    <None Include="Resources\GridErrorIcon.bmp" />
+    <None Include="Resources\GridRowIndicators.bmp" />
+    <None Include="Resources\GridSortOrder.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDataGridView.bmp" />
+    <None Include="Resources\RB2007BlackT.png" />
+    <None Include="Resources\RB2007BlackPC.png" />
+    <None Include="Resources\RB2007BlackP.png" />
+    <None Include="Resources\RB2007BlackNC.png" />
+    <None Include="Resources\RB2007BlackN.png" />
+    <None Include="Resources\RB2007SilverTC.png" />
+    <None Include="Resources\RB2007SilverT.png" />
+    <None Include="Resources\RB2007SilverPC.png" />
+    <None Include="Resources\RB2007SilverP.png" />
+    <None Include="Resources\RB2007SilverNC.png" />
+    <None Include="Resources\RB2007SilverN.png" />
+    <None Include="Resources\RB2007BlackTC.png" />
+    <None Include="Resources\RB2007BlueT.png" />
+    <None Include="Resources\RB2007BluePC.png" />
+    <None Include="Resources\RB2007BlueP.png" />
+    <None Include="Resources\RB2007BlueNC.png" />
+    <None Include="Resources\RB2007BlueN.png" />
+    <None Include="Resources\RB2007BlueDC.png" />
+    <None Include="Resources\RB2007BlueD.png" />
+    <None Include="Resources\RB2007BlueTC.png" />
+    <None Include="Resources\RB2007Blue.png" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonRadioButton.bmp" />
+    <None Include="Resources\CB2007Silver.bmp" />
+    <None Include="Resources\CB2007Blue.bmp" />
+    <None Include="Resources\CB2007Black.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonCheckBox.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonButtonSpec.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonGroupPanel.bmp" />
+    <None Include="Resources\ProfessionalPendantRestoreA.bmp" />
+    <None Include="Resources\ProfessionalPendantMinI.bmp" />
+    <None Include="Resources\ProfessionalPendantMinA.bmp" />
+    <None Include="Resources\ProfessionalPendantCloseI.bmp" />
+    <None Include="Resources\ProfessionalPendantCloseA.bmp" />
+    <None Include="Resources\ProfessionalPendantRestoreI.bmp" />
+    <None Include="Resources\MdiMin.bmp" />
+    <None Include="Resources\MdiClose.bmp" />
+    <None Include="Resources\MdiRestore.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonForm.bmp" />
+    <None Include="Resources\ProfessionalButtonRestoreA.bmp" />
+    <None Include="Resources\ProfessionalButtonMinI.bmp" />
+    <None Include="Resources\ProfessionalButtonMinA.bmp" />
+    <None Include="Resources\ProfessionalButtonMaxI.bmp" />
+    <None Include="Resources\ProfessionalButtonMaxA.bmp" />
+    <None Include="Resources\ProfessionalButtonCloseI.bmp" />
+    <None Include="Resources\ProfessionalButtonCloseA.bmp" />
+    <None Include="Resources\ProfessionalButtonRestoreI.bmp" />
+    <None Include="Resources\SilverButtonRestoreA.bmp" />
+    <None Include="Resources\BlueButtonRestoreI.bmp" />
+    <None Include="Resources\BlueButtonRestoreA.bmp" />
+    <None Include="Resources\BlackButtonRestoreI.bmp" />
+    <None Include="Resources\BlackButtonRestoreAH.bmp" />
+    <None Include="Resources\BlackButtonRestoreA.bmp" />
+    <None Include="Resources\SilverButtonRestoreI.bmp" />
+    <None Include="Resources\SilverButtonMinA.bmp" />
+    <None Include="Resources\SilverButtonMaxI.bmp" />
+    <None Include="Resources\SilverButtonMaxA.bmp" />
+    <None Include="Resources\SilverButtonCloseI.bmp" />
+    <None Include="Resources\SilverButtonCloseA.bmp" />
+    <None Include="Resources\BlueButtonMinI.bmp" />
+    <None Include="Resources\BlueButtonMinA.bmp" />
+    <None Include="Resources\BlueButtonMaxI.bmp" />
+    <None Include="Resources\BlueButtonMaxA.bmp" />
+    <None Include="Resources\BlueButtonCloseI.bmp" />
+    <None Include="Resources\BlueButtonCloseA.bmp" />
+    <None Include="Resources\BlackButtonMinI.bmp" />
+    <None Include="Resources\BlackButtonMinAH.bmp" />
+    <None Include="Resources\BlackButtonMinA.bmp" />
+    <None Include="Resources\BlackButtonMaxI.bmp" />
+    <None Include="Resources\BlackButtonMaxAH.bmp" />
+    <None Include="Resources\BlackButtonMaxA.bmp" />
+    <None Include="Resources\BlackButtonCloseI.bmp" />
+    <None Include="Resources\BlackButtonCloseAH.bmp" />
+    <None Include="Resources\SilverButtonMinI.bmp" />
+    <None Include="Resources\ProfessionalDropDownButton.bmp" />
+    <None Include="Resources\SelectParentControl.png" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonLinkLabel.bmp" />
+    <None Include="Resources\ProfessionalArrowRightButton.bmp" />
+    <None Include="Resources\ProfessionalArrowLeftButton.bmp" />
+    <None Include="Resources\ProfessionalArrowDownButton.bmp" />
+    <None Include="Resources\ProfessionalArrowUpButton.bmp" />
+    <None Include="Resources\ProfessionalNextButton.bmp" />
+    <None Include="Resources\ProfessionalContextButton.bmp" />
+    <None Include="Resources\ProfessionalCloseButton.bmp" />
+    <None Include="Resources\ProfessionalPreviousButton.bmp" />
+    <None Include="Resources\HourGlass.png" />
+    <None Include="StrongKrypton.snk" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties DocumentXCommentEditorState="&lt;HtmlEditState&gt;&#xA;  &lt;Attributes /&gt;&#xA;&lt;/HtmlEditState&gt;" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E00FF125-CB44-480B-847E-7B3D27E481EB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComponentFactory.Krypton.Docking</RootNamespace>
+    <AssemblyName>ComponentFactory.Krypton.Docking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Control Docking\KryptonDockableNavigator.cs" />
+    <Compile Include="Control Docking\KryptonDockspaceSlide.cs" />
+    <Compile Include="Control Docking\KryptonStorePage.cs" />
+    <Compile Include="Control Docking\KryptonAutoHiddenSlidePanel.cs" />
+    <Compile Include="Control Docking\KryptonAutoHiddenProxyPage.cs" />
+    <Compile Include="Control Docking\KryptonDockableWorkspace.cs" />
+    <Compile Include="Control Docking\KryptonDockspaceSeparator.cs" />
+    <Compile Include="Control Docking\KryptonSpace.cs" />
+    <Compile Include="Control Docking\KryptonFloatspace.cs" />
+    <Compile Include="Control Docking\KryptonFloatingWindow.cs" />
+    <Compile Include="Control Docking\KryptonAutoHiddenPanel.cs" />
+    <Compile Include="Control Docking\KryptonAutoHiddenGroup.cs" />
+    <Compile Include="Control Docking\KryptonDockspace.cs" />
+    <Compile Include="Dragging\DockingDragTargetProvider.cs" />
+    <Compile Include="Dragging\DockingDragManager.cs" />
+    <Compile Include="Dragging\DragTargetNull.cs" />
+    <Compile Include="Dragging\DragTargetControlEdge.cs" />
+    <Compile Include="Elements Base\DockingElementClosedCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Elements Base\DockingElementOpenCollection.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Elements Base\DockingElement.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Elements Impl\KryptonDockingNavigator.cs" />
+    <Compile Include="Elements Impl\KryptonDockingWorkspace.cs" />
+    <Compile Include="Elements Impl\KryptonDockingSpace.cs" />
+    <Compile Include="Elements Impl\KryptonDockingFloatspace.cs" />
+    <Compile Include="Elements Impl\KryptonDockingFloatingWindow.cs" />
+    <Compile Include="Elements Impl\KryptonDockingFloating.cs" />
+    <Compile Include="Elements Impl\KryptonDockingAutoHiddenGroup.cs" />
+    <Compile Include="Elements Impl\KryptonDockingDockspace.cs" />
+    <Compile Include="Elements Impl\KryptonDockingEdgeAutoHidden.cs" />
+    <Compile Include="Elements Impl\KryptonDockingEdgeDocked.cs" />
+    <Compile Include="Elements Impl\KryptonDockingEdge.cs" />
+    <Compile Include="Elements Impl\KryptonDockingManager.cs" />
+    <Compile Include="Elements Impl\KryptonDockingControl.cs" />
+    <Compile Include="Event Args\AutoHiddenGroupEventArgs.cs" />
+    <Compile Include="Event Args\AutoHiddenGroupPanelEventArgs.cs" />
+    <Compile Include="Event Args\AutoHiddenSeparatorResizeEventArgs.cs" />
+    <Compile Include="Event Args\CloseRequestEventArgs.cs" />
+    <Compile Include="Event Args\CancelUniqueNameEventArgs.cs" />
+    <Compile Include="Event Args\CancelDropDownEventArgs.cs" />
+    <Compile Include="Event Args\ContextPageEventArgs.cs" />
+    <Compile Include="Event Args\AutoHiddenShowingStateEventArgs.cs" />
+    <Compile Include="Event Args\DockableNavigatorEventArgs.cs" />
+    <Compile Include="Event Args\DockPageSavingEventArgs.cs" />
+    <Compile Include="Event Args\DockPageLoadingEventArgs.cs" />
+    <Compile Include="Event Args\PagesEventArgs.cs" />
+    <Compile Include="Event Args\ScreenAndOffsetEventArgs.cs" />
+    <Compile Include="Event Args\UniqueNamesEventArgs.cs" />
+    <Compile Include="Event Args\StorePageEventArgs.cs" />
+    <Compile Include="Event Args\UniqueNameEventArgs.cs" />
+    <Compile Include="Event Args\DockspaceSeparatorResizeEventArgs.cs" />
+    <Compile Include="Event Args\DockableWorkspaceEventArgs.cs" />
+    <Compile Include="Event Args\DockableWorkspaceCellEventArgs.cs" />
+    <Compile Include="Event Args\DockspaceEventArgs.cs" />
+    <Compile Include="Event Args\FloatspaceEventArgs.cs" />
+    <Compile Include="Event Args\FloatspaceCellEventArgs.cs" />
+    <Compile Include="Event Args\FloatingWindowEventArgs.cs" />
+    <Compile Include="Event Args\DockspaceSeparatorEventArgs.cs" />
+    <Compile Include="Event Args\DockspaceCellEventArgs.cs" />
+    <Compile Include="Event Args\DockGlobalLoadingEventArgs.cs" />
+    <Compile Include="Event Args\DockGlobalSavingEventArgs.cs" />
+    <Compile Include="General\ObscureControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="General\DockingMultiUpdate.cs" />
+    <Compile Include="General\DockingHelper.cs" />
+    <Compile Include="General\Definitions.cs" />
+    <Compile Include="General\PlatformInvoke.cs" />
+    <Compile Include="Palette\DockingManagerStrings.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="ViewDraw\ViewDrawAutoHiddenTab.cs" />
+    <None Include="StrongKrypton.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+    <None Include="Resources\help2.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\check2.png" />
+    <None Include="Resources\CF_Logo.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDockableNavigator.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDockableWorkspace.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonDockingManager.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator.csproj">
+      <Project>{dc0dd714-4d19-4f31-a6d0-ea209d4f0ea8}</Project>
+      <Name>ComponentFactory.Krypton.Navigator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit.csproj">
+      <Project>{96ecaecc-54f8-4aa5-8591-b443c2d9565f}</Project>
+      <Name>ComponentFactory.Krypton.Toolkit</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Workspace\ComponentFactory.Krypton.Workspace.csproj">
+      <Project>{9144ba04-155b-4b66-b85a-9a89aa93f7d4}</Project>
+      <Name>ComponentFactory.Krypton.Workspace</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

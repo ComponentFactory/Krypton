@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -380,11 +380,11 @@ namespace ComponentFactory.Krypton.Ribbon
                     _visibleMenu = new ToolStripMenuItem("Visible", null, new EventHandler(OnVisible));
                     _enabledMenu = new ToolStripMenuItem("Enabled", null, new EventHandler(OnEnabled));
                     _checkedMenu = new ToolStripMenuItem("Checked", null, new EventHandler(OnChecked));
-                    _moveFirstMenu = new ToolStripMenuItem("Move RadioButton First", ComponentFactory.Krypton.Design.Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
-                    _movePreviousMenu = new ToolStripMenuItem("Move RadioButton Previous", ComponentFactory.Krypton.Design.Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
-                    _moveNextMenu = new ToolStripMenuItem("Move RadioButton Next", ComponentFactory.Krypton.Design.Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
-                    _moveLastMenu = new ToolStripMenuItem("Move RadioButton Last", ComponentFactory.Krypton.Design.Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
-                    _deleteRadioButtonMenu = new ToolStripMenuItem("Delete RadioButton", ComponentFactory.Krypton.Design.Properties.Resources.delete2, new EventHandler(OnDeleteRadioButton));
+                    _moveFirstMenu = new ToolStripMenuItem("Move RadioButton First", Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
+                    _movePreviousMenu = new ToolStripMenuItem("Move RadioButton Previous", Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
+                    _moveNextMenu = new ToolStripMenuItem("Move RadioButton Next", Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
+                    _moveLastMenu = new ToolStripMenuItem("Move RadioButton Last", Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
+                    _deleteRadioButtonMenu = new ToolStripMenuItem("Delete RadioButton", Properties.Resources.delete2, new EventHandler(OnDeleteRadioButton));
                     _cms.Items.AddRange(new ToolStripItem[] { _toggleHelpersMenu, new ToolStripSeparator(),
                                                               _visibleMenu, _enabledMenu, _checkedMenu,  new ToolStripSeparator(),
                                                               _moveFirstMenu, _movePreviousMenu, _moveNextMenu, _moveLastMenu, new ToolStripSeparator(),

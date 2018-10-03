@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -1077,28 +1077,28 @@ namespace ComponentFactory.Krypton.Ribbon
                     _minimumSMenu = new ToolStripMenuItem("Small", null, new EventHandler(OnMinSmall));
                     _minimumSizeMenu = new ToolStripMenuItem("Minimum Size");
                     _minimumSizeMenu.DropDownItems.AddRange(new ToolStripItem[] { _minimumLMenu, _minimumMMenu, _minimumSMenu });
-                    _moveFirstMenu = new ToolStripMenuItem("Move Lines First", ComponentFactory.Krypton.Design.Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
-                    _movePreviousMenu = new ToolStripMenuItem("Move Lines Previous", ComponentFactory.Krypton.Design.Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
-                    _moveNextMenu = new ToolStripMenuItem("Move Lines Next", ComponentFactory.Krypton.Design.Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
-                    _moveLastMenu = new ToolStripMenuItem("Move Lines Last", ComponentFactory.Krypton.Design.Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
+                    _moveFirstMenu = new ToolStripMenuItem("Move Lines First", Properties.Resources.MoveFirst, new EventHandler(OnMoveFirst));
+                    _movePreviousMenu = new ToolStripMenuItem("Move Lines Previous", Properties.Resources.MovePrevious, new EventHandler(OnMovePrevious));
+                    _moveNextMenu = new ToolStripMenuItem("Move Lines Next", Properties.Resources.MoveNext, new EventHandler(OnMoveNext));
+                    _moveLastMenu = new ToolStripMenuItem("Move Lines Last", Properties.Resources.MoveLast, new EventHandler(OnMoveLast));
                     _moveToGroupMenu = new ToolStripMenuItem("Move Lines To Group");
-                    _addButtonMenu = new ToolStripMenuItem("Add Button", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupButton, new EventHandler(OnAddButton));
-                    _addColorButtonMenu = new ToolStripMenuItem("Add Color Button", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupColorButton, new EventHandler(OnAddColorButton));
-                    _addCheckBoxMenu = new ToolStripMenuItem("Add CheckBox", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupCheckBox, new EventHandler(OnAddCheckBox));
-                    _addRadioButtonMenu = new ToolStripMenuItem("Add RadioButton", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupRadioButton, new EventHandler(OnAddRadioButton));
-                    _addLabelMenu = new ToolStripMenuItem("Add Label", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupLabel, new EventHandler(OnAddLabel));
-                    _addCustomControlMenu = new ToolStripMenuItem("Add Custom Control", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupCustomControl, new EventHandler(OnAddCustomControl));
-                    _addClusterMenu = new ToolStripMenuItem("Add Cluster", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupCluster, new EventHandler(OnAddCluster));
-                    _addTextBoxMenu = new ToolStripMenuItem("Add TextBox", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupTextBox, new EventHandler(OnAddTextBox));
-                    _addMaskedTextBoxMenu = new ToolStripMenuItem("Add MaskedTextBox", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupMaskedTextBox, new EventHandler(OnAddMaskedTextBox));
-                    _addRichTextBoxMenu = new ToolStripMenuItem("Add RichTextBox", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupRichTextBox, new EventHandler(OnAddRichTextBox));
-                    _addComboBoxMenu = new ToolStripMenuItem("Add ComboBox", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupComboBox, new EventHandler(OnAddComboBox));
-                    _addNumericUpDownMenu = new ToolStripMenuItem("Add NumericUpDown", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupNumericUpDown, new EventHandler(OnAddNumericUpDown));
-                    _addDomainUpDownMenu = new ToolStripMenuItem("Add DomainUpDown", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupDomainUpDown, new EventHandler(OnAddDomainUpDown));
-                    _addDateTimePickerMenu = new ToolStripMenuItem("Add DateTimePicker", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupDateTimePicker, new EventHandler(OnAddDateTimePicker));
-                    _addTrackBarMenu = new ToolStripMenuItem("Add TrackBar", ComponentFactory.Krypton.Design.Properties.Resources.KryptonRibbonGroupTrackBar, new EventHandler(OnAddTrackBar));
+                    _addButtonMenu = new ToolStripMenuItem("Add Button", Properties.Resources.KryptonRibbonGroupButton, new EventHandler(OnAddButton));
+                    _addColorButtonMenu = new ToolStripMenuItem("Add Color Button", Properties.Resources.KryptonRibbonGroupColorButton, new EventHandler(OnAddColorButton));
+                    _addCheckBoxMenu = new ToolStripMenuItem("Add CheckBox", Properties.Resources.KryptonRibbonGroupCheckBox, new EventHandler(OnAddCheckBox));
+                    _addRadioButtonMenu = new ToolStripMenuItem("Add RadioButton", Properties.Resources.KryptonRibbonGroupRadioButton, new EventHandler(OnAddRadioButton));
+                    _addLabelMenu = new ToolStripMenuItem("Add Label", Properties.Resources.KryptonRibbonGroupLabel, new EventHandler(OnAddLabel));
+                    _addCustomControlMenu = new ToolStripMenuItem("Add Custom Control", Properties.Resources.KryptonRibbonGroupCustomControl, new EventHandler(OnAddCustomControl));
+                    _addClusterMenu = new ToolStripMenuItem("Add Cluster", Properties.Resources.KryptonRibbonGroupCluster, new EventHandler(OnAddCluster));
+                    _addTextBoxMenu = new ToolStripMenuItem("Add TextBox", Properties.Resources.KryptonRibbonGroupTextBox, new EventHandler(OnAddTextBox));
+                    _addMaskedTextBoxMenu = new ToolStripMenuItem("Add MaskedTextBox", Properties.Resources.KryptonRibbonGroupMaskedTextBox, new EventHandler(OnAddMaskedTextBox));
+                    _addRichTextBoxMenu = new ToolStripMenuItem("Add RichTextBox", Properties.Resources.KryptonRibbonGroupRichTextBox, new EventHandler(OnAddRichTextBox));
+                    _addComboBoxMenu = new ToolStripMenuItem("Add ComboBox", Properties.Resources.KryptonRibbonGroupComboBox, new EventHandler(OnAddComboBox));
+                    _addNumericUpDownMenu = new ToolStripMenuItem("Add NumericUpDown", Properties.Resources.KryptonRibbonGroupNumericUpDown, new EventHandler(OnAddNumericUpDown));
+                    _addDomainUpDownMenu = new ToolStripMenuItem("Add DomainUpDown", Properties.Resources.KryptonRibbonGroupDomainUpDown, new EventHandler(OnAddDomainUpDown));
+                    _addDateTimePickerMenu = new ToolStripMenuItem("Add DateTimePicker", Properties.Resources.KryptonRibbonGroupDateTimePicker, new EventHandler(OnAddDateTimePicker));
+                    _addTrackBarMenu = new ToolStripMenuItem("Add TrackBar", Properties.Resources.KryptonRibbonGroupTrackBar, new EventHandler(OnAddTrackBar));
                     _clearItemsMenu = new ToolStripMenuItem("Clear Items", null, new EventHandler(OnClearItems));
-                    _deleteLinesMenu = new ToolStripMenuItem("Delete Lines", ComponentFactory.Krypton.Design.Properties.Resources.delete2, new EventHandler(OnDeleteLines));
+                    _deleteLinesMenu = new ToolStripMenuItem("Delete Lines", Properties.Resources.delete2, new EventHandler(OnDeleteLines));
                     _cms.Items.AddRange(new ToolStripItem[] { _toggleHelpersMenu, new ToolStripSeparator(),
                                                               _visibleMenu, _maximumSizeMenu, _minimumSizeMenu, new ToolStripSeparator(),
                                                               _moveFirstMenu, _movePreviousMenu, _moveNextMenu, _moveLastMenu, new ToolStripSeparator(),

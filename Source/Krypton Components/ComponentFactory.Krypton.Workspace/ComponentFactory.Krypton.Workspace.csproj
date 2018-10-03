@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9144BA04-155B-4B66-B85A-9A89AA93F7D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComponentFactory.Krypton.Workspace</RootNamespace>
+    <AssemblyName>ComponentFactory.Krypton.Workspace</AssemblyName>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.XML" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls Workspace\KryptonWorkspaceSequenceConverter.cs" />
+    <Compile Include="Controls Workspace\KryptonWorkspaceCollection.cs">
+    </Compile>
+    <Compile Include="Controls Workspace\KryptonWorkspaceCell.cs" />
+    <Compile Include="Controls Workspace\KryptonWorkspaceSequence.cs" />
+    <Compile Include="Controls Workspace\KryptonWorkspace.cs" />
+    <Compile Include="Dragging\DragTargetWorkspace.cs" />
+    <Compile Include="Dragging\DragTargetWorkspaceCellTransfer.cs" />
+    <Compile Include="Dragging\DragTargetWorkspaceCellEdge.cs" />
+    <Compile Include="Dragging\DragTargetWorkspaceEdge.cs" />
+    <Compile Include="EventArgs\CellDragCancelEventArgs.cs" />
+    <Compile Include="EventArgs\ActiveCellChangedEventArgs.cs" />
+    <Compile Include="EventArgs\ActivePageChangedEventArgs.cs" />
+    <Compile Include="EventArgs\PagesUnmatchedEventArgs.cs" />
+    <Compile Include="EventArgs\PageLoadingEventArgs.cs" />
+    <Compile Include="EventArgs\PageSavingEventArgs.cs" />
+    <Compile Include="EventArgs\RecreateLoadingPageEventArgs.cs" />
+    <Compile Include="EventArgs\XmlLoadingEventArgs.cs" />
+    <Compile Include="EventArgs\XmlSavingEventArgs.cs" />
+    <Compile Include="EventArgs\WorkspaceCellEventArgs.cs" />
+    <Compile Include="General\CellPageNotify.cs" />
+    <Compile Include="General\PlatformInvoke.cs" />
+    <Compile Include="General\StarSize.cs" />
+    <Compile Include="General\Definitions.cs" />
+    <Compile Include="General\StarNumber.cs" />
+    <Compile Include="Palette\WorkspacePageMenu.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View Draw\ViewDrawWorkspaceSeparator.cs" />
+    <Compile Include="Workspace\KryptonWorkspaceActionList.cs" />
+    <Compile Include="Workspace\KryptonWorkspaceCellDesigner.cs" />
+    <Compile Include="Workspace\KryptonWorkspaceCollectionEditor.cs" />
+    <Compile Include="Workspace\KryptonWorkspaceDesigner.cs" />
+    <Compile Include="Workspace\KryptonWorkspaceSequenceDesigner.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+    <None Include="Resources\arrow_up_blue.png" />
+    <None Include="Resources\arrow_down_blue.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\CF_Logo.bmp" />
+    <None Include="Resources\help2.png" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\check2.png" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonWorkspaceSequence.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonWorkspaceCell.bmp" />
+    <EmbeddedResource Include="ToolboxBitmaps\KryptonWorkspace.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StrongKrypton.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator.csproj">
+      <Project>{dc0dd714-4d19-4f31-a6d0-ea209d4f0ea8}</Project>
+      <Name>ComponentFactory.Krypton.Navigator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit.csproj">
+      <Project>{96ecaecc-54f8-4aa5-8591-b443c2d9565f}</Project>
+      <Name>ComponentFactory.Krypton.Toolkit</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

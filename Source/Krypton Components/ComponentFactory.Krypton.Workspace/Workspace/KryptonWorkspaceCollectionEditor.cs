@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -987,7 +987,7 @@ namespace ComponentFactory.Krypton.Workspace
                 // buttonMoveUp
                 // 
                 this.buttonMoveUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-                this.buttonMoveUp.Image = ComponentFactory.Krypton.Design.Properties.Resources.arrow_up_blue;
+                this.buttonMoveUp.Image = Properties.Resources.arrow_up_blue;
                 this.buttonMoveUp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 this.buttonMoveUp.Location = new System.Drawing.Point(272, 32);
                 this.buttonMoveUp.Name = "buttonMoveUp";
@@ -1002,7 +1002,7 @@ namespace ComponentFactory.Krypton.Workspace
                 // buttonMoveDown
                 // 
                 this.buttonMoveDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-                this.buttonMoveDown.Image = ComponentFactory.Krypton.Design.Properties.Resources.arrow_down_blue;
+                this.buttonMoveDown.Image = Properties.Resources.arrow_down_blue;
                 this.buttonMoveDown.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 this.buttonMoveDown.Location = new System.Drawing.Point(272, 66);
                 this.buttonMoveDown.Name = "buttonMoveDown";
@@ -1017,7 +1017,7 @@ namespace ComponentFactory.Krypton.Workspace
                 // buttonDelete
                 // 
                 this.buttonDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-                this.buttonDelete.Image = ComponentFactory.Krypton.Design.Properties.Resources.delete2;
+                this.buttonDelete.Image = Properties.Resources.delete2;
                 this.buttonDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 this.buttonDelete.Location = new System.Drawing.Point(272, 234);
                 this.buttonDelete.Name = "buttonDelete";
@@ -1062,7 +1062,7 @@ namespace ComponentFactory.Krypton.Workspace
                 // buttonAddPage
                 // 
                 this.buttonAddPage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-                this.buttonAddPage.Image = ComponentFactory.Krypton.Design.Properties.Resources.add;
+                this.buttonAddPage.Image = Properties.Resources.add;
                 this.buttonAddPage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 this.buttonAddPage.Location = new System.Drawing.Point(272, 114);
                 this.buttonAddPage.Name = "buttonAddPage";
@@ -1077,7 +1077,7 @@ namespace ComponentFactory.Krypton.Workspace
                 // buttonAddCell
                 // 
                 this.buttonAddCell.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-                this.buttonAddCell.Image = ComponentFactory.Krypton.Design.Properties.Resources.add;
+                this.buttonAddCell.Image = Properties.Resources.add;
                 this.buttonAddCell.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 this.buttonAddCell.Location = new System.Drawing.Point(272, 148);
                 this.buttonAddCell.Name = "buttonAddCell";
@@ -1092,7 +1092,7 @@ namespace ComponentFactory.Krypton.Workspace
                 // buttonAddSequence
                 // 
                 this.buttonAddSequence.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-                this.buttonAddSequence.Image = ComponentFactory.Krypton.Design.Properties.Resources.add;
+                this.buttonAddSequence.Image = Properties.Resources.add;
                 this.buttonAddSequence.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
                 this.buttonAddSequence.Location = new System.Drawing.Point(272, 182);
                 this.buttonAddSequence.Name = "buttonAddSequence";

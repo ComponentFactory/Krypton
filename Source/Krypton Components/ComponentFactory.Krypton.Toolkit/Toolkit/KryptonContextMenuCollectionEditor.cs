@@ -5,7 +5,7 @@
 //  proprietary information of Component Factory Pty Ltd, 13 Swallows Close, 
 //  Mornington, Vic 3931, Australia and are supplied subject to licence terms.
 // 
-//  Version 4.5.0.0 	www.ComponentFactory.com
+//  Version 4.6.0.0 	www.ComponentFactory.com
 // *****************************************************************************
 
 using System;
@@ -298,21 +298,21 @@ namespace ComponentFactory.Krypton.Toolkit
                 // 
                 this.imageList.TransparentColor = System.Drawing.Color.Magenta;
                 this.imageList.Images.AddRange(new Image[]{
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonContextMenuColorColumns,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonContextMenuHeading,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonContextMenuItem,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonContextMenuItems,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonContextMenuSeparator,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonRadioButton,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonCheckBox,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonCheckButton,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonLinkLabel,
-                    ComponentFactory.Krypton.Design.Properties.Resources.delete2,
-                    ComponentFactory.Krypton.Design.Properties.Resources.arrow_up_blue,
-                    ComponentFactory.Krypton.Design.Properties.Resources.arrow_down_blue,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonContextMenuColorColumns,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonContextMenuImageSelect,
-                    ComponentFactory.Krypton.Design.Properties.Resources.KryptonMonthCalendar});
+                    Properties.Resources.KryptonContextMenuColorColumns,
+                    Properties.Resources.KryptonContextMenuHeading,
+                    Properties.Resources.KryptonContextMenuItem,
+                    Properties.Resources.KryptonContextMenuItems,
+                    Properties.Resources.KryptonContextMenuSeparator,
+                    Properties.Resources.KryptonRadioButton,
+                    Properties.Resources.KryptonCheckBox,
+                    Properties.Resources.KryptonCheckButton,
+                    Properties.Resources.KryptonLinkLabel,
+                    Properties.Resources.delete2,
+                    Properties.Resources.arrow_up_blue,
+                    Properties.Resources.arrow_down_blue,
+                    Properties.Resources.KryptonContextMenuColorColumns,
+                    Properties.Resources.KryptonContextMenuImageSelect,
+                    Properties.Resources.KryptonMonthCalendar});
                 this.imageList.Images.SetKeyName(0, "KryptonContextMenuColorColumns.bmp");
                 this.imageList.Images.SetKeyName(1, "KryptonContextMenuHeading.bmp");
                 this.imageList.Images.SetKeyName(2, "KryptonContextMenuItem.bmp");

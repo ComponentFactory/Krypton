@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6004C98A-6642-4DCF-906C-E0ED3581978F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ComponentFactory.Krypton.Design</RootNamespace>
+    <AssemblyName>ComponentFactory.Krypton.Design</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Krypton.ico</ApplicationIcon>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>StrongKrypton.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\Bin\</OutputPath>
+    <BaseIntermediateOutputPath>../../../build/obj/$(AssemblyName)</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)/$(Configuration)/</IntermediateOutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Krypton.ico" />
+    <None Include="Resources\KryptonRibbonGroupTrackBar.bmp" />
+    <None Include="Resources\KryptonGallery.bmp" />
+    <None Include="Resources\KryptonRibbonTab.bmp" />
+    <None Include="Resources\KryptonRibbonRecentDoc.png" />
+    <None Include="Resources\KryptonRibbonQATButton.bmp" />
+    <None Include="Resources\KryptonRibbonGroupTriple.bmp" />
+    <None Include="Resources\KryptonRibbonGroupTextBox.bmp" />
+    <None Include="Resources\KryptonRibbonGroupSeparator.bmp" />
+    <None Include="Resources\KryptonRibbonGroupRichTextBox.bmp" />
+    <None Include="Resources\KryptonRibbonGroupRadioButton.bmp" />
+    <None Include="Resources\KryptonRibbonGroupNumericUpDown.bmp" />
+    <None Include="Resources\KryptonRibbonGroupMaskedTextBox.bmp" />
+    <None Include="Resources\KryptonRibbonGroupLines.bmp" />
+    <None Include="Resources\KryptonRibbonGroupLabel.bmp" />
+    <None Include="Resources\KryptonRibbonGroupDomainUpDown.bmp" />
+    <None Include="Resources\KryptonRibbonGroupDateTimePicker.bmp" />
+    <None Include="Resources\KryptonRibbonGroupCustomControl.bmp" />
+    <None Include="Resources\KryptonRibbonGroupComboBox.bmp" />
+    <None Include="Resources\KryptonRibbonGroupColorButton.bmp" />
+    <None Include="Resources\KryptonRibbonGroupClusterColorButton.bmp" />
+    <None Include="Resources\KryptonRibbonGroupClusterButton.bmp" />
+    <None Include="Resources\KryptonRibbonGroupCluster.bmp" />
+    <None Include="Resources\KryptonRibbonGroupCheckBox.bmp" />
+    <None Include="Resources\KryptonRibbonGroupButton.bmp" />
+    <None Include="Resources\KryptonRibbonGroup.bmp" />
+    <None Include="Resources\KryptonRibbonContext.bmp" />
+    <None Include="Resources\MovePrevious.png" />
+    <None Include="Resources\MoveNext.png" />
+    <None Include="Resources\MoveLast.png" />
+    <None Include="Resources\MoveFirst.png" />
+    <None Include="Resources\Empty16x16.bmp" />
+    <None Include="Resources\delete2.png" />
+    <None Include="Resources\arrow_up_blue.png" />
+    <None Include="Resources\arrow_down_blue.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\KryptonWrapLabel.bmp" />
+    <None Include="Resources\KryptonTextBox.bmp" />
+    <None Include="Resources\KryptonSplitContainer.bmp" />
+    <None Include="Resources\KryptonSeparator.bmp" />
+    <None Include="Resources\KryptonRichTextBox.bmp" />
+    <None Include="Resources\KryptonRadioButton.bmp" />
+    <None Include="Resources\KryptonPanel.bmp" />
+    <None Include="Resources\KryptonPalette.bmp" />
+    <None Include="Resources\KryptonNumericUpDown.bmp" />
+    <None Include="Resources\KryptonMonthCalendar.bmp" />
+    <None Include="Resources\KryptonMaskedTextBox.bmp" />
+    <None Include="Resources\KryptonManager.bmp" />
+    <None Include="Resources\KryptonListBox.bmp" />
+    <None Include="Resources\KryptonLinkLabel.bmp" />
+    <None Include="Resources\KryptonLabel.bmp" />
+    <None Include="Resources\KryptonHeaderGroup.bmp" />
+    <None Include="Resources\KryptonHeader.bmp" />
+    <None Include="Resources\KryptonGroupPanel.bmp" />
+    <None Include="Resources\KryptonGroupBox.bmp" />
+    <None Include="Resources\KryptonGroup.bmp" />
+    <None Include="Resources\KryptonForm.bmp" />
+    <None Include="Resources\KryptonDropButton.bmp" />
+    <None Include="Resources\KryptonDomainUpDown.bmp" />
+    <None Include="Resources\KryptonDateTimePicker.bmp" />
+    <None Include="Resources\KryptonDataGridView.bmp" />
+    <None Include="Resources\KryptonContextMenuSeparator.bmp" />
+    <None Include="Resources\KryptonContextMenuItems.bmp" />
+    <None Include="Resources\KryptonContextMenuItem.bmp" />
+    <None Include="Resources\KryptonContextMenuImageSelect.bmp" />
+    <None Include="Resources\KryptonContextMenuHeading.bmp" />
+    <None Include="Resources\KryptonContextMenuColorColumns.bmp" />
+    <None Include="Resources\KryptonContextMenu.bmp" />
+    <None Include="Resources\KryptonCommand.bmp" />
+    <None Include="Resources\KryptonComboBox.bmp" />
+    <None Include="Resources\KryptonColorButton.bmp" />
+    <None Include="Resources\KryptonCheckSet.bmp" />
+    <None Include="Resources\KryptonCheckedListBox.bmp" />
+    <None Include="Resources\KryptonCheckButton.bmp" />
+    <None Include="Resources\KryptonCheckBox.bmp" />
+    <None Include="Resources\KryptonButtonSpec.bmp" />
+    <None Include="Resources\KryptonButton.bmp" />
+    <None Include="Resources\KryptonBreadCrumbItem.bmp" />
+    <None Include="Resources\KryptonBreadCrumb.bmp" />
+    <None Include="Resources\KryptonBorderEdge.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StrongKrypton.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator.csproj">
+      <Project>{DC0DD714-4D19-4F31-A6D0-EA209D4F0EA8}</Project>
+      <Name>ComponentFactory.Krypton.Navigator 2015</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Ribbon\ComponentFactory.Krypton.Ribbon.csproj">
+      <Project>{E90FC375-453D-4FE4-9822-CE1DB85B6553}</Project>
+      <Name>ComponentFactory.Krypton.Ribbon 2015</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Toolkit\ComponentFactory.Krypton.Toolkit.csproj">
+      <Project>{96ECAECC-54F8-4AA5-8591-B443C2D9565F}</Project>
+      <Name>ComponentFactory.Krypton.Toolkit 2015</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ComponentFactory.Krypton.Workspace\ComponentFactory.Krypton.Workspace.csproj">
+      <Project>{9144BA04-155B-4B66-B85A-9A89AA93F7D4}</Project>
+      <Name>ComponentFactory.Krypton.Workspace 2015</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
