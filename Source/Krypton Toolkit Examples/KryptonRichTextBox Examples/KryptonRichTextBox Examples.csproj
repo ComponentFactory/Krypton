@@ -58,9 +58,6 @@
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ComponentFactory.Krypton.Design">
-      <HintPath>..\..\..\Bin\ComponentFactory.Krypton.Design.dll</HintPath>
-    </Reference>
     <Reference Include="ComponentFactory.Krypton.Toolkit">
       <HintPath>..\..\..\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>

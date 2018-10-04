@@ -27,7 +27,7 @@ namespace ComponentFactory.Krypton.Toolkit
     [ToolboxBitmap(typeof(KryptonPanel), "ToolboxBitmaps.KryptonPanel.bmp")]
     [DefaultEvent("Paint")]
 	[DefaultProperty("PanelStyle")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonPanelDesigner, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonPanelDesigner, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [DesignerCategory("code")]
     [Description("Enables you to group collections of controls.")]
     [Docking(DockingBehavior.Ask)]

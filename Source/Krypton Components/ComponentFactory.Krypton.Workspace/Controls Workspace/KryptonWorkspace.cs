@@ -35,7 +35,7 @@ namespace ComponentFactory.Krypton.Workspace
     [ToolboxBitmap(typeof(KryptonWorkspace), "ToolboxBitmaps.KryptonWorkspace.bmp")]
     [DefaultEvent("WorkspaceCellAdded")]
     [DefaultProperty("Root")]
-    [Designer("ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Workspace.KryptonWorkspaceDesigner, ComponentFactory.Krypton.Workspace, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [DesignerCategory("code")]
     [Description("Layout a hierarchy of KryptonNavigator instances.")]
     [Docking(DockingBehavior.Ask)]

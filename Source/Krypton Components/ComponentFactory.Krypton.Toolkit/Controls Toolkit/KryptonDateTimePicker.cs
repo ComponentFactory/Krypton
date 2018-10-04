@@ -30,7 +30,7 @@ namespace ComponentFactory.Krypton.Toolkit
     [DefaultEvent("ValueChanged")]
 	[DefaultProperty("Value")]
     [DefaultBindingProperty("Value")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonDateTimePickerDesigner, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [DesignerCategory("code")]
     [Description("Enables the user to select a date and time, and to display that date and time in a specified format.")]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]

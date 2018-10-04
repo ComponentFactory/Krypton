@@ -25,7 +25,7 @@ namespace ComponentFactory.Krypton.Toolkit
     /// </summary>
     [ToolboxItem(true)]
     [ToolboxBitmap(typeof(KryptonManager), "ToolboxBitmaps.KryptonManager.bmp")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonManagerDesigner, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonManagerDesigner, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [DefaultProperty("GlobalPaletteMode")]
     [Description("Access global Krypton settings.")]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]

@@ -28,7 +28,7 @@ namespace ComponentFactory.Krypton.Toolkit
     [ToolboxBitmap(typeof(KryptonBorderEdge), "ToolboxBitmaps.KryptonBorderEdge.bmp")]
     [DefaultEvent("Paint")]                             
     [DefaultProperty("Orientation")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonBorderEdgeDesigner, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonBorderEdgeDesigner, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [DesignerCategory("code")]
     [Description("Displays a vertical or horizontal border edge.")]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]

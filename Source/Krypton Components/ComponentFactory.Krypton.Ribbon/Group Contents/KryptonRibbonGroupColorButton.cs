@@ -28,7 +28,7 @@ namespace ComponentFactory.Krypton.Ribbon
     /// </summary>
     [ToolboxItem(false)]
     [ToolboxBitmap(typeof(KryptonRibbonGroupColorButton), "ToolboxBitmaps.KryptonRibbonGroupColorButton.bmp")]
-    [Designer("ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupColorButtonDesigner, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Ribbon.KryptonRibbonGroupColorButtonDesigner, ComponentFactory.Krypton.Ribbon, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [DesignerCategory("code")]
     [DesignTimeVisible(false)]
     [DefaultEvent("SelectedColorChanged")]

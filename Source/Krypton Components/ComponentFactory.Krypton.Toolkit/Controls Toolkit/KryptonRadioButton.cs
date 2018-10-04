@@ -29,7 +29,7 @@ namespace ComponentFactory.Krypton.Toolkit
     [DefaultEvent("CheckedChanged")]
 	[DefaultProperty("Text")]
     [DefaultBindingProperty("Checked")]
-    [Designer("ComponentFactory.Krypton.Toolkit.KryptonRadioButtonDesigner, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Toolkit.KryptonRadioButtonDesigner, ComponentFactory.Krypton.Toolkit, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [DesignerCategory("code")]
     [Description("Allow user to set or clear the associated option.")]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]

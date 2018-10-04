@@ -30,7 +30,7 @@ namespace ComponentFactory.Krypton.Ribbon
     [ToolboxBitmap(typeof(KryptonGallery), "ToolboxBitmaps.KryptonGallery.bmp")]
     [DefaultEvent("SelectedIndexChanged")]
 	[DefaultProperty("SelectedIndex")]
-    [Designer("ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Ribbon.KryptonGalleryDesigner, ComponentFactory.Krypton.Ribbon, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [DesignerCategory("code")]
     [Description("Select from a group of possible images.")]
     [ClassInterface(ClassInterfaceType.AutoDispatch)]

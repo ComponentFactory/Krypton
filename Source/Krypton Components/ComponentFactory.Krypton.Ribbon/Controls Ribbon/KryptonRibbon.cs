@@ -34,7 +34,7 @@ namespace ComponentFactory.Krypton.Ribbon
     [ToolboxBitmap(typeof(KryptonRibbon), "ToolboxBitmaps.KryptonRibbon.bmp")]
     [DefaultEvent("SelectedTabChanged")]
     [DefaultProperty("RibbonTabs")]
-    [Designer("ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
+    [Designer("ComponentFactory.Krypton.Ribbon.KryptonRibbonDesigner, ComponentFactory.Krypton.Ribbon, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e")]
     [DesignerCategory("code")]
     [Description("Ribbon control presents a tabbed set of user options.")]
     [Docking(DockingBehavior.Never)]
@@ -822,7 +822,7 @@ namespace ComponentFactory.Krypton.Ribbon
         [Category("Values")]
         [Description("Collection of ribbon quick access toolbar buttons.")]
         [MergableProperty(false)]
-        [Editor("ComponentFactory.Krypton.Ribbon.KryptonRibbonQATButtonCollectionEditor, ComponentFactory.Krypton.Design, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e", typeof(UITypeEditor))]
+        [Editor("ComponentFactory.Krypton.Ribbon.KryptonRibbonQATButtonCollectionEditor, ComponentFactory.Krypton.Ribbon, Version=4.6.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e", typeof(UITypeEditor))]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Content)]
         public KryptonRibbonQATButtonCollection QATButtons
         {
