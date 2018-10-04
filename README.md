@@ -1,8 +1,3 @@
-# Update: 3rd Oct 2018 #
- - Projects changed to use .NET Framework 4
- - Bin folder readded with already compiled assemblies
- - Separator control drawing issues fixed
-
 # Krypton Suite of .NET WinForms Controls
 The Krypton Suite of .NET WinForms controls are now freely available for use in personal or commerical projects.
 
@@ -18,10 +13,9 @@ I developed and sold them from my company Component Factory from 2006 until 2014
  - Start **Visual Studio** and create/open your Windows Forms project
  - Open the main Form of your application and show the **Toolbox**
  - Right click the **Toolbox** and **Add Tab**, give it the name **Krypton**
- - Right click inside the new tab and select **Choose Toolbox Items**
- - Use the **Browse** button and go to your **Bin** directory, select all the **ComponentFactory.Krypton...** assemblies
+ - Right click inside the new tab and select **Choose items**
+ - Click **Browse** and go to the **Bin** directory, and select all the **ComponentFactory.Krypton...** assemblies
  - Select **OK** and now you have them all in the **Toolbox!**
- - Add a reference to **ComponentFactory.Krypton.Design.dll** to your project, otherwise the controls will **not** work as intended
 
 # Source #
 **Source** directory contains the full source code that you can view, modify and directly compile. The **Krypton Components** sub-directory contains all the actual controls, the other directories are for the myriad example projects.
