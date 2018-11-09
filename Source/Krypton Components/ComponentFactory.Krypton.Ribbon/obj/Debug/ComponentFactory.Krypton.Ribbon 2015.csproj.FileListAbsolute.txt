@@ -1,1 +1,0 @@
-S:\Source Code\GitHub\Krypton Dev\Source\Krypton Components\ComponentFactory.Krypton.Ribbon\obj\Debug\ComponentFactory.Krypton.Ribbon 2015.csprojAssemblyReference.cache
