@@ -4,7 +4,7 @@ The Krypton Suite of .NET WinForms controls are now freely available for use in 
 I developed and sold them from my company Component Factory from 2006 until 2014, when the lack of sales meant selling the controls was no longer viable. So I decided to make them open source so that .NET developers had a good set of free controls to use in their projects. Full source code for all the controls and components is included along with Visual Studio projects and solution files.
 
 # Getting Started #
-**Bin** directory contains already compiled copies of all the example projects and the Krypton assemblies, so I recommend you start by running the **Krypton Explorer** application in this directory. It lists all the controls along with an example applications used to show them in operation.
+**Bin** directory contains already compiled copies of all the example projects and the Krypton assemblies, so I recommend you start by running the **Krypton Explorer** application in this directory. It lists all the controls along with example applications used to show them in operation.
 
 # Documentation #
 **Help** directory contains a **KryptonHelp.chm** file that can be double clicked to open the documentation. I recommend you read this before developing using the Krypton controls.
