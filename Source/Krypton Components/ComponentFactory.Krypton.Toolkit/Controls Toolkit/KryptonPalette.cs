@@ -24,6 +24,7 @@ using System.Globalization;
 using System.Threading;
 using System.Runtime.InteropServices;
 using Microsoft.Win32;
+using System.Drawing.Imaging;
 
 namespace ComponentFactory.Krypton.Toolkit
 {
@@ -3747,9 +3748,8 @@ namespace ComponentFactory.Krypton.Toolkit
                         byte[] bytes = Convert.FromBase64String(cdata.Value);
 
                         // Convert the bytes back into an Image
-                        MemoryStream memory = new MemoryStream(bytes);
-                        BinaryFormatter formatter = new BinaryFormatter();
-                        Image resurect = (Image)formatter.Deserialize(memory);
+                        using MemoryStream memory = new(bytes);
+                        Image resurect = Image.FromStream(memory);
 
                         // Add into the lookup dictionary
                         imageCache.Add(name, resurect);
@@ -3914,11 +3914,10 @@ namespace ComponentFactory.Krypton.Toolkit
             {
                 try
                 {
-                    // Conv ert the Image into base64 so it can be used in xml
-                    MemoryStream memory = new MemoryStream();
-                    BinaryFormatter formatter = new BinaryFormatter();
-                    formatter.Serialize(memory, entry.Key);
-                    string base64 = Convert.ToBase64String(memory.ToArray());
+                    using MemoryStream ms = new();
+                    entry.Key.Save(ms, ImageFormat.Bmp);
+                    // Convert the Image into base64 so it can be used in xml
+                    string base64 = Convert.ToBase64String(ms.ToArray());
 
                     // Create and add a new xml element
                     XmlElement imageElement = doc.CreateElement("Image");

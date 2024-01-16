@@ -1558,16 +1558,14 @@ namespace ComponentFactory.Krypton.Toolkit
             // Only store if we have an actual image to persist
             if (image != null)
             {
-                // Convert the Image into base64 so it can be used in xml
-                MemoryStream memory = new MemoryStream();
-                BinaryFormatter formatter = new BinaryFormatter();
-                formatter.Serialize(memory, image);
-                string base64 = Convert.ToBase64String(memory.ToArray());
-
-                // Store the base64 Hex as a CDATA inside the element
-                xmlWriter.WriteStartElement(name);
-                xmlWriter.WriteCData(base64);
-                xmlWriter.WriteEndElement();
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    image.Save(ms, ImageFormat.Bmp);
+                    byte[] bitmapData = ms.ToArray();
+                    xmlWriter.WriteStartElement("Image");
+                    xmlWriter.WriteBase64(bitmapData, 0, bitmapData.Length);
+                    xmlWriter.WriteEndElement();
+                }
             }
         }
 
@@ -1578,13 +1576,18 @@ namespace ComponentFactory.Krypton.Toolkit
         /// <returns>Image that was recreated.</returns>
         public static Image XmlCDataToImage(XmlReader xmlReader)
         {
-            // Convert the content of the element into base64
-            byte[] bytes = Convert.FromBase64String(xmlReader.ReadContentAsString());
+            using MemoryStream stm = new();
+            byte[] buffer = new byte[1024];
+            int readBytes = 0;
+            while ((readBytes = xmlReader.ReadElementContentAsBase64(buffer, 0, buffer.Length)) > 0)
+            {
+                stm.Write(buffer, 0, readBytes);
+            }
 
-            // Convert the bytes back into an Image
-            MemoryStream memory = new MemoryStream(bytes);
-            BinaryFormatter formatter = new BinaryFormatter();
-            return (Image)formatter.Deserialize(memory);
+            stm.Flush();
+            stm.Seek(0, SeekOrigin.Begin);
+            Image res = Image.FromStream(stm);
+            return res;
         }
 
         /// <summary>

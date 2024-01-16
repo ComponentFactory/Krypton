@@ -1889,7 +1889,7 @@ namespace ComponentFactory.Krypton.Toolkit
                 if (_fiMouseInContentBounds == null)
                 {
                     // Cache field info about the internal 'mouseInContentBounds' instance
-                    _fiMouseInContentBounds = typeof(DataGridViewButtonCell).GetField("mouseInContentBounds", BindingFlags.Static |
+                    _fiMouseInContentBounds = typeof(DataGridViewButtonCell).GetField("s_mouseInContentBounds", BindingFlags.Static |
                                                                                                               BindingFlags.NonPublic |
                                                                                                               BindingFlags.GetField);
                 }
