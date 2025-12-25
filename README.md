@@ -1,7 +1,3 @@
-# Effective C#
-Learn and keep up to date on all things C# by checking out my YouTube channel
-<a href="https://www.youtube.com/channel/UCslxjjdakrR6QYSbIZKkMCQ">Effective C#<a>
-
 # Krypton Suite of .NET WinForms Controls
 The Krypton Suite of .NET WinForms controls are now freely available for use in personal or commerical projects.
 
